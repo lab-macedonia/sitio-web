@@ -11,7 +11,7 @@ title-block-style: none
   <div class="eyebrow">UMCE · INVESTIGACIÓN · EDUCACIÓN · INNOVACIÓN</div>
   <img src="assets/macedonia-mejorado-oscuro.svg" width="240" height="240" class="brand-hero" alt="Logotipo del Laboratorio MACEDONIA">
   <h1>La química que investigamos.<br><em>La ciencia que enseñamos.</em></h1>
-  <p>Conectamos la investigación en química orgánica y reactividad molecular con la formación de profesores, el aprendizaje experimental y la innovación educativa.</p>
+  <p>Conectamos la química orgánica, la química general y las ciencias, desde la investigación en reactividad molecular hasta la formación de profesores, el aprendizaje experimental y la innovación educativa.</p>
   <div class="cta-row"><a class="btn-primary-m" href="presentacion.html">Conoce MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="investigacion.html">Explorar investigación</a></div>
 </div>
 <div class="hero-art"><img src="assets/img/hero.svg" width="560" height="520" alt="Ilustración de un matraz con líquido turquesa, una molécula y un libro abierto: química y formación docente"></div>
@@ -36,8 +36,8 @@ Síntesis orgánica, radicales libres, antioxidantes, modelación molecular y qu
 :::
 ::: {.pillar}
 <div class="pillar-index">02 / FORMAR</div>
-### Educación química
-Aprendizaje en laboratorio, didáctica de las ciencias y formación inicial de profesores.
+### Educación química y ciencias
+Enseñanza de la química general, la química orgánica y las ciencias: aprendizaje en laboratorio, didáctica y formación inicial de profesores.
 
 [Conocer nuestro propósito →](proposito.qmd)
 :::

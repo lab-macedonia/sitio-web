@@ -11,7 +11,7 @@ title-block-style: none
   <div class="eyebrow">UMCE · RESEARCH · EDUCATION · INNOVATION</div>
   <img src="assets/macedonia-mejorado-oscuro.svg" width="240" height="240" class="brand-hero" alt="MACEDONIA Laboratory logo">
   <h1>The chemistry we investigate.<br><em>The science we teach.</em></h1>
-  <p>We connect research in organic chemistry and molecular reactivity with teacher education, experimental learning and educational innovation.</p>
+  <p>We connect organic chemistry, general chemistry and science, from research on molecular reactivity to teacher education, experimental learning and educational innovation.</p>
   <div class="cta-row"><a class="btn-primary-m" href="about.html">About MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="research.html">Explore our research</a></div>
 </div>
 <div class="hero-art"><img src="assets/img/hero.svg" width="560" height="520" alt="Illustration of a flask with turquoise liquid, a molecule and an open book: chemistry and teacher education"></div>
@@ -36,8 +36,8 @@ Organic synthesis, free radicals, antioxidants, molecular modeling and computati
 :::
 ::: {.pillar}
 <div class="pillar-index">02 / TEACH</div>
-### Chemical education
-Laboratory learning, science didactics and initial teacher education.
+### Chemical and science education
+Teaching general chemistry, organic chemistry and science: laboratory learning, didactics and initial teacher education.
 
 [Our purpose →](purpose.qmd)
 :::

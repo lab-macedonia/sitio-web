@@ -23,6 +23,12 @@ Analysis of laboratory learning, digital pre-laboratories, modeling and scientif
 
 **Track record:** Educación Química (2024, 2025); MAPEX (2026).
 
+## General chemistry and science
+
+Teaching and resources for learning general chemistry and science at different levels: interactive science simulations, 3D molecular models and animations.
+
+**Resources:** [digital laboratory](resources.qmd).
+
 ## Technological innovation and educational resources
 
 Development of experiences with molecular modeling, 3D fabrication and printing, and digital technology as a teaching aid.

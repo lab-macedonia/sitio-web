@@ -11,7 +11,7 @@ website:
     location: navbar
     type: overlay
   page-navigation: true
-  description: MACEDONIA · Research in organic chemistry, chemical education and innovation for teacher education at UMCE.
+  description: MACEDONIA · Research and teaching in organic chemistry, general chemistry and science, chemical education and innovation for teacher education at UMCE.
   navbar:
     logo: assets/macedonia-mejorado-icono-oscuro.svg
     background: '#062a4d'
@@ -67,7 +67,7 @@ website:
   page-footer:
     border: true
     left: © MACEDONIA Laboratory · Universidad Metropolitana de Ciencias de la Educación
-    center: Organic chemistry · Chemical education
+    center: Organic chemistry · General chemistry · Science · Chemical education
     right: '[Instagram](https://www.instagram.com/labmacedonia/) · [Contact](/contact.qmd)'
   back-to-top-navigation: true
 format:

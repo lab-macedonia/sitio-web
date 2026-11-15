@@ -9,7 +9,7 @@ project:
   - robots.txt
 website:
   title: Laboratorio MACEDONIA
-  description: MACEDONIA · Investigación en química orgánica, educación química e innovación para la formación
+  description: MACEDONIA · Investigación y docencia en química orgánica, química general y ciencias, educación química e innovación para la formación
     docente en la UMCE.
   site-url: https://lab-macedonia.github.io/sitio-web/
   favicon: assets/macedonia-mejorado-icono-claro.svg
@@ -73,7 +73,7 @@ website:
   page-footer:
     border: true
     left: © Laboratorio MACEDONIA · Universidad Metropolitana de Ciencias de la Educación
-    center: Química orgánica · Educación química
+    center: Química orgánica · Química general · Ciencias · Educación química
     right: '[Instagram](https://www.instagram.com/labmacedonia/) · [Contacto](/contacto.qmd)'
   back-to-top-navigation: true
   open-graph: true

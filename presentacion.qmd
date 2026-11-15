@@ -5,7 +5,7 @@ subtitle: "Investigación química y educación científica en un espacio de enc
 
 ## ¿Qué es MACEDONIA?
 
-El **Laboratorio MACEDONIA** es un espacio de trabajo académico vinculado al Departamento de Química de la **Universidad Metropolitana de Ciencias de la Educación (UMCE)**. Su identidad reúne dos ámbitos que se enriquecen mutuamente: la investigación en **química orgánica** y la **educación química**, con especial atención a la formación inicial docente.
+El **Laboratorio MACEDONIA** es un espacio de trabajo académico vinculado al Departamento de Química de la **Universidad Metropolitana de Ciencias de la Educación (UMCE)**. Su identidad reúne dos ámbitos que se enriquecen mutuamente: la investigación en **química orgánica** y la **educación química**, con especial atención a la formación inicial docente. Su trabajo no se limita a la química orgánica: abarca también la **química general** y las **ciencias** en general, tanto en investigación como en docencia, laboratorio y recursos de aprendizaje.
 
 El trabajo disciplinar comprende el estudio de radicales libres y antioxidantes, la síntesis y caracterización de compuestos orgánicos y el análisis de la reactividad mediante herramientas experimentales y computacionales. En educación científica, se exploran experiencias de aprendizaje en laboratorio, procesos de enseñanza de la química y recursos didácticos apoyados en tecnologías digitales.
 

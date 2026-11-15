@@ -24,6 +24,12 @@ Análisis del aprendizaje en laboratorios, prelaboratorios digitales, modelació
 
 **Trayectoria:** Educación Química (2024, 2025); MAPEX (2026).
 
+## Química general y ciencias
+
+Docencia y recursos para el aprendizaje de la química general y de las ciencias en distintos niveles: simulaciones interactivas de ciencias, modelos moleculares 3D y animaciones.
+
+**Recursos:** [laboratorio digital](laboratorio-digital.qmd).
+
 ## Innovación tecnológica y recursos educativos
 
 Desarrollo de experiencias con modelación molecular, fabricación e impresión 3D y tecnología digital como apoyo didáctico.
