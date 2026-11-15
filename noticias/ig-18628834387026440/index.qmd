@@ -5,6 +5,7 @@ categories: [Instagram, Actividades]
 author: Lab Macedonia
 description: "🧪🧬 Una nueva jornada de química y experimentación  El 2 de septiembre recibimos la visita de estudiantes del Colegio Paulo Freire (@colegiopaulofreire.sm ), quienes parti"
 image: imagen.jpg
+image-alt: "Imagen de la publicación de Instagram: 🧪🧬 Una nueva jornada de química y experimentación"
 ---
 > 🧪🧬 Una nueva jornada de química y experimentación
 > 

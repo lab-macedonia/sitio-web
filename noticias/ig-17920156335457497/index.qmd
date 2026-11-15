@@ -5,6 +5,7 @@ categories: [Instagram, Actividades]
 author: Lab Macedonia
 description: "🧪 ¡Ya son 98 simulaciones interactivas de ciencias del Laboratorio MACEDONIA (UMCE)!  ✅ +18 nuevas: redox, PCR, operón lac, HSAB, polímeros, aspirina y más ✅ Sección «Téc"
 image: imagen.jpg
+image-alt: "Imagen de la publicación de Instagram: 🧪 ¡Ya son 98 simulaciones interactivas de ciencias del Laboratorio MACEDONIA (UMCE)!"
 ---
 > 🧪 ¡Ya son 98 simulaciones interactivas de ciencias del Laboratorio MACEDONIA (UMCE)!
 > 

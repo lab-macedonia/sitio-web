@@ -47,7 +47,7 @@ def page(titulo, sub, intro, filtros, registros, lg):
 
 def art(attrs, h3, sub, cuerpo):
     a = ' '.join(f'data-{k}="{e(v)}"' for k, v in attrs.items())
-    return f'<article class="catalog-record" data-record {a}><h3>{h3}</h3><p class="record-sub">{sub}</p>{cuerpo}</article>'
+    return f'<article class="catalog-record" data-record {a}><h2>{h3}</h2><p class="record-sub">{sub}</p>{cuerpo}</article>'
 
 def filtro(lg, etiqueta_es, etiqueta_en, campo, valores):
     global lang

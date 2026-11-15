@@ -5,6 +5,7 @@ categories: [Instagram, Actividades]
 author: Lab Macedonia
 description: "🌎🧪 Laboratorio MACEDONIA presente en colaboración científica internacional  El Dr. Esteban Rodríguez-Arce, de la Universidad de Chile, participó como conferencista invita"
 image: imagen.jpg
+image-alt: "Imagen de la publicación de Instagram: 🌎🧪 Laboratorio MACEDONIA presente en colaboración científica internacional"
 ---
 > 🌎🧪 Laboratorio MACEDONIA presente en colaboración científica internacional
 > 

@@ -73,10 +73,11 @@ website:
 format:
   html:
     theme:
-      light: cosmo
-      dark: darkly
+      light: [cosmo, styles/theme.scss]
+      dark: [darkly, styles/theme.scss]
     respect-user-color-scheme: true
     css: styles/site.css
+    include-in-header: assets/preload-fonts.html
     toc: true
     lang: en
     link-external-newwindow: true

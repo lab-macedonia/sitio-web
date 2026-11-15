@@ -9,12 +9,12 @@ title-block-style: none
 ::: {.home-hero}
 <div class="home-hero__content">
   <div class="eyebrow">UMCE · RESEARCH · EDUCATION · INNOVATION</div>
-  <img src="assets/macedonia-mejorado-oscuro.svg" class="brand-hero" alt="MACEDONIA Laboratory logo">
+  <img src="assets/macedonia-mejorado-oscuro.svg" width="240" height="240" class="brand-hero" alt="MACEDONIA Laboratory logo">
   <h1>The chemistry we investigate.<br><em>The science we teach.</em></h1>
   <p>We connect research in organic chemistry and molecular reactivity with teacher education, experimental learning and educational innovation.</p>
   <div class="cta-row"><a class="btn-primary-m" href="about.html">About MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="research.html">Explore our research</a></div>
 </div>
-<div class="hero-art"><img src="assets/img/hero.svg" alt="Illustration of a flask with turquoise liquid, a molecule and an open book: chemistry and teacher education"></div>
+<div class="hero-art"><img src="assets/img/hero.svg" width="560" height="520" alt="Illustration of a flask with turquoise liquid, a molecule and an open book: chemistry and teacher education"></div>
 :::
 
 {{< include _stats.html >}}
@@ -79,10 +79,10 @@ Students, faculty and networks behind our shared work.
 ## The laboratory in pictures
 
 <div class="illus-grid">
-<figure><img src="assets/img/laboratorio.svg" alt="Illustration of an Erlenmeyer flask, a beaker and a test tube on a laboratory bench"><figcaption><strong>Experimental learning.</strong> The laboratory as a space for teacher education.</figcaption></figure>
-<figure><img src="assets/img/nitronas.svg" alt="Illustration of the chemical structure of an aromatic nitrone used as a free radical spin trap"><figcaption><strong>Free radicals.</strong> Synthesis and study of nitrones as spin traps.</figcaption></figure>
-<figure><img src="assets/img/quimica-computacional.svg" alt="Illustration of molecular orbitals of opposite colors over a chain of atoms and a grid of calculation points"><figcaption><strong>Computational chemistry.</strong> Reactivity and molecular modeling.</figcaption></figure>
-<figure><img src="assets/img/modelos-3d-ar.svg" alt="Illustration of a ball-and-stick model of acetic acid next to a phone showing it in augmented reality"><figcaption><strong>3D models and augmented reality.</strong> Resources to see and handle molecules.</figcaption></figure>
+<figure><img src="assets/img/laboratorio.svg" width="800" height="500" alt="Illustration of an Erlenmeyer flask, a beaker and a test tube on a laboratory bench"><figcaption><strong>Experimental learning.</strong> The laboratory as a space for teacher education.</figcaption></figure>
+<figure><img src="assets/img/nitronas.svg" width="800" height="500" alt="Illustration of the chemical structure of an aromatic nitrone used as a free radical spin trap"><figcaption><strong>Free radicals.</strong> Synthesis and study of nitrones as spin traps.</figcaption></figure>
+<figure><img src="assets/img/quimica-computacional.svg" width="800" height="500" alt="Illustration of molecular orbitals of opposite colors over a chain of atoms and a grid of calculation points"><figcaption><strong>Computational chemistry.</strong> Reactivity and molecular modeling.</figcaption></figure>
+<figure><img src="assets/img/modelos-3d-ar.svg" width="800" height="500" alt="Illustration of a ball-and-stick model of acetic acid next to a phone showing it in augmented reality"><figcaption><strong>3D models and augmented reality.</strong> Resources to see and handle molecules.</figcaption></figure>
 </div>
 
 ::: {.closing-band}

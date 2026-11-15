@@ -124,6 +124,7 @@ def make_post(item):
              f"description: {json.dumps(caption[:170].replace(chr(10), ' '), ensure_ascii=False)}"]
     if image_name:
         front.append(f"image: {image_name}")
+        front.append("image-alt: " + json.dumps("Imagen de la publicación de Instagram: " + title, ensure_ascii=False))
     front += ["---", ""]
     body = "\n".join("> " + line for line in caption.splitlines())
     if link.startswith("https://"):

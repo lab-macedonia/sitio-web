@@ -7,7 +7,7 @@ The digital laboratory brings together open developments published on GitHub and
 
 ::: {.resource-grid}
 ::: {.resource-item}
-### Chemistry models in augmented reality
+## Chemistry models in augmented reality
 
 **Repository:** `quimica-ar`  
 **What it is:** three-dimensional visualization and augmented reality of molecular models of carboxylic acids, in collaboration with LabTec and UMCE.  
@@ -16,7 +16,7 @@ The digital laboratory brings together open developments published on GitHub and
 [Try the application](https://lab-macedonia.github.io/quimica-ar/) · [Source code](https://github.com/lab-macedonia/quimica-ar)
 :::
 ::: {.resource-item}
-### Interactive science simulations
+## Interactive science simulations
 
 **Repository:** `simulaciones-quimica`  
 **What it is:** a collection of 114 3D simulations in chemistry, biology, earth sciences and physics, related to learning objectives of the Chilean school curriculum.  
@@ -25,7 +25,7 @@ The digital laboratory brings together open developments published on GitHub and
 [Explore the simulations](https://lab-macedonia.github.io/simulaciones-quimica/) · [Source code](https://github.com/lab-macedonia/simulaciones-quimica)
 :::
 ::: {.resource-item}
-### Organic chemistry animations
+## Organic chemistry animations
 
 **Topics:** stereochemistry, isomerism, Newman and sawhorse projections, and molecular conformations.  
 **Origin:** developed in the thesis of Mauricio Cortés and published under a **CC BY-NC-SA 4.0** license.  

@@ -9,12 +9,12 @@ title-block-style: none
 ::: {.home-hero}
 <div class="home-hero__content">
   <div class="eyebrow">UMCE · INVESTIGACIÓN · EDUCACIÓN · INNOVACIÓN</div>
-  <img src="assets/macedonia-mejorado-oscuro.svg" class="brand-hero" alt="Logotipo del Laboratorio MACEDONIA">
+  <img src="assets/macedonia-mejorado-oscuro.svg" width="240" height="240" class="brand-hero" alt="Logotipo del Laboratorio MACEDONIA">
   <h1>La química que investigamos.<br><em>La ciencia que enseñamos.</em></h1>
   <p>Conectamos la investigación en química orgánica y reactividad molecular con la formación de profesores, el aprendizaje experimental y la innovación educativa.</p>
   <div class="cta-row"><a class="btn-primary-m" href="presentacion.html">Conoce MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="investigacion.html">Explorar investigación</a></div>
 </div>
-<div class="hero-art"><img src="assets/img/hero.svg" alt="Ilustración de un matraz con líquido turquesa, una molécula y un libro abierto: química y formación docente"></div>
+<div class="hero-art"><img src="assets/img/hero.svg" width="560" height="520" alt="Ilustración de un matraz con líquido turquesa, una molécula y un libro abierto: química y formación docente"></div>
 :::
 
 {{< include _stats.html >}}
@@ -79,10 +79,10 @@ Estudiantes, docentes y redes que hacen posible el trabajo compartido.
 ## El laboratorio en imágenes
 
 <div class="illus-grid">
-<figure><img src="assets/img/laboratorio.svg" alt="Ilustración de un matraz Erlenmeyer, un vaso de precipitados y un tubo de ensayo sobre un mesón de laboratorio"><figcaption><strong>Aprendizaje experimental.</strong> El laboratorio como espacio de formación docente.</figcaption></figure>
-<figure><img src="assets/img/nitronas.svg" alt="Ilustración de la estructura química de una nitrona aromática usada como atrapador de radicales libres"><figcaption><strong>Radicales libres.</strong> Síntesis y estudio de nitronas como atrapadores de espín.</figcaption></figure>
-<figure><img src="assets/img/quimica-computacional.svg" alt="Ilustración de orbitales moleculares de colores opuestos sobre una cadena de átomos y una malla de puntos de cálculo"><figcaption><strong>Química computacional.</strong> Reactividad y modelación molecular.</figcaption></figure>
-<figure><img src="assets/img/modelos-3d-ar.svg" alt="Ilustración de un modelo de bolas y varillas de ácido acético junto a un teléfono que lo muestra en realidad aumentada"><figcaption><strong>Modelos 3D y realidad aumentada.</strong> Recursos para ver y manipular moléculas.</figcaption></figure>
+<figure><img src="assets/img/laboratorio.svg" width="800" height="500" alt="Ilustración de un matraz Erlenmeyer, un vaso de precipitados y un tubo de ensayo sobre un mesón de laboratorio"><figcaption><strong>Aprendizaje experimental.</strong> El laboratorio como espacio de formación docente.</figcaption></figure>
+<figure><img src="assets/img/nitronas.svg" width="800" height="500" alt="Ilustración de la estructura química de una nitrona aromática usada como atrapador de radicales libres"><figcaption><strong>Radicales libres.</strong> Síntesis y estudio de nitronas como atrapadores de espín.</figcaption></figure>
+<figure><img src="assets/img/quimica-computacional.svg" width="800" height="500" alt="Ilustración de orbitales moleculares de colores opuestos sobre una cadena de átomos y una malla de puntos de cálculo"><figcaption><strong>Química computacional.</strong> Reactividad y modelación molecular.</figcaption></figure>
+<figure><img src="assets/img/modelos-3d-ar.svg" width="800" height="500" alt="Ilustración de un modelo de bolas y varillas de ácido acético junto a un teléfono que lo muestra en realidad aumentada"><figcaption><strong>Modelos 3D y realidad aumentada.</strong> Recursos para ver y manipular moléculas.</figcaption></figure>
 </div>
 
 ::: {.closing-band}

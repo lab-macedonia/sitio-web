@@ -5,6 +5,7 @@ categories: [Instagram, Actividades]
 author: Lab Macedonia
 description: "🔬🧬🪐 ¡Nuestras simulaciones interactivas crecen!  Desde el Laboratorio MACEDONIA (UMCE) lanzamos la nueva versión de la colección: pasamos de 11 a 16 simulaciones y ahora "
 image: imagen.jpg
+image-alt: "Imagen de la publicación de Instagram: 🔬🧬🪐 ¡Nuestras simulaciones interactivas crecen!"
 ---
 > 🔬🧬🪐 ¡Nuestras simulaciones interactivas crecen!
 > 

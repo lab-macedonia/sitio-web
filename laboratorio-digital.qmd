@@ -7,7 +7,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 
 ::: {.resource-grid}
 ::: {.resource-item}
-### Modelos de química en realidad aumentada
+## Modelos de química en realidad aumentada
 
 **Repositorio:** `quimica-ar`  
 **Aplicación:** visualización tridimensional y realidad aumentada de modelos moleculares.  
@@ -16,7 +16,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 [Probar aplicación](https://lab-macedonia.github.io/quimica-ar/) · [Código abierto](https://github.com/lab-macedonia/quimica-ar)
 :::
 ::: {.resource-item}
-### Simulaciones de ciencias
+## Simulaciones de ciencias
 
 **Repositorio:** `simulaciones-quimica`  
 **Contenido:** 114 simulaciones en ciencias.  
@@ -25,7 +25,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 [Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Código abierto](https://github.com/lab-macedonia/simulaciones-quimica)
 :::
 ::: {.resource-item}
-### Animaciones de química orgánica
+## Animaciones de química orgánica
 
 **Temas:** estereoquímica, isomería y conformaciones moleculares.  
 **Procedencia:** recursos asociados al trabajo de titulación de Mauricio Cortés.  
