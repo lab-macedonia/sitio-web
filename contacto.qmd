@@ -20,3 +20,5 @@ Escríbenos a [german.barriga@umce.cl](mailto:german.barriga@umce.cl).
 <div class="map-frame"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-70.6030%2C-33.4668%2C-70.5930%2C-33.4610&amp;layer=mapnik&amp;marker=-33.463902%2C-70.598047" title="Mapa de la ubicación del Laboratorio MACEDONIA, UMCE" loading="lazy" allowfullscreen></iframe></div>
 
 [Abrir en Google Maps](https://www.google.com/maps/search/?api=1&query=-33.463902,-70.598047) · [Visitar el sitio institucional UMCE](https://www.umce.cl/)
+
+<small>Este sitio mide las visitas de forma anónima con [GoatCounter](https://www.goatcounter.com/): sin cookies y sin datos personales.</small>

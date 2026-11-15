@@ -88,7 +88,9 @@ format:
       dark: [darkly, styles/theme.scss]
     respect-user-color-scheme: true
     css: styles/site.css
-    include-in-header: assets/preload-fonts.html
+    include-in-header:
+      - assets/preload-fonts.html
+      - assets/goatcounter.html
     toc: true
     lang: es
     link-external-newwindow: true
