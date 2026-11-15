@@ -192,3 +192,4 @@ table{color:var(--text)}
 .vc-invalid{outline:2px solid #b3261e;outline-offset:-2px}
 .vc-h3{font-size:1.1rem;margin:1.4rem 0 .4rem}
 .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.acronym-note{font-size:.85rem;color:var(--muted);margin:-.4rem 0 .8rem}

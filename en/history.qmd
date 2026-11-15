@@ -7,7 +7,9 @@ subtitle: "A name that brings together chemistry, education and curiosity"
 
 MACEDONIA emerged as a space to **make academic work visible** and **strengthen collaboration networks**. Its name is an acronym formed from the highlighted letters of *química orgánica y educación química* (organic chemistry and chemical education), the two fields that make up its identity:
 
-<p class="acronym-name" lang="es"><span class="visually-hidden">M A C E D O N I A</span><span aria-hidden="true">quí<b>M</b>ica org<b>Á</b>ni<b>C</b>a y <b>ED</b>ucaci<b>ON</b> qu<b>Í</b>mic<b>A</b></span></p>
+<p class="acronym-name" lang="es"><span class="visually-hidden">M A C E D O N I A</span><span aria-hidden="true">qui<b>M</b>ica org<b>A</b>ni<b>C</b>a y <b>ED</b>ucaci<b>ON</b> qu<b>I</b>mic<b>A</b></span></p>
+
+<p class="acronym-note">It is written without accent marks on purpose, so that the highlighted letters stand out more.</p>
 
 **M**·**A**·**C**·**E**·**D**·**O**·**N**·**I**·**A**
 
