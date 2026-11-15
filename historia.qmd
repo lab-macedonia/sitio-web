@@ -25,7 +25,3 @@ La incorporación de Germán Barriga González a la UMCE en **2017** constituye 
 El trabajo disciplinar ha incluido el estudio de compuestos antioxidantes de origen natural y sintético, atrapadores de radicales libres y técnicas de caracterización, como resonancia de espín electrónico y métodos computacionales. Paralelamente, la investigación educativa se ha ocupado de la formación inicial docente, las interacciones en laboratorios, la inclusión y el uso de tecnologías para aprender ciencias.
 
 Hoy esas vertientes se expresan también en desarrollos de **simulación, modelación molecular e impresión 3D**, que conectan la química con nuevas posibilidades pedagógicas. Se trata de una ampliación de las líneas de trabajo, no de un reemplazo de su origen.
-
-## Una nota sobre las fechas
-
-La explicación del nombre y sus motivaciones originales procede de la [historia de MACEDONIA en el sitio anterior](https://sites.google.com/umce.cl/lab-macedonia/historia). El laboratorio no tiene una fecha formal de fundación; los hitos de esta página corresponden a la trayectoria académica de su equipo.

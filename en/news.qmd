@@ -3,6 +3,6 @@ title: "News and activities"
 subtitle: "Scientific updates, education and outreach"
 ---
 
-News and activities from the laboratory, including posts from its Instagram account. News items are published in Spanish.
+News and activities from the laboratory, including posts from its Instagram account.
 
 [Official Instagram: @labmacedonia](https://www.instagram.com/labmacedonia/) · [Spanish news page](../noticias.html)

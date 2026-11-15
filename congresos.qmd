@@ -3,7 +3,7 @@ title: "Congresos y comunicaciones"
 subtitle: "Participaciones académicas"
 ---
 
-Participaciones en congresos, jornadas y simposios, ordenadas de la más reciente a la más antigua. Cada ficha conserva el registro completo de la comunicación.
+Participaciones en congresos, jornadas y simposios.
 
 <div data-catalog data-count-text="{v} de {t} registros">
 <div class="catalog-filters">

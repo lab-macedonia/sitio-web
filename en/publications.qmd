@@ -3,7 +3,7 @@ title: "Scientific output"
 subtitle: "Articles and book chapters"
 ---
 
-Scientific articles and book chapters, listed from most recent to oldest. Titles originally in Spanish are shown with an English translation, followed by the original title; the DOI or journal page is linked when available.
+Scientific articles and book chapters.
 
 <div data-catalog data-count-text="{v} of {t} records">
 <div class="catalog-filters">

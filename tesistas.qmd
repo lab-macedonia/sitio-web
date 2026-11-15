@@ -3,7 +3,7 @@ title: "Tesis y trabajos de titulación"
 subtitle: "Formación de investigadores y profesores"
 ---
 
-Trabajos de titulación dirigidos en el laboratorio, del más reciente al más antiguo. Las descripciones son síntesis breves y no reemplazan el resumen de cada memoria.
+Trabajos de titulación dirigidos en el laboratorio.
 
 <div data-catalog data-count-text="{v} de {t} registros">
 <div class="catalog-filters">

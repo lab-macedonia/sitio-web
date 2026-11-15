@@ -36,5 +36,3 @@ Académico del Departamento de Química de la Universidad Metropolitana de Cienc
 - **2026 · MAPEX** (26-2026-IED): *Mapeando el aprendizaje experimental: trayectorias, huellas digitales y perfiles espaciales en laboratorios de química*. Coinvestigador; en ejecución.
 - **2025 · Ciencia en 3D** (02-2025-LICi): *Innovación pedagógica para la enseñanza de la química mediante diseño y fabricación digital*. Investigador responsable; cerrado.
 - **2024 · Modelación química e impresión 3D** (27-2024-EFA): *Potenciamiento de las habilidades de modelación a través de la química computacional e impresión 3D*. Investigador responsable; cerrado.
-
-*Esta página resume la trayectoria individual y no atribuye al laboratorio todas las actividades profesionales de su director.*

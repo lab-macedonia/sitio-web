@@ -89,10 +89,10 @@ for lg in ('es', 'en'):
     if not es:  # los valores de data-area/tipo en EN deben coincidir con los de los selects traducidos
         fl = [f.replace('value="Educación química"', 'value="Chemical education"').replace('value="Investigación química"', 'value="Chemical research"').replace('value="artículo"', 'value="Article"').replace('value="capítulo"', 'value="Book chapter"') for f in fl]
     if es:
-        intro = 'Artículos científicos y capítulos de libro, ordenados del más reciente al más antiguo. Cuando existe, se enlaza el DOI o la página de la revista.'
+        intro = 'Artículos científicos y capítulos de libro.'
         escribir('publicaciones.qmd', page('Producción científica', 'Artículos y capítulos de libro', intro, fl, regs, 'es'))
     else:
-        intro = 'Scientific articles and book chapters, listed from most recent to oldest. Titles originally in Spanish are shown with an English translation, followed by the original title; the DOI or journal page is linked when available.'
+        intro = 'Scientific articles and book chapters.'
         escribir('en/publications.qmd', page('Scientific output', 'Articles and book chapters', intro, fl, regs, 'en'))
 
 # ---------- Congresos ----------
@@ -119,10 +119,10 @@ for lg in ('es', 'en'):
     if not es:
         fl = [f.replace('value="Ponencia"', 'value="Oral presentation"').replace('value="No explicitada"', 'value="Not specified"') for f in fl]
     if es:
-        intro = 'Participaciones en congresos, jornadas y simposios, ordenadas de la más reciente a la más antigua. Cada ficha conserva el registro completo de la comunicación.'
+        intro = 'Participaciones en congresos, jornadas y simposios.'
         escribir('congresos.qmd', page('Congresos y comunicaciones', 'Participaciones académicas', intro, fl, regs, 'es'))
     else:
-        intro = 'Participation in conferences, symposia and workshops, from most recent to oldest. Each entry keeps the complete original record (in the original language) after an English rendering of the title.'
+        intro = 'Participation in conferences, symposia and workshops.'
         escribir('en/conferences.qmd', page('Conferences and presentations', 'Academic participation', intro, fl, regs, 'en'))
 
 # ---------- Proyectos ----------
@@ -149,10 +149,10 @@ for lg in ('es', 'en'):
     if not es:
         fl = [f.replace('value="Cerrado"', 'value="Closed"').replace('value="En ejecución"', 'value="Ongoing"') for f in fl]
     if es:
-        intro = 'Proyectos de investigación e innovación en los que participa el laboratorio, del más reciente al más antiguo.\n\n[Explorar las líneas de investigación](investigacion.qmd).'
+        intro = '[Explorar las líneas de investigación](investigacion.qmd).'
         escribir('proyectos.qmd', page('Proyectos de investigación e innovación', 'Proyectos del laboratorio', intro, fl, regs, 'es'))
     else:
-        intro = 'Research and innovation projects in which the laboratory takes part, from most recent to oldest.\n\n[Explore the research areas](research.qmd).'
+        intro = '[Explore the research areas](research.qmd).'
         escribir('en/projects.qmd', page('Research and innovation projects', 'Laboratory projects', intro, fl, regs, 'en'))
 
 # ---------- Tesis ----------
@@ -191,10 +191,10 @@ for lg in ('es', 'en'):
         for k, v in TR['etiquetas'].items():
             fl = [f.replace(f'value="{k}"', f'value="{v}"') for f in fl]
     if es:
-        intro = 'Trabajos de titulación dirigidos en el laboratorio, del más reciente al más antiguo. Las descripciones son síntesis breves y no reemplazan el resumen de cada memoria.'
+        intro = 'Trabajos de titulación dirigidos en el laboratorio.'
         escribir('tesistas.qmd', page('Tesis y trabajos de titulación', 'Formación de investigadores y profesores', intro, fl, regs, 'es'))
     else:
-        intro = 'Undergraduate and graduate theses supervised in the laboratory, from most recent to oldest. Descriptions are brief summaries and do not replace each thesis abstract.'
+        intro = 'Undergraduate and graduate theses supervised in the laboratory.'
         escribir('en/theses.qmd', page('Theses and degree projects', 'Training researchers and teachers', intro, fl, regs, 'en'))
 
 if faltan:

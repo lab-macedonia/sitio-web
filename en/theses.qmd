@@ -3,7 +3,7 @@ title: "Theses and degree projects"
 subtitle: "Training researchers and teachers"
 ---
 
-Undergraduate and graduate theses supervised in the laboratory, from most recent to oldest. Descriptions are brief summaries and do not replace each thesis abstract.
+Undergraduate and graduate theses supervised in the laboratory.
 
 <div data-catalog data-count-text="{v} of {t} records">
 <div class="catalog-filters">

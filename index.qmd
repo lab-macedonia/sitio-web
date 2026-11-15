@@ -83,8 +83,6 @@ Estudiantes, docentes y redes que hacen posible el trabajo compartido.
 <figure><img src="assets/img/modelos-3d-ar.svg" alt="Ilustración de un modelo de bolas y varillas de ácido acético junto a un teléfono que lo muestra en realidad aumentada"><figcaption><strong>Modelos 3D y realidad aumentada.</strong> Recursos para ver y manipular moléculas.</figcaption></figure>
 </div>
 
-<p class="illus-note">Ilustraciones originales creadas para este sitio; no son fotografías del laboratorio. Las fotografías reales de actividades se incorporarán cuando el equipo cuente con material propio y autorizado.</p>
-
 ::: {.closing-band}
 <div class="eyebrow">NUESTRA IDENTIDAD</div>
 ## Investigación rigurosa. Educación con sentido. Colaboración abierta.

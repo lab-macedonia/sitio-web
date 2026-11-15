@@ -3,8 +3,6 @@ title: "Proyectos de investigación e innovación"
 subtitle: "Proyectos del laboratorio"
 ---
 
-Proyectos de investigación e innovación en los que participa el laboratorio, del más reciente al más antiguo.
-
 [Explorar las líneas de investigación](investigacion.qmd).
 
 <div data-catalog data-count-text="{v} de {t} registros">

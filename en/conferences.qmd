@@ -3,7 +3,7 @@ title: "Conferences and presentations"
 subtitle: "Academic participation"
 ---
 
-Participation in conferences, symposia and workshops, from most recent to oldest. Each entry keeps the complete original record (in the original language) after an English rendering of the title.
+Participation in conferences, symposia and workshops.
 
 <div data-catalog data-count-text="{v} of {t} records">
 <div class="catalog-filters">

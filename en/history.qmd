@@ -25,7 +25,3 @@ Germán Barriga González joined UMCE in **2017**. This is a milestone in the tr
 Disciplinary work has included the study of natural and synthetic antioxidant compounds, free radical traps and characterization techniques such as electron spin resonance and computational methods. At the same time, educational research has addressed initial teacher education, laboratory interactions, inclusion and the use of technologies for learning science.
 
 Today these strands are also expressed in developments in **simulation, molecular modeling and 3D printing**, which connect chemistry with new pedagogical possibilities. This is an expansion of the lines of work, not a replacement of their origin.
-
-## A note on dates
-
-The explanation of the name and its original motivations comes from the [history of MACEDONIA on the previous site](https://sites.google.com/umce.cl/lab-macedonia/historia) (in Spanish). The laboratory has no formal founding date; the milestones on this page correspond to the academic trajectory of its team.

@@ -3,8 +3,6 @@ title: "Research and innovation projects"
 subtitle: "Laboratory projects"
 ---
 
-Research and innovation projects in which the laboratory takes part, from most recent to oldest.
-
 [Explore the research areas](research.qmd).
 
 <div data-catalog data-count-text="{v} of {t} records">

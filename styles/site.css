@@ -37,3 +37,28 @@ h1,h2,h3,h4,.navbar-brand{font-family:'Manrope',system-ui,sans-serif;letter-spac
 .navbar .navbar-title,.navbar .navbar-brand{color:#fff!important}
 @media(min-width:901px){.home-hero{grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr)}}.hero-art img{max-width:600px}
 body:has(.home-hero) #title-block-header,body:has(.home-hero) h1.title{display:none}
+
+/* Modo oscuro (se activa con el interruptor de la barra o según el sistema) */
+body.quarto-dark{--ink:#e9f6f3;--line:#2b444c;--paper:#0f1a1f;background:#0f1a1f;color:#cfe0dd}
+body.quarto-dark a{color:#7fd8cc}body.quarto-dark a:hover{color:#bceadd}
+body.quarto-dark h1,body.quarto-dark h2,body.quarto-dark h3,body.quarto-dark h4,body.quarto-dark .navbar-brand{color:#e9f6f3}
+body.quarto-dark .navbar{box-shadow:0 3px 16px #0008}
+body.quarto-dark .quarto-title-banner{background:#13262c}
+body.quarto-dark .quarto-title-meta,body.quarto-dark .subtitle,body.quarto-dark .quarto-title .subtitle{color:#9db6bb}
+body.quarto-dark .pillar,body.quarto-dark .home-link,body.quarto-dark .principle,body.quarto-dark .feature,body.quarto-dark .catalog-record,body.quarto-dark .illus-grid figure,body.quarto-dark .team-person,body.quarto-dark .resource-item{background:#152a31;border-color:#2b444c;box-shadow:0 10px 30px #0006}
+body.quarto-dark .home-link{background:#122328}
+body.quarto-dark .pillar p,body.quarto-dark .catalog-record p,body.quarto-dark .illus-grid figcaption,body.quarto-dark .illus-note,body.quarto-dark .record-authors,body.quarto-dark .record-source,body.quarto-dark .record-orig{color:#a9c1c5}
+body.quarto-dark .pillar-index,body.quarto-dark .catalog-record .record-sub,body.quarto-dark .catalog-count,body.quarto-dark .timeline-item span,body.quarto-dark .feature .num{color:#7fd8cc}
+body.quarto-dark .eyebrow.dark{color:#7fd8cc}
+body.quarto-dark .catalog-filters{background:#13262c}
+body.quarto-dark .catalog-filters input,body.quarto-dark .catalog-filters select{background:#0f1a1f;color:#e1efec;border-color:#5f9293}
+body.quarto-dark .lead-box,body.quarto-dark .photo-note{background:#13303a;border-left-color:#3fb3a6}
+body.quarto-dark .timeline-m{border-left-color:#3fb3a6}body.quarto-dark .timeline-item:before{background:#3fb3a6}
+body.quarto-dark .logo-gallery img{background:#1b343b}
+body.quarto-dark .btn-primary-m{color:#103a46!important}
+body.quarto-dark .closing-band a,body.quarto-dark .home-hero a:not(.btn-primary-m){color:#d1f6e9}
+body.quarto-dark :focus-visible{outline-color:#f0bd5c}
+body.quarto-dark .callout{background:#13262c}
+body.quarto-dark table{color:#cfe0dd}
+body.quarto-dark .nav-footer{background:#0b1418;border-top-color:#2b444c;color:#9db6bb}
+body.quarto-dark .navbar a,body.quarto-dark .navbar .nav-link,body.quarto-dark .navbar .dropdown-toggle{color:#fff}body.quarto-dark .navbar .nav-link.active,body.quarto-dark .navbar .nav-link:hover{color:#bceadd}

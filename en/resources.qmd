@@ -3,7 +3,7 @@ title: "Educational resources"
 subtitle: "Open resources to explore, learn and teach science"
 ---
 
-The digital laboratory brings together open developments published on GitHub and educational resources from the laboratory. The applications and their interfaces are in Spanish.
+The digital laboratory brings together open developments published on GitHub and educational resources from the laboratory.
 
 ::: {.resource-grid}
 ::: {.resource-item}

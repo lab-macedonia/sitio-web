@@ -83,8 +83,6 @@ Students, faculty and networks behind our shared work.
 <figure><img src="assets/img/modelos-3d-ar.svg" alt="Illustration of a ball-and-stick model of acetic acid next to a phone showing it in augmented reality"><figcaption><strong>3D models and augmented reality.</strong> Resources to see and handle molecules.</figcaption></figure>
 </div>
 
-<p class="illus-note">Original illustrations created for this site; they are not photographs of the laboratory. Real photographs of activities will be added when the team has its own authorized material.</p>
-
 ::: {.closing-band}
 <div class="eyebrow">OUR IDENTITY</div>
 ## Rigorous research. Meaningful education. Open collaboration.

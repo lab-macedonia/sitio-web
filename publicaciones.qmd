@@ -3,7 +3,7 @@ title: "Producción científica"
 subtitle: "Artículos y capítulos de libro"
 ---
 
-Artículos científicos y capítulos de libro, ordenados del más reciente al más antiguo. Cuando existe, se enlaza el DOI o la página de la revista.
+Artículos científicos y capítulos de libro.
 
 <div data-catalog data-count-text="{v} de {t} registros">
 <div class="catalog-filters">
