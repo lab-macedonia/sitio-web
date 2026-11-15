@@ -6,6 +6,7 @@ project:
   - "noticias/**/*.qmd"
   resources:
   - assets/**
+  - enlaces/**
   - robots.txt
 website:
   title: Laboratorio MACEDONIA

@@ -154,10 +154,11 @@ table{color:var(--text)}
 .vc-tab{flex:1 1 220px;padding:.7rem 1rem;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:12px;font:inherit;font-weight:700;cursor:pointer}
 .vc-tab[aria-selected=true]{background:var(--deep);border-color:var(--deep);color:#fff}
 .vc-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.2rem 1.3rem;margin:0 0 1rem;min-width:0}
-.vc-card legend{float:none;width:auto;padding:0;margin:0 0 .6rem;font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:1.1rem;color:var(--accent-text)}
+.vc-card legend{float:left;width:100%;padding:0;margin:0 0 .6rem;font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:1.1rem;color:var(--accent-text)}
 .vc label{display:block;font-weight:700;font-size:.93rem;color:var(--ink);margin:.9rem 0 .25rem}
 .vc-opt{font-weight:400;color:var(--muted)}
 .vc input[type=text],.vc input[type=email],.vc input[type=date],.vc input[type=time],.vc input[type=number],.vc textarea{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.vc-card legend+*{clear:both}
 .vc select{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
 .vc textarea{min-height:5rem;resize:vertical}
 .vc-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
