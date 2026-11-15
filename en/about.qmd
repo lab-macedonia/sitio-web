@@ -1,0 +1,9 @@
+---
+title: "About MACEDONIA"
+---
+
+MACEDONIA connects research in organic chemistry with chemical education. Its academic work at UMCE includes the study of molecular reactivity and antioxidant systems, laboratory learning, and the development of digital teaching resources.
+
+The laboratory's historical identity relates chemical research and science teacher education. The current purpose and vision are editorial formulations under institutional review, rather than separately approved institutional statements.
+
+[Read the full history in Spanish](../historia.qmd) · [Back to the English homepage](index.qmd)

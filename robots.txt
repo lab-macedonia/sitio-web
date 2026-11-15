@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lab-macedonia.github.io/sitio-web/sitemap.xml

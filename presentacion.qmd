@@ -1,0 +1,28 @@
+---
+title: "Presentación"
+subtitle: "Investigación química y educación científica en un espacio de encuentro"
+---
+
+## ¿Qué es MACEDONIA?
+
+El **Laboratorio MACEDONIA** es un espacio de trabajo académico vinculado al Departamento de Química de la **Universidad Metropolitana de Ciencias de la Educación (UMCE)**. Su identidad reúne dos ámbitos que se enriquecen mutuamente: la investigación en **química orgánica** y la **educación química**, con especial atención a la formación inicial docente.
+
+El trabajo disciplinar comprende el estudio de radicales libres y antioxidantes, la síntesis y caracterización de compuestos orgánicos y el análisis de la reactividad mediante herramientas experimentales y computacionales. En educación científica, se exploran experiencias de aprendizaje en laboratorio, procesos de enseñanza de la química y recursos didácticos apoyados en tecnologías digitales.
+
+## ¿Cómo trabajamos?
+
+Nuestro enfoque conecta preguntas científicas, necesidades formativas y colaboración. El laboratorio desarrolla proyectos y recursos con académicos, estudiantes, tesistas y redes de investigación, procurando que el conocimiento producido pueda dialogar con la práctica educativa.
+
+::: {.lead-box}
+**El rasgo distintivo de MACEDONIA** es reunir investigación química y formación docente en una misma identidad: estudiar fenómenos y, a la vez, pensar cómo hacerlos comprensibles, enseñables y relevantes para otras personas.
+:::
+
+## Tres ámbitos complementarios
+
+1. **Investigación química:** estudio de reactividad, radicales y compuestos de interés mediante aproximaciones experimentales y teóricas.
+2. **Educación química:** investigación sobre el aprendizaje de las ciencias y la formación inicial docente.
+3. **Innovación educativa:** diseño y evaluación de recursos como simulaciones digitales, modelación y fabricación 3D.
+
+## Para seguir explorando
+
+[Historia e identidad](historia.qmd) · [Propósito, misión y visión](proposito.qmd) · [Líneas de investigación](investigacion.qmd) · [Proyectos](proyectos.qmd)

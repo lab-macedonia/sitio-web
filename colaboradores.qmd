@@ -1,0 +1,31 @@
+---
+title: "Colaboradores"
+subtitle: "Red académica y de investigación"
+---
+
+::: {.cards}
+::: {.feature}
+### LabTec — Laboratorio de Tecnología
+
+Espacio dedicado al desarrollo de tecnologías para la formación de profesores de ciencia y tecnología, a cargo del profesor **Mg. Yonnhatan García Cartagena**, constituido desde 2010.
+
+[Visitar LabTec](https://sites.google.com/umce.cl/labtec/home)
+:::
+::: {.feature}
+### Semillero CATIÓN
+
+**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias.
+:::
+::: {.feature}
+### José Muñoz Espinoza
+
+Profesor de Química UMCE y magíster en Química de la Universidad de Chile. Colaborador en **reactividad química computacional**.
+:::
+::: {.feature}
+### Bernardo Maradiaga
+
+Profesor de Física UMCE y magíster en Didáctica de las Ciencias Naturales por la UMCE. Colaborador en el área de **educación científica**.
+:::
+:::
+
+*Información de colaboradores proveniente del sitio original; revisar cargos y grados actuales antes de la publicación final.*

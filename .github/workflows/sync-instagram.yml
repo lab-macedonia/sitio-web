@@ -1,0 +1,51 @@
+name: Sincronizar Instagram autorizado
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3,9,15,21 * * *"
+permissions:
+  contents: write
+  actions: write
+jobs:
+  synchronize:
+    if: github.repository == 'lab-macedonia/sitio-web'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Comprobar configuración segura
+        id: token
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          BEHOLD_FEED_URL: ${{ secrets.BEHOLD_FEED_URL }}
+        run: |
+          if [ -n "$INSTAGRAM_ACCESS_TOKEN" ] || [ -n "$BEHOLD_FEED_URL" ]; then echo "enabled=true" >> "$GITHUB_OUTPUT"; else echo "enabled=false" >> "$GITHUB_OUTPUT"; fi
+      - name: Instalar dependencias
+        if: steps.token.outputs.enabled == 'true'
+        run: pip install -r requirements.txt
+      - name: Importar publicaciones nuevas
+        if: steps.token.outputs.enabled == 'true'
+        env:
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ vars.INSTAGRAM_USER_ID }}
+          BEHOLD_FEED_URL: ${{ secrets.BEHOLD_FEED_URL }}
+        run: python scripts/sync_instagram.py
+      - name: Guardar nuevas noticias
+        id: commit
+        if: steps.token.outputs.enabled == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add noticias/
+          if ! git diff --cached --quiet; then
+            git commit -m "Noticias: sincronización autorizada de Instagram"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publicar los nuevos contenidos
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run publish.yml --ref main

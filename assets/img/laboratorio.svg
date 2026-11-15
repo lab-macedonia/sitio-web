@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t2 d2"><title id="t2">Ilustración: material de laboratorio de química</title><desc id="d2">Dibujo de un matraz Erlenmeyer, un vaso de precipitados y un tubo de ensayo con líquidos de color verdoso sobre un mesón.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#103641"/><stop offset=".6" stop-color="#0b525b"/><stop offset="1" stop-color="#14736d"/></linearGradient>
+<radialGradient id="sC" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8fa6ae"/><stop offset="1" stop-color="#34505b"/></radialGradient>
+<radialGradient id="sO" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffb4a6"/><stop offset="1" stop-color="#c2503f"/></radialGradient>
+<radialGradient id="sH" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9d3cd"/></radialGradient>
+<radialGradient id="sN" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#a9c6ff"/><stop offset="1" stop-color="#3f64b5"/></radialGradient></defs>
+<rect width="800" height="500" rx="26" fill="url(#bg)"/>
+<rect x="40" y="395" width="720" height="14" rx="7" fill="#bceadd" opacity=".35"/>
+<g stroke="#d8f5ec" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+<path d="M255 120 H325 V200 L405 380 Q412 395 395 395 H185 Q168 395 175 380 L255 200 Z" fill="#ffffff14"/>
+<path d="M217 300 H363 L405 380 Q412 395 395 395 H185 Q168 395 175 380 Z" fill="#53cbbb" stroke="none" opacity=".75"/>
+<path d="M255 120 H325 V200 L405 380 Q412 395 395 395 H185 Q168 395 175 380 L255 200 Z" fill="none"/>
+<line x1="245" y1="120" x2="335" y2="120"/>
+<rect x="470" y="230" width="160" height="165" rx="10" fill="#ffffff14"/><rect x="473" y="300" width="154" height="92" rx="8" fill="#f1cf81" opacity=".7" stroke="none"/><rect x="470" y="230" width="160" height="165" rx="10" fill="none"/>
+<path d="M660 160 V370 Q660 395 685 395 Q710 395 710 370 V160" fill="#ffffff14"/><path d="M663 260 V368 Q663 392 685 392 Q707 392 707 368 V260 Z" fill="#85dbce" opacity=".8" stroke="none"/><path d="M660 160 V370 Q660 395 685 395 Q710 395 710 370 V160" fill="none"/><line x1="652" y1="160" x2="718" y2="160"/></g>
+<g fill="#fff" opacity=".7"><circle cx="270" cy="340" r="7"/><circle cx="300" cy="320" r="5"/><circle cx="330" cy="352" r="9"/><circle cx="520" cy="330" r="6"/><circle cx="575" cy="350" r="8"/></g>
+<g stroke="#d8f5ec" stroke-width="3" opacity=".7"><line x1="470" y1="270" x2="500" y2="270"/><line x1="470" y1="310" x2="490" y2="310"/><line x1="470" y1="350" x2="500" y2="350"/></g>
+<g fill="#bceadd" font-family="DM Sans,sans-serif" letter-spacing="3"><text x="60" y="80" font-size="20" font-weight="800">LABORATORIO</text><text x="60" y="110" font-size="16" opacity=".8">Aprendizaje experimental · formación docente</text></g></svg>

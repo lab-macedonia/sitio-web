@@ -1,0 +1,23 @@
+---
+title: "Noticias y actividades"
+subtitle: "Actualidad científica, formación y vinculación"
+listing:
+  contents: "noticias/*/index.qmd"
+  type: grid
+  sort: "date desc"
+  categories: true
+  feed:
+    type: partial
+    items: 30
+    title: "Noticias MACEDONIA"
+    description: "Actividades y novedades de investigación, formación e innovación del Laboratorio MACEDONIA."
+    language: es-cl
+  sort-ui: [date, title]
+  filter-ui: true
+---
+
+Aquí se publicarán noticias institucionales y, una vez autorizada la API de Meta, publicaciones verificadas de la cuenta profesional del laboratorio.
+
+[Instagram oficial: @labmacedonia](https://www.instagram.com/labmacedonia/) · [Suscribirse al RSS](noticias.xml)
+
+> **Estado de integración:** la sincronización automática está preparada, pero permanece desactivada hasta configurar credenciales autorizadas. No hay noticias de Instagram inventadas.

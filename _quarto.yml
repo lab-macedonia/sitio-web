@@ -1,0 +1,91 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+  - "*.qmd"
+  - "en/*.qmd"
+  - "noticias/**/*.qmd"
+  resources:
+  - assets/**
+  - robots.txt
+website:
+  title: Laboratorio MACEDONIA
+  description: MACEDONIA · Investigación en química orgánica, educación química e innovación para la formación
+    docente en la UMCE.
+  site-url: https://lab-macedonia.github.io/sitio-web/
+  favicon: assets/macedonia-mejorado-icono-claro.svg
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: true
+  navbar:
+    logo: assets/macedonia-mejorado-icono-oscuro.svg
+    logo-alt: Logotipo del Laboratorio MACEDONIA
+    background: '#103a46'
+    foreground: '#ffffff'
+    pinned: true
+    collapse-below: lg
+    left:
+    - text: Inicio
+      href: index.qmd
+    - text: El laboratorio
+      menu:
+      - text: Presentación
+        href: presentacion.qmd
+      - text: Historia e identidad
+        href: historia.qmd
+      - text: Propósito, misión y visión
+        href: proposito.qmd
+      - text: Equipo y redes
+        href: equipo.qmd
+      - text: Perfil académico
+        href: perfil.qmd
+    - text: Investigación
+      menu:
+      - text: Líneas de investigación
+        href: investigacion.qmd
+      - text: Proyectos
+        href: proyectos.qmd
+    - text: Producción académica
+      menu:
+      - text: Artículos y capítulos
+        href: publicaciones.qmd
+      - text: Congresos
+        href: congresos.qmd
+      - text: Tesistas
+        href: tesistas.qmd
+    - text: Recursos educativos
+      href: laboratorio-digital.qmd
+    - text: Actualidad
+      href: noticias.qmd
+    right:
+    - text: English
+      href: en/index.qmd
+    - icon: instagram
+      href: https://www.instagram.com/labmacedonia/
+      aria-label: Instagram de MACEDONIA
+    - text: Contacto
+      href: contacto.qmd
+  page-footer:
+    border: true
+    left: © Laboratorio MACEDONIA · Universidad Metropolitana de Ciencias de la Educación
+    center: Química orgánica · Educación química
+    right: '[Instagram](https://www.instagram.com/labmacedonia/) · [Contacto](/contacto.qmd)'
+  back-to-top-navigation: true
+  open-graph: true
+  twitter-card: true
+  repo-url: https://github.com/lab-macedonia/sitio-web
+  repo-actions:
+  - source
+format:
+  html:
+    theme: cosmo
+    css: styles/site.css
+    toc: true
+    lang: es
+    link-external-newwindow: true
+    smooth-scroll: true
+    anchor-sections: true
+    include-after-body: assets/catalog-filters.html
+execute:
+  freeze: auto

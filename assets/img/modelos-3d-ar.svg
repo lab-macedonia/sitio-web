@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t4 d4"><title id="t4">Ilustración: modelo molecular 3D y realidad aumentada</title><desc id="d4">Modelo de bolas y varillas de una molécula de ácido acético junto a un teléfono que muestra la misma molécula en realidad aumentada.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#103641"/><stop offset=".6" stop-color="#0b525b"/><stop offset="1" stop-color="#14736d"/></linearGradient>
+<radialGradient id="sC" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8fa6ae"/><stop offset="1" stop-color="#34505b"/></radialGradient>
+<radialGradient id="sO" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffb4a6"/><stop offset="1" stop-color="#c2503f"/></radialGradient>
+<radialGradient id="sH" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9d3cd"/></radialGradient>
+<radialGradient id="sN" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#a9c6ff"/><stop offset="1" stop-color="#3f64b5"/></radialGradient></defs>
+<rect width="800" height="500" rx="26" fill="url(#bg)"/>
+<g stroke="#d8f5ec" stroke-width="10" stroke-linecap="round"><line x1="250" y1="300" x2="330" y2="250"/><line x1="330" y1="250" x2="410" y2="300"/><line x1="330" y1="250" x2="330" y2="160"/><line x1="410" y1="300" x2="470" y2="360"/></g>
+<g stroke="#bceadd" stroke-width="5" stroke-linecap="round" opacity=".7"><line x1="215" y1="262" x2="250" y2="300"/><line x1="230" y1="345" x2="250" y2="300"/><line x1="285" y1="338" x2="250" y2="300"/></g>
+<circle cx="250" cy="300" r="34" fill="url(#sC)"/><circle cx="330" cy="250" r="34" fill="url(#sC)"/><circle cx="330" cy="150" r="30" fill="url(#sO)"/><circle cx="410" cy="300" r="30" fill="url(#sO)"/><circle cx="478" cy="368" r="18" fill="url(#sH)"/>
+<circle cx="212" cy="258" r="18" fill="url(#sH)"/><circle cx="226" cy="348" r="18" fill="url(#sH)"/><circle cx="288" cy="342" r="18" fill="url(#sH)"/>
+<g><rect x="560" y="110" width="170" height="320" rx="26" fill="#0b2f38" stroke="#bceadd" stroke-width="5"/><rect x="574" y="140" width="142" height="260" rx="10" fill="#14566a"/><rect x="618" y="122" width="54" height="8" rx="4" fill="#bceadd" opacity=".6"/>
+<g stroke="#d8f5ec" stroke-width="5" stroke-linecap="round"><line x1="614" y1="320" x2="644" y2="300"/><line x1="644" y1="300" x2="674" y2="320"/><line x1="644" y1="300" x2="644" y2="262"/></g>
+<circle cx="614" cy="322" r="13" fill="url(#sC)"/><circle cx="644" cy="300" r="13" fill="url(#sC)"/><circle cx="644" cy="258" r="12" fill="url(#sO)"/><circle cx="676" cy="322" r="12" fill="url(#sO)"/>
+<g fill="none" stroke="#f1cf81" stroke-width="3"><path d="M590 170 v-16 h16"/><path d="M700 170 v-16 h-16"/><path d="M590 370 v16 h16"/><path d="M700 370 v16 h-16"/></g></g>
+<path d="M500 250 C520 250 530 250 556 250" stroke="#f1cf81" stroke-width="3" fill="none" stroke-dasharray="6 8"/>
+<g fill="#bceadd" font-family="DM Sans,sans-serif" letter-spacing="3"><text x="60" y="80" font-size="20" font-weight="800">MODELOS 3D Y REALIDAD AUMENTADA</text><text x="60" y="110" font-size="16" opacity=".8">Ver y manipular la estructura molecular</text></g></svg>

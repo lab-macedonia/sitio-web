@@ -1,0 +1,16 @@
+---
+title: "Contacto"
+toc: false
+---
+
+## Laboratorio MACEDONIA
+
+**Dr. Germán Barriga González**  
+**Universidad Metropolitana de Ciencias de la Educación (UMCE)**  
+Av. José Pedro Alessandri 1030, Ñuñoa, Santiago, Chile.
+
+[Visitar el sitio institucional UMCE](https://www.umce.cl/)
+
+::: {.callout-note}
+La dirección anterior corresponde a la publicada en el Google Sites original. Antes de activar formularios o publicar correos, confirma los canales oficiales de contacto del laboratorio.
+:::

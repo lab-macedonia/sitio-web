@@ -1,0 +1,16 @@
+---
+title: "MACEDONIA Laboratory"
+subtitle: "Organic chemistry · Chemical education · Educational innovation"
+---
+
+# The chemistry we investigate. The science we teach.
+
+**MACEDONIA** is an academic laboratory at the **Metropolitan University of Educational Sciences (UMCE), Chile**, bringing together organic chemistry research, molecular reactivity, chemical education and teacher preparation.
+
+We explore how scientific research, experimental learning and digital educational resources can support meaningful science education.
+
+- **Research:** organic chemistry, free radicals, antioxidants and computational chemistry.
+- **Education:** laboratory learning, chemistry education and initial teacher education.
+- **Innovation:** molecular modeling, 3D printing and digital resources.
+
+[Research areas](research.qmd) · [About the laboratory](about.qmd) · [Versión en español](../index.qmd)

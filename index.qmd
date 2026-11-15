@@ -1,0 +1,92 @@
+---
+title: "Inicio"
+page-layout: full
+toc: false
+title-block-banner: false
+---
+
+::: {.home-hero}
+<div class="home-hero__content">
+  <div class="eyebrow">UMCE · INVESTIGACIÓN · EDUCACIÓN · INNOVACIÓN</div>
+  <img src="assets/macedonia-mejorado-oscuro.svg" class="brand-hero" alt="Logotipo del Laboratorio MACEDONIA">
+  <h1>La química que investigamos.<br><em>La ciencia que enseñamos.</em></h1>
+  <p>Conectamos la investigación en química orgánica y reactividad molecular con la formación de profesores, el aprendizaje experimental y la innovación educativa.</p>
+  <div class="cta-row"><a class="btn-primary-m" href="presentacion.html">Conoce MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="investigacion.html">Explorar investigación</a></div>
+</div>
+<div class="hero-art" aria-hidden="true"><span class="orbit o1"></span><span class="orbit o2"></span><span class="orb a"></span><span class="orb b"></span><span class="orb c"></span><span class="orb d"></span><span class="orbit-label">Q · E · I</span></div>
+:::
+
+::: {.intro-band}
+<div class="eyebrow dark">NUESTRO ENFOQUE</div>
+## Conocimiento científico y formación docente, en diálogo
+
+En el **Laboratorio MACEDONIA** de la Universidad Metropolitana de Ciencias de la Educación (UMCE) integramos investigación disciplinar, educación química y recursos digitales. Trabajamos junto a estudiantes, académicos y colaboradores para explorar cómo la ciencia se construye, se comunica y se aprende.
+:::
+
+::: {.three-pillars}
+::: {.pillar}
+<div class="pillar-index">01 / INVESTIGAR</div>
+### Química y reactividad
+Síntesis orgánica, radicales libres, antioxidantes, modelación molecular y química computacional.
+
+[Conocer las líneas de investigación →](investigacion.qmd)
+:::
+::: {.pillar}
+<div class="pillar-index">02 / FORMAR</div>
+### Educación química
+Aprendizaje en laboratorio, didáctica de las ciencias y formación inicial de profesores.
+
+[Conocer nuestro propósito →](proposito.qmd)
+:::
+::: {.pillar}
+<div class="pillar-index">03 / INNOVAR</div>
+### Recursos para aprender
+Simulaciones, impresión 3D y tecnologías digitales con sentido pedagógico.
+
+[Explorar recursos educativos →](repositorios.qmd)
+:::
+:::
+
+## Conoce nuestro trabajo
+
+::: {.home-links}
+::: {.home-link}
+**Investigación y proyectos**
+
+Líneas, preguntas de investigación y experiencias de trabajo interdisciplinario.
+
+[Ver proyectos →](proyectos.qmd)
+:::
+::: {.home-link}
+**Producción académica**
+
+Artículos, capítulos de libros, congresos y trabajos de tesis.
+
+[Ver publicaciones →](publicaciones.qmd)
+:::
+::: {.home-link}
+**Personas y colaboración**
+
+Estudiantes, docentes y redes que hacen posible el trabajo compartido.
+
+[Conocer al equipo →](colaboradores.qmd)
+:::
+:::
+
+## El laboratorio en imágenes
+
+<div class="illus-grid">
+<figure><img src="assets/img/laboratorio.svg" alt="Ilustración de un matraz Erlenmeyer, un vaso de precipitados y un tubo de ensayo sobre un mesón de laboratorio" loading="lazy"><figcaption><strong>Aprendizaje experimental.</strong> El laboratorio como espacio de formación docente.</figcaption></figure>
+<figure><img src="assets/img/nitronas.svg" alt="Ilustración de la estructura química de una nitrona aromática usada como atrapador de radicales libres" loading="lazy"><figcaption><strong>Radicales libres.</strong> Síntesis y estudio de nitronas como atrapadores de espín.</figcaption></figure>
+<figure><img src="assets/img/quimica-computacional.svg" alt="Ilustración de orbitales moleculares de colores opuestos sobre una cadena de átomos y una malla de puntos de cálculo" loading="lazy"><figcaption><strong>Química computacional.</strong> Reactividad y modelación molecular.</figcaption></figure>
+<figure><img src="assets/img/modelos-3d-ar.svg" alt="Ilustración de un modelo de bolas y varillas de ácido acético junto a un teléfono que lo muestra en realidad aumentada" loading="lazy"><figcaption><strong>Modelos 3D y realidad aumentada.</strong> Recursos para ver y manipular moléculas.</figcaption></figure>
+</div>
+
+<p class="illus-note">Ilustraciones originales creadas para este sitio; no son fotografías del laboratorio. Las fotografías reales de actividades se incorporarán cuando el equipo cuente con material propio y autorizado.</p>
+
+::: {.closing-band}
+<div class="eyebrow">NUESTRA IDENTIDAD</div>
+## Investigación rigurosa. Educación con sentido. Colaboración abierta.
+
+[Lee nuestra historia](historia.qmd) · [Propósito, misión y visión](proposito.qmd) · [Contáctanos](contacto.qmd)
+:::

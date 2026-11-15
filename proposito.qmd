@@ -1,0 +1,55 @@
+---
+title: "Propósito, misión y visión"
+subtitle: "Los principios que orientan nuestra investigación y compromiso educativo"
+---
+
+## Propósito
+
+**Conectar la investigación química con la formación docente y la educación científica**, promoviendo espacios donde el conocimiento disciplinar, las preguntas pedagógicas y la innovación tecnológica se enriquezcan de manera recíproca.
+
+Queremos que la investigación no quede aislada de la enseñanza: que las preguntas del laboratorio alimenten experiencias formativas y que las necesidades educativas inspiren nuevas formas de investigar, representar y comunicar la química.
+
+## Misión
+
+Contribuir a la formación de profesores de química y ciencias mediante investigación rigurosa, colaboración académica y desarrollo de experiencias y recursos educativos pertinentes, con **compromiso social, respeto por las personas y atención a la diversidad**.
+
+## Visión — propuesta editorial
+
+Proyectar a MACEDONIA como un espacio académico reconocido por articular investigación química, formación docente e innovación educativa, fortaleciendo redes de colaboración y compartiendo conocimientos y recursos útiles para distintas comunidades de aprendizaje.
+
+## Principios de trabajo
+
+::: {.principles-grid}
+::: {.principle}
+### Rigor científico
+Preguntas claras, métodos fundamentados y comunicación responsable de resultados.
+:::
+::: {.principle}
+### Sentido pedagógico
+Recursos y experiencias diseñados en función del aprendizaje, no solamente de la tecnología.
+:::
+::: {.principle}
+### Colaboración
+Trabajo con estudiantes, profesores, investigadores y laboratorios asociados.
+:::
+::: {.principle}
+### Inclusión y respeto
+Reconocimiento de distintas trayectorias, contextos y necesidades formativas.
+:::
+::: {.principle}
+### Apertura responsable
+Difusión y reutilización de recursos cuando las licencias y autorizaciones lo permiten.
+:::
+::: {.principle}
+### Compromiso público
+Contribución a una educación científica vinculada con su contexto social.
+:::
+:::
+
+## Propósito en acción
+
+Se expresa en nuestras [investigaciones](investigacion.qmd), [proyectos](proyectos.qmd), [tesis](tesistas.qmd), [colaboraciones](colaboradores.qmd) y [recursos educativos](repositorios.qmd).
+
+::: {.callout-note}
+**Nota editorial.** La misión original del Google Sites enfatiza la formación de profesores de química, el compromiso social y el respeto. Los textos ampliados de esta página son propuestas para validación del equipo antes de presentarlos como declaraciones institucionales definitivas.
+:::

@@ -1,0 +1,26 @@
+---
+title: "Proyectos de investigación e innovación"
+subtitle: "Proyectos internos documentados"
+---
+
+Estos proyectos son los registrados en el CV de 2026. Se indican funciones y estados documentados; no se atribuyen resultados que no estén verificados.
+
+[Explorar las líneas de investigación](investigacion.qmd).
+
+<div data-catalog>
+<div class="catalog-filters">
+<label>Buscar en el catálogo<input type="search" placeholder="Título, autoría, tema…" data-filter-text aria-label="Buscar en el catálogo"></label>
+<label>Año<select data-filter-field="anio" aria-label="Filtrar por Año"><option value="">Todos</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2022">2022</option><option value="2020">2020</option><option value="2018">2018</option><option value="2017">2017</option></select></label>
+<label>Estado<select data-filter-field="estado" aria-label="Filtrar por Estado"><option value="">Todos</option><option value="Cerrado">Cerrado</option><option value="En ejecución">En ejecución</option></select></label>
+</div>
+<p class="catalog-count" role="status" aria-live="polite" data-count></p>
+<div class="catalog-records">
+<article class="catalog-record" data-record data-anio="2026" data-estado="En ejecución"><h3>MAPEX: Mapeando el aprendizaje experimental: trayectorias, huellas digitales y perfiles espaciales en laboratorios de química</h3><p class="record-sub">2026 · 26-2026-IED · En ejecución</p><p>Coinvestigador · Coinvestigador. Duración: 3 años. Estado: En ejecución. Dedicación certificada: 8 horas.</p></article>
+<article class="catalog-record" data-record data-anio="2025" data-estado="Cerrado"><h3>Ciencia en 3D: Innovación pedagógica para la enseñanza de la química mediante diseño y fabricación digital</h3><p class="record-sub">2025 · 02-2025-LICi · Cerrado</p><p>Investigador responsable · Investigador responsable. Duración: 1 año. Estado: Cerrado. Dedicación certificada: 6 horas.</p></article>
+<article class="catalog-record" data-record data-anio="2024" data-estado="Cerrado"><h3>Potenciamiento de las habilidades de modelación a través de la química computacional e impresión 3D</h3><p class="record-sub">2024 · 27-2024-EFA · Cerrado</p><p>Investigador responsable · Investigador responsable. Duración: 2 años. Estado: Cerrado. Dedicación certificada: 8 horas.</p></article>
+<article class="catalog-record" data-record data-anio="2022" data-estado="Cerrado"><h3>El docente en el Sistema Educativo Nacional: desde la formación inicial docente a una propuesta de educación continua</h3><p class="record-sub">2022 · 13-2022-PIED · Cerrado</p><p>Coinvestigador · Coinvestigador. Duración: 1 año. Estado: Cerrado. Dedicación certificada: 6 horas.</p></article>
+<article class="catalog-record" data-record data-anio="2020" data-estado="Cerrado"><h3>Estudio de los efectos del uso de un sistema online de prelaboratorios sobre el desempeño de los estudiantes en práctica experimentales de química</h3><p class="record-sub">2020 · 20-2020-FID · Cerrado</p><p>Coinvestigador · Coinvestigador. Duración: 2 años. Estado: Cerrado. Dedicación certificada: 6 horas.</p></article>
+<article class="catalog-record" data-record data-anio="2018" data-estado="Cerrado"><h3>Aproximación disciplinar, didáctica y curricular de la Química Orgánica mediante la síntesis y caracterización de nuevas nitronas como atrapadores de radicales libres</h3><p class="record-sub">2018 · FGI 42-18 · Cerrado</p><p>Investigador responsable · Investigador responsable. Duración: 2 años. Estado: Cerrado. Dedicación certificada: 12 horas.</p></article>
+<article class="catalog-record" data-record data-anio="2017" data-estado="Cerrado"><h3>Study of the trinomicidal properties of new nitrocompounds derived from nitrofuran and nitroindazole</h3><p class="record-sub">2017 · PEI 04-17 · Cerrado</p><p>Investigador responsable · Investigador responsable. Duración: 6 meses. Estado: Cerrado. Dedicación certificada: 4 horas.</p></article>
+</div>
+</div>

@@ -1,0 +1,45 @@
+---
+title: "Laboratorio digital"
+subtitle: "Recursos abiertos para explorar, aprender y enseñar ciencias"
+---
+
+El laboratorio digital reúne desarrollos accesibles desde GitHub, junto con recursos educativos publicados previamente. No se han copiado ni modificado las aplicaciones originales.
+
+::: {.resource-grid}
+::: {.resource-item}
+### Modelos de química en realidad aumentada
+
+**Repositorio:** `quimica-ar`  
+**Aplicación:** visualización tridimensional y realidad aumentada de modelos moleculares.  
+**Aplicación educativa:** observación espacial y representación de estructuras químicas.
+
+[Probar aplicación](https://lab-macedonia.github.io/quimica-ar/) · [Código abierto](https://github.com/lab-macedonia/quimica-ar)
+:::
+::: {.resource-item}
+### Simulaciones de ciencias
+
+**Repositorio:** `simulaciones-quimica`  
+**Contenido declarado en la versión anterior:** 114 simulaciones en ciencias.  
+**Aplicación educativa:** exploración interactiva de fenómenos científicos.
+
+[Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Código abierto](https://github.com/lab-macedonia/simulaciones-quimica)
+:::
+::: {.resource-item}
+### Animaciones de química orgánica
+
+**Temas:** estereoquímica, isomería y conformaciones moleculares.  
+**Procedencia:** recursos asociados al trabajo de titulación de Mauricio Cortés.  
+**Disponibilidad:** catálogo alojado en el Google Sites original.
+
+[Consultar catálogo y atribuciones](https://sites.google.com/umce.cl/lab-macedonia/recursos)
+:::
+:::
+
+## Cómo utilizar estos recursos
+
+1. Identifica el recurso y sus objetivos de aprendizaje.
+2. Revisa las instrucciones y condiciones de uso en el repositorio correspondiente.
+3. Integra la actividad con preguntas, discusión y evaluación formativa.
+4. Consulta licencias y atribuciones antes de redistribuir materiales.
+
+**Aviso:** La accesibilidad y compatibilidad de las aplicaciones externas requieren una auditoría específica; los recursos no se consideran validados por incorporarlos a este catálogo.
