@@ -1,10 +1,16 @@
 ---
 title: "Visitas de colegios"
-subtitle: "Solicitud de visitas de establecimientos educacionales al Departamento de Química, UMCE"
+subtitle: "Visitas organizadas por el Laboratorio MACEDONIA y desarrolladas en el Departamento de Química de la UMCE"
 toc: false
 ---
 
-Este formulario ayuda a preparar la solicitud de visita de un curso o grupo de estudiantes a las dependencias del Departamento de Química, según el protocolo vigente (instructivo del 7 de octubre de 2024). **Está pensado para el académico o la académica del Departamento que organiza la actividad.**
+Las visitas de establecimientos educacionales son **organizadas por el Laboratorio MACEDONIA y se desarrollan en el Departamento de Química de la Universidad Metropolitana de Ciencias de la Educación (UMCE)**. Este formulario ayuda a preparar la solicitud de visita de un curso o grupo de estudiantes a las dependencias del Departamento, según el protocolo vigente (instructivo del 7 de octubre de 2024). **Está pensado para el académico o la académica del Departamento que organiza la actividad.**
+
+::: {.callout-tip}
+## Material de apoyo: próximamente
+
+Próximamente estará disponible el material de las actividades, como las **guías de laboratorio** y el **reporte de resultados**.
+:::
 
 ::: {.callout-important}
 ## Plazos del protocolo
