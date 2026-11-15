@@ -76,10 +76,10 @@ Estudiantes, docentes y redes que hacen posible el trabajo compartido.
 ## El laboratorio en imágenes
 
 <div class="illus-grid">
-<figure><img src="assets/img/laboratorio.svg" alt="Ilustración de un matraz Erlenmeyer, un vaso de precipitados y un tubo de ensayo sobre un mesón de laboratorio" loading="lazy"><figcaption><strong>Aprendizaje experimental.</strong> El laboratorio como espacio de formación docente.</figcaption></figure>
-<figure><img src="assets/img/nitronas.svg" alt="Ilustración de la estructura química de una nitrona aromática usada como atrapador de radicales libres" loading="lazy"><figcaption><strong>Radicales libres.</strong> Síntesis y estudio de nitronas como atrapadores de espín.</figcaption></figure>
-<figure><img src="assets/img/quimica-computacional.svg" alt="Ilustración de orbitales moleculares de colores opuestos sobre una cadena de átomos y una malla de puntos de cálculo" loading="lazy"><figcaption><strong>Química computacional.</strong> Reactividad y modelación molecular.</figcaption></figure>
-<figure><img src="assets/img/modelos-3d-ar.svg" alt="Ilustración de un modelo de bolas y varillas de ácido acético junto a un teléfono que lo muestra en realidad aumentada" loading="lazy"><figcaption><strong>Modelos 3D y realidad aumentada.</strong> Recursos para ver y manipular moléculas.</figcaption></figure>
+<figure><img src="assets/img/laboratorio.svg" alt="Ilustración de un matraz Erlenmeyer, un vaso de precipitados y un tubo de ensayo sobre un mesón de laboratorio"><figcaption><strong>Aprendizaje experimental.</strong> El laboratorio como espacio de formación docente.</figcaption></figure>
+<figure><img src="assets/img/nitronas.svg" alt="Ilustración de la estructura química de una nitrona aromática usada como atrapador de radicales libres"><figcaption><strong>Radicales libres.</strong> Síntesis y estudio de nitronas como atrapadores de espín.</figcaption></figure>
+<figure><img src="assets/img/quimica-computacional.svg" alt="Ilustración de orbitales moleculares de colores opuestos sobre una cadena de átomos y una malla de puntos de cálculo"><figcaption><strong>Química computacional.</strong> Reactividad y modelación molecular.</figcaption></figure>
+<figure><img src="assets/img/modelos-3d-ar.svg" alt="Ilustración de un modelo de bolas y varillas de ácido acético junto a un teléfono que lo muestra en realidad aumentada"><figcaption><strong>Modelos 3D y realidad aumentada.</strong> Recursos para ver y manipular moléculas.</figcaption></figure>
 </div>
 
 <p class="illus-note">Ilustraciones originales creadas para este sitio; no son fotografías del laboratorio. Las fotografías reales de actividades se incorporarán cuando el equipo cuente con material propio y autorizado.</p>
