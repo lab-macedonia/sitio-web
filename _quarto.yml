@@ -21,7 +21,7 @@ website:
     title: MACEDONIA
     logo: assets/macedonia-mejorado-icono-oscuro.svg
     logo-alt: Logotipo del Laboratorio MACEDONIA
-    background: '#103a46'
+    background: '#062a4d'
     foreground: '#ffffff'
     pinned: true
     collapse-below: xl

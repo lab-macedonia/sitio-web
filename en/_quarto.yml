@@ -14,7 +14,7 @@ website:
   description: MACEDONIA · Research in organic chemistry, chemical education and innovation for teacher education at UMCE.
   navbar:
     logo: assets/macedonia-mejorado-icono-oscuro.svg
-    background: '#103a46'
+    background: '#062a4d'
     foreground: '#ffffff'
     pinned: true
     collapse-below: xl

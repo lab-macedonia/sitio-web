@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="t1 d1"><title id="t1">Ilustración: nitrona como atrapador de radicales</title><desc id="d1">Dibujo esquemático de una nitrona aromática con lóbulos de densidad de espín, ilustrando la línea de radicales libres y antioxidantes.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#103641"/><stop offset=".6" stop-color="#0b525b"/><stop offset="1" stop-color="#14736d"/></linearGradient>
-<radialGradient id="sC" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8fa6ae"/><stop offset="1" stop-color="#34505b"/></radialGradient>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0e2b43"/><stop offset=".6" stop-color="#07375f"/><stop offset="1" stop-color="#0f4978"/></linearGradient>
+<radialGradient id="sC" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#8da0b0"/><stop offset="1" stop-color="#324a5d"/></radialGradient>
 <radialGradient id="sO" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffb4a6"/><stop offset="1" stop-color="#c2503f"/></radialGradient>
-<radialGradient id="sH" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b9d3cd"/></radialGradient>
+<radialGradient id="sH" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#b8c7d4"/></radialGradient>
 <radialGradient id="sN" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#a9c6ff"/><stop offset="1" stop-color="#3f64b5"/></radialGradient></defs>
 <rect width="800" height="500" rx="26" fill="url(#bg)"/>
-<g fill="none" stroke="#bceadd" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<g fill="none" stroke="#bad6ec" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
 <polygon points="190,250 235,224 280,250 280,302 235,328 190,302"/><polygon points="204,257 235,239 266,257 266,295 235,313 204,295" stroke-width="2.5" opacity=".55"/>
 <line x1="280" y1="250" x2="330" y2="222"/><line x1="330" y1="222" x2="385" y2="250"/><line x1="330" y1="236" x2="376" y2="262" stroke-width="3" opacity=".9"/>
 <line x1="385" y1="250" x2="385" y2="320"/><line x1="385" y1="250" x2="452" y2="212"/><line x1="452" y1="212" x2="452" y2="150"/><line x1="452" y1="212" x2="510" y2="244"/><line x1="452" y1="212" x2="396" y2="176"/></g>
-<g font-family="Manrope,DM Sans,sans-serif" font-weight="800" fill="#fff" text-anchor="middle" font-size="26"><circle cx="385" cy="250" r="22" fill="#3f64b5"/><text x="385" y="259">N</text><text x="396" y="224" font-size="17" fill="#bceadd">+</text><circle cx="385" cy="332" r="22" fill="#c2503f"/><text x="385" y="341">O</text><text x="418" y="338" font-size="20" fill="#ffd0c7">−</text></g>
-<g><circle cx="600" cy="150" r="14" fill="#f1cf81"/><circle cx="640" cy="190" r="9" fill="#bceadd" opacity=".7"/><circle cx="560" cy="100" r="7" fill="#85dbce" opacity=".7"/>
+<g font-family="Manrope,DM Sans,sans-serif" font-weight="800" fill="#fff" text-anchor="middle" font-size="26"><circle cx="385" cy="250" r="22" fill="#3f64b5"/><text x="385" y="259">N</text><text x="396" y="224" font-size="17" fill="#bad6ec">+</text><circle cx="385" cy="332" r="22" fill="#c2503f"/><text x="385" y="341">O</text><text x="418" y="338" font-size="20" fill="#ffd0c7">−</text></g>
+<g><circle cx="600" cy="150" r="14" fill="#f1cf81"/><circle cx="640" cy="190" r="9" fill="#bad6ec" opacity=".7"/><circle cx="560" cy="100" r="7" fill="#81b5df" opacity=".7"/>
 <path d="M520 160 Q560 130 596 148" stroke="#f1cf81" stroke-width="3" fill="none" stroke-dasharray="6 7"/></g>
-<g fill="#bceadd" font-family="DM Sans,sans-serif" font-size="20" letter-spacing="3"><text x="60" y="80" font-weight="800">RADICALES LIBRES</text><text x="60" y="110" font-size="16" opacity=".8">Spin trapping · antioxidantes</text></g>
+<g fill="#bad6ec" font-family="DM Sans,sans-serif" font-size="20" letter-spacing="3"><text x="60" y="80" font-weight="800">RADICALES LIBRES</text><text x="60" y="110" font-size="16" opacity=".8">Spin trapping · antioxidantes</text></g>
 <g fill="#f1cf81" opacity=".85"><circle cx="600" cy="360" r="46" opacity=".12"/><circle cx="600" cy="360" r="28" opacity=".22"/><circle cx="600" cy="360" r="12"/></g></svg>

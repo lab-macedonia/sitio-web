@@ -17,6 +17,8 @@ title-block-style: none
 <div class="hero-art"><img src="assets/img/hero.svg" alt="Illustration of a flask with turquoise liquid, a molecule and an open book: chemistry and teacher education"></div>
 :::
 
+{{< include _stats.html >}}
+
 ::: {.intro-band}
 <div class="eyebrow dark">OUR APPROACH</div>
 ## Scientific knowledge and teacher education, in dialogue

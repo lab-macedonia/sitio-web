@@ -17,6 +17,8 @@ title-block-style: none
 <div class="hero-art"><img src="assets/img/hero.svg" alt="Ilustración de un matraz con líquido turquesa, una molécula y un libro abierto: química y formación docente"></div>
 :::
 
+{{< include _stats.html >}}
+
 ::: {.intro-band}
 <div class="eyebrow dark">NUESTRO ENFOQUE</div>
 ## Conocimiento científico y formación docente, en diálogo

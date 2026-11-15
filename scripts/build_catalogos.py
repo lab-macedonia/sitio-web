@@ -200,3 +200,9 @@ for lg in ('es', 'en'):
 if faltan:
     print('SIN TRADUCCIÓN:', *sorted(faltan), sep='\n  ')
 print('OK')
+
+# ---------- Cifras de la portada ----------
+def stats(items):
+    return '<div class="stats-band">' + ''.join(f'<a class="stat" href="{h}"><strong>{n}</strong><span>{t}</span></a>' for n, t, h in items) + '</div>\n'
+escribir('_stats.html', stats([(len(pubs), 'Artículos y capítulos', 'publicaciones.html'), (len(cong), 'Congresos y comunicaciones', 'congresos.html'), (len(tes), 'Tesis dirigidas', 'tesistas.html'), (len(proy), 'Proyectos', 'proyectos.html')]))
+escribir('en/_stats.html', stats([(len(pubs), 'Articles and chapters', 'publications.html'), (len(cong), 'Conference presentations', 'conferences.html'), (len(tes), 'Theses supervised', 'theses.html'), (len(proy), 'Projects', 'projects.html')]))
