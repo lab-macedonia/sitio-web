@@ -17,7 +17,7 @@ website:
     background: '#103a46'
     foreground: '#ffffff'
     pinned: true
-    collapse-below: lg
+    collapse-below: xl
     logo-alt: MACEDONIA Laboratory logo
     left:
     - text: Home

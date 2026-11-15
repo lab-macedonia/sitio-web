@@ -62,3 +62,6 @@ body.quarto-dark .callout{background:#13262c}
 body.quarto-dark table{color:#cfe0dd}
 body.quarto-dark .nav-footer{background:#0b1418;border-top-color:#2b444c;color:#9db6bb}
 body.quarto-dark .navbar a,body.quarto-dark .navbar .nav-link,body.quarto-dark .navbar .dropdown-toggle{color:#fff}body.quarto-dark .navbar .nav-link.active,body.quarto-dark .navbar .nav-link:hover{color:#bceadd}
+.navbar-brand-container{flex:0 0 auto;max-width:none!important;margin-right:.8rem}.navbar-brand .navbar-title{overflow:visible;text-overflow:clip}@media(min-width:1200px){.navbar .nav-link{white-space:nowrap;padding-left:.5rem!important;padding-right:.5rem!important;font-size:.93rem}}
+.navbar .navbar-title{text-transform:uppercase;letter-spacing:.03em}
+@media(min-width:1200px){.navbar .nav-link{padding-left:.38rem!important;padding-right:.38rem!important;font-size:.9rem}.navbar-brand-container{margin-right:.3rem}}

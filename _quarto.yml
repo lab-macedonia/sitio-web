@@ -18,12 +18,13 @@ website:
     type: overlay
   page-navigation: true
   navbar:
+    title: MACEDONIA
     logo: assets/macedonia-mejorado-icono-oscuro.svg
     logo-alt: Logotipo del Laboratorio MACEDONIA
     background: '#103a46'
     foreground: '#ffffff'
     pinned: true
-    collapse-below: lg
+    collapse-below: xl
     left:
     - text: Inicio
       href: index.qmd
