@@ -143,3 +143,7 @@ table{color:var(--text)}
 #title-block-header .description,#title-block-header div:has(>.description){display:none}
 .feature h2,.resource-item h2,.principle h2,.pillar h2{font-size:1.25rem;line-height:1.3;margin:0 0 .6rem;padding:0;border:0}
 .catalog-record h2{padding:0;border:0}
+
+/* Acrónimo MACEDONIA */
+.acronym-name{font-family:'Manrope',system-ui,sans-serif;font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:600;letter-spacing:-.01em;color:var(--muted);margin:.4rem 0 .8rem;padding:.9rem 1.2rem;border-left:4px solid var(--accent-text);background:var(--surface-alt);border-radius:0 var(--radius) var(--radius) 0}
+.acronym-name b{color:var(--accent-text);font-weight:800;font-size:1.12em}

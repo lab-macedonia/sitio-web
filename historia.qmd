@@ -5,7 +5,11 @@ subtitle: "Un nombre que reúne química, educación y curiosidad"
 
 ## El origen del nombre
 
-MACEDONIA surge como un espacio para **visibilizar el trabajo académico** y **fortalecer redes de colaboración**. Su denominación juega con las letras de *química orgánica y educación química*, los dos campos que conforman su identidad.
+MACEDONIA surge como un espacio para **visibilizar el trabajo académico** y **fortalecer redes de colaboración**. Su nombre es un acrónimo que se forma con las letras destacadas de *química orgánica y educación química*, los dos campos que conforman su identidad:
+
+<p class="acronym-name" lang="es"><span class="visually-hidden">M A C E D O N I A</span><span aria-hidden="true">quí<b>M</b>ica org<b>Á</b>ni<b>C</b>a y <b>ED</b>ucaci<b>ON</b> qu<b>Í</b>mic<b>A</b></span></p>
+
+**M**·**A**·**C**·**E**·**D**·**O**·**N**·**I**·**A**
 
 El relato original del laboratorio asocia también la elección de su nombre con el interés por la **historia de la civilización griega** y con la **macedonia de frutas**. Esta última referencia enlaza de manera cercana y memorable con los estudios de antioxidantes y radicales libres presentes en la trayectoria investigativa del equipo. La combinación de estas ideas explica por qué un laboratorio de química y educación adopta un nombre poco convencional.
 
