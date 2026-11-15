@@ -2,7 +2,7 @@
    Funciona solo en el navegador: no envía ni guarda datos. */
 (function(){
 'use strict';
-var MAIL_DEPTO='quimica@umce.cl', MAIL_TEC='rodrigo.castro_m@umce.cl';
+var MAIL_DEPTO='quimica@umce.cl', MAIL_TEC='rodrigo.castro_m@umce.cl', MAIL_LAB='german.barriga@umce.cl';
 function $(id){return document.getElementById(id)}
 function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
@@ -99,7 +99,7 @@ function showErrs(id,list){
 }
 function setupOut(k,asunto,cuerpo,cc){
   $('asunto'+k).textContent=asunto;$('body'+k).textContent=cuerpo;$('out'+k).hidden=false;
-  $('mailto'+k).href='mailto:'+MAIL_DEPTO+'?subject='+encodeURIComponent(asunto)+(cc?'&cc='+encodeURIComponent(cc):'')+'&body='+encodeURIComponent(cuerpo);
+  $('mailto'+k).href='mailto:'+MAIL_DEPTO+'?subject='+encodeURIComponent(asunto)+(cc?'&cc='+encodeURIComponent(cc).replace(/%2C/g,','):'')+'&body='+encodeURIComponent(cuerpo);
   var msg=$('msg'+k);
   $('copy'+k).onclick=function(){
     var ok=function(){msg.className='vc-note vc-note--ok';msg.textContent='Texto copiado. Pégalo en un correo a '+MAIL_DEPTO+'.'};
@@ -163,8 +163,8 @@ $('gen1').addEventListener('click',function(){
   if($('c_est').checked){L.push('    Tipo de transporte: '+v('transp'));L.push('    Horario aproximado: llegada '+v('hllega')+(v('hsale')?', salida '+v('hsale'):'')+' h')}
   L.push('13. Otros: '+($('c_otro').checked&&v('otro_txt')?v('otro_txt'):'No'),'');
   L.push('Quedo atento/a a la confirmación por escrito. Saludos cordiales,',v('acad'));
-  var cc=$('c_reac').checked?MAIL_TEC:'';
-  $('ccline').textContent=cc?'· CC: '+cc:'';
+  var cc=$('c_reac').checked?MAIL_LAB+','+MAIL_TEC:MAIL_LAB;
+  $('ccline').textContent='· CC: '+cc.replace(',',', ');
   setupOut('1','Solicitud de visita de colegio – '+v('cole')+' – '+fdate(v('fact')),L.join('\n'),cc);
 });
 

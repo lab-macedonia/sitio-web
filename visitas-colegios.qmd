@@ -25,7 +25,7 @@ Próximamente estará disponible el material de las actividades, como las **guí
 ::: {.callout-note}
 ## Cómo funciona
 
-Esta página **no envía ni almacena ninguna información**: lo que escribes se queda en tu navegador y no se guarda en ningún servidor. Al terminar, genera el texto del correo para [quimica@umce.cl](mailto:quimica@umce.cl) (con copia al técnico de laboratorio si se piden reactivos o materiales): puedes abrirlo en tu programa de correo, copiarlo o descargarlo.
+Esta página **no envía ni almacena ninguna información**: lo que escribes se queda en tu navegador y no se guarda en ningún servidor. Al terminar, genera el texto del correo para [quimica@umce.cl](mailto:quimica@umce.cl) (con copia al Laboratorio MACEDONIA y, si se piden reactivos o materiales, también al técnico de laboratorio): puedes abrirlo en tu programa de correo, copiarlo o descargarlo.
 :::
 
 ```{=html}
