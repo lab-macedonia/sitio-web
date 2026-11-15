@@ -26,4 +26,4 @@ Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [la
 
 El laboratorio cuenta con una colección de animaciones sobre isomería, estructuras de Newman y caballete y conformaciones moleculares, desarrolladas en la tesis de **Mauricio Cortés** y publicadas con licencia **CC BY-NC-SA 4.0**.
 
-[Acceder al catálogo de animaciones y descargas](https://sites.google.com/umce.cl/lab-macedonia/recursos).
+[Ver las animaciones](animaciones.qmd).

@@ -3,6 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 scripts/build_catalogos.py
+python3 scripts/build_animaciones.py
 quarto render
 rm -rf en/assets en/styles en/_site
 cp -r assets en/assets && cp -r styles en/styles

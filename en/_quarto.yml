@@ -49,7 +49,11 @@ website:
       - text: Theses
         href: theses.qmd
     - text: Educational resources
-      href: resources.qmd
+      menu:
+      - text: Digital laboratory
+        href: resources.qmd
+      - text: Organic chemistry animations
+        href: animations.qmd
     - text: News
       href: news.qmd
     right:

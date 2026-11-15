@@ -29,9 +29,9 @@ The digital laboratory brings together open developments published on GitHub and
 
 **Topics:** stereochemistry, isomerism, Newman and sawhorse projections, and molecular conformations.  
 **Origin:** developed in the thesis of Mauricio Cortés and published under a **CC BY-NC-SA 4.0** license.  
-**Availability:** catalog on the laboratory's Google Sites.
+**Availability:** 25 animations under CC BY-NC-SA 4.0.
 
-[View the catalog and attributions](https://sites.google.com/umce.cl/lab-macedonia/recursos)
+[Watch the animations](animations.qmd)
 :::
 :::
 

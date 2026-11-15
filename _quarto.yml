@@ -55,7 +55,11 @@ website:
       - text: Tesistas
         href: tesistas.qmd
     - text: Recursos educativos
-      href: laboratorio-digital.qmd
+      menu:
+      - text: Laboratorio digital
+        href: laboratorio-digital.qmd
+      - text: Animaciones de química orgánica
+        href: animaciones.qmd
     - text: Actualidad
       href: noticias.qmd
     right:

@@ -29,9 +29,9 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 
 **Temas:** estereoquímica, isomería y conformaciones moleculares.  
 **Procedencia:** recursos asociados al trabajo de titulación de Mauricio Cortés.  
-**Disponibilidad:** catálogo alojado en el Google Sites del laboratorio.
+**Disponibilidad:** 25 animaciones con licencia CC BY-NC-SA 4.0.
 
-[Consultar catálogo y atribuciones](https://sites.google.com/umce.cl/lab-macedonia/recursos)
+[Ver las animaciones](animaciones.qmd)
 :::
 :::
 
