@@ -13,7 +13,7 @@ Queremos que la investigación no quede aislada de la enseñanza: que las pregun
 
 Contribuir a la formación de profesores de química y ciencias mediante investigación rigurosa, colaboración académica y desarrollo de experiencias y recursos educativos pertinentes, con **compromiso social, respeto por las personas y atención a la diversidad**.
 
-## Visión — propuesta editorial
+## Visión
 
 Proyectar a MACEDONIA como un espacio académico reconocido por articular investigación química, formación docente e innovación educativa, fortaleciendo redes de colaboración y compartiendo conocimientos y recursos útiles para distintas comunidades de aprendizaje.
 
@@ -50,6 +50,3 @@ Contribución a una educación científica vinculada con su contexto social.
 
 Se expresa en nuestras [investigaciones](investigacion.qmd), [proyectos](proyectos.qmd), [tesis](tesistas.qmd), [colaboraciones](colaboradores.qmd) y [recursos educativos](repositorios.qmd).
 
-::: {.callout-note}
-**Nota editorial.** La misión original del Google Sites enfatiza la formación de profesores de química, el compromiso social y el respeto. Los textos ampliados de esta página son propuestas para validación del equipo antes de presentarlos como declaraciones institucionales definitivas.
-:::

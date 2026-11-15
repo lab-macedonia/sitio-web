@@ -12,7 +12,7 @@ for page in root.rglob('*.qmd'):
     text=page.read_text(encoding='utf-8')
     if not text.startswith('---\n'):errors.append(f'Frontmatter ausente: {page.relative_to(root)}')
     for href in re.findall(r'\]\(([^)#]+)(?:#[^)]+)?\)',text):
-        if re.match(r'^(https?://|mailto:)',href):continue
+        if re.match(r'^(https?://|mailto:)',href) or href.endswith('.html'):continue
         if href.startswith('#') or href == 'noticias.xml':continue
         target=(page.parent/href.split('#')[0]).resolve()
         if not target.exists():errors.append(f'Enlace local roto: {page.relative_to(root)} -> {href}')

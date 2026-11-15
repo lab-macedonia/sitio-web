@@ -29,3 +29,11 @@ h1,h2,h3,h4,.navbar-brand{font-family:'Manrope',system-ui,sans-serif;letter-spac
 .illus-grid figcaption{padding:1rem 1.3rem 1.2rem;color:#3f5963;font-size:.97rem;line-height:1.5}
 .illus-note{font-size:.9rem;color:#536570;margin-bottom:4rem}
 @media(max-width:700px){.illus-grid{grid-template-columns:1fr}}
+
+.hero-art{height:auto;opacity:1;display:flex;align-items:center;justify-content:center}.hero-art img{width:100%;max-width:520px;height:auto;filter:drop-shadow(0 18px 34px #02222b66)}
+.record-authors{color:#38505a;margin-bottom:.35rem}.record-source{color:#4b6670;font-size:.95rem;margin-bottom:.4rem}.record-orig{color:#4b6670;font-size:.92rem;margin-bottom:.35rem}
+@media(max-width:900px){.hero-art{max-width:340px;margin:0 auto}}
+@media(max-width:600px){.hero-art{display:flex;max-width:260px}}
+.navbar .navbar-title,.navbar .navbar-brand{color:#fff!important}
+@media(min-width:901px){.home-hero{grid-template-columns:minmax(0,1.05fr) minmax(260px,.95fr)}}.hero-art img{max-width:600px}
+body:has(.home-hero) #title-block-header,body:has(.home-hero) h1.title{display:none}

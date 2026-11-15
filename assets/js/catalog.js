@@ -5,6 +5,7 @@
     var selects = Array.from(catalog.querySelectorAll('[data-filter-field]'));
     var records = Array.from(catalog.querySelectorAll('[data-record]'));
     var status = catalog.querySelector('[data-count]');
+    var tpl = catalog.getAttribute('data-count-text') || '{v} de {t} registros';
     if (!records.length) return;
     function plain(s) {return (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();}
     function update() {
@@ -19,7 +20,7 @@
         record.hidden = !ok;
         if (ok) visible += 1;
       });
-      if (status) status.textContent = visible + ' de ' + records.length + ' registros';
+      if (status) status.textContent = tpl.replace('{v}', visible).replace('{t}', records.length);
     }
     if (input) input.addEventListener('input', update);
     selects.forEach(function (el) {el.addEventListener('change', update);});

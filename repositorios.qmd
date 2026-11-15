@@ -3,7 +3,7 @@ title: "Recursos digitales y código abierto"
 subtitle: "Proyectos del laboratorio publicados en GitHub"
 ---
 
-Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [lab-macedonia](https://github.com/lab-macedonia). Se mantienen en sus sitios originales para evitar duplicar código y facilitar actualizaciones.
+Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [lab-macedonia](https://github.com/lab-macedonia). Se mantienen en sus propios sitios para facilitar su actualización.
 
 ::: {.cards}
 ::: {.feature}
@@ -24,8 +24,6 @@ Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [la
 
 ## Animaciones de química orgánica
 
-El sitio anterior incluye una colección de animaciones sobre isomería, estructuras de Newman y caballete y conformaciones moleculares, desarrolladas en la tesis de **Mauricio Cortés** y publicadas con licencia **CC BY-NC-SA 4.0**.
+El laboratorio cuenta con una colección de animaciones sobre isomería, estructuras de Newman y caballete y conformaciones moleculares, desarrolladas en la tesis de **Mauricio Cortés** y publicadas con licencia **CC BY-NC-SA 4.0**.
 
 [Acceder al catálogo de animaciones y descargas](https://sites.google.com/umce.cl/lab-macedonia/recursos).
-
-> La migración mantiene el enlace a la fuente original para respetar atribuciones y verificar permisos antes de alojar copias de estos videos en GitHub.

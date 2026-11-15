@@ -1,0 +1,51 @@
+---
+title: "Purpose, mission and vision"
+subtitle: "The principles that guide our research and educational commitment"
+---
+
+## Purpose
+
+**To connect chemical research with teacher education and science education**, promoting spaces where disciplinary knowledge, pedagogical questions and technological innovation enrich one another.
+
+We want research not to remain isolated from teaching: for the questions of the laboratory to feed educational experiences, and for educational needs to inspire new ways of investigating, representing and communicating chemistry.
+
+## Mission
+
+To contribute to the education of chemistry and science teachers through rigorous research, academic collaboration, and the development of relevant educational experiences and resources, with **social commitment, respect for people and attention to diversity**.
+
+## Vision
+
+To establish MACEDONIA as an academic space recognized for linking chemical research, teacher education and educational innovation, strengthening collaboration networks and sharing knowledge and resources that are useful to different learning communities.
+
+## Working principles
+
+::: {.principles-grid}
+::: {.principle}
+### Scientific rigor
+Clear questions, well-founded methods and responsible communication of results.
+:::
+::: {.principle}
+### Pedagogical purpose
+Resources and experiences designed around learning, not only technology.
+:::
+::: {.principle}
+### Collaboration
+Work with students, teachers, researchers and partner laboratories.
+:::
+::: {.principle}
+### Inclusion and respect
+Recognition of different trajectories, contexts and educational needs.
+:::
+::: {.principle}
+### Responsible openness
+Sharing and reuse of resources when licenses and permissions allow.
+:::
+::: {.principle}
+### Public commitment
+Contribution to a science education connected to its social context.
+:::
+:::
+
+## Purpose in action
+
+It is expressed in our [research](research.qmd), [projects](projects.qmd), [theses](theses.qmd), [collaborations](team.qmd) and [educational resources](resources.qmd).

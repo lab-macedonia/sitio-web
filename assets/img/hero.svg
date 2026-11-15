@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" role="img" aria-labelledby="t d">
+<title id="t">Matraz, molécula y libro: química y formación docente</title>
+<desc id="d">Ilustración de un matraz Erlenmeyer con líquido turquesa, una molécula de bolas y varillas con órbitas y un libro abierto.</desc>
+<defs>
+<linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fe3d1"/><stop offset="1" stop-color="#1f9f93"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".34"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".08"/><stop offset="1" stop-color="#ffffff" stop-opacity=".28"/></linearGradient>
+<radialGradient id="ball" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#ffffff"/><stop offset=".25" stop-color="#cdf3e7"/><stop offset="1" stop-color="#4fbfae"/></radialGradient>
+<radialGradient id="ballg" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#fff6d8"/><stop offset=".3" stop-color="#f6d98e"/><stop offset="1" stop-color="#c9962b"/></radialGradient>
+<radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#bceadd" stop-opacity=".35"/><stop offset="1" stop-color="#bceadd" stop-opacity="0"/></radialGradient>
+</defs>
+<circle cx="290" cy="270" r="250" fill="url(#glow)"/>
+<g fill="none" stroke="#a7e4d0" stroke-opacity=".38" stroke-width="2">
+<ellipse cx="360" cy="170" rx="165" ry="62" transform="rotate(-24 360 170)"/>
+<ellipse cx="360" cy="170" rx="150" ry="52" transform="rotate(34 360 170)"/>
+</g>
+<!-- molécula -->
+<g stroke="#d9f5ec" stroke-width="7" stroke-linecap="round" opacity=".95">
+<line x1="360" y1="108" x2="418" y2="142"/><line x1="418" y1="142" x2="418" y2="208"/><line x1="418" y1="208" x2="360" y2="242"/><line x1="360" y1="242" x2="302" y2="208"/><line x1="302" y1="208" x2="302" y2="142"/><line x1="302" y1="142" x2="360" y2="108"/>
+<line x1="418" y1="142" x2="476" y2="108"/><line x1="302" y1="208" x2="244" y2="242"/><line x1="360" y1="242" x2="360" y2="300"/>
+</g>
+<g stroke="#103641" stroke-opacity=".28" stroke-width="3" fill="none" stroke-linecap="round"><line x1="374" y1="128" x2="402" y2="146"/><line x1="402" y1="196" x2="376" y2="214"/><line x1="316" y1="190" x2="316" y2="160"/></g>
+<circle cx="360" cy="108" r="17" fill="url(#ball)"/><circle cx="418" cy="142" r="17" fill="url(#ball)"/><circle cx="418" cy="208" r="17" fill="url(#ball)"/><circle cx="360" cy="242" r="17" fill="url(#ball)"/><circle cx="302" cy="208" r="17" fill="url(#ball)"/><circle cx="302" cy="142" r="17" fill="url(#ball)"/>
+<circle cx="476" cy="108" r="26" fill="url(#ballg)"/><circle cx="244" cy="242" r="21" fill="url(#ball)"/><circle cx="360" cy="300" r="30" fill="url(#ball)"/>
+<circle cx="476" cy="108" r="26" fill="none" stroke="#fff" stroke-opacity=".25"/>
+<!-- orbitales -->
+<g opacity=".9">
+<ellipse cx="500" cy="60" rx="14" ry="24" transform="rotate(30 500 60)" fill="#53cbbb" fill-opacity=".5" stroke="#bceadd" stroke-width="2"/><ellipse cx="520" cy="86" rx="14" ry="24" transform="rotate(30 520 86)" fill="#f1cf81" fill-opacity=".45" stroke="#f6e3b0" stroke-width="2"/>
+</g>
+<!-- matraz -->
+<g transform="translate(40 150)">
+<path d="M112 12h66v96l92 168c13 24-4 54-32 54H52c-28 0-45-30-32-54l92-168z" fill="url(#glass)" stroke="#d9f5ec" stroke-width="5" stroke-linejoin="round"/>
+<path d="M63 224l49-90h66l49 90 21 40c10 18-3 40-24 40H66c-21 0-34-22-24-40z" fill="url(#liq)" opacity=".92"/>
+<path d="M63 224c30-14 58 14 92 0s54-14 96 0" fill="none" stroke="#e5fbf4" stroke-width="3" opacity=".8"/>
+<rect x="104" y="2" width="82" height="16" rx="8" fill="#d9f5ec"/>
+<circle cx="118" cy="268" r="9" fill="#fff" fill-opacity=".55"/><circle cx="170" cy="246" r="6" fill="#fff" fill-opacity=".5"/><circle cx="198" cy="282" r="11" fill="#fff" fill-opacity=".45"/><circle cx="140" cy="236" r="4" fill="#fff" fill-opacity=".6"/>
+<path d="M118 40v66l-82 150" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="5" stroke-linecap="round"/>
+</g>
+<!-- libro abierto -->
+<g transform="translate(262 398) scale(.98)">
+<path d="M0 22c46-18 92-14 138 6v70c-46-20-92-24-138-6z" fill="#f4faf7"/>
+<path d="M276 22c-46-18-92-14-138 6v70c46-20 92-24 138-6z" fill="#dff3ec"/>
+<path d="M138 28v70" stroke="#14736d" stroke-width="4"/>
+<g fill="none" stroke="#14736d" stroke-opacity=".45" stroke-width="3" stroke-linecap="round"><path d="M22 44c30-8 68-6 96 6"/><path d="M22 62c30-8 68-6 96 6"/><path d="M158 50c28-12 66-14 96-6"/><path d="M158 68c28-12 66-14 96-6"/></g>
+<circle cx="205" cy="34" r="6" fill="#f1cf81"/>
+</g>
+<!-- partículas -->
+<g fill="#bceadd"><circle cx="70" cy="90" r="5" opacity=".7"/><circle cx="520" cy="300" r="7" opacity=".55"/><circle cx="500" cy="440" r="4" opacity=".6"/><circle cx="60" cy="400" r="6" opacity=".45"/></g>
+<circle cx="520" cy="210" r="9" fill="#f1cf81" opacity=".85"/><circle cx="96" cy="170" r="12" fill="#53cbbb" opacity=".7"/>
+</svg>

@@ -3,7 +3,6 @@ project:
   output-dir: _site
   render:
   - "*.qmd"
-  - "en/*.qmd"
   - "noticias/**/*.qmd"
   resources:
   - assets/**
@@ -60,7 +59,7 @@ website:
       href: noticias.qmd
     right:
     - text: English
-      href: en/index.qmd
+      href: en/index.html
     - icon: instagram
       href: https://www.instagram.com/labmacedonia/
       aria-label: Instagram de MACEDONIA

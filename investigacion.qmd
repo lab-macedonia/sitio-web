@@ -4,36 +4,36 @@ subtitle: "Preguntas científicas y formación de profesores"
 toc: true
 ---
 
-Las siguientes líneas son una **organización editorial** de los ámbitos documentados en el CV 2026 y en el sitio institucional; no constituyen una declaración formal de nuevas unidades o centros.
+Estas son las líneas de trabajo que articulan la investigación y la formación en el laboratorio.
 
 ## Química orgánica, radicales libres y antioxidantes
 
 Síntesis y caracterización de nitronas y compuestos de interés biológico; resonancia de espín electrónico y estudio de especies radicalarias.
 
-**Evidencia en la trayectoria:** RSC Advances (2020); proyectos FGI 42-18 y FONDECYT 3120241.
+**Trayectoria:** RSC Advances (2020); proyectos FGI 42-18 y FONDECYT 3120241.
 
 ## Química computacional y reactividad molecular
 
 Estudio de reactividad química mediante modelos computacionales, DFT conceptual y DFT de espín polarizado; aplicación a antioxidantes, complejos de inclusión y química de coordinación.
 
-**Evidencia en la trayectoria:** The Journal of Physical Chemistry A (2026); Chemical Physics Letters (2025).
+**Trayectoria:** The Journal of Physical Chemistry A (2026); Chemical Physics Letters (2025).
 
 ## Educación química y aprendizaje experimental
 
 Análisis del aprendizaje en laboratorios, prelaboratorios digitales, modelación y habilidades científicas en formación inicial docente.
 
-**Evidencia en la trayectoria:** Educación Química (2024, 2025); MAPEX (2026).
+**Trayectoria:** Educación Química (2024, 2025); MAPEX (2026).
 
 ## Innovación tecnológica y recursos educativos
 
 Desarrollo de experiencias con modelación molecular, fabricación e impresión 3D y tecnología digital como apoyo didáctico.
 
-**Evidencia en la trayectoria:** Proyectos Ciencia en 3D (2025) y 27-2024-EFA (2024).
+**Trayectoria:** Proyectos Ciencia en 3D (2025) y 27-2024-EFA (2024).
 
 ## Inclusión y formación docente
 
 Propuestas y estudios orientados a adecuaciones curriculares, estrategias didácticas y acceso a experiencias científicas para diversos grupos de estudiantes.
 
-**Evidencia en la trayectoria:** Trabajos de titulación y proyectos vinculados a la UMCE.
+**Trayectoria:** Trabajos de titulación y proyectos vinculados a la UMCE.
 
 Consulta los [proyectos](proyectos.qmd), las [publicaciones](publicaciones.qmd) y las [tesis](tesistas.qmd) para explorar la producción asociada.

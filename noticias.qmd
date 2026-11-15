@@ -16,8 +16,7 @@ listing:
   filter-ui: true
 ---
 
-Aquí se publicarán noticias institucionales y, una vez autorizada la API de Meta, publicaciones verificadas de la cuenta profesional del laboratorio.
+Noticias y actividades del laboratorio, incluidas las publicaciones de su cuenta de Instagram.
 
 [Instagram oficial: @labmacedonia](https://www.instagram.com/labmacedonia/) · [Suscribirse al RSS](noticias.xml)
 
-> **Estado de integración:** la sincronización automática está preparada, pero permanece desactivada hasta configurar credenciales autorizadas. No hay noticias de Instagram inventadas.

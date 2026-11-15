@@ -3,6 +3,7 @@ title: "Inicio"
 page-layout: full
 toc: false
 title-block-banner: false
+title-block-style: none
 ---
 
 ::: {.home-hero}
@@ -13,7 +14,7 @@ title-block-banner: false
   <p>Conectamos la investigación en química orgánica y reactividad molecular con la formación de profesores, el aprendizaje experimental y la innovación educativa.</p>
   <div class="cta-row"><a class="btn-primary-m" href="presentacion.html">Conoce MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="investigacion.html">Explorar investigación</a></div>
 </div>
-<div class="hero-art" aria-hidden="true"><span class="orbit o1"></span><span class="orbit o2"></span><span class="orb a"></span><span class="orb b"></span><span class="orb c"></span><span class="orb d"></span><span class="orbit-label">Q · E · I</span></div>
+<div class="hero-art"><img src="assets/img/hero.svg" alt="Ilustración de un matraz con líquido turquesa, una molécula y un libro abierto: química y formación docente"></div>
 :::
 
 ::: {.intro-band}

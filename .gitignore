@@ -1,14 +1,17 @@
-_site/
-.quarto/
-.env
-__pycache__/
 
+# Copias temporales para compilar la versión en inglés
 # Fuentes privadas utilizadas solo para la edición
-**/CV_German_Barriga_Gonzalez_2026.pdf
-**/CV_*.pdf
-
-/.quarto/
-**/*.quarto_ipynb
-
 # Notas internas de control editorial (no se publican)
+**/*.quarto_ipynb
+**/CV_*.pdf
+**/CV_German_Barriga_Gonzalez_2026.pdf
+.env
+.quarto/
+/.quarto/
+__pycache__/
+_site/
 docs/
+en/.quarto/
+en/_site/
+en/assets/
+en/styles/

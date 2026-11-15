@@ -3,7 +3,7 @@ title: "Laboratorio digital"
 subtitle: "Recursos abiertos para explorar, aprender y enseñar ciencias"
 ---
 
-El laboratorio digital reúne desarrollos accesibles desde GitHub, junto con recursos educativos publicados previamente. No se han copiado ni modificado las aplicaciones originales.
+El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recursos educativos del laboratorio.
 
 ::: {.resource-grid}
 ::: {.resource-item}
@@ -19,7 +19,7 @@ El laboratorio digital reúne desarrollos accesibles desde GitHub, junto con rec
 ### Simulaciones de ciencias
 
 **Repositorio:** `simulaciones-quimica`  
-**Contenido declarado en la versión anterior:** 114 simulaciones en ciencias.  
+**Contenido:** 114 simulaciones en ciencias.  
 **Aplicación educativa:** exploración interactiva de fenómenos científicos.
 
 [Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Código abierto](https://github.com/lab-macedonia/simulaciones-quimica)
@@ -29,7 +29,7 @@ El laboratorio digital reúne desarrollos accesibles desde GitHub, junto con rec
 
 **Temas:** estereoquímica, isomería y conformaciones moleculares.  
 **Procedencia:** recursos asociados al trabajo de titulación de Mauricio Cortés.  
-**Disponibilidad:** catálogo alojado en el Google Sites original.
+**Disponibilidad:** catálogo alojado en el Google Sites del laboratorio.
 
 [Consultar catálogo y atribuciones](https://sites.google.com/umce.cl/lab-macedonia/recursos)
 :::
@@ -41,5 +41,3 @@ El laboratorio digital reúne desarrollos accesibles desde GitHub, junto con rec
 2. Revisa las instrucciones y condiciones de uso en el repositorio correspondiente.
 3. Integra la actividad con preguntas, discusión y evaluación formativa.
 4. Consulta licencias y atribuciones antes de redistribuir materiales.
-
-**Aviso:** La accesibilidad y compatibilidad de las aplicaciones externas requieren una auditoría específica; los recursos no se consideran validados por incorporarlos a este catálogo.

@@ -1,0 +1,80 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+  - assets/**
+website:
+  title: MACEDONIA Laboratory
+  site-url: https://lab-macedonia.github.io/sitio-web/en/
+  favicon: assets/macedonia-mejorado-icono-claro.svg
+  search:
+    location: navbar
+    type: overlay
+  page-navigation: true
+  description: MACEDONIA · Research in organic chemistry, chemical education and innovation for teacher education at UMCE.
+  navbar:
+    logo: assets/macedonia-mejorado-icono-oscuro.svg
+    background: '#103a46'
+    foreground: '#ffffff'
+    pinned: true
+    collapse-below: lg
+    logo-alt: MACEDONIA Laboratory logo
+    left:
+    - text: Home
+      href: index.qmd
+    - text: The laboratory
+      menu:
+      - text: About
+        href: about.qmd
+      - text: History and identity
+        href: history.qmd
+      - text: Purpose, mission and vision
+        href: purpose.qmd
+      - text: Team and collaboration
+        href: team.qmd
+      - text: Academic profile
+        href: profile.qmd
+    - text: Research
+      menu:
+      - text: Research areas
+        href: research.qmd
+      - text: Projects
+        href: projects.qmd
+    - text: Scientific output
+      menu:
+      - text: Articles and chapters
+        href: publications.qmd
+      - text: Conferences
+        href: conferences.qmd
+      - text: Theses
+        href: theses.qmd
+    - text: Educational resources
+      href: resources.qmd
+    - text: News
+      href: news.qmd
+    right:
+    - text: Español
+      href: ../index.html
+    - icon: instagram
+      href: https://www.instagram.com/labmacedonia/
+      aria-label: MACEDONIA on Instagram
+    - text: Contact
+      href: contact.qmd
+  page-footer:
+    border: true
+    left: © MACEDONIA Laboratory · Universidad Metropolitana de Ciencias de la Educación
+    center: Organic chemistry · Chemical education
+    right: '[Instagram](https://www.instagram.com/labmacedonia/) · [Contact](/contact.qmd)'
+  back-to-top-navigation: true
+format:
+  html:
+    theme: cosmo
+    css: styles/site.css
+    toc: true
+    lang: en
+    link-external-newwindow: true
+    smooth-scroll: true
+    anchor-sections: true
+    include-after-body: assets/catalog-filters.html
+execute:
+  freeze: auto

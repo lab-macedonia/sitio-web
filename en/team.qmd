@@ -1,0 +1,49 @@
+---
+title: "Team and collaboration"
+subtitle: "A network of research, education and innovation"
+---
+
+The research driven by MACEDONIA is built with students, thesis students, academics and collaboration networks.
+
+## Academic coordination
+
+::: {.team-grid}
+::: {.team-person}
+### Germán Eduardo Barriga González
+
+**Associate professor · Department of Chemistry, UMCE**
+
+PhD in Chemistry (Universidad de Chile). His work combines organic chemistry, free radicals, computational reactivity, initial teacher education and digital learning resources.
+
+[ORCID](https://orcid.org/0000-0002-9628-2414) · [Academic profile](profile.qmd)
+:::
+:::
+
+## Networks and collaborators
+
+::: {.cards}
+::: {.feature}
+### LabTec — Technology Laboratory
+
+A space dedicated to developing technologies for the education of science and technology teachers, led by Professor **Mg. Yonnhatan García Cartagena**, established in 2010.
+
+[Visit LabTec](https://sites.google.com/umce.cl/labtec/home)
+:::
+::: {.feature}
+### Semillero CATIÓN
+
+**Science, didactics and innovation.** A space created in 2023, led by Professor **Dr. Carla Olivares Petit**, focused on science didactics.
+:::
+::: {.feature}
+### José Muñoz Espinoza
+
+Chemistry teacher at UMCE with a master's degree in Chemistry from Universidad de Chile. Collaborator in **computational chemical reactivity**.
+:::
+::: {.feature}
+### Bernardo Madariaga
+
+Physics teacher at UMCE with a master's degree in Natural Science Didactics from UMCE. Collaborator in **science education**.
+:::
+:::
+
+[Meet our thesis students](theses.qmd)

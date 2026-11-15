@@ -1,9 +1,28 @@
 ---
 title: "About MACEDONIA"
+subtitle: "Chemical research and science education in a shared space"
 ---
 
-MACEDONIA connects research in organic chemistry with chemical education. Its academic work at UMCE includes the study of molecular reactivity and antioxidant systems, laboratory learning, and the development of digital teaching resources.
+## What is MACEDONIA?
 
-The laboratory's historical identity relates chemical research and science teacher education. The current purpose and vision are editorial formulations under institutional review, rather than separately approved institutional statements.
+The **MACEDONIA Laboratory** is an academic workspace linked to the Department of Chemistry of the **Metropolitan University of Educational Sciences (UMCE)**, in Santiago, Chile. Its identity brings together two fields that enrich each other: research in **organic chemistry** and **chemical education**, with special attention to initial teacher education.
 
-[Read the full history in Spanish](../historia.qmd) · [Back to the English homepage](index.qmd)
+Its disciplinary work includes the study of free radicals and antioxidants, the synthesis and characterization of organic compounds, and the analysis of reactivity with experimental and computational tools. In science education, the laboratory explores learning experiences in the laboratory, the teaching of chemistry, and teaching resources supported by digital technologies.
+
+## How do we work?
+
+Our approach connects scientific questions, educational needs and collaboration. The laboratory develops projects and resources with academics, students, thesis students and research networks, so that the knowledge produced can dialogue with educational practice.
+
+::: {.lead-box}
+**What makes MACEDONIA distinctive** is that it brings chemical research and teacher education together in a single identity: studying phenomena while thinking about how to make them understandable, teachable and relevant for others.
+:::
+
+## Three complementary areas
+
+1. **Chemical research:** study of reactivity, radicals and compounds of interest through experimental and theoretical approaches.
+2. **Chemical education:** research on science learning and initial teacher education.
+3. **Educational innovation:** design and evaluation of resources such as digital simulations, molecular modeling and 3D fabrication.
+
+## Keep exploring
+
+[History and identity](history.qmd) · [Purpose, mission and vision](purpose.qmd) · [Research areas](research.qmd) · [Projects](projects.qmd)

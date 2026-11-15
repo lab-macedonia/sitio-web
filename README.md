@@ -16,7 +16,7 @@ Instalar Quarto desde https://quarto.org/docs/get-started/ y ejecutar:
 
 ```bash
 python scripts/validate_site.py
-quarto render
+bash scripts/build_site.sh   # español + inglés (genera _site/ y _site/en/)
 quarto preview
 ```
 
@@ -37,7 +37,7 @@ La página `noticias.qmd` usa las listas nativas de Quarto y genera `noticias.xm
 
 ## Catálogos
 
-Las páginas `publicaciones.qmd`, `congresos.qmd`, `proyectos.qmd` y `tesistas.qmd` se generan a partir de los archivos JSON de `data/`; los filtros en `assets/js/catalog.js` se ejecutan localmente en el navegador. El buscador general de Quarto opera en el resto del sitio. Para regenerar catálogos tras cambios en JSON, volver a correr el generador de contenidos del proyecto o actualizar las páginas correspondientes.
+Las páginas `publicaciones.qmd`, `congresos.qmd`, `proyectos.qmd` y `tesistas.qmd` se generan a partir de los archivos JSON de `data/`; los filtros en `assets/js/catalog.js` se ejecutan localmente en el navegador. El buscador general de Quarto opera en el resto del sitio. Todas se ordenan de más reciente a más antigua. Las versiones en inglés (`en/publications.qmd`, `en/conferences.qmd`, `en/projects.qmd`, `en/theses.qmd`) usan las traducciones de títulos de `data/traducciones_en.json`. Para regenerar los catálogos tras cambios en los JSON: `python3 scripts/build_catalogos.py` (o `bash scripts/build_site.sh`, que además compila todo el sitio). La versión en inglés es un subproyecto Quarto (`en/_quarto.yml`) que se publica en `/en/`.
 
 ## Privacidad y fuentes
 

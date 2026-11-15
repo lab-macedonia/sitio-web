@@ -3,7 +3,7 @@ title: "Equipo y colaboración"
 subtitle: "Una red de investigación, formación e innovación"
 ---
 
-La investigación que impulsa MACEDONIA se construye con estudiantes, tesistas, académicos y redes de colaboración. Esta página diferencia los perfiles confirmados de las colaboraciones descritas en el sitio institucional.
+La investigación que impulsa MACEDONIA se construye con estudiantes, tesistas, académicos y redes de colaboración. 
 
 ## Coordinación académica
 
@@ -21,13 +21,11 @@ Doctor en Química (Universidad de Chile). Su actividad integra química orgáni
 
 ## Redes y colaboradores
 
-Se presentan las colaboraciones mencionadas en la web original. Sus cargos y afiliaciones actuales deben confirmarse antes del lanzamiento.
+Colaboraciones con las que el laboratorio trabaja en investigación y educación científica.
 
-- **LabTec:** tecnologías para la formación de docentes de ciencias. [Sitio original](https://sites.google.com/umce.cl/labtec/home).
+- **LabTec:** tecnologías para la formación de docentes de ciencias. [Sitio de LabTec](https://sites.google.com/umce.cl/labtec/home).
 - **Semillero CATIÓN:** colaboración en didáctica de las ciencias e innovación educativa.
 - **José Muñoz Espinoza:** colaboración en reactividad química computacional.
 - **Bernardo Madariaga:** colaboración en educación científica y formación docente.
 
-[Consultar listado heredado de colaboradores](colaboradores.qmd) · [Conocer tesistas](tesistas.qmd)
-
-> No se han agregado retratos personales, grados ni cargos nuevos sin documentación o autorización.
+[Ver detalle de colaboradores](colaboradores.qmd) · [Conocer tesistas](tesistas.qmd)

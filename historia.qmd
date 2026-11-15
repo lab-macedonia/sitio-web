@@ -11,11 +11,11 @@ El relato original del laboratorio asocia también la elección de su nombre con
 
 ## Una trayectoria académica en desarrollo
 
-La incorporación de Germán Barriga González a la UMCE en **2017** constituye un hito documentado de esta trayectoria, pero **no debe confundirse con una fecha formal de fundación del laboratorio**. En el marco del trabajo del Departamento de Química, se han articulado líneas disciplinarias, proyectos educativos, formación de estudiantes y colaboraciones académicas.
+La incorporación de Germán Barriga González a la UMCE en **2017** constituye un hito de esta trayectoria, pero **no debe confundirse con una fecha formal de fundación del laboratorio**. En el marco del trabajo del Departamento de Química, se han articulado líneas disciplinarias, proyectos educativos, formación de estudiantes y colaboraciones académicas.
 
 ::: {.timeline-m}
-<div class="timeline-item"><span>2017</span><div><strong>Vínculo académico con la UMCE.</strong> Inicio de la etapa de trabajo universitario identificada en el relato original del laboratorio.</div></div>
-<div class="timeline-item"><span>2018–2020</span><div><strong>Investigación disciplinar y educativa.</strong> Proyectos sobre química orgánica, radicales y prelaboratorios en línea documentados en el registro académico.</div></div>
+<div class="timeline-item"><span>2017</span><div><strong>Vínculo académico con la UMCE.</strong> Inicio de la etapa de trabajo universitario señalada en el relato original del laboratorio.</div></div>
+<div class="timeline-item"><span>2018–2020</span><div><strong>Investigación disciplinar y educativa.</strong> Proyectos sobre química orgánica, radicales libres y prelaboratorios en línea.</div></div>
 <div class="timeline-item"><span>2024–2025</span><div><strong>Modelación y fabricación digital.</strong> Proyectos sobre química computacional, impresión 3D y aprendizaje de la química.</div></div>
 <div class="timeline-item"><span>2026</span><div><strong>Continuidad de la investigación experimental y educativa.</strong> Participación en MAPEX, orientado al estudio de experiencias de aprendizaje en laboratorios de química.</div></div>
 :::
@@ -24,8 +24,8 @@ La incorporación de Germán Barriga González a la UMCE en **2017** constituye 
 
 El trabajo disciplinar ha incluido el estudio de compuestos antioxidantes de origen natural y sintético, atrapadores de radicales libres y técnicas de caracterización, como resonancia de espín electrónico y métodos computacionales. Paralelamente, la investigación educativa se ha ocupado de la formación inicial docente, las interacciones en laboratorios, la inclusión y el uso de tecnologías para aprender ciencias.
 
-Hoy esas vertientes se expresan también en desarrollos de **simulación, modelación molecular e impresión 3D**, que conectan la química con nuevas posibilidades pedagógicas. Se trata de una ampliación de líneas documentadas, no de un reemplazo de su origen.
+Hoy esas vertientes se expresan también en desarrollos de **simulación, modelación molecular e impresión 3D**, que conectan la química con nuevas posibilidades pedagógicas. Se trata de una ampliación de las líneas de trabajo, no de un reemplazo de su origen.
 
-## Fuentes y precisión histórica
+## Una nota sobre las fechas
 
-La explicación del nombre y las motivaciones originales procede de la [historia de MACEDONIA en Google Sites](https://sites.google.com/umce.cl/lab-macedonia/historia). Los hitos académicos se basan en el CV 2026 facilitado para la edición del sitio. No se ha establecido una fecha de fundación institucional porque la documentación consultada no la señala.
+La explicación del nombre y sus motivaciones originales procede de la [historia de MACEDONIA en el sitio anterior](https://sites.google.com/umce.cl/lab-macedonia/historia). El laboratorio no tiene una fecha formal de fundación; los hitos de esta página corresponden a la trayectoria académica de su equipo.

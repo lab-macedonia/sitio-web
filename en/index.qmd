@@ -1,16 +1,93 @@
 ---
-title: "MACEDONIA Laboratory"
-subtitle: "Organic chemistry · Chemical education · Educational innovation"
+title: "Home"
+page-layout: full
+toc: false
+title-block-banner: false
+title-block-style: none
 ---
 
-# The chemistry we investigate. The science we teach.
+::: {.home-hero}
+<div class="home-hero__content">
+  <div class="eyebrow">UMCE · RESEARCH · EDUCATION · INNOVATION</div>
+  <img src="assets/macedonia-mejorado-oscuro.svg" class="brand-hero" alt="MACEDONIA Laboratory logo">
+  <h1>The chemistry we investigate.<br><em>The science we teach.</em></h1>
+  <p>We connect research in organic chemistry and molecular reactivity with teacher education, experimental learning and educational innovation.</p>
+  <div class="cta-row"><a class="btn-primary-m" href="about.html">About MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="research.html">Explore our research</a></div>
+</div>
+<div class="hero-art"><img src="assets/img/hero.svg" alt="Illustration of a flask with turquoise liquid, a molecule and an open book: chemistry and teacher education"></div>
+:::
 
-**MACEDONIA** is an academic laboratory at the **Metropolitan University of Educational Sciences (UMCE), Chile**, bringing together organic chemistry research, molecular reactivity, chemical education and teacher preparation.
+::: {.intro-band}
+<div class="eyebrow dark">OUR APPROACH</div>
+## Scientific knowledge and teacher education, in dialogue
 
-We explore how scientific research, experimental learning and digital educational resources can support meaningful science education.
+At the **MACEDONIA Laboratory** of the Metropolitan University of Educational Sciences (UMCE, Chile) we bring together disciplinary research, chemical education and digital resources. We work with students, academics and collaborators to explore how science is built, communicated and learned.
+:::
 
-- **Research:** organic chemistry, free radicals, antioxidants and computational chemistry.
-- **Education:** laboratory learning, chemistry education and initial teacher education.
-- **Innovation:** molecular modeling, 3D printing and digital resources.
+::: {.three-pillars}
+::: {.pillar}
+<div class="pillar-index">01 / INVESTIGATE</div>
+### Chemistry and reactivity
+Organic synthesis, free radicals, antioxidants, molecular modeling and computational chemistry.
 
-[Research areas](research.qmd) · [About the laboratory](about.qmd) · [Versión en español](../index.qmd)
+[Explore our research areas →](research.qmd)
+:::
+::: {.pillar}
+<div class="pillar-index">02 / TEACH</div>
+### Chemical education
+Laboratory learning, science didactics and initial teacher education.
+
+[Our purpose →](purpose.qmd)
+:::
+::: {.pillar}
+<div class="pillar-index">03 / INNOVATE</div>
+### Resources for learning
+Simulations, 3D printing and digital technologies with a pedagogical purpose.
+
+[Explore educational resources →](resources.qmd)
+:::
+:::
+
+## Explore our work
+
+::: {.home-links}
+::: {.home-link}
+**Research and projects**
+
+Research areas, questions and interdisciplinary work.
+
+[View projects →](projects.qmd)
+:::
+::: {.home-link}
+**Scientific output**
+
+Articles, book chapters, conference presentations and theses.
+
+[View publications →](publications.qmd)
+:::
+::: {.home-link}
+**People and collaboration**
+
+Students, faculty and networks behind our shared work.
+
+[Meet the team →](team.qmd)
+:::
+:::
+
+## The laboratory in pictures
+
+<div class="illus-grid">
+<figure><img src="assets/img/laboratorio.svg" alt="Illustration of an Erlenmeyer flask, a beaker and a test tube on a laboratory bench"><figcaption><strong>Experimental learning.</strong> The laboratory as a space for teacher education.</figcaption></figure>
+<figure><img src="assets/img/nitronas.svg" alt="Illustration of the chemical structure of an aromatic nitrone used as a free radical spin trap"><figcaption><strong>Free radicals.</strong> Synthesis and study of nitrones as spin traps.</figcaption></figure>
+<figure><img src="assets/img/quimica-computacional.svg" alt="Illustration of molecular orbitals of opposite colors over a chain of atoms and a grid of calculation points"><figcaption><strong>Computational chemistry.</strong> Reactivity and molecular modeling.</figcaption></figure>
+<figure><img src="assets/img/modelos-3d-ar.svg" alt="Illustration of a ball-and-stick model of acetic acid next to a phone showing it in augmented reality"><figcaption><strong>3D models and augmented reality.</strong> Resources to see and handle molecules.</figcaption></figure>
+</div>
+
+<p class="illus-note">Original illustrations created for this site; they are not photographs of the laboratory. Real photographs of activities will be added when the team has its own authorized material.</p>
+
+::: {.closing-band}
+<div class="eyebrow">OUR IDENTITY</div>
+## Rigorous research. Meaningful education. Open collaboration.
+
+[Read our history](history.qmd) · [Purpose, mission and vision](purpose.qmd) · [Contact us](contact.qmd)
+:::

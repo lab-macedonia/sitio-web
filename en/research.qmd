@@ -1,13 +1,38 @@
 ---
-title: "Research"
+title: "Research areas"
+subtitle: "Scientific questions and teacher education"
 ---
 
-MACEDONIA brings together several complementary research fields:
+These are the lines of work that connect research and education in the laboratory.
 
-1. Organic synthesis and molecular characterization.
-2. Free radicals, antioxidants and electron spin resonance.
-3. Computational chemistry and molecular reactivity.
-4. Chemical education, experimental learning and teacher preparation.
-5. Digital technologies, molecular modeling and 3D printing for science education.
+## Organic chemistry, free radicals and antioxidants
 
-[Scientific production (Spanish)](../publicaciones.qmd) · [Projects (Spanish)](../proyectos.qmd) · [Open educational resources](../laboratorio-digital.qmd)
+Synthesis and characterization of nitrones and compounds of biological interest; electron spin resonance and the study of radical species.
+
+**Track record:** RSC Advances (2020); projects FGI 42-18 and FONDECYT 3120241.
+
+## Computational chemistry and molecular reactivity
+
+Study of chemical reactivity through computational models, conceptual DFT and spin-polarized DFT; applications to antioxidants, inclusion complexes and coordination chemistry.
+
+**Track record:** The Journal of Physical Chemistry A (2026); Chemical Physics Letters (2025).
+
+## Chemical education and experimental learning
+
+Analysis of laboratory learning, digital pre-laboratories, modeling and scientific skills in initial teacher education.
+
+**Track record:** Educación Química (2024, 2025); MAPEX (2026).
+
+## Technological innovation and educational resources
+
+Development of experiences with molecular modeling, 3D fabrication and printing, and digital technology as a teaching aid.
+
+**Track record:** Projects Science in 3D (2025) and 27-2024-EFA (2024).
+
+## Inclusion and teacher education
+
+Proposals and studies on curricular adaptations, teaching strategies and access to science experiences for diverse groups of students.
+
+**Track record:** Theses and projects linked to UMCE.
+
+See the [projects](projects.qmd), [publications](publications.qmd) and [theses](theses.qmd) to explore the associated output.

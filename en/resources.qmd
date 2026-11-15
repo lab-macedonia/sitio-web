@@ -1,0 +1,43 @@
+---
+title: "Educational resources"
+subtitle: "Open resources to explore, learn and teach science"
+---
+
+The digital laboratory brings together open developments published on GitHub and educational resources from the laboratory. The applications and their interfaces are in Spanish.
+
+::: {.resource-grid}
+::: {.resource-item}
+### Chemistry models in augmented reality
+
+**Repository:** `quimica-ar`  
+**What it is:** three-dimensional visualization and augmented reality of molecular models of carboxylic acids, in collaboration with LabTec and UMCE.  
+**Educational use:** spatial observation and representation of chemical structures.
+
+[Try the application](https://lab-macedonia.github.io/quimica-ar/) · [Source code](https://github.com/lab-macedonia/quimica-ar)
+:::
+::: {.resource-item}
+### Interactive science simulations
+
+**Repository:** `simulaciones-quimica`  
+**What it is:** a collection of 114 3D simulations in chemistry, biology, earth sciences and physics, related to learning objectives of the Chilean school curriculum.  
+**Educational use:** interactive exploration of scientific phenomena.
+
+[Explore the simulations](https://lab-macedonia.github.io/simulaciones-quimica/) · [Source code](https://github.com/lab-macedonia/simulaciones-quimica)
+:::
+::: {.resource-item}
+### Organic chemistry animations
+
+**Topics:** stereochemistry, isomerism, Newman and sawhorse projections, and molecular conformations.  
+**Origin:** developed in the thesis of Mauricio Cortés and published under a **CC BY-NC-SA 4.0** license.  
+**Availability:** catalog on the laboratory's Google Sites.
+
+[View the catalog and attributions](https://sites.google.com/umce.cl/lab-macedonia/recursos)
+:::
+:::
+
+## How to use these resources
+
+1. Identify the resource and its learning objectives.
+2. Review the instructions and terms of use in the corresponding repository.
+3. Integrate the activity with questions, discussion and formative assessment.
+4. Check licenses and attributions before redistributing materials.
