@@ -57,9 +57,10 @@ def build(lg):
             descargar = 'Descargar video (MP4)' if es else 'Download video (MP4)'
             pre = '' if es else '../'
             mp4, jpg = _f(n, 'mp4'), _f(n, 'jpg')
-            out.append(f'<figure class="anim"><div class="anim-frame"><video controls preload="none" playsinline poster="{pre}assets/animaciones/{jpg}" src="{pre}assets/animaciones/{mp4}" aria-label="{t}"></video></div>'
+            out.append(f'<figure class="anim"><div class="anim-frame"><video controls preload="none" playsinline data-poster="{pre}assets/animaciones/{jpg}" src="{pre}assets/animaciones/{mp4}" aria-label="{t}"></video></div>'
                        f'<figcaption><strong>{t}</strong><span>{lic}</span><a href="{pre}assets/animaciones/{mp4}" download>{descargar}</a></figcaption></figure>')
         out += ['</div>', '']
+    out.append('<script defer src="/assets/js/lazy-posters.js"></script>')
     return '\n'.join(out)
 (ROOT / 'animaciones.qmd').write_text(build('es'), encoding='utf8')
 (ROOT / 'en/animations.qmd').write_text(build('en'), encoding='utf8')
