@@ -1,0 +1,122 @@
+---
+title: "Charlas y actividades experimentales en tu colegio"
+subtitle: "Solicitud para profesores y profesoras de establecimientos educacionales"
+toc: false
+---
+
+El Laboratorio MACEDONIA puede ir a tu establecimiento para realizar una **charla** o una **actividad experimental**. Completa este formulario con los datos de tu colegio y de la actividad que te interesa, y nos pondremos en contacto contigo para coordinar los detalles.
+
+::: {.callout-note}
+## Cómo funciona
+
+Esta página **no envía información por sí sola ni la guarda**. Al terminar, genera el texto de un correo para el laboratorio: puedes abrirlo en tu programa de correo (tendrás que apretar «Enviar»), copiarlo o descargarlo. Si tu colegio quiere venir a las dependencias de la UMCE, revisa en cambio la página de [visitas de colegios](visitas-colegios.qmd).
+:::
+
+```{=html}
+<div class="vc" id="vc">
+  <fieldset class="vc-card">
+    <legend>I. Tu establecimiento</legend>
+    <label for="cole">Nombre del establecimiento</label>
+    <input type="text" id="cole">
+    <div class="vc-row">
+      <div><label for="comuna">Comuna</label><input type="text" id="comuna"></div>
+      <div></div>
+    </div>
+    <label for="dir">Dirección del establecimiento</label>
+    <input type="text" id="dir" autocomplete="street-address">
+  </fieldset>
+
+  <fieldset class="vc-card">
+    <legend>II. Profesor/a que realiza la solicitud</legend>
+    <label for="prof">Nombre del profesor/a</label>
+    <input type="text" id="prof" autocomplete="name">
+    <div class="vc-row">
+      <div><label for="mail">Correo electrónico</label><input type="email" id="mail" inputmode="email" autocomplete="email"></div>
+      <div><label for="tel">Teléfono <span class="vc-opt">(opcional)</span></label><input type="text" id="tel" inputmode="tel" autocomplete="tel"></div>
+    </div>
+    <label for="asig">Asignatura que imparte <span class="vc-opt">(opcional)</span></label>
+    <input type="text" id="asig">
+  </fieldset>
+
+  <fieldset class="vc-card">
+    <legend>III. Actividad que solicitas</legend>
+    <label class="vc-chk"><input type="radio" name="tipo" id="t_charla" value="charla"><span>Charla</span></label>
+    <label class="vc-chk"><input type="radio" name="tipo" id="t_exp" value="exp"><span>Actividad experimental</span></label>
+
+    <div class="vc-sub" id="s_charla" hidden>
+      <label for="tema">Tema de la charla</label>
+      <input type="text" id="tema" placeholder="Ej.: la química en la vida cotidiana, orientación vocacional…">
+    </div>
+
+    <div class="vc-sub" id="s_exp" hidden>
+      <label for="act">Actividad experimental</label>
+      <select id="act">
+        <option value="">Selecciona una actividad…</option>
+        <option>Reconocimiento de grupos funcionales (enfoque en química orgánica)</option>
+        <option>Reconocimiento de grupos funcionales (enfoque en biomoléculas)</option>
+        <option>Ácido-base</option>
+        <option>Calorimetría</option>
+        <option>Reacciones redox</option>
+        <option>Cinética química</option>
+        <option value="otra">Otra actividad (especificar)</option>
+      </select>
+      <div id="s_otra" hidden>
+        <label for="otra_txt">¿Qué actividad te interesa?</label>
+        <input type="text" id="otra_txt">
+      </div>
+    </div>
+
+    <div class="vc-row">
+      <div><label for="curso">Curso(s) o nivel</label><input type="text" id="curso" placeholder="Ej.: 2.º medio A y B"></div>
+      <div><label for="nest">N.º de estudiantes</label><input type="number" id="nest" min="1" inputmode="numeric"></div>
+    </div>
+    <label for="obs">Detalles u observaciones <span class="vc-opt">(opcional)</span></label>
+    <textarea id="obs" placeholder="Ej.: objetivos de aprendizaje, contenidos que quieren reforzar…"></textarea>
+  </fieldset>
+
+  <fieldset class="vc-card">
+    <legend>IV. Fecha y horario</legend>
+    <div class="vc-row">
+      <div><label for="f1">Fecha preferente</label><input type="date" id="f1"></div>
+      <div><label for="f2">Fecha alternativa <span class="vc-opt">(opcional)</span></label><input type="date" id="f2"></div>
+    </div>
+    <div class="vc-row">
+      <div><label for="hini">Horario desde</label><input type="time" id="hini"></div>
+      <div><label for="hfin">Horario hasta</label><input type="time" id="hfin"></div>
+    </div>
+  </fieldset>
+
+  <fieldset class="vc-card">
+    <legend>V. Condiciones en tu establecimiento</legend>
+    <p class="vc-hint" style="margin-top:0">Marca lo que tu colegio puede ofrecer. Nos ayuda a preparar la actividad.</p>
+    <label class="vc-chk"><input type="checkbox" id="e_lab"><span>Laboratorio de ciencias</span></label>
+    <label class="vc-chk"><input type="checkbox" id="e_sala"><span>Sala de clases</span></label>
+    <label class="vc-chk"><input type="checkbox" id="e_agua"><span>Acceso a agua y lavamanos</span></label>
+    <label class="vc-chk"><input type="checkbox" id="e_proy"><span>Proyector o pantalla</span></label>
+    <label class="vc-chk"><input type="checkbox" id="e_net"><span>Computador e internet</span></label>
+    <label for="e_otro">Otras condiciones o limitaciones <span class="vc-opt">(opcional)</span></label>
+    <textarea id="e_otro" placeholder="Ej.: no hay laboratorio equipado, solo un patio techado…"></textarea>
+  </fieldset>
+
+  <div class="vc-card">
+    <div id="errs" aria-live="polite"></div>
+    <button class="vc-btn" id="gen" type="button">Generar solicitud</button>
+    <div id="out" hidden>
+      <p class="vc-meta"><strong>Para:</strong> <span id="para"></span></p>
+      <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto"></span></p>
+      <pre id="body" tabindex="0"></pre>
+      <div class="vc-actions">
+        <button class="vc-btn" id="copy" type="button">Copiar texto</button>
+        <a class="vc-btn vc-btn--sec" id="mailto" href="#">Abrir en el correo</a>
+        <button class="vc-btn vc-btn--sec" id="dl" type="button">Descargar .txt</button>
+      </div>
+      <p class="vc-note" id="msg" role="status">Esta página no envía nada: copia el texto o ábrelo en tu correo. Si el botón de correo no funciona, copia el texto y pégalo en un mensaje nuevo.</p>
+    </div>
+  </div>
+</div>
+<script src="assets/js/charlas.js" defer></script>
+```
+
+## Contacto
+
+Para consultas, escríbenos a [german.barriga@umce.cl](mailto:german.barriga@umce.cl).
