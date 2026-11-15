@@ -40,6 +40,8 @@ website:
         href: equipo.qmd
       - text: Perfil académico
         href: perfil.qmd
+      - text: Visitas de colegios
+        href: visitas-colegios.qmd
     - text: Investigación
       menu:
       - text: Líneas de investigación

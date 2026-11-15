@@ -147,3 +147,47 @@ table{color:var(--text)}
 /* Acrónimo MACEDONIA */
 .acronym-name{font-family:'Manrope',system-ui,sans-serif;font-size:clamp(1.15rem,2.6vw,1.6rem);font-weight:600;letter-spacing:-.01em;color:var(--muted);margin:.4rem 0 .8rem;padding:.9rem 1.2rem;border-left:4px solid var(--accent-text);background:var(--surface-alt);border-radius:0 var(--radius) var(--radius) 0}
 .acronym-name b{color:var(--accent-text);font-weight:800;font-size:1.12em}
+
+/* Formulario de visitas de colegios */
+.vc{max-width:860px;margin:1.5rem 0}
+.vc-tabs{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+.vc-tab{flex:1 1 220px;padding:.7rem 1rem;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:12px;font:inherit;font-weight:700;cursor:pointer}
+.vc-tab[aria-selected=true]{background:var(--deep);border-color:var(--deep);color:#fff}
+.vc-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.2rem 1.3rem;margin:0 0 1rem;min-width:0}
+.vc-card legend{float:none;width:auto;padding:0;margin:0 0 .6rem;font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:1.1rem;color:var(--accent-text)}
+.vc label{display:block;font-weight:700;font-size:.93rem;color:var(--ink);margin:.9rem 0 .25rem}
+.vc-opt{font-weight:400;color:var(--muted)}
+.vc input[type=text],.vc input[type=email],.vc input[type=date],.vc input[type=time],.vc input[type=number],.vc textarea{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.vc select{width:100%;padding:.6rem .7rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.vc textarea{min-height:5rem;resize:vertical}
+.vc-row{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.vc-row--tight{gap:.5rem}
+@media(max-width:600px){.vc-row{grid-template-columns:1fr}}
+.vc-hint{font-size:.85rem;color:var(--muted);margin:.25rem 0 0}
+.vc-chk{display:flex!important;gap:.7rem;align-items:center;padding:.65rem .8rem;border:1px solid var(--line);border-radius:12px;margin:.5rem 0 0!important;font-weight:600!important;cursor:pointer}
+.vc-chk input{width:1.15rem;height:1.15rem;flex:none;accent-color:var(--deep)}
+.vc-sub{margin:.4rem 0 .8rem .5rem;padding:.4rem 1rem .9rem;border-left:4px solid var(--blue);background:var(--surface-alt);border-radius:0 12px 12px 0}
+.vc-sub[hidden],.vc [hidden]{display:none!important}
+.vc-note{font-size:.9rem;padding:.6rem .85rem;border-radius:10px;background:var(--bg-alt);color:var(--text);margin:.7rem 0;max-width:none}
+.vc-note ul{margin:.4rem 0 0;padding-left:1.2rem}
+.vc-note--warn{background:#fdf0e1;color:#7a3a05}
+.vc-note--ok{background:#e4f4ea;color:#1b5e35}
+[data-bs-theme=dark] .vc-note--warn,.quarto-dark .vc-note--warn{background:#3a2a14;color:#f6d6a8}
+[data-bs-theme=dark] .vc-note--ok,.quarto-dark .vc-note--ok{background:#12351f;color:#a9e2bf}
+.vc-btn{display:inline-block;padding:.65rem 1.1rem;border-radius:50px;border:1px solid var(--deep);background:var(--deep);color:#fff!important;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.vc-btn:hover{background:var(--navy);border-color:var(--navy)}
+.vc-btn--sec{background:transparent;color:var(--accent-text)!important}
+.vc-btn--sec:hover{background:var(--bg-alt);border-color:var(--deep)}
+.vc-btn--sm{padding:.3rem .75rem;font-size:.88rem;margin:.4rem 0}
+.vc-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0}
+.vc-meta{margin:.9rem 0 .3rem;max-width:none}
+.vc pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--surface-alt);border:1px solid var(--line);border-radius:12px;padding:.9rem;max-height:22rem;overflow:auto;color:var(--ink);font-size:.86rem}
+.vc-scroll{overflow-x:auto}
+.vc table{width:100%;border-collapse:collapse;font-size:.92rem;margin:.4rem 0}
+.vc th,.vc td{border:1px solid var(--line);padding:.2rem .3rem;text-align:left}
+.vc th{background:var(--bg-alt);font-size:.82rem;color:var(--ink)}
+.vc td input{border:0!important;background:transparent!important;border-radius:0!important;padding:.45rem!important}
+.vc-num{width:2.6rem;text-align:center!important;color:var(--muted)}
+.vc-invalid{outline:2px solid #b3261e;outline-offset:-2px}
+.vc-h3{font-size:1.1rem;margin:1.4rem 0 .4rem}
+.visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}

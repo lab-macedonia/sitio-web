@@ -1,0 +1,210 @@
+---
+title: "Visitas de colegios"
+subtitle: "Solicitud de visitas de establecimientos educacionales al Departamento de Química, UMCE"
+toc: false
+---
+
+Este formulario ayuda a preparar la solicitud de visita de un curso o grupo de estudiantes a las dependencias del Departamento de Química, según el protocolo vigente (instructivo del 7 de octubre de 2024). **Está pensado para el académico o la académica del Departamento que organiza la actividad.**
+
+::: {.callout-important}
+## Plazos del protocolo
+
+- La solicitud debe hacerse **por escrito**, con al menos **3 semanas (15 días hábiles)** de antelación. Las solicitudes sin esa antelación no pueden realizarse.
+- El Departamento responde por escrito en un máximo de **5 días hábiles** desde que recibe la solicitud.
+- La **ficha de identificación de visitas** (pestaña 2) se completa solo cuando la visita está **confirmada**.
+:::
+
+::: {.callout-note}
+## Cómo funciona
+
+Esta página **no envía información por sí sola ni la guarda**. Al terminar, genera el texto del correo para [quimica@umce.cl](mailto:quimica@umce.cl) (con copia al técnico de laboratorio si se piden reactivos o materiales): puedes abrirlo en tu programa de correo, copiarlo o descargarlo.
+:::
+
+```{=html}
+<div class="vc" id="vc">
+  <div class="vc-tabs" role="tablist" aria-label="Etapas del trámite">
+    <button class="vc-tab" role="tab" id="vc-t1" aria-controls="vc-p1" aria-selected="true" type="button">1. Solicitud de visita</button>
+    <button class="vc-tab" role="tab" id="vc-t2" aria-controls="vc-p2" aria-selected="false" type="button" tabindex="-1">2. Ficha de identificación</button>
+  </div>
+
+  <!-- ETAPA 1 -->
+  <div id="vc-p1" role="tabpanel" aria-labelledby="vc-t1">
+    <fieldset class="vc-card">
+      <legend>I. Académico/a que realiza la solicitud</legend>
+      <label for="acad">Académico/a que realiza la solicitud</label>
+      <input type="text" id="acad" autocomplete="name">
+      <div class="vc-row">
+        <div><label for="fsol">Fecha de solicitud</label><input type="date" id="fsol"></div>
+        <div></div>
+      </div>
+      <label for="encarg">Académicos encargados de la actividad</label>
+      <input type="text" id="encarg" aria-describedby="encarg-h">
+      <p class="vc-hint" id="encarg-h">Si es la misma persona, repita el nombre.</p>
+    </fieldset>
+
+    <fieldset class="vc-card">
+      <legend>II. Establecimiento educacional</legend>
+      <label for="cole">Nombre del establecimiento</label>
+      <input type="text" id="cole">
+      <div class="vc-row">
+        <div><label for="nest">N.º de estudiantes que asistirían</label><input type="number" id="nest" min="1" inputmode="numeric"></div>
+        <div></div>
+      </div>
+      <label for="prof">Profesor/a encargado/a del establecimiento <span class="vc-opt">(quien acompaña a los estudiantes)</span></label>
+      <input type="text" id="prof">
+      <label for="mail">Correo del profesor/a</label>
+      <input type="email" id="mail" inputmode="email" autocomplete="email">
+    </fieldset>
+
+    <fieldset class="vc-card">
+      <legend>III. Tipo de actividad</legend>
+      <label for="act">Actividad que desea desarrollar</label>
+      <select id="act">
+        <option value="">Selecciona una actividad…</option>
+        <optgroup label="Laboratorio">
+          <option>Reconocimiento de grupos funcionales (enfoque en química orgánica)</option>
+          <option>Reconocimiento de grupos funcionales (enfoque en biomoléculas)</option>
+          <option>Ácido-base</option>
+          <option>Calorimetría</option>
+          <option>Reacciones redox</option>
+          <option>Cinética química</option>
+        </optgroup>
+        <option value="otra">Otra actividad (especificar)</option>
+      </select>
+      <div id="s_otra" hidden>
+        <label for="otra_txt">¿Qué actividad desea desarrollar?</label>
+        <input type="text" id="otra_txt" placeholder="Ej.: charla, visita guiada, otro taller…">
+      </div>
+      <label for="tipo">Detalles u observaciones sobre la actividad <span class="vc-opt">(opcional)</span></label>
+      <textarea id="tipo" placeholder="Ej.: nivel del curso, objetivos, aspectos que el profesor/a quiere reforzar…"></textarea>
+      <div class="vc-row">
+        <div><label for="fact">Fecha de la actividad</label><input type="date" id="fact"></div>
+        <div class="vc-row vc-row--tight">
+          <div><label for="hini">Desde</label><input type="time" id="hini"></div>
+          <div><label for="hfin">Hasta</label><input type="time" id="hfin"></div>
+        </div>
+      </div>
+      <div id="plazo" aria-live="polite"></div>
+    </fieldset>
+
+    <fieldset class="vc-card">
+      <legend>IV. Espacios y recursos que solicita</legend>
+      <label class="vc-chk"><input type="checkbox" id="c_lab"><span>Laboratorio</span></label>
+      <div class="vc-sub" id="s_lab" hidden>
+        <label for="lab_txt">Laboratorio que desea utilizar y horario</label>
+        <textarea id="lab_txt"></textarea>
+      </div>
+
+      <label class="vc-chk"><input type="checkbox" id="c_sala"><span>Sala de clases</span></label>
+      <div class="vc-sub" id="s_sala" hidden>
+        <label for="sala_txt">Sala que desea utilizar y horario</label>
+        <textarea id="sala_txt"></textarea>
+      </div>
+
+      <label class="vc-chk"><input type="checkbox" id="c_reac"><span>Reactivos y materiales</span></label>
+      <div class="vc-sub" id="s_reac" hidden>
+        <p class="vc-note vc-note--warn">Al elegir esta opción, el correo se copia también al técnico de laboratorio del Departamento, Sr. Rodrigo Castro, para verificar disponibilidad.</p>
+        <div class="vc-scroll">
+          <table id="treac">
+            <caption class="visually-hidden">Detalle de reactivos, soluciones, materiales y otros</caption>
+            <thead><tr><th scope="col">Reactivos</th><th scope="col">Soluciones</th><th scope="col">Materiales</th><th scope="col">Otros</th><th scope="col"><span class="visually-hidden">Quitar</span></th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <button type="button" class="vc-btn vc-btn--sec vc-btn--sm" id="addreac">+ Agregar fila</button>
+      </div>
+
+      <label class="vc-chk"><input type="checkbox" id="c_est"><span>Estacionamiento</span></label>
+      <div class="vc-sub" id="s_est" hidden>
+        <p class="vc-note">Se avisa a portería con anticipación (por ejemplo, si los estudiantes llegan en bus).</p>
+        <label for="transp">Tipo de transporte</label>
+        <input type="text" id="transp" placeholder="Ej.: bus, minibús, vehículos particulares">
+        <div class="vc-row">
+          <div><label for="hllega">Hora aproximada de llegada</label><input type="time" id="hllega"></div>
+          <div><label for="hsale">Hora aproximada de salida</label><input type="time" id="hsale"></div>
+        </div>
+      </div>
+
+      <label class="vc-chk"><input type="checkbox" id="c_otro"><span>Otros requerimientos</span></label>
+      <div class="vc-sub" id="s_otro" hidden>
+        <label for="otro_txt">Indique cualquier otro requerimiento</label>
+        <textarea id="otro_txt"></textarea>
+      </div>
+    </fieldset>
+
+    <div class="vc-card">
+      <div id="errs" aria-live="polite"></div>
+      <button class="vc-btn" id="gen1" type="button">Generar solicitud</button>
+      <div id="out1" hidden>
+        <p class="vc-meta"><strong>Para:</strong> quimica@umce.cl <span id="ccline"></span></p>
+        <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto1"></span></p>
+        <pre id="body1" tabindex="0"></pre>
+        <div class="vc-actions">
+          <button class="vc-btn" id="copy1" type="button">Copiar texto</button>
+          <a class="vc-btn vc-btn--sec" id="mailto1" href="#">Abrir en el correo</a>
+          <button class="vc-btn vc-btn--sec" id="dl1" type="button">Descargar .txt</button>
+        </div>
+        <p class="vc-note" id="msg1" role="status">Esta página no envía nada: copia el texto o ábrelo en tu correo. Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a quimica@umce.cl.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ETAPA 2 -->
+  <div id="vc-p2" role="tabpanel" aria-labelledby="vc-t2" hidden>
+    <p class="vc-note vc-note--warn">Completa esta ficha <strong>solo cuando la visita haya sido confirmada</strong> por la Dirección del Departamento de Química.</p>
+    <fieldset class="vc-card">
+      <legend>Ficha de identificación de visitas</legend>
+      <button class="vc-btn vc-btn--sec vc-btn--sm" id="prefill" type="button">Rellenar con los datos de la solicitud</button>
+      <label for="f_cole">Establecimiento educacional</label><input type="text" id="f_cole">
+      <div class="vc-row">
+        <div><label for="f_fecha">Fecha</label><input type="date" id="f_fecha"></div>
+        <div class="vc-row vc-row--tight">
+          <div><label for="f_hini">Desde</label><input type="time" id="f_hini"></div>
+          <div><label for="f_hfin">Hasta</label><input type="time" id="f_hfin"></div>
+        </div>
+      </div>
+      <label for="f_act">Actividad</label><input type="text" id="f_act">
+      <div class="vc-row">
+        <div><label for="f_n">N.º de estudiantes</label><input type="number" id="f_n" min="1" inputmode="numeric"></div>
+        <div></div>
+      </div>
+      <label for="f_prof">Profesor/a (establecimiento educacional)</label><input type="text" id="f_prof">
+      <label for="f_mail">Correo del profesor/a</label><input type="email" id="f_mail" inputmode="email">
+      <label for="f_acad">Académico/a encargado/a (UMCE)</label><input type="text" id="f_acad">
+
+      <h3 class="vc-h3">Nómina de estudiantes</h3>
+      <div class="vc-scroll">
+        <table id="tn">
+          <caption class="visually-hidden">Nómina de estudiantes con nombre y RUT</caption>
+          <thead><tr><th scope="col" class="vc-num">N.º</th><th scope="col">Nombre estudiante</th><th scope="col">RUT</th><th scope="col"><span class="visually-hidden">Quitar</span></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <button type="button" class="vc-btn vc-btn--sec vc-btn--sm" id="addest">+ Agregar estudiante</button>
+      <p class="vc-note">El RUT se valida con su dígito verificador y se formatea automáticamente (12.345.678-5). Los datos no se guardan ni se envían desde esta página.</p>
+    </fieldset>
+
+    <div class="vc-card">
+      <div id="errs2" aria-live="polite"></div>
+      <button class="vc-btn" id="gen2" type="button">Generar ficha</button>
+      <div id="out2" hidden>
+        <p class="vc-meta"><strong>Para:</strong> quimica@umce.cl</p>
+        <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto2"></span></p>
+        <pre id="body2" tabindex="0"></pre>
+        <div class="vc-actions">
+          <button class="vc-btn" id="copy2" type="button">Copiar texto</button>
+          <a class="vc-btn vc-btn--sec" id="mailto2" href="#">Abrir en el correo</a>
+          <button class="vc-btn vc-btn--sec" id="dl2" type="button">Descargar .txt</button>
+        </div>
+        <p class="vc-note" id="msg2" role="status">Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a quimica@umce.cl.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/js/visitas.js" defer></script>
+```
+
+## Contacto del Departamento
+
+Departamento de Química, UMCE · Campus Macul, Av. José Pedro Alessandri 774, Ñuñoa, Santiago.
+Correos: [quimica@umce.cl](mailto:quimica@umce.cl) · [direccion.quimica@umce.cl](mailto:direccion.quimica@umce.cl)
