@@ -15,8 +15,6 @@ Escríbenos a [german.barriga@umce.cl](mailto:german.barriga@umce.cl).
 
 <div class="nets"><a class="net" href="https://www.instagram.com/labmacedonia/" rel="noopener" target="_blank"><i class="bi bi-instagram" aria-hidden="true"></i><span>Instagram</span></a><a class="net" href="https://www.facebook.com/labmacedoniaumce" rel="noopener" target="_blank"><i class="bi bi-facebook" aria-hidden="true"></i><span>Facebook</span></a><a class="net" href="https://x.com/Lab_Macedonia" rel="noopener" target="_blank"><i class="bi bi-twitter-x" aria-hidden="true"></i><span>X</span></a><a class="net" href="https://www.youtube.com/@laboratorio_MACEDONIA" rel="noopener" target="_blank"><i class="bi bi-youtube" aria-hidden="true"></i><span>YouTube</span></a><a class="net" href="https://open.spotify.com/show/2ruBkHrix07FtjXyImRNB5" rel="noopener" target="_blank"><i class="bi bi-spotify" aria-hidden="true"></i><span>Spotify</span></a></div>
 
-El **canal de YouTube** reúne grabaciones de las clases que se imparten en la Universidad Metropolitana de Ciencias de la Educación (UMCE) para las carreras de Pedagogía en Química y Pedagogía en Física, disponibles para quienes no pueden asistir en el horario fijado.
-
 ## Ubicación
 
 <div class="map-frame"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-70.6030%2C-33.4668%2C-70.5930%2C-33.4610&amp;layer=mapnik&amp;marker=-33.463902%2C-70.598047" title="Mapa de la ubicación del Laboratorio MACEDONIA, UMCE" loading="lazy" allowfullscreen></iframe></div>
