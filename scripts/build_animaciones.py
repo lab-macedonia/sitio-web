@@ -1,8 +1,10 @@
-"""Genera la galería de animaciones (ES/EN). Videos alojados en Google Drive del laboratorio.
-Autoría: Mauricio Cortés · Licencia CC BY-NC-SA 4.0. Para alojar copias en el propio sitio,
-reemplazar 'drive' por la ruta del archivo local en GRUPOS y usar <video>."""
+"""Genera la galería de animaciones (ES/EN). Los videos (assets/animaciones/NN-*.mp4, con portada .jpg)
+se alojan en el propio sitio. Autoría: Mauricio Cortés · Licencia CC BY-NC-SA 4.0."""
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
+VID = ROOT / 'assets/animaciones'
+def _f(n, ext):
+    return next(VID.glob(f'{n:02d}-*.{ext}')).name
 LIC = 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es'
 LIC_EN = 'https://creativecommons.org/licenses/by-nc-sa/4.0/'
 # (grupo_es, grupo_en, [(n, titulo_es, titulo_en, drive_id)])
@@ -52,9 +54,11 @@ def build(lg):
             t = t_es if es else t_en
             lic = (f'{t} de Mauricio Cortés, licencia <a href="{LIC}" rel="license noopener">CC BY-NC-SA 4.0</a>.' if es
                    else f'{t} by Mauricio Cortés, licensed under <a href="{LIC_EN}" rel="license noopener">CC BY-NC-SA 4.0</a>.')
-            abrir = 'Abrir en Google Drive' if es else 'Open in Google Drive'
-            out.append(f'<figure class="anim"><div class="anim-frame"><iframe src="https://drive.google.com/file/d/{vid}/preview" title="{t}" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>'
-                       f'<figcaption><strong>{t}</strong><span>{lic}</span><a href="https://drive.google.com/file/d/{vid}/view" rel="noopener">{abrir}</a></figcaption></figure>')
+            descargar = 'Descargar video (MP4)' if es else 'Download video (MP4)'
+            pre = '' if es else '../'
+            mp4, jpg = _f(n, 'mp4'), _f(n, 'jpg')
+            out.append(f'<figure class="anim"><div class="anim-frame"><video controls preload="none" playsinline poster="{pre}assets/animaciones/{jpg}" src="{pre}assets/animaciones/{mp4}" aria-label="{t}"></video></div>'
+                       f'<figcaption><strong>{t}</strong><span>{lic}</span><a href="{pre}assets/animaciones/{mp4}" download>{descargar}</a></figcaption></figure>')
         out += ['</div>', '']
     return '\n'.join(out)
 (ROOT / 'animaciones.qmd').write_text(build('es'), encoding='utf8')
