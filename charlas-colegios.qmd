@@ -9,7 +9,7 @@ El Laboratorio MACEDONIA puede ir a tu establecimiento para realizar una **charl
 ::: {.callout-note}
 ## Cómo funciona
 
-Esta página **no envía información por sí sola ni la guarda**. Al terminar, genera el texto de un correo para el laboratorio: puedes abrirlo en tu programa de correo (tendrás que apretar «Enviar»), copiarlo o descargarlo. Si tu colegio quiere venir a las dependencias de la UMCE, revisa en cambio la página de [visitas de colegios](visitas-colegios.qmd).
+Esta página **no envía ni almacena ninguna información**: lo que escribes se queda en tu navegador y no se guarda en ningún servidor. Al terminar, genera el texto de un correo para el laboratorio: puedes abrirlo en tu programa de correo (tendrás que apretar «Enviar»), copiarlo o descargarlo. Si tu colegio quiere venir a las dependencias de la UMCE, revisa en cambio la página de [visitas de colegios](visitas-colegios.qmd).
 :::
 
 ```{=html}
