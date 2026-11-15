@@ -1,9 +1,0 @@
----
-title: "Bienvenidos al nuevo espacio de noticias"
-date: "2026-11-14"
-description: "Página de demostración para probar el formato de noticias de Quarto."
-categories: [Sitio web]
-draft: true
----
-
-Esta página es un ejemplo de estructura y **no corresponde a una noticia institucional publicada**. Puedes reemplazarla por actividades reales o borrarla al activar Instagram.
