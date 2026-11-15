@@ -25,24 +25,19 @@ PhD in Chemistry (Universidad de Chile). His work combines organic chemistry, fr
 ::: {.feature}
 ### LabTec — Technology Laboratory
 
-A space dedicated to developing technologies for the education of science and technology teachers, led by Professor **Mg. Yonnhatan García Cartagena**, established in 2010.
+A space dedicated to developing technologies for the education of science and technology teachers, led by Professor **Mg. Yonnhatan García Cartagena**, established in 2010. Professor **David Reyes** takes part.
 
 [Visit LabTec](https://sites.google.com/umce.cl/labtec/home)
 :::
 ::: {.feature}
 ### Semillero CATIÓN
 
-**Science, didactics and innovation.** A space created in 2023, led by Professor **Dr. Carla Olivares Petit**, focused on science didactics.
+**Science, didactics and innovation.** A space created in 2023, led by Professor **Dr. Carla Olivares Petit**, focused on science didactics. Professor **Bernardo Madariaga** takes part: Physics teacher at UMCE with a master's degree in Natural Science Didactics from UMCE, working in science education.
 :::
 ::: {.feature}
 ### José Muñoz Espinoza
 
 Chemistry teacher at UMCE with a master's degree in Chemistry from Universidad de Chile. Collaborator in **computational chemical reactivity**.
-:::
-::: {.feature}
-### Bernardo Madariaga
-
-Physics teacher at UMCE with a master's degree in Natural Science Didactics from UMCE. Collaborator in **science education**.
 :::
 :::
 

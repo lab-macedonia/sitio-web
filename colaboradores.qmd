@@ -7,23 +7,18 @@ subtitle: "Red académica y de investigación"
 ::: {.feature}
 ### LabTec — Laboratorio de Tecnología
 
-Espacio dedicado al desarrollo de tecnologías para la formación de profesores de ciencia y tecnología, a cargo del profesor **Mg. Yonnhatan García Cartagena**, constituido desde 2010.
+Espacio dedicado al desarrollo de tecnologías para la formación de profesores de ciencia y tecnología, a cargo del profesor **Mg. Yonnhatan García Cartagena**, constituido desde 2010. Participa el profesor **David Reyes**.
 
 [Visitar LabTec](https://sites.google.com/umce.cl/labtec/home)
 :::
 ::: {.feature}
 ### Semillero CATIÓN
 
-**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias.
+**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias. Participa el profesor **Bernardo Madariaga**, de Física UMCE y magíster en Didáctica de las Ciencias Naturales por la UMCE, en el área de educación científica.
 :::
 ::: {.feature}
 ### José Muñoz Espinoza
 
 Profesor de Química UMCE y magíster en Química de la Universidad de Chile. Colaborador en **reactividad química computacional**.
-:::
-::: {.feature}
-### Bernardo Maradiaga
-
-Profesor de Física UMCE y magíster en Didáctica de las Ciencias Naturales por la UMCE. Colaborador en el área de **educación científica**.
 :::
 :::
