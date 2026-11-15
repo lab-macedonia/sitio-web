@@ -1,0 +1,27 @@
+---
+title: "🧪 ¡Nuevo desde el Laboratorio MACEDONIA!"
+date: 2026-10-11
+categories: [Instagram, Actividades]
+author: Lab Macedonia
+description: "🧪 ¡Nuevo desde el Laboratorio MACEDONIA!  Lanzamos 12 simulaciones interactivas de química, gratis y directo en tu navegador, sin instalar nada:  ⚛️ Química general: mode"
+image: imagen.jpg
+---
+> 🧪 ¡Nuevo desde el Laboratorio MACEDONIA!
+> 
+> Lanzamos 12 simulaciones interactivas de química, gratis y directo en tu navegador, sin instalar nada:
+> 
+> ⚛️ Química general: modelos atómicos, configuración electrónica, propiedades periódicas, estructuras de Lewis, geometría molecular 3D, enlaces σ y π, ensayo a la llama y electrólisis del agua.
+> 🧬 Química orgánica: mecanismos SN1, SN2, E1 y E2 con flechas de electrones y perfiles de energía.
+> 🔷 Química inorgánica: isomería y quiralidad (Δ/Λ) en complejos de coordinación.
+> 
+> Cada una trae lección guiada paso a paso, desafíos para practicar y la opción de guardar una imagen de lo que estás viendo. Funcionan en computador, tablet y celular.
+> 
+> Pensadas para estudiantes, docentes y para quien quiera ver la química en 3D. 👩‍🔬👨‍🔬
+> 
+> 🔗 Link en la bio: https://lab-macedonia.github.io/simulaciones-quimica/
+> 
+> Las creamos con Gemini y ChatGPT y las optimizamos con Claude. Código abierto (licencia MIT).
+> 
+> #Química #QuímicaGeneral #QuímicaOrgánica #QuímicaInorgánica #EducaciónEnCiencias #SimulacionesInteractivas #EnseñanzaDeLaQuímica #UMCE #LaboratorioMACEDONIA #Chile #EducaciónChile #RecursosEducativos #IAGen #Docentes #STEM
+
+[Ver publicación original en Instagram](https://www.instagram.com/p/DeVXvBKneY-/)

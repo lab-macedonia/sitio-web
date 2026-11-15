@@ -1,0 +1,25 @@
+---
+title: "🔬🧬🪐 ¡Nuestras simulaciones interactivas crecen!"
+date: 2026-10-11
+categories: [Instagram, Actividades]
+author: Lab Macedonia
+description: "🔬🧬🪐 ¡Nuestras simulaciones interactivas crecen!  Desde el Laboratorio MACEDONIA (UMCE) lanzamos la nueva versión de la colección: pasamos de 11 a 16 simulaciones y ahora "
+image: imagen.jpg
+---
+> 🔬🧬🪐 ¡Nuestras simulaciones interactivas crecen!
+> 
+> Desde el Laboratorio MACEDONIA (UMCE) lanzamos la nueva versión de la colección: pasamos de 11 a 16 simulaciones y ahora no son solo de química.
+> 
+> ✨ Novedades
+> 🧪 Química: Enlace químico 3D y Colisiones y estado de transición.
+> 🧬 Biología: Célula animal 3D y Célula vegetal 3D, con todos sus componentes rotulados.
+> 🪐 Física: Sistema Solar 3D, con fichas de cada planeta, tamaños a escala y leyes de Kepler.
+> ⚛️ Además, los modelos atómicos ahora incluyen orbitales s, p y d, y varias simulaciones migraron a 3D con Three.js.
+> 
+> 📱 Funcionan directo en el navegador, en computador o celular, sin instalar nada.
+> 
+> 👉 Pruébalas aquí: https://lab-macedonia.github.io/simulaciones-quimica/
+> 
+> #Química #Biología #Física #EducaciónCientífica #UMCE #LaboratorioMACEDONIA #SimulacionesInteractivas #EducaciónChile
+
+[Ver publicación original en Instagram](https://www.instagram.com/p/DeXu9rQGeC4/)
