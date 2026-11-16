@@ -9,7 +9,7 @@ El Laboratorio MACEDONIA puede ir a tu establecimiento para realizar una **charl
 ::: {.callout-note}
 ## Cómo funciona
 
-Esta página **no envía ni almacena ninguna información**: lo que escribes se queda en tu navegador y no se guarda en ningún servidor. Al terminar, genera el texto de un correo para el laboratorio: puedes abrirlo en tu programa de correo (tendrás que apretar «Enviar»), copiarlo o descargarlo. Si tu colegio quiere venir a las dependencias de la UMCE, revisa en cambio la página de [visitas de colegios](visitas-colegios.qmd).
+Al terminar, puedes **enviar la solicitud directamente** al laboratorio desde esta página, a través del servicio externo FormSubmit, y te responderemos al correo que indiques. Si prefieres, también puedes abrirla en tu programa de correo, copiarla o descargarla. Si tu colegio quiere venir a las dependencias de la UMCE, revisa en cambio la página de [visitas de colegios](visitas-colegios.qmd).
 :::
 
 ```{=html}
@@ -106,11 +106,12 @@ Esta página **no envía ni almacena ninguna información**: lo que escribes se 
       <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto"></span></p>
       <pre id="body" tabindex="0"></pre>
       <div class="vc-actions">
-        <button class="vc-btn" id="copy" type="button">Copiar texto</button>
+        <button class="vc-btn" id="send" type="button">Enviar solicitud</button>
+        <button class="vc-btn vc-btn--sec" id="copy" type="button">Copiar texto</button>
         <a class="vc-btn vc-btn--sec" id="mailto" href="#">Abrir en el correo</a>
         <button class="vc-btn vc-btn--sec" id="dl" type="button">Descargar .txt</button>
       </div>
-      <p class="vc-note" id="msg" role="status">Esta página no envía nada: copia el texto o ábrelo en tu correo. Si el botón de correo no funciona, copia el texto y pégalo en un mensaje nuevo.</p>
+      <p class="vc-note" id="msg" role="status">Revisa el texto y aprieta «Enviar solicitud». Si el envío falla, copia el texto o ábrelo en tu correo y mándalo al laboratorio.</p>
     </div>
   </div>
 </div>

@@ -1,8 +1,8 @@
 /* Formulario de visitas de colegios · Departamento de Química UMCE.
-   Funciona solo en el navegador: no envía ni guarda datos. */
+   La solicitud (etapa 1) se envía por FormSubmit; la ficha con RUT (etapa 2) NO se envía: solo correo manual. */
 (function(){
 'use strict';
-var MAIL_DEPTO='quimica@umce.cl', MAIL_TEC='rodrigo.castro_m@umce.cl', MAIL_LAB='german.barriga@umce.cl';
+var MAIL_LAB='german.barriga@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
 function $(id){return document.getElementById(id)}
 function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
@@ -92,15 +92,34 @@ $('prefill').addEventListener('click',function(){
   $('f_act').value=actividad();$('f_n').value=v('nest');$('f_prof').value=v('prof');$('f_mail').value=v('mail');$('f_acad').value=v('encarg')||v('acad');
 });
 
+/* envío por FormSubmit (https://formsubmit.co): el correo sale del servicio, no del navegador */
+function enviar(btn,msg,destino,asunto,cuerpo,cc,replyto,okMsg){
+  var data={_subject:asunto,_captcha:'false',_template:'box',message:cuerpo};
+  if(cc)data._cc=cc;
+  if(replyto)data.email=replyto;
+  btn.disabled=true;msg.className='vc-note';msg.textContent='Enviando…';
+  fetch('https://formsubmit.co/ajax/'+destino,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.json()})
+    .then(function(d){
+      if(d.success!==true&&d.success!=='true')throw new Error(d.message||'error');
+      msg.className='vc-note vc-note--ok';msg.textContent=okMsg||'Solicitud enviada. Recibirás respuesta en el correo que indicaste.';
+    })
+    .catch(function(){
+      btn.disabled=false;msg.className='vc-note vc-note--warn';
+      msg.textContent='No se pudo enviar. Usa «Abrir en el correo» o copia el texto y envíalo a '+destino+'.';
+    });
+}
+
 /* salida */
 function selectText(el){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
 function showErrs(id,list){
   $(id).innerHTML=list.length?'<div class="vc-note vc-note--warn"><strong>Falta completar:</strong><ul>'+list.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>':'';
 }
-function setupOut(k,asunto,cuerpo,cc){
+function setupOut(k,asunto,cuerpo,cc,replyto){
   $('asunto'+k).textContent=asunto;$('body'+k).textContent=cuerpo;$('out'+k).hidden=false;
   $('mailto'+k).href='mailto:'+MAIL_DEPTO+'?subject='+encodeURIComponent(asunto)+(cc?'&cc='+encodeURIComponent(cc).replace(/%2C/g,','):'')+'&body='+encodeURIComponent(cuerpo);
   var msg=$('msg'+k);
+  if($('send'+k)){$('send'+k).disabled=false;$('send'+k).onclick=function(){enviar($('send'+k),msg,MAIL_LAB,asunto,cuerpo,'',replyto,'Solicitud enviada. Será procesada por el laboratorio y la Dirección del Departamento. Si la respuesta es positiva, se te avisará y se procederá con el envío de la ficha de identificación con los RUT.')}}
   $('copy'+k).onclick=function(){
     var ok=function(){msg.className='vc-note vc-note--ok';msg.textContent='Texto copiado. Pégalo en un correo a '+MAIL_DEPTO+'.'};
     var fail=function(){selectText($('body'+k));msg.className='vc-note vc-note--warn';msg.textContent='No se pudo copiar automáticamente: el texto quedó seleccionado, cópialo manualmente.'};
@@ -163,9 +182,8 @@ $('gen1').addEventListener('click',function(){
   if($('c_est').checked){L.push('    Tipo de transporte: '+v('transp'));L.push('    Horario aproximado: llegada '+v('hllega')+(v('hsale')?', salida '+v('hsale'):'')+' h')}
   L.push('13. Otros: '+($('c_otro').checked&&v('otro_txt')?v('otro_txt'):'No'),'');
   L.push('Quedo atento/a a la confirmación por escrito. Saludos cordiales,',v('acad'));
-  var cc=$('c_reac').checked?MAIL_LAB+','+MAIL_TEC:MAIL_LAB;
-  $('ccline').textContent='· CC: '+cc.replace(',',', ');
-  setupOut('1','Solicitud de visita de colegio – '+v('cole')+' – '+fdate(v('fact')),L.join('\n'),cc);
+  var cc='';
+  setupOut('1','Solicitud de visita de colegio – '+v('cole')+' – '+fdate(v('fact')),L.join('\n'),cc,v('mail'));
 });
 
 /* generar ficha de identificación */

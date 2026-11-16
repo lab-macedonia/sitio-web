@@ -1,5 +1,5 @@
 /* Solicitud de charlas y actividades experimentales en colegios · Laboratorio MACEDONIA.
-   Funciona solo en el navegador: no envía ni guarda datos. */
+   Se envía por FormSubmit al correo del laboratorio (DESTINO). */
 (function(){
 'use strict';
 var DESTINO='german.barriga@umce.cl';
@@ -7,6 +7,23 @@ function $(id){return document.getElementById(id)}
 function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+/* envío por FormSubmit (https://formsubmit.co): el correo sale del servicio, no del navegador */
+function enviar(btn,msg,destino,asunto,cuerpo,cc,replyto){
+  var data={_subject:asunto,_captcha:'false',_template:'box',message:cuerpo};
+  if(cc)data._cc=cc;
+  if(replyto)data.email=replyto;
+  btn.disabled=true;msg.className='vc-note';msg.textContent='Enviando…';
+  fetch('https://formsubmit.co/ajax/'+destino,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(data)})
+    .then(function(r){return r.json()})
+    .then(function(d){
+      if(d.success!==true&&d.success!=='true')throw new Error(d.message||'error');
+      msg.className='vc-note vc-note--ok';msg.textContent='Solicitud enviada. Recibirás respuesta en el correo que indicaste.';
+    })
+    .catch(function(){
+      btn.disabled=false;msg.className='vc-note vc-note--warn';
+      msg.textContent='No se pudo enviar. Usa «Abrir en el correo» o copia el texto y envíalo a '+destino+'.';
+    });
+}
 function tipo(){return $('t_charla').checked?'charla':($('t_exp').checked?'exp':'')}
 function actividad(){var a=v('act');return a==='otra'?v('otra_txt'):a}
 
@@ -75,6 +92,7 @@ $('gen').addEventListener('click',function(){
   $('asunto').textContent=asunto;$('body').textContent=cuerpo;$('out').hidden=false;
   $('mailto').href='mailto:'+DESTINO+'?subject='+encodeURIComponent(asunto)+'&body='+encodeURIComponent(cuerpo);
   var msg=$('msg');
+  $('send').disabled=false;$('send').onclick=function(){enviar($('send'),msg,DESTINO,asunto,cuerpo,'',v('mail'))};
   $('copy').onclick=function(){
     var ok=function(){msg.className='vc-note vc-note--ok';msg.textContent='Texto copiado. Pégalo en un correo a '+DESTINO+'.'};
     var fail=function(){selectText($('body'));msg.className='vc-note vc-note--warn';msg.textContent='No se pudo copiar automáticamente: el texto quedó seleccionado, cópialo manualmente.'};

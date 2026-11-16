@@ -19,13 +19,13 @@ Próximamente estará disponible el material de las actividades, como las **guí
 
 - La solicitud debe hacerse **por escrito**, con al menos **3 semanas (15 días hábiles)** de antelación. Las solicitudes sin esa antelación no pueden realizarse.
 - El Departamento responde por escrito en un máximo de **5 días hábiles** desde que recibe la solicitud.
-- La **ficha de identificación de visitas** (pestaña 2) se completa solo cuando la visita está **confirmada**.
+- La solicitud será **procesada por el laboratorio y la Dirección del Departamento**. Solo si la respuesta es positiva se procede con la **ficha de identificación de visitas** (pestaña 2), con el envío de los RUT.
 :::
 
 ::: {.callout-note}
 ## Cómo funciona
 
-Esta página **no envía ni almacena ninguna información**: lo que escribes se queda en tu navegador y no se guarda en ningún servidor. Al terminar, genera el texto del correo para [quimica@umce.cl](mailto:quimica@umce.cl) (con copia al Laboratorio MACEDONIA y, si se piden reactivos o materiales, también al técnico de laboratorio): puedes abrirlo en tu programa de correo, copiarlo o descargarlo.
+Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta página al Laboratorio MACEDONIA, que la **procesa y la gestiona con la Dirección del Departamento de Química**. El envío se hace a través del servicio externo FormSubmit. Si la respuesta es positiva, se te avisará y **recién entonces se procede con el envío de la ficha de identificación (pestaña 2), que incluye los RUT de los estudiantes**. Esa ficha no se almacena en esta página: se genera para que la copies o la mandes por correo al laboratorio. Si prefieres, la solicitud también puedes abrirla en tu programa de correo, copiarla o descargarla.
 :::
 
 ```{=html}
@@ -111,7 +111,6 @@ Esta página **no envía ni almacena ninguna información**: lo que escribes se 
 
       <label class="vc-chk"><input type="checkbox" id="c_reac"><span>Reactivos y materiales</span></label>
       <div class="vc-sub" id="s_reac" hidden>
-        <p class="vc-note vc-note--warn">Al elegir esta opción, el correo se copia también al técnico de laboratorio del Departamento, Sr. Rodrigo Castro, para verificar disponibilidad.</p>
         <div class="vc-scroll">
           <table id="treac">
             <caption class="visually-hidden">Detalle de reactivos, soluciones, materiales y otros</caption>
@@ -144,22 +143,23 @@ Esta página **no envía ni almacena ninguna información**: lo que escribes se 
       <div id="errs" aria-live="polite"></div>
       <button class="vc-btn" id="gen1" type="button">Generar solicitud</button>
       <div id="out1" hidden>
-        <p class="vc-meta"><strong>Para:</strong> quimica@umce.cl <span id="ccline"></span></p>
+        <p class="vc-meta"><strong>Para:</strong> german.barriga@umce.cl</p>
         <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto1"></span></p>
         <pre id="body1" tabindex="0"></pre>
         <div class="vc-actions">
-          <button class="vc-btn" id="copy1" type="button">Copiar texto</button>
+          <button class="vc-btn" id="send1" type="button">Enviar solicitud</button>
+          <button class="vc-btn vc-btn--sec" id="copy1" type="button">Copiar texto</button>
           <a class="vc-btn vc-btn--sec" id="mailto1" href="#">Abrir en el correo</a>
           <button class="vc-btn vc-btn--sec" id="dl1" type="button">Descargar .txt</button>
         </div>
-        <p class="vc-note" id="msg1" role="status">Esta página no envía nada: copia el texto o ábrelo en tu correo. Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a quimica@umce.cl.</p>
+        <p class="vc-note" id="msg1" role="status">Revisa el texto y aprieta «Enviar solicitud»: llega al Laboratorio MACEDONIA. Si prefieres, usa «Abrir en el correo» o copia el texto.</p>
       </div>
     </div>
   </div>
 
   <!-- ETAPA 2 -->
   <div id="vc-p2" role="tabpanel" aria-labelledby="vc-t2" hidden>
-    <p class="vc-note vc-note--warn">Completa esta ficha <strong>solo cuando la visita haya sido confirmada</strong> por la Dirección del Departamento de Química.</p>
+    <p class="vc-note vc-note--warn">Completa esta ficha <strong>solo cuando recibas una respuesta positiva</strong> a tu solicitud: los RUT se envían únicamente después de esa confirmación.</p>
     <fieldset class="vc-card">
       <legend>Ficha de identificación de visitas</legend>
       <button class="vc-btn vc-btn--sec vc-btn--sm" id="prefill" type="button">Rellenar con los datos de la solicitud</button>
@@ -189,14 +189,14 @@ Esta página **no envía ni almacena ninguna información**: lo que escribes se 
         </table>
       </div>
       <button type="button" class="vc-btn vc-btn--sec vc-btn--sm" id="addest">+ Agregar estudiante</button>
-      <p class="vc-note">El RUT se valida con su dígito verificador y se formatea automáticamente (12.345.678-5). Los datos no se guardan ni se envían desde esta página.</p>
+      <p class="vc-note">El RUT se valida con su dígito verificador y se formatea automáticamente (12.345.678-5). Los datos no se guardan ni se envían desde esta página: la ficha se manda por correo, de forma manual.</p>
     </fieldset>
 
     <div class="vc-card">
       <div id="errs2" aria-live="polite"></div>
       <button class="vc-btn" id="gen2" type="button">Generar ficha</button>
       <div id="out2" hidden>
-        <p class="vc-meta"><strong>Para:</strong> quimica@umce.cl</p>
+        <p class="vc-meta"><strong>Para:</strong> german.barriga@umce.cl</p>
         <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto2"></span></p>
         <pre id="body2" tabindex="0"></pre>
         <div class="vc-actions">
@@ -204,15 +204,10 @@ Esta página **no envía ni almacena ninguna información**: lo que escribes se 
           <a class="vc-btn vc-btn--sec" id="mailto2" href="#">Abrir en el correo</a>
           <button class="vc-btn vc-btn--sec" id="dl2" type="button">Descargar .txt</button>
         </div>
-        <p class="vc-note" id="msg2" role="status">Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a quimica@umce.cl.</p>
+        <p class="vc-note" id="msg2" role="status">Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a german.barriga@umce.cl.</p>
       </div>
     </div>
   </div>
 </div>
 <script src="assets/js/visitas.js" defer></script>
 ```
-
-## Contacto del Departamento
-
-Departamento de Química, UMCE · Campus Macul, Av. José Pedro Alessandri 774, Ñuñoa, Santiago.
-Correos: [quimica@umce.cl](mailto:quimica@umce.cl) · [direccion.quimica@umce.cl](mailto:direccion.quimica@umce.cl)
