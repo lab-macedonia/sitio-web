@@ -151,7 +151,7 @@ table{color:var(--text)}
 /* Formulario de visitas de colegios */
 .vc{max-width:860px;margin:1.5rem 0}
 .vc-tabs{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
-.vc-tab{flex:1 1 220px;padding:.7rem 1rem;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:12px;font:inherit;font-weight:700;cursor:pointer}
+.vc-tab{flex:1 1 220px;padding:.7rem 1rem;border:1px solid var(--line);background:var(--surface);color:var(--muted);border-radius:12px;font-family:'Manrope',system-ui,sans-serif;font-weight:800;cursor:pointer}
 .vc-tab[aria-selected=true]{background:var(--deep);border-color:var(--deep);color:#fff}
 .vc-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.2rem 1.3rem;margin:0 0 1rem;min-width:0}
 .vc-card legend{float:left;width:100%;padding:0;margin:0 0 .6rem;font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:1.1rem;color:var(--accent-text)}
@@ -175,14 +175,17 @@ table{color:var(--text)}
 .vc-note--ok{background:#e4f4ea;color:#1b5e35}
 [data-bs-theme=dark] .vc-note--warn,.quarto-dark .vc-note--warn{background:#3a2a14;color:#f6d6a8}
 [data-bs-theme=dark] .vc-note--ok,.quarto-dark .vc-note--ok{background:#12351f;color:#a9e2bf}
-.vc-btn{display:inline-block;padding:.65rem 1.1rem;border-radius:50px;border:1px solid var(--deep);background:var(--deep);color:#fff!important;font:inherit;font-weight:700;text-decoration:none;cursor:pointer}
+.vc-btn{display:inline-block;padding:.65rem 1.2rem;border-radius:50px;border:1px solid var(--deep);background:var(--deep);color:#fff!important;font-family:'Manrope',system-ui,sans-serif;font-size:.95rem;font-weight:800;letter-spacing:-.01em;line-height:1.3;text-decoration:none;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.vc-btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(6,42,77,.22)}
+#send1,#send{padding:.8rem 1.7rem;font-size:1.05rem}
+.vc-btn:disabled{opacity:.6;cursor:wait;transform:none;box-shadow:none}
 .vc-btn:hover{background:var(--navy);border-color:var(--navy)}
 .vc-btn--sec{background:transparent;color:var(--accent-text)!important}
 .vc-btn--sec:hover{background:var(--bg-alt);border-color:var(--deep)}
 .vc-btn--sm{padding:.3rem .75rem;font-size:.88rem;margin:.4rem 0}
 .vc-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0}
 .vc-meta{margin:.9rem 0 .3rem;max-width:none}
-.vc pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--surface-alt);border:1px solid var(--line);border-radius:12px;padding:.9rem;max-height:22rem;overflow:auto;color:var(--ink);font-size:.86rem}
+.vc pre{font-family:'DM Sans',system-ui,sans-serif;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere;background:var(--surface-alt);border:1px solid var(--line);border-radius:12px;padding:.9rem;max-height:22rem;overflow:auto;color:var(--ink);font-size:.86rem}
 .vc-scroll{overflow-x:auto}
 .vc table{width:100%;border-collapse:collapse;font-size:.92rem;margin:.4rem 0}
 .vc th,.vc td{border:1px solid var(--line);padding:.2rem .3rem;text-align:left}

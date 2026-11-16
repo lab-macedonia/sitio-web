@@ -13,7 +13,7 @@ website:
   description: MACEDONIA · Investigación y docencia en química orgánica, química general y ciencias, educación química e innovación para la formación
     docente en la UMCE.
   site-url: https://lab-macedonia.github.io/sitio-web/
-  favicon: assets/macedonia-mejorado-icono-claro.svg
+  favicon: assets/favicon-macedonia-64.png
   search:
     location: navbar
     type: overlay

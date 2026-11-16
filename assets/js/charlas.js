@@ -8,8 +8,10 @@ function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 /* envío por FormSubmit (https://formsubmit.co): el correo sale del servicio, no del navegador */
-function enviar(btn,msg,destino,asunto,cuerpo,cc,replyto){
-  var data={_subject:asunto,_captcha:'false',_template:'box',message:cuerpo};
+function enviar(btn,msg,destino,asunto,campos,cc,replyto){
+  /* un campo por dato: FormSubmit los muestra como tabla ordenada en el correo */
+  var data={_subject:asunto,_captcha:'false',_template:'table'};
+  campos.forEach(function(c){data[c[0]]=c[1]||'—'});
   if(cc)data._cc=cc;
   if(replyto)data.email=replyto;
   btn.disabled=true;msg.className='vc-note';msg.textContent='Enviando…';
@@ -89,10 +91,20 @@ $('gen').addEventListener('click',function(){
   L.push('','Quedo atento/a a su respuesta. Saludos cordiales,',v('prof'));
 
   var asunto='Solicitud de '+(t==='charla'?'charla':'actividad experimental')+' en colegio – '+v('cole'),cuerpo=L.join('\n');
+  var campos=[
+    ['Solicitud',t==='charla'?'Charla en colegio':'Actividad experimental en colegio'],
+    ['Establecimiento',v('cole')],['Comuna',v('comuna')],['Dirección',v('dir')],
+    ['Profesor/a',v('prof')],['Correo',v('mail')],['Teléfono',v('tel')],['Asignatura',v('asig')],
+    [t==='charla'?'Tema de la charla':'Actividad experimental',t==='charla'?v('tema'):actividad()],
+    ['Curso(s) o nivel',v('curso')],['N.º de estudiantes',v('nest')],['Detalles',v('obs')],
+    ['Fecha preferente',fdate(v('f1'))],['Fecha alternativa',v('f2')?fdate(v('f2')):''],
+    ['Horario',v('hini')+(v('hfin')?' a '+v('hfin'):'')+' h'],
+    ['Condiciones disponibles',cond.length?cond.join(', '):'No se indicaron'],['Otras condiciones o limitaciones',v('e_otro')]
+  ];
   $('asunto').textContent=asunto;$('body').textContent=cuerpo;$('out').hidden=false;
   $('mailto').href='mailto:'+DESTINO+'?subject='+encodeURIComponent(asunto)+'&body='+encodeURIComponent(cuerpo);
   var msg=$('msg');
-  $('send').disabled=false;$('send').onclick=function(){enviar($('send'),msg,DESTINO,asunto,cuerpo,'',v('mail'))};
+  $('send').disabled=false;$('send').onclick=function(){enviar($('send'),msg,DESTINO,asunto,campos,'',v('mail'))};
   $('copy').onclick=function(){
     var ok=function(){msg.className='vc-note vc-note--ok';msg.textContent='Texto copiado. Pégalo en un correo a '+DESTINO+'.'};
     var fail=function(){selectText($('body'));msg.className='vc-note vc-note--warn';msg.textContent='No se pudo copiar automáticamente: el texto quedó seleccionado, cópialo manualmente.'};

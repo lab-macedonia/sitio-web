@@ -93,8 +93,10 @@ $('prefill').addEventListener('click',function(){
 });
 
 /* envío por FormSubmit (https://formsubmit.co): el correo sale del servicio, no del navegador */
-function enviar(btn,msg,destino,asunto,cuerpo,cc,replyto,okMsg){
-  var data={_subject:asunto,_captcha:'false',_template:'box',message:cuerpo};
+function enviar(btn,msg,destino,asunto,campos,cc,replyto,okMsg){
+  /* un campo por dato: FormSubmit los muestra como tabla ordenada en el correo */
+  var data={_subject:asunto,_captcha:'false',_template:'table'};
+  campos.forEach(function(c){data[c[0]]=c[1]||'—'});
   if(cc)data._cc=cc;
   if(replyto)data.email=replyto;
   btn.disabled=true;msg.className='vc-note';msg.textContent='Enviando…';
@@ -115,11 +117,11 @@ function selectText(el){var r=document.createRange();r.selectNodeContents(el);va
 function showErrs(id,list){
   $(id).innerHTML=list.length?'<div class="vc-note vc-note--warn"><strong>Falta completar:</strong><ul>'+list.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul></div>':'';
 }
-function setupOut(k,asunto,cuerpo,cc,replyto){
+function setupOut(k,asunto,cuerpo,cc,replyto,campos){
   $('asunto'+k).textContent=asunto;$('body'+k).textContent=cuerpo;$('out'+k).hidden=false;
   $('mailto'+k).href='mailto:'+MAIL_DEPTO+'?subject='+encodeURIComponent(asunto)+(cc?'&cc='+encodeURIComponent(cc).replace(/%2C/g,','):'')+'&body='+encodeURIComponent(cuerpo);
   var msg=$('msg'+k);
-  if($('send'+k)){$('send'+k).disabled=false;$('send'+k).onclick=function(){enviar($('send'+k),msg,MAIL_LAB,asunto,cuerpo,'',replyto,'Solicitud enviada. Será procesada por el laboratorio y la Dirección del Departamento. Si la respuesta es positiva, se te avisará y se procederá con el envío de la ficha de identificación con los RUT.')}}
+  if($('send'+k)){$('send'+k).disabled=false;$('send'+k).onclick=function(){enviar($('send'+k),msg,MAIL_LAB,asunto,campos,'',replyto,'Solicitud enviada. Será procesada por el laboratorio y la Dirección del Departamento. Si la respuesta es positiva, se te avisará y se procederá con el envío de la ficha de identificación con los RUT.')}}
   $('copy'+k).onclick=function(){
     var ok=function(){msg.className='vc-note vc-note--ok';msg.textContent='Texto copiado. Pégalo en un correo a '+MAIL_DEPTO+'.'};
     var fail=function(){selectText($('body'+k));msg.className='vc-note vc-note--warn';msg.textContent='No se pudo copiar automáticamente: el texto quedó seleccionado, cópialo manualmente.'};
@@ -183,7 +185,24 @@ $('gen1').addEventListener('click',function(){
   L.push('13. Otros: '+($('c_otro').checked&&v('otro_txt')?v('otro_txt'):'No'),'');
   L.push('Quedo atento/a a la confirmación por escrito. Saludos cordiales,',v('acad'));
   var cc='';
-  setupOut('1','Solicitud de visita de colegio – '+v('cole')+' – '+fdate(v('fact')),L.join('\n'),cc,v('mail'));
+  var si=function(id,txt){return $(id).checked?'Sí'+(txt?' – '+txt:''):'No'};
+  var reac='No';
+  if($('c_reac').checked){
+    var fr=Array.prototype.map.call($('treac').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
+      .filter(function(r){return r.some(function(x){return x})})
+      .map(function(r){return 'Reactivo: '+(r[0]||'-')+' | Solución: '+(r[1]||'-')+' | Material: '+(r[2]||'-')+' | Otros: '+(r[3]||'-')});
+    reac='Sí'+(fr.length?' – '+fr.join(' · '):'');
+  }
+  var campos=[
+    ['Solicitud','Visita de colegio al Departamento de Química'],
+    ['Académico/a que solicita',v('acad')],['Fecha de solicitud',fdate(v('fsol'))],['Académicos encargados',v('encarg')],
+    ['Establecimiento',v('cole')],['N.º de estudiantes',v('nest')],['Profesor/a encargado/a',v('prof')],['Correo del profesor/a',v('mail')],
+    ['Actividad',actividadFull()],['Fecha de la actividad',fdate(v('fact'))],['Horario',hrs(v('hini'),v('hfin'))],
+    ['Laboratorio',si('c_lab',v('lab_txt'))],['Sala de clases',si('c_sala',v('sala_txt'))],['Reactivos y materiales',reac],
+    ['Estacionamiento',$('c_est').checked?'Sí – '+v('transp')+', llegada '+v('hllega')+(v('hsale')?', salida '+v('hsale'):'')+' h':'No'],
+    ['Otros requerimientos',$('c_otro').checked&&v('otro_txt')?v('otro_txt'):'No']
+  ];
+  setupOut('1','Solicitud de visita de colegio – '+v('cole')+' – '+fdate(v('fact')),L.join('\n'),cc,v('mail'),campos);
 });
 
 /* generar ficha de identificación */
