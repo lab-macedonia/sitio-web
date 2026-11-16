@@ -2,7 +2,7 @@
    La solicitud (etapa 1) se envía por FormSubmit; la ficha con RUT (etapa 2) NO se envía: solo correo manual. */
 (function(){
 'use strict';
-var MAIL_LAB='german.barriga@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
+var ACAD='Germán Barriga González', MAIL_LAB='german.barriga@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
 function $(id){return document.getElementById(id)}
 function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
@@ -89,7 +89,7 @@ $('addest').addEventListener('click',addEst);
 /* ficha: rellenar con los datos de la solicitud */
 $('prefill').addEventListener('click',function(){
   $('f_cole').value=v('cole');$('f_fecha').value=v('fact');$('f_hini').value=v('hini');$('f_hfin').value=v('hfin');
-  $('f_act').value=actividad();$('f_n').value=v('nest');$('f_prof').value=v('prof');$('f_mail').value=v('mail');$('f_acad').value=v('encarg')||v('acad');
+  $('f_act').value=actividad();$('f_n').value=v('nest');$('f_prof').value=v('prof');$('f_mail').value=v('mail');
 });
 
 /* envío por FormSubmit (https://formsubmit.co): el correo sale del servicio, no del navegador */
@@ -139,12 +139,10 @@ function setupOut(k,asunto,cuerpo,cc,replyto,campos){
 /* generar solicitud */
 $('gen1').addEventListener('click',function(){
   var e=[];
-  if(!v('acad'))e.push('Académico/a que realiza la solicitud');
-  if(!v('fsol'))e.push('Fecha de solicitud');
-  if(!v('encarg'))e.push('Académicos encargados de la actividad');
   if(!v('cole'))e.push('Nombre del establecimiento');
   if(!v('nest'))e.push('N.º de estudiantes');
   if(!v('prof'))e.push('Profesor/a encargado/a');
+  if(!v('fsol'))e.push('Fecha de solicitud');
   if(!v('act'))e.push('Actividad que desea desarrollar');else if(!actividad())e.push('Indicar cuál es la otra actividad');
   if(!v('fact')||!v('hini'))e.push('Fecha y horario de la actividad');
   var esp=['c_lab','c_sala','c_reac','c_est','c_otro'].some(function(i){return $(i).checked});
@@ -160,30 +158,28 @@ $('gen1').addEventListener('click',function(){
   var L=[];
   L.push('Estimados/as: junto con saludar, solicito autorización para realizar una visita de un establecimiento educacional al Departamento de Química, según el protocolo vigente.','');
   L.push('FICHA PARA VISITAS DE COLEGIOS AL DEPARTAMENTO DE QUÍMICA','');
-  L.push('I. ACADÉMICO/A QUE REALIZA LA SOLICITUD');
-  L.push('1. Académico/a que realiza la solicitud: '+v('acad'));
-  L.push('2. Fecha de solicitud: '+fdate(v('fsol')));
-  L.push('3. Académicos encargados de la actividad: '+v('encarg'),'');
-  L.push('II. ESTABLECIMIENTO EDUCACIONAL');
-  L.push('4. Nombre del establecimiento: '+v('cole'));
-  L.push('5. N.º de estudiantes que asistirían: '+v('nest'));
-  L.push('6. Profesor/a encargado/a (quien acompaña a los estudiantes): '+v('prof')+(v('mail')?' – '+v('mail'):''),'');
-  L.push('III. TIPO DE ACTIVIDAD');
-  L.push('7. Tipo de actividad: '+actividadFull());
-  L.push('8. Fecha y horario: '+fdate(v('fact'))+', '+hrs(v('hini'),v('hfin')),'');
-  L.push('IV. ESPACIOS QUE SOLICITA USAR');
-  L.push('9. Laboratorio: '+($('c_lab').checked?'SÍ – '+v('lab_txt'):'No'));
-  L.push('10. Sala de clases: '+($('c_sala').checked?'SÍ – '+v('sala_txt'):'No'));
-  L.push('11. Reactivos: '+($('c_reac').checked?'SÍ':'No'));
+  L.push('Fecha de solicitud: '+fdate(v('fsol')));
+  L.push('Académico/a encargado/a (UMCE): '+ACAD,'');
+  L.push('I. ESTABLECIMIENTO EDUCACIONAL');
+  L.push('1. Nombre del establecimiento: '+v('cole'));
+  L.push('2. N.º de estudiantes que asistirían: '+v('nest'));
+  L.push('3. Profesor/a encargado/a (quien acompaña a los estudiantes): '+v('prof')+(v('mail')?' – '+v('mail'):''),'');
+  L.push('II. TIPO DE ACTIVIDAD');
+  L.push('4. Tipo de actividad: '+actividadFull());
+  L.push('5. Fecha y horario: '+fdate(v('fact'))+', '+hrs(v('hini'),v('hfin')),'');
+  L.push('III. ESPACIOS QUE SOLICITA USAR');
+  L.push('6. Laboratorio: '+($('c_lab').checked?'SÍ – '+v('lab_txt'):'No'));
+  L.push('7. Sala de clases: '+($('c_sala').checked?'SÍ – '+v('sala_txt'):'No'));
+  L.push('8. Reactivos: '+($('c_reac').checked?'SÍ':'No'));
   if($('c_reac').checked){
     Array.prototype.map.call($('treac').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
       .filter(function(r){return r.some(function(x){return x})})
       .forEach(function(r,i){L.push('    '+(i+1)+') Reactivo: '+(r[0]||'-')+' | Solución: '+(r[1]||'-')+' | Material: '+(r[2]||'-')+' | Otros: '+(r[3]||'-'))});
   }
-  L.push('12. Estacionamiento: '+($('c_est').checked?'SÍ':'No'));
+  L.push('9. Estacionamiento: '+($('c_est').checked?'SÍ':'No'));
   if($('c_est').checked){L.push('    Tipo de transporte: '+v('transp'));L.push('    Horario aproximado: llegada '+v('hllega')+(v('hsale')?', salida '+v('hsale'):'')+' h')}
-  L.push('13. Otros: '+($('c_otro').checked&&v('otro_txt')?v('otro_txt'):'No'),'');
-  L.push('Quedo atento/a a la confirmación por escrito. Saludos cordiales,',v('acad'));
+  L.push('10. Otros: '+($('c_otro').checked&&v('otro_txt')?v('otro_txt'):'No'),'');
+  L.push('Quedo atento/a a la confirmación por escrito. Saludos cordiales,',v('prof'));
   var cc='';
   var si=function(id,txt){return $(id).checked?'Sí'+(txt?' – '+txt:''):'No'};
   var reac='No';
@@ -195,7 +191,7 @@ $('gen1').addEventListener('click',function(){
   }
   var campos=[
     ['Solicitud','Visita de colegio al Departamento de Química'],
-    ['Académico/a que solicita',v('acad')],['Fecha de solicitud',fdate(v('fsol'))],['Académicos encargados',v('encarg')],
+    ['Fecha de solicitud',fdate(v('fsol'))],['Académico/a encargado/a (UMCE)',ACAD],
     ['Establecimiento',v('cole')],['N.º de estudiantes',v('nest')],['Profesor/a encargado/a',v('prof')],['Correo del profesor/a',v('mail')],
     ['Actividad',actividadFull()],['Fecha de la actividad',fdate(v('fact'))],['Horario',hrs(v('hini'),v('hfin'))],
     ['Laboratorio',si('c_lab',v('lab_txt'))],['Sala de clases',si('c_sala',v('sala_txt'))],['Reactivos y materiales',reac],

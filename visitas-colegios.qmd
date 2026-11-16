@@ -4,7 +4,7 @@ subtitle: "Visitas organizadas por el Laboratorio MACEDONIA y desarrolladas en e
 toc: false
 ---
 
-Las visitas de establecimientos educacionales son **organizadas por el Laboratorio MACEDONIA y se desarrollan en el Departamento de Química de la Universidad Metropolitana de Ciencias de la Educación (UMCE)**. Este formulario ayuda a preparar la solicitud de visita de un curso o grupo de estudiantes a las dependencias del Departamento, según el protocolo vigente (instructivo del 7 de octubre de 2024). **Está pensado para el académico o la académica del Departamento que organiza la actividad.**
+Las visitas de establecimientos educacionales son **organizadas por el Laboratorio MACEDONIA y se desarrollan en el Departamento de Química de la Universidad Metropolitana de Ciencias de la Educación (UMCE)**. Este formulario ayuda a preparar la solicitud de visita de un curso o grupo de estudiantes a las dependencias del Departamento, según el protocolo vigente (instructivo del 7 de octubre de 2024).
 
 Si eres profesor/a y quieres que el laboratorio vaya a tu colegio, usa el formulario de [charlas y actividades experimentales en tu colegio](charlas-colegios.qmd).
 
@@ -38,20 +38,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
   <!-- ETAPA 1 -->
   <div id="vc-p1" role="tabpanel" aria-labelledby="vc-t1">
     <fieldset class="vc-card">
-      <legend>I. Académico/a que realiza la solicitud</legend>
-      <label for="acad">Académico/a que realiza la solicitud</label>
-      <input type="text" id="acad" autocomplete="name">
-      <div class="vc-row">
-        <div><label for="fsol">Fecha de solicitud</label><input type="date" id="fsol"></div>
-        <div></div>
-      </div>
-      <label for="encarg">Académicos encargados de la actividad</label>
-      <input type="text" id="encarg" aria-describedby="encarg-h">
-      <p class="vc-hint" id="encarg-h">Si es la misma persona, repita el nombre.</p>
-    </fieldset>
-
-    <fieldset class="vc-card">
-      <legend>II. Establecimiento educacional</legend>
+      <legend>I. Establecimiento educacional</legend>
       <label for="cole">Nombre del establecimiento</label>
       <input type="text" id="cole">
       <div class="vc-row">
@@ -62,10 +49,14 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
       <input type="text" id="prof">
       <label for="mail">Correo del profesor/a</label>
       <input type="email" id="mail" inputmode="email" autocomplete="email">
+      <div class="vc-row">
+        <div><label for="fsol">Fecha de solicitud</label><input type="date" id="fsol"></div>
+        <div></div>
+      </div>
     </fieldset>
 
     <fieldset class="vc-card">
-      <legend>III. Tipo de actividad</legend>
+      <legend>II. Tipo de actividad</legend>
       <label for="act">Actividad que desea desarrollar</label>
       <select id="act">
         <option value="">Selecciona una actividad…</option>
@@ -96,7 +87,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
     </fieldset>
 
     <fieldset class="vc-card">
-      <legend>IV. Espacios y recursos que solicita</legend>
+      <legend>III. Espacios y recursos que solicita</legend>
       <label class="vc-chk"><input type="checkbox" id="c_lab"><span>Laboratorio</span></label>
       <div class="vc-sub" id="s_lab" hidden>
         <label for="lab_txt">Laboratorio que desea utilizar y horario</label>
@@ -178,7 +169,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
       </div>
       <label for="f_prof">Profesor/a (establecimiento educacional)</label><input type="text" id="f_prof">
       <label for="f_mail">Correo del profesor/a</label><input type="email" id="f_mail" inputmode="email">
-      <label for="f_acad">Académico/a encargado/a (UMCE)</label><input type="text" id="f_acad">
+      <label for="f_acad">Académico/a encargado/a (UMCE)</label><input type="text" id="f_acad" value="Germán Barriga González" readonly>
 
       <h3 class="vc-h3">Nómina de estudiantes</h3>
       <div class="vc-scroll">
