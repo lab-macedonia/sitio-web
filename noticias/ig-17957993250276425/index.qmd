@@ -1,0 +1,34 @@
+---
+title: "🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva."
+date: 2026-11-16
+categories: [Instagram, Actividades]
+author: Lab Macedonia
+description: "🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva.  Un sitio renovado para conocer cómo unimos investigación en química y formación de profesores."
+image: imagen.jpg
+image-alt: "Imagen de la publicación de Instagram: 🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva."
+---
+> 🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva.
+> 
+> Un sitio renovado para conocer cómo unimos investigación en química y formación de profesores. Esto es lo nuevo:
+> 
+> 🎨 Imagen unificada: ahora todas nuestras redes sociales comparten la misma identidad visual que el sitio.
+> 
+> 🔬 Producción académica: catálogos con filtros de publicaciones (42), congresos (48), proyectos (7) y tesis (24).
+> 
+> 💻 Laboratorio digital: modelos moleculares en realidad aumentada, 114 simulaciones de ciencias y 25 animaciones de química orgánica, de acceso abierto.
+> 
+> 🏫 Visitas de colegios: formulario para organizar visitas al Departamento de Química de la UMCE.
+> 
+> 🎒 Charlas y actividades en tu colegio: profesores y profesoras pueden pedir que vayamos a su establecimiento. Actividades como reconocimiento de grupos funcionales, ácido-base, calorimetría, redox y cinética.
+> 
+> 📰 Actualidad: nuestras noticias y publicaciones de Instagram, en un solo lugar.
+> 
+> 🌗 Modo claro y oscuro, buscador y versión en inglés de las secciones principales.
+> 
+> ⏳ Próximamente: guías de laboratorio y reporte de resultados de las actividades.
+> 
+> 👉 Visítalo: lab-macedonia.github.io/sitio-web (link en la bio)
+> 
+> #LaboratorioMACEDONIA #UMCE #Química #EducaciónQuímica #FormaciónDocente #CienciaAbierta #chile
+
+[Ver publicación original en Instagram](https://www.instagram.com/p/DfyF-dfihFL/)
