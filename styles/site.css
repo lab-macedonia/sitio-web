@@ -29,7 +29,11 @@ table{color:var(--text)}
 
 /* Barra superior */
 .navbar{box-shadow:0 4px 20px rgba(3,24,48,.25);background:var(--navy)!important}
-.navbar .navbar-title,.navbar .navbar-brand,.navbar a,.navbar .nav-link,.navbar .dropdown-toggle{color:#fff!important}
+.navbar .navbar-title,.navbar .navbar-brand,.navbar > .container-fluid a:not(.dropdown-item),.navbar .nav-link,.navbar .dropdown-toggle{color:#fff!important}
+/* Menús desplegables: texto legible en modo claro y oscuro */
+.navbar .dropdown-menu{background:var(--surface)!important;border:1px solid var(--line);box-shadow:0 10px 30px rgba(3,24,48,.25)}
+.navbar .dropdown-menu .dropdown-item,.navbar .dropdown-menu a.dropdown-item{color:var(--ink)!important}
+.navbar .dropdown-menu .dropdown-item:hover,.navbar .dropdown-menu .dropdown-item:focus,.navbar .dropdown-menu .dropdown-item.active{background:var(--bg-alt)!important;color:var(--link-hover)!important}
 .navbar .nav-link.active,.navbar .nav-link:hover{color:var(--ice)!important}
 .navbar-logo{max-height:42px;width:auto}
 .navbar .navbar-title{text-transform:uppercase;letter-spacing:.04em;font-weight:800}
