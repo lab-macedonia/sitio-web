@@ -125,10 +125,7 @@ for lg in ('es', 'en'):
         cuerpo += f'<p>{e(texto)}</p>'
         regs.append(art({'anio': c['anio'], 'modalidad': mod}, h3, sub, cuerpo))
     anios = sorted({c['anio'] for c in cong}, reverse=True)
-    mods = sorted({c['modalidad'] for c in cong})
-    fl = [filtro(lg, 'Año', 'Year', 'anio', anios), filtro(lg, 'Modalidad', 'Format', 'modalidad', mods)]
-    if not es:
-        fl = [f.replace('value="Ponencia"', 'value="Oral presentation"').replace('value="No explicitada"', 'value="Not specified"') for f in fl]
+    fl = [filtro(lg, 'Año', 'Year', 'anio', anios)]
     if es:
         intro = 'Participaciones en congresos, jornadas y simposios.'
         escribir('congresos.qmd', page('Congresos y comunicaciones', 'Participaciones académicas', intro, fl, regs, 'es'))

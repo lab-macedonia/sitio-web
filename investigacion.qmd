@@ -41,6 +41,6 @@ Desarrollo de experiencias con modelación molecular, fabricación e impresión 
 
 Propuestas y estudios orientados a adecuaciones curriculares, estrategias didácticas y acceso a experiencias científicas para diversos grupos de estudiantes.
 
-**Trabajos de titulación asociados:** *Orientaciones pedagógicas para una educación media inclusiva* (2026) y *Adecuaciones curriculares para estudiantes con Trastorno del Espectro Autista (TEA), a través del Diseño Universal para el Aprendizaje (DUA) en la unidad de Soluciones Químicas* (2024).
+**Trabajos de titulación asociados:** *Manual didáctico de contenidos químicos de 8° básico para estudiantes chilenos con TEA* (2026); *Orientaciones pedagógicas para una educación media inclusiva* (2026); *Propuesta de enseñanza-aprendizaje en contexto de didáctica multisensorial de las ciencias: reacciones químicas para sordos* (2025); *Adaptaciones a la metodología ECBI para el aprendizaje de las ciencias, enfocada a estudiantes neurodivergentes con Trastorno por Déficit de Atención (TDA)* (2024); y *Adecuaciones curriculares para estudiantes con Trastorno del Espectro Autista (TEA), a través del Diseño Universal para el Aprendizaje (DUA) en la unidad de Soluciones Químicas* (2024).
 
 Consulta los [proyectos](proyectos.qmd), las [publicaciones](publicaciones.qmd) y las [tesis](tesistas.qmd) para explorar la producción asociada.

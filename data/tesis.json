@@ -228,15 +228,5 @@
     "estado": "Finalizada",
     "fecha_defensa": "29/04/2026",
     "anio": 2026
-  },
-  {
-    "id": "T24",
-    "autoria": "Camila Castillo",
-    "titulo": null,
-    "linea": "Por informar",
-    "descripcion": "Trabajo de tesis en desarrollo. El sitio original aún no publica título ni resumen.",
-    "estado": "En desarrollo",
-    "fecha_defensa": null,
-    "anio": null
   }
 ]

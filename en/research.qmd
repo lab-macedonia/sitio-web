@@ -40,6 +40,6 @@ Development of experiences with molecular modeling, 3D fabrication and printing,
 
 Proposals and studies on curricular adaptations, teaching strategies and access to science experiences for diverse groups of students.
 
-**Associated theses:** *Pedagogical guidelines for inclusive secondary education* (2026) and *Curricular adaptations for students with Autism Spectrum Disorder (ASD) through Universal Design for Learning (UDL) in the chemical solutions unit* (2024).
+**Associated theses:** *Didactic manual of grade 8 chemistry content for Chilean students with ASD* (2026); *Pedagogical guidelines for inclusive secondary education* (2026); *Teaching-learning proposal in the context of multisensory science didactics: chemical reactions for Deaf students* (2025); *Adaptations of the inquiry-based science education (ECBI) methodology for neurodivergent students with Attention Deficit Disorder (ADD)* (2024); and *Curricular adaptations for students with Autism Spectrum Disorder (ASD) through Universal Design for Learning (UDL) in the chemical solutions unit* (2024).
 
 See the [projects](projects.qmd), [publications](publications.qmd) and [theses](theses.qmd) to explore the associated output.
