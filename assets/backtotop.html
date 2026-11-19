@@ -1,0 +1,14 @@
+<script>
+/* Botón «Volver arriba»: se mantiene por encima del pie de página, cualquiera sea su altura */
+(function(){
+  function pos(){
+    var b=document.getElementById('quarto-back-to-top'),f=document.querySelector('.nav-footer');
+    if(!b||!f)return;
+    var h=Math.max(0,window.innerHeight-f.getBoundingClientRect().top);
+    b.style.bottom=Math.max(50,h+14)+'px';
+  }
+  window.addEventListener('scroll',pos,{passive:true});
+  window.addEventListener('resize',pos);
+  window.addEventListener('load',pos);
+})();
+</script>
