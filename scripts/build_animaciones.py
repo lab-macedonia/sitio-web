@@ -32,8 +32,8 @@ G = [
   (17,'Espejo del limoneno','Limonene mirror image','11vId5WOoyTGroLmtB-G84oQdI8Roytld'),
   (18,'(R)-limoneno (2D y 3D)','(R)-limonene (2D and 3D)','11q4X2CDM0W3-nr-n880iqhW03JpaC0Ft'),
   (19,'(S)-limoneno (2D y 3D)','(S)-limonene (2D and 3D)','123TdRdZilIdmDcwleWDe5me5UfBuTWfd'),
-  (20,'Espejo del 2-bromo-2-clorobutano (superposición)','2-Bromo-2-chlorobutane mirror image (superposition)','1252Wnqih8ABLCoyUKiArb6ZLCw77Qxnc'),
-  (21,'Espejo del 2-bromo-2-clorobutano','2-Bromo-2-chlorobutane mirror image','1298YEz-FylhCQTzgQ6Ghm10dilXAuTUo'),
+  (20,'Espejo del 2-bromo-2-clorobutano','2-Bromo-2-chlorobutane mirror image','1252Wnqih8ABLCoyUKiArb6ZLCw77Qxnc'),
+  (21,'Espejo del 2-bromo-2-clorobutano (superposición)','2-Bromo-2-chlorobutane mirror image (superposition)','1298YEz-FylhCQTzgQ6Ghm10dilXAuTUo'),
   (22,'(2R)-2-bromo-2-clorobutano','(2R)-2-bromo-2-chlorobutane','12D9ys4XYA0OFkO9ulp0a5_-ABB9ucw1-'),
   (23,'(2S)-2-bromo-2-clorobutano','(2S)-2-bromo-2-chlorobutane','12ArtNxldXu0EzfI6LsQxrVzm7HG7I0yj'),
   (24,'(R)-valina (proyección de Fischer)','(R)-valine (Fischer projection)','12IDVhpzF6HEo1B2Hk_o2O5ZXlmC_GbuI'),
@@ -42,7 +42,8 @@ G = [
 def build(lg):
     es = lg == 'es'
     out = ['---', f'title: "{"Animaciones de química orgánica" if es else "Organic chemistry animations"}"',
-           f'subtitle: "{"Estereoquímica e isomería · Ciencias Naturales 2.º medio, eje Química" if es else "Stereochemistry and isomerism · Natural Sciences, grade 10, Chemistry strand"}"', '---', '']
+           f'subtitle: "{"Estereoquímica e isomería · Ciencias Naturales 2.º medio, eje Química" if es else "Stereochemistry and isomerism · Natural Sciences, grade 10, Chemistry strand"}"',
+           f'description: "{"25 animaciones de química orgánica sobre isomería, conformaciones y estereoquímica, con licencia CC BY-NC-SA 4.0. Laboratorio MACEDONIA, UMCE." if es else "25 organic chemistry animations on isomerism, conformations and stereochemistry, under a CC BY-NC-SA 4.0 license. MACEDONIA Laboratory, UMCE."}"', '---', '']
     if es:
         out.append(f'Animaciones desarrolladas por **Mauricio Cortés** en su trabajo de titulación (Unidad 4: química orgánica, estereoquímica e isomería). Todas están licenciadas bajo [Creative Commons CC BY-NC-SA 4.0]({LIC}): puedes compartirlas y adaptarlas citando la autoría, sin fines comerciales y con la misma licencia.')
     else:
