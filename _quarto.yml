@@ -102,6 +102,7 @@ format:
     include-in-header:
       - assets/preload-fonts.html
       - assets/goatcounter.html
+      - assets/search-console.html
     toc: true
     lang: es
     link-external-newwindow: true
