@@ -23,8 +23,8 @@ Doctor en Química (Universidad de Chile). Su actividad integra química orgáni
 
 Colaboraciones con las que el laboratorio trabaja en investigación y educación científica.
 
-- **LabTec:** tecnologías para la formación de docentes de ciencias, con la participación del profesor David Reyes González. [Sitio de LabTec](https://sites.google.com/umce.cl/labtec/home).
-- **Semillero CATIÓN:** didáctica de las ciencias e innovación educativa, con la participación del profesor Bernardo Madariaga.
+- **LabTec:** tecnologías para la formación de docentes de ciencias. [Sitio de LabTec](https://sites.google.com/umce.cl/labtec/home).
+- **Semillero CATIÓN:** didáctica de las ciencias e innovación educativa.
 - **José Muñoz Espinoza:** colaboración en reactividad química computacional.
 
 [Ver detalle de colaboradores](colaboradores.qmd) · [Conocer tesistas](tesistas.qmd)

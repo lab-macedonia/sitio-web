@@ -84,7 +84,7 @@ format:
     lang: en
     link-external-newwindow: true
     smooth-scroll: true
-    anchor-sections: true
+    anchor-sections: false
     include-after-body: assets/catalog-filters.html
 execute:
   freeze: auto

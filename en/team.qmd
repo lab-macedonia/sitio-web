@@ -25,7 +25,7 @@ PhD in Chemistry (Universidad de Chile). His work combines organic chemistry, fr
 ::: {.feature}
 ### LabTec — Technology Laboratory
 
-A space dedicated to developing technologies for the education of science and technology teachers, led by Professor **Mg. Yonnhatan García Cartagena**, established in 2010. Professor **David Reyes González** takes part.
+A space dedicated to developing technologies for the education of science and technology teachers, led by Professor **Mg. Yonnhatan García Cartagena**, established in 2010. Professor **Dr. David Reyes González** takes part.
 
 [Visit LabTec](https://sites.google.com/umce.cl/labtec/home)
 :::
