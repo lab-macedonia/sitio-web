@@ -17,9 +17,9 @@ Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [la
 ::: {.feature}
 ## Simulaciones interactivas de ciencias
 
-**simulaciones-quimica** · Colección publicada de 115 simulaciones interactivas de química, biología, ciencias de la Tierra y física, relacionadas con objetivos de aprendizaje del currículo escolar chileno.
+**simulaciones-quimica** · Colección publicada de 115 simulaciones interactivas de química, biología, ciencias de la Tierra y física, relacionadas con los Objetivos de Aprendizaje del currículo escolar chileno. Cada una cuenta con una guía docente (objetivos, actividad de aula, banco de preguntas y solucionario).
 
-[Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Código fuente](https://github.com/lab-macedonia/simulaciones-quimica)
+[Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Guías docentes](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/guias/index.html) · [Cobertura curricular](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/curriculo.html) · [Código fuente](https://github.com/lab-macedonia/simulaciones-quimica)
 :::
 :::
 
