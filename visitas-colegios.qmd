@@ -9,12 +9,6 @@ Las visitas de establecimientos educacionales son **organizadas por el Laborator
 
 Si eres profesor/a y quieres que el laboratorio vaya a tu colegio, usa el formulario de [charlas y actividades experimentales en tu colegio](charlas-colegios.qmd).
 
-::: {.callout-tip}
-## Material de apoyo: próximamente
-
-Próximamente estará disponible el material de las actividades, como las **guías de laboratorio** y el **reporte de resultados**.
-:::
-
 ::: {.callout-important}
 ## Plazos del protocolo
 
