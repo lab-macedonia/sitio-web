@@ -102,7 +102,7 @@ table{color:var(--text)}
 .lead-box{background:var(--bg-alt);border-left:5px solid var(--blue);padding:1.4rem 1.7rem;border-radius:0 14px 14px 0}.lead-box p:last-child{margin:0}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.1rem}
 .feature h2,.feature h3{margin-top:0}
-.team-grid,.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.1rem}
+.team-grid,.resource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1.1rem;margin-bottom:2.5rem}
 .team-person,.resource-item{padding:1.5rem;background:var(--surface-alt)}
 .logo-gallery{display:flex;gap:1rem;flex-wrap:wrap}.logo-gallery img{width:150px;max-width:100%;padding:12px;background:var(--bg-alt);border-radius:14px}
 .illus-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:1.4rem 0 3.5rem}
