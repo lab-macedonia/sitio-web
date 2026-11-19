@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+description: "Contact details, social networks and location of the MACEDONIA Laboratory at UMCE, Ñuñoa, Santiago, Chile."
 toc: false
 ---
 

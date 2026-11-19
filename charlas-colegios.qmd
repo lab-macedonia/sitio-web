@@ -1,6 +1,7 @@
 ---
 title: "Charlas y actividades experimentales en tu colegio"
 subtitle: "Solicitud para profesores y profesoras de establecimientos educacionales"
+description: "Solicita una charla o actividad experimental del Laboratorio MACEDONIA (UMCE) en tu colegio: formulario para profesores y profesoras."
 toc: false
 ---
 

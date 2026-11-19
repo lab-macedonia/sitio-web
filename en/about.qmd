@@ -1,6 +1,7 @@
 ---
 title: "About MACEDONIA"
 subtitle: "Chemical research and science education in a shared space"
+description: "What the MACEDONIA Laboratory at UMCE is: research in organic chemistry and chemical education, with a focus on initial teacher education."
 ---
 
 ## What is MACEDONIA?

@@ -1,5 +1,6 @@
 ---
 title: "Contacto"
+description: "Contacto, redes sociales y ubicación del Laboratorio MACEDONIA en la UMCE, Ñuñoa, Santiago de Chile."
 toc: false
 ---
 

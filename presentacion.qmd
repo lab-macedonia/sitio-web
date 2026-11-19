@@ -1,6 +1,7 @@
 ---
 title: "Presentación"
 subtitle: "Investigación química y educación científica en un espacio de encuentro"
+description: "Qué es el Laboratorio MACEDONIA de la UMCE: investigación en química orgánica y educación química, con foco en la formación inicial docente."
 ---
 
 ## ¿Qué es MACEDONIA?

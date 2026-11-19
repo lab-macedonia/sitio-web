@@ -31,6 +31,17 @@ def select(etiqueta, campo, valores, todos, aria):
     opts = f'<option value="">{todos}</option>' + ''.join(f'<option value="{e(v)}">{e(v if lang=="es" else lab(v) if not str(v).isdigit() else v)}</option>' for v in valores)
     return f'<label>{etiqueta}<select data-filter-field="{campo}" aria-label="{aria} {etiqueta}">{opts}</select></label>'
 
+DESC = {
+ 'Producción científica': 'Artículos y capítulos de libro del Laboratorio MACEDONIA en investigación química y educación química.',
+ 'Scientific output': 'Articles and book chapters from the MACEDONIA Laboratory in chemical research and chemical education.',
+ 'Congresos y comunicaciones': 'Congresos y comunicaciones del Laboratorio MACEDONIA (UMCE) en investigación química y educación química.',
+ 'Conferences and presentations': 'Conferences and presentations of the MACEDONIA Laboratory (UMCE) in chemical research and chemical education.',
+ 'Proyectos de investigación e innovación': 'Proyectos de investigación e innovación del Laboratorio MACEDONIA (UMCE), con su estado, rol y duración.',
+ 'Research and innovation projects': 'Research and innovation projects of the MACEDONIA Laboratory (UMCE), with their status, role and duration.',
+ 'Tesis y trabajos de titulación': 'Tesis y trabajos de titulación dirigidos en el Laboratorio MACEDONIA (UMCE).',
+ 'Theses and degree projects': 'Theses and degree projects supervised at the MACEDONIA Laboratory (UMCE).',
+}
+
 def page(titulo, sub, intro, filtros, registros, lg):
     global lang
     lang = lg
@@ -38,7 +49,7 @@ def page(titulo, sub, intro, filtros, registros, lg):
     buscar = 'Buscar en el catálogo' if es else 'Search the catalog'
     ph = 'Título, autoría, tema…' if es else 'Title, author, topic…'
     cnt = '{v} de {t} registros' if es else '{v} of {t} records'
-    head = ['---', f'title: "{titulo}"', f'subtitle: "{sub}"', '---', '', intro, '',
+    head = ['---', f'title: "{titulo}"', f'subtitle: "{sub}"', f'description: "{DESC[titulo]}"', '---', '', intro, '',
             f'<div data-catalog data-count-text="{cnt}">', '<div class="catalog-filters">',
             f'<label>{buscar}<input type="search" placeholder="{ph}" data-filter-text aria-label="{buscar}"></label>']
     head += filtros

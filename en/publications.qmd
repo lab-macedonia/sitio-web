@@ -1,6 +1,7 @@
 ---
 title: "Scientific output"
 subtitle: "Articles and book chapters"
+description: "Articles and book chapters from the MACEDONIA Laboratory in chemical research and chemical education."
 ---
 
 Scientific articles and book chapters.

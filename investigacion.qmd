@@ -1,6 +1,7 @@
 ---
 title: "Líneas de investigación"
 subtitle: "Preguntas científicas y formación de profesores"
+description: "Líneas de investigación del Laboratorio MACEDONIA: química orgánica y radicales libres, química computacional, educación química e innovación."
 toc: true
 ---
 

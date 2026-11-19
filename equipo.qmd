@@ -1,6 +1,7 @@
 ---
 title: "Equipo y colaboración"
 subtitle: "Una red de investigación, formación e innovación"
+description: "Coordinación académica y redes de colaboración del Laboratorio MACEDONIA (UMCE)."
 ---
 
 La investigación que impulsa MACEDONIA se construye con estudiantes, tesistas, académicos y redes de colaboración. 

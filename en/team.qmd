@@ -1,6 +1,7 @@
 ---
 title: "Team and collaboration"
 subtitle: "A network of research, education and innovation"
+description: "Academic coordination and collaboration networks of the MACEDONIA Laboratory (UMCE)."
 ---
 
 The research driven by MACEDONIA is built with students, thesis students, academics and collaboration networks.

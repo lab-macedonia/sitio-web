@@ -1,6 +1,7 @@
 ---
 title: "Perfil académico"
 subtitle: "Coordinación e investigación"
+description: "Perfil académico de Germán Barriga González, profesor titular del Departamento de Química de la UMCE: formación, líneas y proyectos."
 ---
 
 ## Germán Eduardo Barriga González

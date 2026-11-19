@@ -1,6 +1,7 @@
 ---
 title: "Producción científica"
 subtitle: "Artículos y capítulos de libro"
+description: "Artículos y capítulos de libro del Laboratorio MACEDONIA en investigación química y educación química."
 ---
 
 Artículos científicos y capítulos de libro.

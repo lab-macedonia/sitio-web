@@ -1,6 +1,7 @@
 ---
 title: "Research and innovation projects"
 subtitle: "Laboratory projects"
+description: "Research and innovation projects of the MACEDONIA Laboratory (UMCE), with their status, role and duration."
 ---
 
 [Explore the research areas](research.qmd).

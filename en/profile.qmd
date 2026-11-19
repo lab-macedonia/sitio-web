@@ -1,6 +1,7 @@
 ---
 title: "Academic profile"
 subtitle: "Coordination and research"
+description: "Academic profile of Germán Barriga González, full professor in the Department of Chemistry at UMCE: education, research lines and projects."
 ---
 
 ## Germán Eduardo Barriga González

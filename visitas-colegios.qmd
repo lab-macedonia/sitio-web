@@ -1,6 +1,7 @@
 ---
 title: "Visitas de colegios"
 subtitle: "Visitas organizadas por el Laboratorio MACEDONIA y desarrolladas en el Departamento de Química de la UMCE"
+description: "Solicita una visita de tu colegio al Departamento de Química de la UMCE, organizada por el Laboratorio MACEDONIA."
 toc: false
 ---
 
@@ -171,7 +172,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
       <label for="f_mail">Correo del profesor/a</label><input type="email" id="f_mail" inputmode="email">
       <label for="f_acad">Académico/a encargado/a (UMCE)</label><input type="text" id="f_acad" value="Germán Barriga González" readonly>
 
-      <h3 class="vc-h3">Nómina de estudiantes</h3>
+      <h2 class="vc-h3">Nómina de estudiantes</h2>
       <div class="vc-scroll">
         <table id="tn">
           <caption class="visually-hidden">Nómina de estudiantes con nombre y RUT</caption>

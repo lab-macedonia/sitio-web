@@ -1,6 +1,7 @@
 ---
 title: "Conferences and presentations"
 subtitle: "Academic participation"
+description: "Conferences and presentations of the MACEDONIA Laboratory (UMCE) in chemical research and chemical education."
 ---
 
 Participation in conferences, symposia and workshops.

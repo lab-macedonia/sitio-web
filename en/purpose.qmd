@@ -1,6 +1,7 @@
 ---
 title: "Purpose, mission and vision"
 subtitle: "The principles that guide our research and educational commitment"
+description: "Purpose, mission, vision and working principles of the MACEDONIA Laboratory (UMCE)."
 ---
 
 ## Purpose

@@ -1,6 +1,7 @@
 ---
 title: "Research areas"
 subtitle: "Scientific questions and teacher education"
+description: "Research areas of the MACEDONIA Laboratory: organic chemistry and free radicals, computational chemistry, chemical education and innovation."
 ---
 
 These are the lines of work that connect research and education in the laboratory.

@@ -1,20 +1,21 @@
 ---
 title: "Recursos digitales y código abierto"
 subtitle: "Proyectos del laboratorio publicados en GitHub"
+description: "Repositorios abiertos del Laboratorio MACEDONIA en GitHub: realidad aumentada en química orgánica y simulaciones de ciencias."
 ---
 
 Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [lab-macedonia](https://github.com/lab-macedonia). Se mantienen en sus propios sitios para facilitar su actualización.
 
 ::: {.cards}
 ::: {.feature}
-### Realidad aumentada en química orgánica
+## Realidad aumentada en química orgánica
 
 **quimica-ar** · Modelos tridimensionales de ácidos carboxílicos con recursos de realidad aumentada, en colaboración con LabTec y UMCE.
 
 [Explorar aplicación](https://lab-macedonia.github.io/quimica-ar/) · [Código fuente](https://github.com/lab-macedonia/quimica-ar)
 :::
 ::: {.feature}
-### Simulaciones interactivas de ciencias
+## Simulaciones interactivas de ciencias
 
 **simulaciones-quimica** · Colección publicada de 114 simulaciones 3D de química, biología, ciencias de la Tierra y física, relacionadas con objetivos de aprendizaje del currículo escolar chileno.
 

@@ -1,6 +1,7 @@
 ---
 title: "News and activities"
 subtitle: "Scientific updates, education and outreach"
+description: "News and activities of the MACEDONIA Laboratory: science, teacher education and outreach to schools."
 ---
 
 News and activities from the laboratory, including posts from its Instagram account. News is published in Spanish.

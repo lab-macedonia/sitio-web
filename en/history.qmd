@@ -1,6 +1,7 @@
 ---
 title: "History and identity"
 subtitle: "A name that brings together chemistry, education and curiosity"
+description: "Origin of the MACEDONIA name and the trajectory of the chemistry and chemical education laboratory at UMCE."
 ---
 
 ## The origin of the name

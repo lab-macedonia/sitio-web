@@ -1,6 +1,7 @@
 ---
 title: "Propósito, misión y visión"
 subtitle: "Los principios que orientan nuestra investigación y compromiso educativo"
+description: "Propósito, misión, visión y principios de trabajo del Laboratorio MACEDONIA (UMCE)."
 ---
 
 ## Propósito

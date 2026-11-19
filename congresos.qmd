@@ -1,6 +1,7 @@
 ---
 title: "Congresos y comunicaciones"
 subtitle: "Participaciones académicas"
+description: "Congresos y comunicaciones del Laboratorio MACEDONIA (UMCE) en investigación química y educación química."
 ---
 
 Participaciones en congresos, jornadas y simposios.

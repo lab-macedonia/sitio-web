@@ -1,6 +1,7 @@
 ---
 title: "Colaboradores"
 subtitle: "Red académica y de investigación"
+description: "Redes y colaboradores del Laboratorio MACEDONIA (UMCE): LabTec, Semillero CATIÓN y colaboración en reactividad química computacional."
 ---
 
 ::: {.cards}

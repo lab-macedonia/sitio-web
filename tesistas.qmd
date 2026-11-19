@@ -1,6 +1,7 @@
 ---
 title: "Tesis y trabajos de titulación"
 subtitle: "Formación de investigadores y profesores"
+description: "Tesis y trabajos de titulación dirigidos en el Laboratorio MACEDONIA (UMCE)."
 ---
 
 Trabajos de titulación dirigidos en el laboratorio.

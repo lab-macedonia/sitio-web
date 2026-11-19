@@ -197,6 +197,6 @@ table{color:var(--text)}
 .vc td input{border:0!important;background:transparent!important;border-radius:0!important;padding:.45rem!important}
 .vc-num{width:2.6rem;text-align:center!important;color:var(--muted)}
 .vc-invalid{outline:2px solid #b3261e;outline-offset:-2px}
-.vc-h3{font-size:1.1rem;margin:1.4rem 0 .4rem}
+.vc-h3,main .vc-h3{font-size:1.1rem;margin:1.4rem 0 .4rem;padding:0;border:0}
 .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .acronym-note{font-size:.85rem;color:var(--muted);margin:-.4rem 0 .8rem}

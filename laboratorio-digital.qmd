@@ -1,6 +1,7 @@
 ---
 title: "Laboratorio digital"
 subtitle: "Recursos abiertos para explorar, aprender y enseñar ciencias"
+description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 114 simulaciones de ciencias y animaciones de química orgánica."
 ---
 
 El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recursos educativos del laboratorio.

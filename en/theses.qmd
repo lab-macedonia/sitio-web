@@ -1,6 +1,7 @@
 ---
 title: "Theses and degree projects"
 subtitle: "Training researchers and teachers"
+description: "Theses and degree projects supervised at the MACEDONIA Laboratory (UMCE)."
 ---
 
 Undergraduate and graduate theses supervised in the laboratory.

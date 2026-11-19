@@ -1,6 +1,7 @@
 ---
 title: "Proyectos de investigación e innovación"
 subtitle: "Proyectos del laboratorio"
+description: "Proyectos de investigación e innovación del Laboratorio MACEDONIA (UMCE), con su estado, rol y duración."
 ---
 
 [Explorar las líneas de investigación](investigacion.qmd).
