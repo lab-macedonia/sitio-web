@@ -1,11 +1,11 @@
 ---
-title: "🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva."
+title: "¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva."
 date: 2026-11-16
 categories: [Instagram, Actividades]
 author: Lab Macedonia
-description: "🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva.  Un sitio renovado para conocer cómo unimos investigación en química y formación de profesores."
+description: "¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva. Un sitio renovado para conocer cómo unimos investigación en química y formación de profesores."
 image: imagen.jpg
-image-alt: "Imagen de la publicación de Instagram: 🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva."
+image-alt: "Imagen de la publicación de Instagram: ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva."
 ---
 > 🧪 ¡Estrenamos sitio web! El Laboratorio MACEDONIA (UMCE) tiene casa nueva.
 > 

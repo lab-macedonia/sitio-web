@@ -97,11 +97,19 @@ def save_image(url, folder):
         return None
 
 
+EMOJI = re.compile("[\U0001F000-\U0001FAFF\u2600-\u27BF\u2B50\u2B55\uFE0F\u200D]")
+
+
+def sin_emojis(texto):
+    """Quita emojis y espacios sobrantes (títulos y descripciones de la web)."""
+    return re.sub(r"\s+", " ", EMOJI.sub("", texto)).strip()
+
+
 def make_post(item):
     identifier = str(item["id"])
     caption = item.get("caption") or "Actividad del laboratorio."
     first = next((line.strip() for line in caption.splitlines() if line.strip()), "Actividad del laboratorio")
-    title = first[:105].rstrip() or "Actividad del laboratorio"
+    title = sin_emojis(first)[:105].rstrip() or "Actividad del laboratorio"
     folder = OUT / f"ig-{identifier}"
     folder.mkdir(parents=True, exist_ok=True)
     path = folder / "index.qmd"
@@ -121,7 +129,7 @@ def make_post(item):
     # json.dumps safely quotes frontmatter string values (JSON strings are valid YAML scalars).
     front = ["---", f"title: {json.dumps(title, ensure_ascii=False)}", f"date: {date}",
              "categories: [Instagram, Actividades]", "author: Lab Macedonia",
-             f"description: {json.dumps(caption[:170].replace(chr(10), ' '), ensure_ascii=False)}"]
+             f"description: {json.dumps(sin_emojis(caption)[:170], ensure_ascii=False)}"]
     if image_name:
         front.append(f"image: {image_name}")
         front.append("image-alt: " + json.dumps("Imagen de la publicación de Instagram: " + title, ensure_ascii=False))

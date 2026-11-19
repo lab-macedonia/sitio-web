@@ -1,11 +1,11 @@
 ---
-title: "🧪 ¡Nuevo desde el Laboratorio MACEDONIA!"
+title: "¡Nuevo desde el Laboratorio MACEDONIA!"
 date: 2026-10-11
 categories: [Instagram, Actividades]
 author: Lab Macedonia
-description: "🧪 ¡Nuevo desde el Laboratorio MACEDONIA!  Lanzamos 12 simulaciones interactivas de química, gratis y directo en tu navegador, sin instalar nada:  ⚛️ Química general: mode"
+description: "¡Nuevo desde el Laboratorio MACEDONIA! Lanzamos 12 simulaciones interactivas de química, gratis y directo en tu navegador, sin instalar nada: Química general: mode"
 image: imagen.jpg
-image-alt: "Imagen de la publicación de Instagram: 🧪 ¡Nuevo desde el Laboratorio MACEDONIA!"
+image-alt: "Imagen de la publicación de Instagram: ¡Nuevo desde el Laboratorio MACEDONIA!"
 ---
 > 🧪 ¡Nuevo desde el Laboratorio MACEDONIA!
 > 

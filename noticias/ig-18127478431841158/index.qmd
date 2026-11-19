@@ -1,11 +1,11 @@
 ---
-title: "🔬🧬 Química, experimentación y macromoléculas"
+title: "Química, experimentación y macromoléculas"
 date: 2026-09-22
 categories: [Instagram, Actividades]
 author: Lab Macedonia
-description: "🔬🧬 Química, experimentación y macromoléculas  El 20 de agosto recibimos la visita de estudiantes del Colegio Parroquial de San Miguel, quienes participaron en la activida"
+description: "Química, experimentación y macromoléculas El 20 de agosto recibimos la visita de estudiantes del Colegio Parroquial de San Miguel, quienes participaron en la activida"
 image: imagen.jpg
-image-alt: "Imagen de la publicación de Instagram: 🔬🧬 Química, experimentación y macromoléculas"
+image-alt: "Imagen de la publicación de Instagram: Química, experimentación y macromoléculas"
 ---
 > 🔬🧬 Química, experimentación y macromoléculas
 > 
