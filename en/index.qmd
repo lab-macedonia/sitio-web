@@ -11,7 +11,7 @@ title-block-style: none
   <div class="eyebrow">UMCE · RESEARCH · EDUCATION · INNOVATION</div>
   <img src="assets/macedonia-mejorado-oscuro.svg" width="240" height="240" class="brand-hero" alt="MACEDONIA Laboratory logo">
   <h1>The chemistry we investigate.<br><em>The science we teach.</em></h1>
-  <p>We connect organic chemistry, general chemistry and science, from research on molecular reactivity to teacher education, experimental learning and educational innovation.</p>
+  <p>We investigate the reactivity of molecules and develop resources to teach chemistry: teacher education, laboratory learning and educational innovation.</p>
   <div class="cta-row"><a class="btn-primary-m" href="about.html">About MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="research.html">Explore our research</a></div>
 </div>
 <div class="hero-art"><img src="assets/img/hero.svg" width="560" height="520" alt="Illustration of a flask with turquoise liquid, a molecule and an open book: chemistry and teacher education"></div>
@@ -56,7 +56,7 @@ Simulations, 3D printing and digital technologies with a pedagogical purpose.
 ::: {.home-link}
 **Research and projects**
 
-Research areas, questions and interdisciplinary work.
+Research lines and projects funded by internal UMCE funds.
 
 [View projects →](projects.qmd)
 :::
@@ -70,9 +70,16 @@ Articles, book chapters, conference presentations and theses.
 ::: {.home-link}
 **People and collaboration**
 
-Students, faculty and networks behind our shared work.
+Team, thesis students and collaborators of the laboratory.
 
 [Meet the team →](team.qmd)
+:::
+::: {.home-link}
+**News and activities**
+
+Updates from the laboratory: simulations, education and outreach.
+
+[View news →](news.qmd)
 :::
 :::
 

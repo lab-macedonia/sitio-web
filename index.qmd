@@ -11,7 +11,7 @@ title-block-style: none
   <div class="eyebrow">UMCE · INVESTIGACIÓN · EDUCACIÓN · INNOVACIÓN</div>
   <img src="assets/macedonia-mejorado-oscuro.svg" width="240" height="240" class="brand-hero" alt="Logotipo del Laboratorio MACEDONIA">
   <h1>La química que investigamos.<br><em>La ciencia que enseñamos.</em></h1>
-  <p>Conectamos la química orgánica, la química general y las ciencias, desde la investigación en reactividad molecular hasta la formación de profesores, el aprendizaje experimental y la innovación educativa.</p>
+  <p>Investigamos la reactividad de las moléculas y desarrollamos recursos para enseñar química: formación de profesores, aprendizaje en el laboratorio e innovación educativa.</p>
   <div class="cta-row"><a class="btn-primary-m" href="presentacion.html">Conoce MACEDONIA <span aria-hidden="true">↗</span></a><a class="btn-outline-m" href="investigacion.html">Explorar investigación</a></div>
 </div>
 <div class="hero-art"><img src="assets/img/hero.svg" width="560" height="520" alt="Ilustración de un matraz con líquido turquesa, una molécula y un libro abierto: química y formación docente"></div>
@@ -56,7 +56,7 @@ Simulaciones, impresión 3D y tecnologías digitales con sentido pedagógico.
 ::: {.home-link}
 **Investigación y proyectos**
 
-Líneas, preguntas de investigación y experiencias de trabajo interdisciplinario.
+Líneas de investigación y proyectos financiados con fondos internos de la UMCE.
 
 [Ver proyectos →](proyectos.qmd)
 :::
@@ -70,9 +70,23 @@ Artículos, capítulos de libros, congresos y trabajos de tesis.
 ::: {.home-link}
 **Personas y colaboración**
 
-Estudiantes, docentes y redes que hacen posible el trabajo compartido.
+Equipo, tesistas y colaboradores del laboratorio.
 
 [Conocer al equipo →](equipo.qmd)
+:::
+::: {.home-link}
+**Colegios**
+
+Charlas y actividades experimentales en tu colegio, y visitas a los laboratorios de la UMCE.
+
+[Solicitar una charla →](charlas-colegios.qmd) · [Visitas →](visitas-colegios.qmd)
+:::
+::: {.home-link}
+**Noticias y actividades**
+
+Novedades del laboratorio: simulaciones, formación y vinculación.
+
+[Ver noticias →](noticias.qmd)
 :::
 :::
 

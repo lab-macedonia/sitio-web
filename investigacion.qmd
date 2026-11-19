@@ -15,7 +15,7 @@ Síntesis y caracterización de nitronas y compuestos de interés biológico; re
 
 ## Química computacional y reactividad molecular
 
-Estudio de reactividad química mediante modelos computacionales, DFT conceptual y DFT de espín polarizado; aplicación a antioxidantes, complejos de inclusión y química de coordinación.
+Estudio de reactividad química mediante modelos computacionales basados en la teoría del funcional de la densidad (DFT), en sus versiones conceptual y de espín polarizado; aplicación a antioxidantes, complejos de inclusión y química de coordinación.
 
 **Producción asociada:** artículos en *The Journal of Physical Chemistry A* (2026) y *Chemical Physics Letters* (2025).
 

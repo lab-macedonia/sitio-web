@@ -14,7 +14,7 @@ Synthesis and characterization of nitrones and compounds of biological interest;
 
 ## Computational chemistry and molecular reactivity
 
-Study of chemical reactivity through computational models, conceptual DFT and spin-polarized DFT; applications to antioxidants, inclusion complexes and coordination chemistry.
+Study of chemical reactivity through computational models based on density functional theory (DFT), in its conceptual and spin-polarized versions; applications to antioxidants, inclusion complexes and coordination chemistry.
 
 **Associated output:** articles in *The Journal of Physical Chemistry A* (2026) and *Chemical Physics Letters* (2025).
 
