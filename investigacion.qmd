@@ -10,19 +10,19 @@ Estas son las líneas de trabajo que articulan la investigación y la formación
 
 Síntesis y caracterización de nitronas y compuestos de interés biológico; resonancia de espín electrónico y estudio de especies radicalarias.
 
-**Trayectoria:** RSC Advances (2020); proyectos FGI 42-18 y FONDECYT 3120241.
+**Producción y proyectos asociados:** artículo en *RSC Advances* (2020); proyectos FGI 42-18 y FONDECYT 3120241.
 
 ## Química computacional y reactividad molecular
 
 Estudio de reactividad química mediante modelos computacionales, DFT conceptual y DFT de espín polarizado; aplicación a antioxidantes, complejos de inclusión y química de coordinación.
 
-**Trayectoria:** The Journal of Physical Chemistry A (2026); Chemical Physics Letters (2025).
+**Producción asociada:** artículos en *The Journal of Physical Chemistry A* (2026) y *Chemical Physics Letters* (2025).
 
 ## Educación química y aprendizaje experimental
 
 Análisis del aprendizaje en laboratorios, prelaboratorios digitales, modelación y habilidades científicas en formación inicial docente.
 
-**Trayectoria:** Educación Química (2024, 2025); MAPEX (2026).
+**Producción y proyectos asociados:** artículos en *Educación Química* (2025, 2024) y *Journal of Chemical Education* (2018); proyecto MAPEX (2026).
 
 ## Química general y ciencias
 
@@ -34,12 +34,12 @@ Docencia y recursos para el aprendizaje de la química general y de las ciencias
 
 Desarrollo de experiencias con modelación molecular, fabricación e impresión 3D y tecnología digital como apoyo didáctico.
 
-**Trayectoria:** Proyectos Ciencia en 3D (2025) y 27-2024-EFA (2024).
+**Proyectos asociados:** Ciencia en 3D (2025) y Potenciamiento de las habilidades de modelación a través de la química computacional e impresión 3D, 27-2024-EFA (2024).
 
 ## Inclusión y formación docente
 
 Propuestas y estudios orientados a adecuaciones curriculares, estrategias didácticas y acceso a experiencias científicas para diversos grupos de estudiantes.
 
-**Trayectoria:** Trabajos de titulación y proyectos vinculados a la UMCE.
+**Trabajos de titulación asociados:** *Orientaciones pedagógicas para una educación media inclusiva* (2026) y *Adecuaciones curriculares para estudiantes con Trastorno del Espectro Autista (TEA), a través del Diseño Universal para el Aprendizaje (DUA) en la unidad de Soluciones Químicas* (2024).
 
 Consulta los [proyectos](proyectos.qmd), las [publicaciones](publicaciones.qmd) y las [tesis](tesistas.qmd) para explorar la producción asociada.

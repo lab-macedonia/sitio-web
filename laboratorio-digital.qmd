@@ -10,7 +10,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 ## Modelos de química en realidad aumentada
 
 **Repositorio:** `quimica-ar`  
-**Aplicación:** visualización tridimensional y realidad aumentada de modelos moleculares.  
+**Contenido:** visualización tridimensional y realidad aumentada de modelos moleculares.  
 **Aplicación educativa:** observación espacial y representación de estructuras químicas.
 
 [Probar aplicación](https://lab-macedonia.github.io/quimica-ar/) · [Código abierto](https://github.com/lab-macedonia/quimica-ar)

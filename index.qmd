@@ -72,7 +72,7 @@ Artículos, capítulos de libros, congresos y trabajos de tesis.
 
 Estudiantes, docentes y redes que hacen posible el trabajo compartido.
 
-[Conocer al equipo →](colaboradores.qmd)
+[Conocer al equipo →](equipo.qmd)
 :::
 :::
 

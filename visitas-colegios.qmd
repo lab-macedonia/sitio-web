@@ -143,7 +143,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
           <a class="vc-btn vc-btn--sec" id="mailto1" href="#">Abrir en el correo</a>
           <button class="vc-btn vc-btn--sec" id="dl1" type="button">Descargar .txt</button>
         </div>
-        <p class="vc-note" id="msg1" role="status">Revisa el texto y aprieta «Enviar solicitud»: llega al Laboratorio MACEDONIA. Si prefieres, usa «Abrir en el correo» o copia el texto.</p>
+        <p class="vc-note" id="msg1" role="status">Revisa el texto y presiona «Enviar solicitud»: llega al Laboratorio MACEDONIA. Si prefieres, usa «Abrir en el correo» o copia el texto.</p>
       </div>
     </div>
   </div>

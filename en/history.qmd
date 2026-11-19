@@ -13,14 +13,14 @@ MACEDONIA emerged as a space to **make academic work visible** and **strengthen 
 
 **M**·**A**·**C**·**E**·**D**·**O**·**N**·**I**·**A**
 
-The laboratory's original account also links the choice of name to an interest in the **history of Greek civilization** and to the **macedonia fruit salad** (*macedonia de frutas*). The latter connects closely and memorably with the studies of antioxidants and free radicals in the team's research. Together, these ideas explain why a chemistry and education laboratory has such an unconventional name.
+The choice of name is also linked to an interest in the **history of Greek civilization** and to the **macedonia fruit salad** (*macedonia de frutas*). The latter connects closely and memorably with the studies of antioxidants and free radicals in the team's research. Together, these ideas explain why a chemistry and education laboratory has such an unconventional name.
 
 ## An academic trajectory in development
 
-Germán Barriga González joined UMCE in **2017**. This is a milestone in the trajectory, but **it should not be confused with a formal founding date of the laboratory**. Within the Department of Chemistry, disciplinary lines, educational projects, student training and academic collaborations have been developed.
+Germán Barriga González joined UMCE in **2017**. This is a milestone in the trajectory, although **it is not a formal founding date of the laboratory**. Within the Department of Chemistry, disciplinary lines, educational projects, student training and academic collaborations have been developed.
 
 ::: {.timeline-m}
-<div class="timeline-item"><span>2017</span><div><strong>Academic link with UMCE.</strong> Start of the university work stage noted in the laboratory's original account.</div></div>
+<div class="timeline-item"><span>2017</span><div><strong>Academic link with UMCE.</strong> Start of Germán Barriga González's academic work at UMCE.</div></div>
 <div class="timeline-item"><span>2018–2020</span><div><strong>Disciplinary and educational research.</strong> Projects on organic chemistry, free radicals and online pre-laboratories.</div></div>
 <div class="timeline-item"><span>2024–2025</span><div><strong>Modeling and digital fabrication.</strong> Projects on computational chemistry, 3D printing and chemistry learning.</div></div>
 <div class="timeline-item"><span>2026</span><div><strong>Continuity of experimental and educational research.</strong> Participation in MAPEX, which studies learning experiences in chemistry laboratories.</div></div>

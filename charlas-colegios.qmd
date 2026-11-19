@@ -111,7 +111,7 @@ Al terminar, puedes **enviar la solicitud directamente** al laboratorio desde es
         <a class="vc-btn vc-btn--sec" id="mailto" href="#">Abrir en el correo</a>
         <button class="vc-btn vc-btn--sec" id="dl" type="button">Descargar .txt</button>
       </div>
-      <p class="vc-note" id="msg" role="status">Revisa el texto y aprieta «Enviar solicitud». Si el envío falla, copia el texto o ábrelo en tu correo y mándalo al laboratorio.</p>
+      <p class="vc-note" id="msg" role="status">Revisa el texto y presiona «Enviar solicitud». Si el envío falla, copia el texto o ábrelo en tu correo y mándalo al laboratorio.</p>
     </div>
   </div>
 </div>

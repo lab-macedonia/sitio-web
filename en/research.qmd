@@ -9,19 +9,19 @@ These are the lines of work that connect research and education in the laborator
 
 Synthesis and characterization of nitrones and compounds of biological interest; electron spin resonance and the study of radical species.
 
-**Track record:** RSC Advances (2020); projects FGI 42-18 and FONDECYT 3120241.
+**Associated output and projects:** article in *RSC Advances* (2020); projects FGI 42-18 and FONDECYT 3120241.
 
 ## Computational chemistry and molecular reactivity
 
 Study of chemical reactivity through computational models, conceptual DFT and spin-polarized DFT; applications to antioxidants, inclusion complexes and coordination chemistry.
 
-**Track record:** The Journal of Physical Chemistry A (2026); Chemical Physics Letters (2025).
+**Associated output:** articles in *The Journal of Physical Chemistry A* (2026) and *Chemical Physics Letters* (2025).
 
 ## Chemical education and experimental learning
 
 Analysis of laboratory learning, digital pre-laboratories, modeling and scientific skills in initial teacher education.
 
-**Track record:** Educación Química (2024, 2025); MAPEX (2026).
+**Associated output and projects:** articles in *Educación Química* (2025, 2024) and *Journal of Chemical Education* (2018); project MAPEX (2026).
 
 ## General chemistry and science
 
@@ -33,12 +33,12 @@ Teaching and resources for learning general chemistry and science at different l
 
 Development of experiences with molecular modeling, 3D fabrication and printing, and digital technology as a teaching aid.
 
-**Track record:** Projects Science in 3D (2025) and 27-2024-EFA (2024).
+**Associated projects:** Science in 3D (2025) and Strengthening modeling skills through computational chemistry and 3D printing, 27-2024-EFA (2024).
 
 ## Inclusion and teacher education
 
 Proposals and studies on curricular adaptations, teaching strategies and access to science experiences for diverse groups of students.
 
-**Track record:** Theses and projects linked to UMCE.
+**Associated theses:** *Pedagogical guidelines for inclusive secondary education* (2026) and *Curricular adaptations for students with Autism Spectrum Disorder (ASD) through Universal Design for Learning (UDL) in the chemical solutions unit* (2024).
 
 See the [projects](projects.qmd), [publications](publications.qmd) and [theses](theses.qmd) to explore the associated output.

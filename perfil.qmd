@@ -16,11 +16,11 @@ Académico del Departamento de Química de la Universidad Metropolitana de Cienc
 
 | Año | Formación | Institución |
 |---|---|---|
+| 2023 | Certificación de Competencia TIC | UMCE |
+| 2020 | Diploma en Tecnologías de la Información y Comunicación para la Docencia Universitaria | UTEM y UNAM |
 | 2011 | Doctor en Química | Universidad de Chile |
 | 2007 | Profesor de Química y Ciencias Naturales | UMCE |
 | 2005 | Licenciado en Educación Química | UMCE |
-| 2020 | Diploma en Tecnologías de la Información y Comunicación para la Docencia Universitaria | UTEM y UNAM |
-| 2023 | Certificación de Competencia TIC | UMCE |
 
 ## Líneas de investigación
 

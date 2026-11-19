@@ -5,7 +5,7 @@ subtitle: "Chemical research and science education in a shared space"
 
 ## What is MACEDONIA?
 
-The **MACEDONIA Laboratory** is an academic workspace linked to the Department of Chemistry of the **Metropolitan University of Educational Sciences (UMCE)**, in Santiago, Chile. Its identity brings together two fields that enrich each other: research in **organic chemistry** and **chemical education**, with special attention to initial teacher education. Its work is not limited to organic chemistry: it also covers **general chemistry** and **science** more broadly, in research as well as in teaching, laboratory work and learning resources.
+The **MACEDONIA Laboratory** is an academic workspace linked to the Department of Chemistry of the **Metropolitan University of Educational Sciences (UMCE)**, in Santiago, Chile. Its identity brings together two fields that enrich each other: research in **organic chemistry** and **chemical education**, with special attention to initial teacher education. Its work is not limited to organic chemistry: it also covers **general chemistry** and other **sciences**, in research as well as in teaching, laboratory work and learning resources.
 
 Its disciplinary work includes the study of free radicals and antioxidants, the synthesis and characterization of organic compounds, and the analysis of reactivity with experimental and computational tools. In science education, the laboratory explores learning experiences in the laboratory, the teaching of chemistry, and teaching resources supported by digital technologies.
 
@@ -17,7 +17,7 @@ Our approach connects scientific questions, educational needs and collaboration.
 **What makes MACEDONIA distinctive** is that it brings chemical research and teacher education together in a single identity: studying phenomena while thinking about how to make them understandable, teachable and relevant for others.
 :::
 
-## Three complementary areas
+## Three complementary lines of work
 
 1. **Chemical research:** study of reactivity, radicals and compounds of interest through experimental and theoretical approaches.
 2. **Chemical education:** research on science learning and initial teacher education.

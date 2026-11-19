@@ -16,11 +16,11 @@ Faculty member of the Department of Chemistry at the Metropolitan University of 
 
 | Year | Degree | Institution |
 |---|---|---|
+| 2023 | ICT Competence Certification | UMCE |
+| 2020 | Diploma in Information and Communication Technologies for University Teaching | UTEM and UNAM |
 | 2011 | PhD in Chemistry | Universidad de Chile |
 | 2007 | Teacher of Chemistry and Natural Sciences | UMCE |
 | 2005 | Bachelor's degree in Chemical Education | UMCE |
-| 2020 | Diploma in Information and Communication Technologies for University Teaching | UTEM and UNAM |
-| 2023 | ICT Competence Certification | UMCE |
 
 ## Research areas
 
