@@ -8,9 +8,9 @@ PAIRS = {  # español -> inglés
  'index.html':'index.html','presentacion.html':'about.html','historia.html':'history.html',
  'proposito.html':'purpose.html','investigacion.html':'research.html','proyectos.html':'projects.html',
  'publicaciones.html':'publications.html','congresos.html':'conferences.html','tesistas.html':'theses.html',
- 'perfil.html':'profile.html','contacto.html':'contact.html','noticias.html':'news.html',
+ 'perfil.html':'profile.html','contacto.html':'contact.html',
  'animaciones.html':'animations.html','laboratorio-digital.html':'resources.html',
- 'colaboradores.html':'team.html','visitas-colegios.html':'schools.html',
+ 'colaboradores.html':'team.html',
 }
 def url(rel):
     return BASE + (rel[:-len('index.html')] if rel.endswith('index.html') else rel)

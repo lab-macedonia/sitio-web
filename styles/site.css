@@ -200,3 +200,7 @@ table{color:var(--text)}
 .vc-h3,main .vc-h3{font-size:1.1rem;margin:1.4rem 0 .4rem;padding:0;border:0}
 .visually-hidden{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .acronym-note{font-size:.85rem;color:var(--muted);margin:-.4rem 0 .8rem}
+
+/* Noticias: los títulos de tarjeta y de categorías son h2 por orden de encabezados, con el aspecto de h5 */
+main h2.listing-title,#quarto-margin-sidebar h2.quarto-listing-category-title{font-size:1.15rem;line-height:1.3;margin:.2rem 0 .5rem;padding:0;border:0}
+#quarto-margin-sidebar h2.quarto-listing-category-title{font-size:1rem;text-transform:none}

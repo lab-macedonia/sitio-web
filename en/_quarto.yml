@@ -34,8 +34,6 @@ website:
         href: team.qmd
       - text: Academic profile
         href: profile.qmd
-      - text: Schools
-        href: schools.qmd
     - text: Research
       menu:
       - text: Research areas
@@ -56,8 +54,6 @@ website:
         href: resources.qmd
       - text: Organic chemistry animations
         href: animations.qmd
-    - text: News
-      href: news.qmd
     right:
     - text: Español
       href: ../index.html
