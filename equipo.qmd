@@ -22,10 +22,4 @@ Doctor en Química (Universidad de Chile). Su actividad integra química orgáni
 
 ## Redes y colaboradores
 
-Colaboraciones con las que el laboratorio trabaja en investigación y educación científica.
-
-- **LabTec:** tecnologías para la formación de docentes de ciencias. [Sitio de LabTec](https://sites.google.com/umce.cl/labtec/home).
-- **Semillero CATIÓN:** didáctica de las ciencias e innovación educativa.
-- **José Muñoz Espinoza:** colaboración en reactividad química computacional.
-
-[Ver detalle de colaboradores](colaboradores.qmd) · [Conocer tesistas](tesistas.qmd)
+El laboratorio trabaja con redes y colaboradores en investigación y educación científica. Puedes conocerlos en la página de [colaboradores](colaboradores.qmd). Los trabajos de titulación dirigidos están en [tesistas](tesistas.qmd).

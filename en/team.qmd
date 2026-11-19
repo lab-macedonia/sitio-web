@@ -33,12 +33,12 @@ A space dedicated to developing technologies for the education of science and te
 ::: {.feature}
 ### Semillero CATIÓN
 
-**Science, didactics and innovation.** A space created in 2023, led by Professor **Dr. Carla Olivares Petit**, focused on science didactics. Professor **Bernardo Madariaga** takes part: a Physics graduate of UMCE, currently working in UMCE's Master's program in Natural Science Didactics.
+**Science, didactics and innovation.** A space created in 2023, led by Professor **Dr. Carla Olivares Petit**, focused on science didactics. Professor **Mg. Bernardo Madariaga** takes part: a Physics graduate of UMCE with a master's degree in Didactics of Natural Sciences and Mathematics from UMCE, a program in which he currently works.
 :::
 ::: {.feature}
 ### José Muñoz Espinoza
 
-Chemistry teacher at UMCE with a master's degree in Chemistry from Universidad de Chile. Collaborator in **computational chemical reactivity**.
+Chemistry teacher at UMCE with a master's degree in Chemical Sciences from the Faculty of Sciences of Universidad de Chile, where he is currently completing his doctorate. Collaborator in **computational chemical reactivity**.
 :::
 :::
 

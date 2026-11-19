@@ -15,11 +15,11 @@ Espacio dedicado al desarrollo de tecnologías para la formación de profesores 
 ::: {.feature}
 ## Semillero CATIÓN
 
-**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias. Participa el profesor **Bernardo Madariaga**, titulado de Física en la UMCE, quien actualmente trabaja en el Magíster en Didáctica de las Ciencias Naturales de la misma universidad.
+**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias. Participa el profesor **Mg. Bernardo Madariaga**, titulado de Física en la UMCE y magíster en Didáctica de las Ciencias Naturales y las Matemáticas por la UMCE, programa en el que actualmente trabaja.
 :::
 ::: {.feature}
 ## José Muñoz Espinoza
 
-Profesor de Química UMCE y magíster en Química de la Universidad de Chile. Colaborador en **reactividad química computacional**.
+Profesor de Química UMCE y magíster en Ciencias Químicas de la Facultad de Ciencias de la Universidad de Chile, institución en la que actualmente completa su doctorado. Colaborador en **reactividad química computacional**.
 :::
 :::
