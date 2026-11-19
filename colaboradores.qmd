@@ -14,7 +14,7 @@ Espacio dedicado al desarrollo de tecnologías para la formación de profesores 
 ::: {.feature}
 ## Semillero CATIÓN
 
-**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias. Participa el profesor **Bernardo Madariaga**, de Física UMCE y magíster en Didáctica de las Ciencias Naturales por la UMCE, en el área de educación científica.
+**Ciencias, didáctica e innovación.** Espacio surgido en 2023, a cargo de la profesora **Dra. Carla Olivares Petit**, centrado en la didáctica de las ciencias. Participa el profesor **Bernardo Madariaga**, titulado de Física en la UMCE, quien actualmente trabaja en el Magíster en Didáctica de las Ciencias Naturales de la misma universidad.
 :::
 ::: {.feature}
 ## José Muñoz Espinoza
