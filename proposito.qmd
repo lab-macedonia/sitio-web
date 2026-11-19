@@ -23,31 +23,31 @@ Proyectar a MACEDONIA como un espacio académico reconocido por articular invest
 ::: {.principles-grid}
 ::: {.principle}
 ### Rigor científico
-Preguntas claras, métodos fundamentados y comunicación responsable de resultados.
+Proyectos financiados con fondos internos de la UMCE, resultados difundidos en publicaciones y congresos, y tesis dirigidas con método explícito.
 :::
 ::: {.principle}
 ### Sentido pedagógico
-Recursos y experiencias diseñados en función del aprendizaje, no solamente de la tecnología.
+Cada simulación, modelo 3D o prelaboratorio parte de una pregunta de aprendizaje, no de la herramienta.
 :::
 ::: {.principle}
 ### Colaboración
-Trabajo con estudiantes, profesores, investigadores y laboratorios asociados.
+Trabajo con LabTec, el Semillero CATIÓN, estudiantes tesistas y colegios.
 :::
 ::: {.principle}
 ### Inclusión y respeto
-Reconocimiento de distintas trayectorias, contextos y necesidades formativas.
+Tesis y proyectos sobre aprendizaje multisensorial, TEA/DUA y TDA en el laboratorio de química.
 :::
 ::: {.principle}
 ### Apertura responsable
-Difusión y reutilización de recursos cuando las licencias y autorizaciones lo permiten.
+Simulaciones y recursos de acceso libre en línea; el visor de realidad aumentada tiene licencia MIT.
 :::
 ::: {.principle}
 ### Compromiso público
-Contribución a una educación científica vinculada con su contexto social.
+Charlas y visitas con colegios, disponibles mediante solicitud.
 :::
 :::
 
 ## Propósito en acción
 
-Se expresa en nuestras [investigaciones](investigacion.qmd), [proyectos](proyectos.qmd), [tesis](tesistas.qmd), [colaboraciones](colaboradores.qmd) y [recursos educativos](repositorios.qmd).
+Lo que hacemos está en nuestras [líneas de investigación](investigacion.qmd), los [proyectos](proyectos.qmd) y las [tesis](tesistas.qmd) dirigidas, junto a [colaboradores](colaboradores.qmd) y [recursos educativos](repositorios.qmd) de uso abierto.
 

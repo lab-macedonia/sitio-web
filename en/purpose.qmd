@@ -23,30 +23,30 @@ To establish MACEDONIA as an academic space recognized for linking chemical rese
 ::: {.principles-grid}
 ::: {.principle}
 ### Scientific rigor
-Clear questions, well-founded methods and responsible communication of results.
+Projects funded by internal UMCE funds, results shared in publications and conferences, and supervised theses with explicit methods.
 :::
 ::: {.principle}
 ### Pedagogical purpose
-Resources and experiences designed around learning, not only technology.
+Every simulation, 3D model or pre-laboratory starts from a learning question, not from the tool.
 :::
 ::: {.principle}
 ### Collaboration
-Work with students, teachers, researchers and partner laboratories.
+Work with LabTec, the Semillero CATIÓN, thesis students and schools.
 :::
 ::: {.principle}
 ### Inclusion and respect
-Recognition of different trajectories, contexts and educational needs.
+Theses and projects on multisensory learning, ASD/UDL and ADHD in the chemistry laboratory.
 :::
 ::: {.principle}
 ### Responsible openness
-Sharing and reuse of resources when licenses and permissions allow.
+Simulations and resources freely accessible online; the augmented reality viewer is MIT-licensed.
 :::
 ::: {.principle}
 ### Public commitment
-Contribution to a science education connected to its social context.
+Talks and visits with schools, available on request.
 :::
 :::
 
 ## Purpose in action
 
-It is expressed in our [research](research.qmd), [projects](projects.qmd), [theses](theses.qmd), [collaborations](team.qmd) and [educational resources](resources.qmd).
+What we do is found in our [research lines](research.qmd), [projects](projects.qmd) and supervised [theses](theses.qmd), along with [collaborators](team.qmd) and openly available [educational resources](resources.qmd).
