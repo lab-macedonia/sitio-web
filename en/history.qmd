@@ -18,11 +18,12 @@ The choice of name is also linked to an interest in the **history of Greek civil
 
 ## An academic trajectory in development
 
-Germán Barriga González joined UMCE in **2017**. This is a milestone in the trajectory, although **it is not a formal founding date of the laboratory**. Within the Department of Chemistry, disciplinary lines, educational projects, student training and academic collaborations have been developed.
+The MACEDONIA Laboratory was **founded between July and August 2020**, with the aim of **making the work carried out until then visible**. An earlier milestone in this trajectory is Germán Barriga González joining UMCE in **2017**. Within the Department of Chemistry, disciplinary lines, educational projects, student training and academic collaborations have been developed.
 
 ::: {.timeline-m}
 <div class="timeline-item"><span>2017</span><div><strong>Academic link with UMCE.</strong> Start of Germán Barriga González's academic work at UMCE.</div></div>
 <div class="timeline-item"><span>2018–2020</span><div><strong>Disciplinary and educational research.</strong> Projects on organic chemistry, free radicals and online pre-laboratories.</div></div>
+<div class="timeline-item"><span>Jul–Aug 2020</span><div><strong>The MACEDONIA Laboratory is founded.</strong> It is created to make the work carried out visible.</div></div>
 <div class="timeline-item"><span>2024–2025</span><div><strong>Modeling and digital fabrication.</strong> Projects on computational chemistry, 3D printing and chemistry learning.</div></div>
 <div class="timeline-item"><span>2026</span><div><strong>Continuity of experimental and educational research.</strong> Participation in MAPEX, which studies learning experiences in chemistry laboratories.</div></div>
 :::
