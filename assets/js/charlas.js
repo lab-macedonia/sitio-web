@@ -41,7 +41,7 @@ function showErrs(list){
 }
 
 $('gen').addEventListener('click',function(){
-  var e=[],t=tipo(),hoy=new Date().toISOString().slice(0,10);
+  var e=[],t=tipo(),d0=new Date(),hoy=d0.getFullYear()+'-'+String(d0.getMonth()+1).padStart(2,'0')+'-'+String(d0.getDate()).padStart(2,'0');
   if(!v('cole'))e.push('Nombre del establecimiento');
   if(!v('comuna'))e.push('Comuna');
   if(!v('dir'))e.push('Dirección del establecimiento');

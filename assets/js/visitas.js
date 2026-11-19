@@ -4,6 +4,8 @@
 'use strict';
 var ACAD='Germán Barriga González', MAIL_LAB='german.barriga@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
 function $(id){return document.getElementById(id)}
+/* tablas: Quarto envuelve <table id> en un <div> con el mismo id; se busca la tabla por su etiqueta */
+function tbl(id){return document.querySelector('table#'+id)}
 function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
 function hrs(a,b){return a&&b?a+' a '+b+' h':(a?'desde '+a+' h':'')}
@@ -58,7 +60,7 @@ function addReac(){
   var tr=document.createElement('tr');
   tr.innerHTML='<td><input aria-label="Reactivo"></td><td><input aria-label="Solución"></td><td><input aria-label="Material"></td><td><input aria-label="Otros"></td><td><button type="button" class="vc-btn vc-btn--sec vc-btn--sm" aria-label="Quitar fila">×</button></td>';
   tr.querySelector('button').addEventListener('click',function(){tr.remove()});
-  $('treac').tBodies[0].appendChild(tr);
+  tbl('treac').tBodies[0].appendChild(tr);
 }
 for(var i=0;i<3;i++)addReac();
 $('addreac').addEventListener('click',addReac);
@@ -70,7 +72,7 @@ function rutValido(s){var r=rutLimpio(s);if(r.length<8||r.length>9)return false;
 function rutFmt(s){var r=rutLimpio(s);if(r.length<2)return r;return r.slice(0,-1).replace(/\B(?=(\d{3})+(?!\d))/g,'.')+'-'+r.slice(-1)}
 
 /* nómina */
-function renum(){Array.prototype.forEach.call($('tn').tBodies[0].rows,function(r,i){r.cells[0].textContent=i+1})}
+function renum(){Array.prototype.forEach.call(tbl('tn').tBodies[0].rows,function(r,i){r.cells[0].textContent=i+1})}
 function addEst(){
   var tr=document.createElement('tr');
   tr.innerHTML='<td class="vc-num"></td><td><input aria-label="Nombre estudiante"></td><td><input aria-label="RUT" placeholder="12.345.678-5"></td><td><button type="button" class="vc-btn vc-btn--sec vc-btn--sm" aria-label="Quitar estudiante">×</button></td>';
@@ -81,7 +83,7 @@ function addEst(){
     r.classList.toggle('vc-invalid',bad);r.setAttribute('aria-invalid',bad);
   });
   tr.querySelector('button').addEventListener('click',function(){tr.remove();renum()});
-  $('tn').tBodies[0].appendChild(tr);renum();
+  tbl('tn').tBodies[0].appendChild(tr);renum();
 }
 for(var j=0;j<14;j++)addEst();
 $('addest').addEventListener('click',addEst);
@@ -172,7 +174,7 @@ $('gen1').addEventListener('click',function(){
   L.push('7. Sala de clases: '+($('c_sala').checked?'SÍ – '+v('sala_txt'):'No'));
   L.push('8. Reactivos: '+($('c_reac').checked?'SÍ':'No'));
   if($('c_reac').checked){
-    Array.prototype.map.call($('treac').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
+    Array.prototype.map.call(tbl('treac').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
       .filter(function(r){return r.some(function(x){return x})})
       .forEach(function(r,i){L.push('    '+(i+1)+') Reactivo: '+(r[0]||'-')+' | Solución: '+(r[1]||'-')+' | Material: '+(r[2]||'-')+' | Otros: '+(r[3]||'-'))});
   }
@@ -184,7 +186,7 @@ $('gen1').addEventListener('click',function(){
   var si=function(id,txt){return $(id).checked?'Sí'+(txt?' – '+txt:''):'No'};
   var reac='No';
   if($('c_reac').checked){
-    var fr=Array.prototype.map.call($('treac').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
+    var fr=Array.prototype.map.call(tbl('treac').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
       .filter(function(r){return r.some(function(x){return x})})
       .map(function(r){return 'Reactivo: '+(r[0]||'-')+' | Solución: '+(r[1]||'-')+' | Material: '+(r[2]||'-')+' | Otros: '+(r[3]||'-')});
     reac='Sí'+(fr.length?' – '+fr.join(' · '):'');
@@ -206,7 +208,7 @@ $('gen2').addEventListener('click',function(){
   var e=[];
   [['f_cole','Establecimiento'],['f_fecha','Fecha'],['f_hini','Horario'],['f_act','Actividad'],['f_n','N.º de estudiantes'],['f_prof','Profesor/a'],['f_mail','Correo del profesor/a'],['f_acad','Académico/a encargado/a']]
     .forEach(function(p){if(!v(p[0]))e.push(p[1])});
-  var filas=Array.prototype.map.call($('tn').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
+  var filas=Array.prototype.map.call(tbl('tn').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
     .filter(function(r){return r[0]||r[1]});
   if(!filas.length)e.push('Al menos un estudiante');
   filas.forEach(function(r,i){
