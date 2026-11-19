@@ -34,6 +34,8 @@ website:
         href: team.qmd
       - text: Academic profile
         href: profile.qmd
+      - text: Schools
+        href: schools.qmd
     - text: Research
       menu:
       - text: Research areas
@@ -70,8 +72,16 @@ website:
     center: Organic chemistry · General chemistry · Science · Chemical education
     right: '[Instagram](https://www.instagram.com/labmacedonia/) · [Contact](/contact.qmd)'
   back-to-top-navigation: true
+  open-graph:
+    image: assets/og-macedonia.png
+    image-alt: MACEDONIA Laboratory logo on a blue background
+    locale: en_US
+  twitter-card:
+    image: assets/og-macedonia.png
+    card-style: summary_large_image
 format:
   html:
+    canonical-url: true
     theme:
       light: [cosmo, styles/theme.scss]
       dark: [darkly, styles/theme.scss]

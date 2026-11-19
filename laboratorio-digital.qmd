@@ -1,7 +1,7 @@
 ---
 title: "Laboratorio digital"
 subtitle: "Recursos abiertos para explorar, aprender y enseñar ciencias"
-description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 114 simulaciones de ciencias y animaciones de química orgánica."
+description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 115 simulaciones de ciencias y animaciones de química orgánica."
 ---
 
 El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recursos educativos del laboratorio.
@@ -20,7 +20,8 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 ## Simulaciones de ciencias
 
 **Repositorio:** `simulaciones-quimica`  
-**Contenido:** 114 simulaciones en ciencias.  
+**Contenido:** 115 simulaciones en ciencias.  
+**Licencia:** MIT.  
 **Aplicación educativa:** exploración interactiva de fenómenos científicos.
 
 [Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Código abierto](https://github.com/lab-macedonia/simulaciones-quimica)

@@ -1,0 +1,44 @@
+---
+title: "Schools: visits, talks and activities"
+subtitle: "How teachers in Chile can work with the MACEDONIA Laboratory"
+description: "Information for schools: request a visit to the UMCE Department of Chemistry, or a talk or experimental activity at your school, with the MACEDONIA Laboratory."
+toc: false
+---
+
+The MACEDONIA Laboratory works with schools in two ways. Both services are aimed at schools in Chile, so the request forms are in Spanish.
+
+::: {.callout-note}
+## About the language
+
+The forms are available only in Spanish. If you prefer to write in English, email [german.barriga@umce.cl](mailto:german.barriga@umce.cl) and we will coordinate by email.
+:::
+
+## Visit to the UMCE Department of Chemistry
+
+A course or group of students visits the facilities of the Department of Chemistry of the Metropolitan University of Educational Sciences (UMCE). Visits are organized by the MACEDONIA Laboratory and take place in the Department, following the protocol in force.
+
+- The request must be made **in writing**, at least **3 weeks (15 business days)** in advance. Requests with less notice cannot be accommodated.
+- The Department replies in writing within **5 business days** of receiving the request.
+- The request is processed by the laboratory and the Department's management. Only after a positive reply does the school send the visit identification form.
+
+[Request a visit (form in Spanish) →](../visitas-colegios.html)
+
+## Talk or experimental activity at your school
+
+Teachers can ask the laboratory to come to their school for a **talk** or an **experimental activity**. The form asks for the school's details, the activity of interest, the course and number of students, preferred dates, and the conditions available at the school (laboratory, classroom, water, projector, computer and internet).
+
+Experimental activities currently offered:
+
+- Recognition of functional groups (organic chemistry focus)
+- Recognition of functional groups (biomolecules focus)
+- Acid-base
+- Calorimetry
+- Redox reactions
+- Chemical kinetics
+- Another activity, to be specified in the request
+
+[Request a talk or activity (form in Spanish) →](../charlas-colegios.html)
+
+## Questions
+
+Write to [german.barriga@umce.cl](mailto:german.barriga@umce.cl).

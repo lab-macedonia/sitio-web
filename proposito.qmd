@@ -39,7 +39,7 @@ Tesis y proyectos sobre aprendizaje multisensorial, TEA/DUA y TDA en el laborato
 :::
 ::: {.principle}
 ### Apertura responsable
-Simulaciones y recursos de acceso libre en línea; el visor de realidad aumentada tiene licencia MIT.
+Simulaciones y visor de realidad aumentada con licencia MIT; animaciones con licencia Creative Commons.
 :::
 ::: {.principle}
 ### Compromiso público

@@ -12,7 +12,7 @@ Sitio académico bilingüe parcial con filtros para catálogos, perfiles de cola
 
 ## Desarrollo local
 
-Instalar Quarto desde https://quarto.org/docs/get-started/ y ejecutar:
+Instalar Quarto desde https://quarto.org/docs/get-started/ (la publicación usa la versión **1.11.9**, fijada en `.github/workflows/publish.yml`; conviene usar la misma en local) y ejecutar:
 
 ```bash
 python scripts/validate_site.py
@@ -29,7 +29,7 @@ La cuenta vinculada es https://www.instagram.com/labmacedonia/ (debe ser profesi
 3. En GitHub: Settings → Secrets and variables → Actions → New repository secret → nombre `BEHOLD_FEED_URL`.
 4. Ejecutar manualmente el flujo `Sincronizar Instagram autorizado` (Actions → Run workflow) y comprobar que aparecen carpetas `noticias/ig-*`.
 
-El flujo se ejecuta cada seis horas (UTC), guarda únicamente noticias nuevas y no sobrescribe las que ya fueron editadas. Tras un commit con noticias nuevas solicita explícitamente el workflow de publicación (los commits con `GITHUB_TOKEN` no desencadenan otros workflows). Alternativa sin intermediario: definir `INSTAGRAM_ACCESS_TOKEN` (API de Instagram con app de Meta; el token caduca cada 60 días). **La importación todavía no se ha probado con una cuenta real.**
+El flujo se ejecuta cada seis horas (UTC), importa únicamente noticias nuevas y no sobrescribe las que ya fueron editadas. Las noticias nuevas **no se publican solas**: el flujo las sube a la rama `instagram-sync` y abre un *pull request* para que se revisen (título, fecha, texto) y se apruebe; al fusionarlo, el sitio se publica. Requiere activar una vez en el repositorio *Settings → Actions → General → Workflow permissions → Allow GitHub Actions to create and approve pull requests*. Alternativa sin intermediario: definir `INSTAGRAM_ACCESS_TOKEN` (API de Instagram con app de Meta; el token caduca cada 60 días).
 
 ## Noticias y RSS
 

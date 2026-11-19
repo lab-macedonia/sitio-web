@@ -1,7 +1,7 @@
 ---
 title: "Educational resources"
 subtitle: "Open resources to explore, learn and teach science"
-description: "Open resources from the MACEDONIA Laboratory: augmented reality, 114 science simulations and organic chemistry animations."
+description: "Open resources from the MACEDONIA Laboratory: augmented reality, 115 science simulations and organic chemistry animations."
 ---
 
 The digital laboratory brings together open developments published on GitHub and educational resources from the laboratory.
@@ -20,7 +20,8 @@ The digital laboratory brings together open developments published on GitHub and
 ## Interactive science simulations
 
 **Repository:** `simulaciones-quimica`  
-**What it is:** a collection of 114 3D simulations in chemistry, biology, earth sciences and physics, related to learning objectives of the Chilean school curriculum.  
+**What it is:** a collection of 115 interactive simulations in chemistry, biology, earth sciences and physics, related to learning objectives of the Chilean school curriculum.  
+**License:** MIT.  
 **Educational use:** interactive exploration of scientific phenomena.
 
 [Explore the simulations](https://lab-macedonia.github.io/simulaciones-quimica/) · [Source code](https://github.com/lab-macedonia/simulaciones-quimica)

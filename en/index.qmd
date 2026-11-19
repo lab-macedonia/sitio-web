@@ -75,6 +75,13 @@ Team, thesis students and collaborators of the laboratory.
 [Meet the team →](team.qmd)
 :::
 ::: {.home-link}
+**Schools**
+
+Visits to the UMCE Department of Chemistry, and talks and experimental activities at your school.
+
+[Information for schools →](schools.qmd)
+:::
+::: {.home-link}
 **News and activities**
 
 Updates from the laboratory: simulations, education and outreach.

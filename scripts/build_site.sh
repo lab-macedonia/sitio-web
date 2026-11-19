@@ -10,3 +10,5 @@ cp -r assets en/assets && cp -r styles en/styles
 (cd en && quarto render)
 rm -rf _site/en && mv en/_site _site/en
 rm -rf en/assets en/styles
+python3 scripts/add_hreflang.py _site
+rm -f _site/assets/backtotop.html _site/assets/catalog-filters.html _site/assets/goatcounter.html _site/assets/preload-fonts.html _site/en/assets/backtotop.html _site/en/assets/catalog-filters.html _site/en/assets/goatcounter.html _site/en/assets/preload-fonts.html

@@ -81,13 +81,19 @@ website:
     center: Química orgánica · Química general · Ciencias · Educación química
     right: '[Instagram](https://www.instagram.com/labmacedonia/) · [Contacto](/contacto.qmd)'
   back-to-top-navigation: true
-  open-graph: true
-  twitter-card: true
+  open-graph:
+    image: assets/og-macedonia.png
+    image-alt: Logotipo del Laboratorio MACEDONIA sobre fondo azul
+    locale: es_CL
+  twitter-card:
+    image: assets/og-macedonia.png
+    card-style: summary_large_image
   repo-url: https://github.com/lab-macedonia/sitio-web
   repo-actions:
   - source
 format:
   html:
+    canonical-url: true
     theme:
       light: [cosmo, styles/theme.scss]
       dark: [darkly, styles/theme.scss]

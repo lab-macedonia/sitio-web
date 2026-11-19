@@ -39,7 +39,7 @@ Theses and projects on multisensory learning, ASD/UDL and ADHD in the chemistry 
 :::
 ::: {.principle}
 ### Responsible openness
-Simulations and resources freely accessible online; the augmented reality viewer is MIT-licensed.
+Simulations and augmented reality viewer under the MIT license; animations under a Creative Commons license.
 :::
 ::: {.principle}
 ### Public commitment
