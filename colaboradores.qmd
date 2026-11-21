@@ -1,7 +1,7 @@
 ---
 title: "Colaboradores"
 subtitle: "Red académica y de investigación"
-description: "Redes y colaboradores del Laboratorio MACEDONIA (UMCE): LabTec, Semillero CATIÓN y colaboración en reactividad química computacional."
+description: "Redes y colaboradores del Laboratorio MACEDONIA (UMCE): LabTec, Semillero CATIÓN y colaboración en química teórica."
 ---
 
 ::: {.cards}
@@ -22,6 +22,6 @@ Espacio dedicado al desarrollo de tecnologías para la formación de profesores 
 ::: {.feature}
 ## José Muñoz Espinoza
 
-Profesor de Química UMCE y magíster en Ciencias Químicas de la Facultad de Ciencias de la Universidad de Chile, institución en la que actualmente completa su doctorado. Colaborador en **reactividad química computacional**.
+Profesor de Química UMCE y magíster en Ciencias Químicas de la Facultad de Ciencias de la Universidad de Chile, institución en la que es candidato a doctor. Trabaja en **química teórica**.
 :::
 :::

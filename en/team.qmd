@@ -40,7 +40,7 @@ A space dedicated to developing technologies for the education of science and te
 ::: {.feature}
 ### José Muñoz Espinoza
 
-Chemistry teacher at UMCE with a master's degree in Chemical Sciences from the Faculty of Sciences of Universidad de Chile, where he is currently completing his doctorate. Collaborator in **computational chemical reactivity**.
+Chemistry teacher at UMCE with a master's degree in Chemical Sciences from the Faculty of Sciences of Universidad de Chile, where he is a doctoral candidate. He works in **theoretical chemistry**.
 :::
 :::
 
