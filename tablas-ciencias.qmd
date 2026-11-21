@@ -1,11 +1,11 @@
 ---
 title: "Tablas de referencia de ciencias"
-subtitle: "Química, biología y física: tabla periódica, grupos funcionales, aminoácidos, Modelo Estándar y unidades SI"
-description: "Cinco tablas interactivas de química, biología y física: tabla periódica con configuración electrónica y átomo animado, grupos funcionales, aminoácidos, Modelo Estándar de partículas y unidades del Sistema Internacional. Laboratorio MACEDONIA, UMCE."
+subtitle: "Química, biología y física: tabla periódica, grupos funcionales, aminoácidos, nucleótidos, Modelo Estándar y unidades SI"
+description: "Seis tablas interactivas de química, biología y física: tabla periódica con configuración electrónica y átomo animado, grupos funcionales, aminoácidos, Modelo Estándar de partículas y unidades del Sistema Internacional. Laboratorio MACEDONIA, UMCE."
 toc: false
 ---
 
-Recurso del Laboratorio MACEDONIA con cinco vistas para consultar y estudiar. En **química**: la **tabla periódica** con configuración electrónica (resumida, completa y en cajas cuánticas) y un átomo animado, y los **grupos funcionales**. En **biología y bioquímica**: los **20 aminoácidos** con sus estructuras. En **física**: el **Modelo Estándar de partículas** y las **magnitudes y unidades** del Sistema Internacional. Las tarjetas giran para mostrar los datos principales en el reverso.
+Recurso del Laboratorio MACEDONIA con seis vistas para consultar y estudiar. En **química**: la **tabla periódica** con configuración electrónica (resumida, completa y en cajas cuánticas) y un átomo animado, y los **grupos funcionales**. En **biología y bioquímica**: los **20 aminoácidos** y los **nucleótidos y bases nitrogenadas** (ADN y ARN), con sus estructuras y un traductor de hebras. En **física**: el **Modelo Estándar de partículas** y las **magnitudes y unidades** del Sistema Internacional. Las tarjetas giran para mostrar los datos principales en el reverso.
 
 ```{=html}
 <link rel="stylesheet" href="assets/tabla-periodica/app.css">

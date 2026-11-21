@@ -11,10 +11,10 @@ var $=function(id){return document.getElementById('tpe-'+id);};
 
 /* ================= textos de la interfaz ================= */
 var S={
- tabs:[['Tabla periódica','configuración electrónica'],['Grupos funcionales','estructuras generales'],['Aminoácidos','los 20 proteinogénicos'],['Modelo Estándar','partículas elementales'],['Magnitudes y unidades','Sistema Internacional']],
- tabsEn:[['Periodic table','electron configuration'],['Functional groups','general structures'],['Amino acids','the 20 standard ones'],['Standard Model','elementary particles'],['Quantities and units','SI']],
- h2:['Tabla periódica de los elementos','Grupos funcionales de la química orgánica','Aminoácidos proteinogénicos','Modelo Estándar de partículas','Magnitudes y unidades del Sistema Internacional'],
- h2En:['Periodic table of the elements','Functional groups in organic chemistry','Standard protein amino acids','Standard Model of particles','Quantities and units of the International System'],
+ tabs:[['Tabla periódica','configuración electrónica'],['Grupos funcionales','estructuras generales'],['Aminoácidos','los 20 proteinogénicos'],['Nucleótidos y bases','ADN y ARN'],['Modelo Estándar','partículas elementales'],['Magnitudes y unidades','Sistema Internacional']],
+ tabsEn:[['Periodic table','electron configuration'],['Functional groups','general structures'],['Amino acids','the 20 standard ones'],['Nucleotides and bases','DNA and RNA'],['Standard Model','elementary particles'],['Quantities and units','SI']],
+ h2:['Tabla periódica de los elementos','Grupos funcionales de la química orgánica','Aminoácidos proteinogénicos','Nucleótidos y bases nitrogenadas','Modelo Estándar de partículas','Magnitudes y unidades del Sistema Internacional'],
+ h2En:['Periodic table of the elements','Functional groups in organic chemistry','Standard protein amino acids','Nucleotides and nitrogenous bases','Standard Model of particles','Quantities and units of the International System'],
  search:['Buscar por nombre, símbolo o número','Search by name, symbol or number'],
  searchLabel:['Buscar elemento','Search element'],
  tileLabel:['Casilla:','Tile shows:'],
@@ -343,7 +343,7 @@ var aVB=unionVB(AA);
 
 /* ================= construcción de la interfaz ================= */
 var tabsT=T('tabs'), h2T=T('h2');
-var ids=['tabla','grupos','aminoacidos','estandar','unidades'];
+var ids=['tabla','grupos','aminoacidos','nucleo','estandar','unidades'];
 var html='<div class="tpe-tabs" role="tablist">';
 ids.forEach(function(id,i){html+='<button class="tpe-tab" role="tab" type="button" id="tpe-t-'+id+'" aria-controls="tpe-p-'+id+'" aria-selected="'+(i===0)+'" data-tab="'+id+'">'+tabsT[i][0]+'<small>'+tabsT[i][1]+'</small></button>';});
 html+='</div>';
@@ -364,8 +364,14 @@ html+='<section id="tpe-p-aminoacidos" role="tabpanel" aria-labelledby="tpe-t-am
  '<div class="tpe-chips" id="tpe-achips" role="group"></div>'+
  '<div class="tpe-legend"><span><i style="border-color:var(--muted)"></i>'+S.aLegend[0][LI]+'</span><span><i style="border-color:var(--accent-text)"></i>'+S.aLegend[1][LI]+'</span></div>'+
  '<div class="tpe-cards" id="tpe-acards"></div><p class="tpe-note">'+tr(S.noteAmino)+'</p></section>';
-html+='<section id="tpe-p-estandar" role="tabpanel" aria-labelledby="tpe-t-estandar" hidden><h2 class="visually-hidden">'+h2T[3]+'</h2><div class="fis" data-fis data-lang="'+(EN?'en':'es')+'" data-tool="sm"></div></section>';
-html+='<section id="tpe-p-unidades" role="tabpanel" aria-labelledby="tpe-t-unidades" hidden><h2 class="visually-hidden">'+h2T[4]+'</h2><div class="fis" data-fis data-lang="'+(EN?'en':'es')+'" data-tool="si"></div></section>';
+html+='<section id="tpe-p-nucleo" role="tabpanel" aria-labelledby="tpe-t-nucleo" hidden><h2 class="visually-hidden">'+h2T[3]+'</h2>'+
+ '<div class="tpe-chips" id="tpe-nsub" role="group"></div>'+
+ '<div id="tpe-n-bases"><div class="tpe-chips" id="tpe-nchips" role="group"></div><div class="tpe-legend"><span><i style="border-color:var(--muted)"></i>'+(EN?'R = pentose (ribose or deoxyribose) bonded at N1 (pyrimidines) or N9 (purines)':'R = pentosa (ribosa o desoxirribosa) unida en N1 (pirimidinas) o N9 (purinas)')+'</span></div><div class="tpe-cards" id="tpe-ncards"></div></div>'+
+ '<div id="tpe-n-sug" hidden><div class="tpe-cards" id="tpe-scards"></div><div id="tpe-ntab"></div></div>'+
+ '<div id="tpe-n-seq" hidden><div class="tpe-seq"><h3 class="tpe-h3">'+(EN?'Complementary strand and transcript':'Hebra complementaria y transcrito')+'</h3><p class="tpe-meta">'+(EN?'Type the coding (sense) strand of DNA, 5\u2032\u21923\u2032, using A, T, G and C.':'Escribe la hebra codificante (sentido) del ADN, de 5\u2032 a 3\u2032, con A, T, G y C.')+'</p><div class="fis-row"><input id="tpe-seq" type="text" value="ATGGCCATTGTAATGGGC" aria-label="'+(EN?'DNA sequence':'Secuencia de ADN')+'" autocomplete="off" spellcheck="false" style="flex:1 1 260px;font-family:ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase"></div><div class="tpe-seqout" id="tpe-seqout" aria-live="polite"></div></div></div>'+
+ '<p class="tpe-note" id="tpe-nnote"></p></section>';
+html+='<section id="tpe-p-estandar" role="tabpanel" aria-labelledby="tpe-t-estandar" hidden><h2 class="visually-hidden">'+h2T[4]+'</h2><div class="fis" data-fis data-lang="'+(EN?'en':'es')+'" data-tool="sm"></div></section>';
+html+='<section id="tpe-p-unidades" role="tabpanel" aria-labelledby="tpe-t-unidades" hidden><h2 class="visually-hidden">'+h2T[5]+'</h2><div class="fis" data-fis data-lang="'+(EN?'en':'es')+'" data-tool="si"></div></section>';
 root.innerHTML=html;
 root.classList.add('tpe');
 
@@ -560,4 +566,93 @@ function drawAmino(filter){
 }
 chipRow('gchips',S.gFilters.map(function(f){return [f[0],f[LI+1]];}),drawGrupos); drawGrupos('all');
 chipRow('achips',[['all',tr(S.aAll)]].concat(Object.keys(ACLS).map(function(k){return [k,tr(ACLS[k][0]),ACLS[k][1]];})),drawAmino); drawAmino('all');
+
+/* ================= nucleótidos y bases ================= */
+(function(){
+var P6=function(o){return o;};
+var h6=a, x5=a+0.951, x8=a+1.539;
+function purine(k){ /* k: 'A' o 'G' */
+  var at={C6:[0,-1],N1:[-a,-.5,k==='G'?'NH':'N'],C2:[-a,.5],N3:[0,1,'N'],C4:[a,.5],C5:[a,-.5],N7:[x5,-.809,'N'],C8:[x8,0],N9:[x5,.809,'N'],R9:[a+1.26,1.76,'R']};
+  var b='N1-C2 N3-C4 C5-C6 C5-N7 C8-N9 N9-C4 N9-R9 C4=C5@r6 N7=C8@r5';
+  if(k==='A'){at.EX=[0,-2,'NH2'];b+=' C6=N1@r6 C2=N3@r6 C6-EX';}
+  else{at.EX=[0,-2,'O'];at.EY=[-2*a,1,'NH2'];b+=' C6-N1 C6=EX C2=N3@r6 C2-EY';}
+  return {atoms:at,bonds:b,hi:[],mode:'sc',rc:{r6:[0,0],r5:[a+.688,0]}};
+}
+function pyrimidine(k){ /* C, U, T */
+  var at={N1:[0,1,'N'],C2:[a,.5],N3:[a,-.5,k==='C'?'N':'NH'],C4:[0,-1],C5:[-a,-.5],C6:[-a,.5],O2:[2*a,1,'O'],R1:[0,2,'R']};
+  var b='N1-C2 C2=O2 C2-N3 C4-C5 C5=C6@r C6-N1 N1-R1';
+  if(k==='C'){at.X4=[0,-2,'NH2'];b+=' N3=C4@r C4-X4';}
+  else{at.X4=[0,-2,'O'];b+=' N3-C4 C4=X4';}
+  if(k==='T'){at.ME=[-2*a,-1,'CH3'];b+=' C5-ME';}
+  return {atoms:at,bonds:b,hi:[],mode:'sc',rc:{r:[0,0]}};
+}
+var NB=[
+ {k:'A',n:['Adenina','Adenine'],t:'pur',d:purine('A'),f:'C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>',mm:'135.13',par:['con T (ADN) o U (ARN): 2 puentes de hidrógeno','with T (DNA) or U (RNA): 2 hydrogen bonds'],nuc:['adenosina · AMP (en ADN: desoxiadenosina · dAMP)','adenosine · AMP (in DNA: deoxyadenosine · dAMP)'],en:['ADN y ARN','DNA and RNA'],x:['También forma ATP, NAD⁺ y FAD, que transportan energía y electrones.','It also forms ATP, NAD⁺ and FAD, which carry energy and electrons.']},
+ {k:'G',n:['Guanina','Guanine'],t:'pur',d:purine('G'),f:'C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>O',mm:'151.13',par:['con C: 3 puentes de hidrógeno','with C: 3 hydrogen bonds'],nuc:['guanosina · GMP (en ADN: desoxiguanosina · dGMP)','guanosine · GMP (in DNA: deoxyguanosine · dGMP)'],en:['ADN y ARN','DNA and RNA'],x:['Forma GTP, usado en la síntesis de proteínas y en señales celulares.','Forms GTP, used in protein synthesis and in cell signalling.']},
+ {k:'C',n:['Citosina','Cytosine'],t:'pir',d:pyrimidine('C'),f:'C<sub>4</sub>H<sub>5</sub>N<sub>3</sub>O',mm:'111.10',par:['con G: 3 puentes de hidrógeno','with G: 3 hydrogen bonds'],nuc:['citidina · CMP (en ADN: desoxicitidina · dCMP)','cytidine · CMP (in DNA: deoxycytidine · dCMP)'],en:['ADN y ARN','DNA and RNA'],x:['Al perder su grupo amino (desaminación) se convierte en uracilo, una fuente común de mutaciones.','When it loses its amino group (deamination) it becomes uracil, a common source of mutations.']},
+ {k:'T',n:['Timina','Thymine'],t:'pir',d:pyrimidine('T'),f:'C<sub>5</sub>H<sub>6</sub>N<sub>2</sub>O<sub>2</sub>',mm:'126.11',par:['con A: 2 puentes de hidrógeno','with A: 2 hydrogen bonds'],nuc:['desoxitimidina · dTMP (timidina)','deoxythymidine · dTMP (thymidine)'],en:['solo ADN','DNA only'],x:['Es 5-metiluracilo: el grupo CH₃ la distingue del uracilo.','It is 5-methyluracil: the CH₃ group distinguishes it from uracil.']},
+ {k:'U',n:['Uracilo','Uracil'],t:'pir',d:pyrimidine('U'),f:'C<sub>4</sub>H<sub>4</sub>N<sub>2</sub>O<sub>2</sub>',mm:'112.09',par:['con A: 2 puentes de hidrógeno','with A: 2 hydrogen bonds'],nuc:['uridina · UMP','uridine · UMP'],en:['solo ARN','RNA only'],x:['Reemplaza a la timina en el ARN.','It replaces thymine in RNA.']}
+];
+var NBCOL={pur:'var(--tpe-bas)',pir:'var(--tpe-aci)'};
+var NBT={pur:['Purina (dos anillos)','Purine (two rings)'],pir:['Pirimidina (un anillo)','Pyrimidine (one ring)']};
+var nVB=unionVB(NB.map(function(x){return x.d;}));
+function drawNB(f){
+  var box=$('ncards'); box.innerHTML='';
+  NB.filter(function(x){return f==='all'||x.t===f;}).forEach(function(x){
+    var nm=tr(x.n), def=x.d; def.alt=nm;
+    var head='<h3 class="tpe-h3">'+nm+'<small>'+x.k+'</small></h3>';
+    var front=head+'<div class="tpe-mol">'+molSVG(def,centerVB(def,nVB))+'</div><span class="tpe-badge">'+tr(NBT[x.t])+'</span><div class="tpe-meta"><b>'+(EN?'Found in':'Está en')+':</b> '+tr(x.en)+'</div>';
+    var back=head+'<dl class="tpe-back-dl"><div><dt>'+(EN?'Formula · molar mass':'Fórmula · masa molar')+'</dt><dd>'+x.f+' · '+fmt(x.mm)+' g/mol</dd></div>'+
+     '<div><dt>'+(EN?'Base pairing':'Apareamiento')+'</dt><dd>'+tr(x.par)+'</dd></div>'+
+     '<div><dt>'+(EN?'Nucleoside · nucleotide':'Nucleósido · nucleótido')+'</dt><dd>'+tr(x.nuc)+'</dd></div>'+
+     '<div><dt>'+(EN?'Key fact':'Dato clave')+'</dt><dd>'+tr(x.x)+'</dd></div></dl>';
+    box.appendChild(makeCard(front,back,NBCOL[x.t],nm));
+  });
+}
+chipRow('nchips',[['all',EN?'All':'Todas'],['pur',EN?'Purines (A, G)':'Purinas (A, G)',NBCOL.pur],['pir',EN?'Pyrimidines (C, T, U)':'Pirimidinas (C, T, U)',NBCOL.pir]],drawNB); drawNB('all');
+/* pentosas */
+function sugar(deoxy){
+  return {atoms:{O:[0,-.851,'O'],C1:[.809,-.263],C2:[.5,.688],C3:[-.5,.688],C4:[-.809,-.263],C5:[-1.76,-.572,'CH2OH'],O3:[-1.088,1.497,'OH'],X2:[1.088,1.497,deoxy?'H':'OH'],R1:[1.76,-.572,EN?'base':'base']},
+   bonds:'O-C1 C1-C2 C2-C3 C3-C4 C4-O C4-C5 C3-O3 C2-X2 C1-R1',hi:['X2'],mode:'sc',alt:deoxy?(EN?'Deoxyribose':'Desoxirribosa'):(EN?'Ribose':'Ribosa')};
+}
+var SG=[
+ {n:['Ribosa','Ribose'],dx:false,f:'C<sub>5</sub>H<sub>10</sub>O<sub>5</sub>',mm:'150.13',w:['ARN','RNA'],c2:['OH en C2′','OH on C2′'],x:['El OH de C2′ hace al ARN más reactivo y menos estable que el ADN.','The 2′ OH makes RNA more reactive and less stable than DNA.']},
+ {n:['Desoxirribosa','Deoxyribose'],dx:true,f:'C<sub>5</sub>H<sub>10</sub>O<sub>4</sub>',mm:'134.13',w:['ADN','DNA'],c2:['H en C2′ (sin oxígeno)','H on C2′ (no oxygen)'],x:['Al faltarle ese oxígeno, el ADN es más estable y sirve para guardar la información genética.','Lacking that oxygen, DNA is more stable and suited to storing genetic information.']}
+];
+SG.forEach(function(g){
+  var def=sugar(g.dx), nm=tr(g.n);
+  var head='<h3 class="tpe-h3">'+nm+'</h3>';
+  var front=head+'<div class="tpe-mol">'+molSVG(def,tightVB({atoms:def.atoms}))+'</div><span class="tpe-badge">'+tr(g.w)+'</span><div class="tpe-meta">'+(EN?'Five-carbon sugar (pentose), furanose ring.':'Azúcar de cinco carbonos (pentosa), anillo de furanosa.')+'</div>';
+  var back=head+'<dl class="tpe-back-dl"><div><dt>'+(EN?'Formula · molar mass':'Fórmula · masa molar')+'</dt><dd>'+g.f+' · '+fmt(g.mm)+' g/mol</dd></div><div><dt>'+(EN?'Difference':'Diferencia')+'</dt><dd>'+tr(g.c2)+'</dd></div><div><dt>'+(EN?'Found in':'Está en')+'</dt><dd>'+tr(g.w)+'</dd></div><div><dt>'+(EN?'Key fact':'Dato clave')+'</dt><dd>'+tr(g.x)+'</dd></div></dl>';
+  $('scards').appendChild(makeCard(front,back,g.dx?'var(--tpe-bas)':'var(--tpe-aci)',nm));
+});
+var TB=EN?
+ {h:['Base','Nucleoside (RNA)','Nucleotide (RNA)','Nucleoside (DNA)','Nucleotide (DNA)'],r:[['Adenine (A)','adenosine','AMP','deoxyadenosine','dAMP'],['Guanine (G)','guanosine','GMP','deoxyguanosine','dGMP'],['Cytosine (C)','cytidine','CMP','deoxycytidine','dCMP'],['Thymine (T)','—','—','deoxythymidine','dTMP'],['Uracil (U)','uridine','UMP','—','—']],
+  t:'A nucleoside is a base bonded to a pentose; a nucleotide adds one to three phosphate groups on the 5′ carbon (the names here are the monophosphates).'}:
+ {h:['Base','Nucleósido (ARN)','Nucleótido (ARN)','Nucleósido (ADN)','Nucleótido (ADN)'],r:[['Adenina (A)','adenosina','AMP','desoxiadenosina','dAMP'],['Guanina (G)','guanosina','GMP','desoxiguanosina','dGMP'],['Citosina (C)','citidina','CMP','desoxicitidina','dCMP'],['Timina (T)','—','—','desoxitimidina','dTMP'],['Uracilo (U)','uridina','UMP','—','—']],
+  t:'Un nucleósido es una base unida a una pentosa; un nucleótido suma de uno a tres grupos fosfato en el carbono 5′ (aquí se muestran los monofosfatos).'};
+$('ntab').innerHTML='<div class="tpe-tblwrap"><table class="tpe-tbl"><thead><tr>'+TB.h.map(function(x){return '<th scope="col">'+x+'</th>';}).join('')+'</tr></thead><tbody>'+TB.r.map(function(r){return '<tr><th scope="row">'+r[0]+'</th>'+r.slice(1).map(function(c){return '<td>'+c+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table></div><p class="tpe-meta" style="margin:.6rem 0 0">'+TB.t+'</p>';
+/* secuencia */
+var BC={A:'T',T:'A',G:'C',C:'G'};
+function seqCalc(){
+  var raw=$('seq').value.toUpperCase().replace(/[\s\d]/g,''), seq=raw.replace(/[^ATGC]/g,''), bad=raw.length-seq.length;
+  var span=function(c){return '<span class="nb nb-'+c+'">'+c+'</span>';};
+  if(!seq){$('seqout').innerHTML='<p class="tpe-meta">'+(EN?'Type a sequence with A, T, G and C.':'Escribe una secuencia con A, T, G y C.')+'</p>';return;}
+  var comp=seq.split('').map(function(c){return BC[c];}), rna=seq.split('').map(function(c){return c==='T'?'U':c;});
+  var at=seq.split('').filter(function(c){return c==='A'||c==='T';}).length, gc=seq.length-at;
+  var line=function(lab,arr,l,r){return '<div class="tpe-sl"><i>'+lab+'</i><span>'+l+'</span><b>'+arr.map(span).join('')+'</b><span>'+r+'</span></div>';};
+  $('seqout').innerHTML=
+   line(EN?'coding DNA':'ADN codificante',seq.split(''),'5′','3′')+
+   '<div class="tpe-sl tpe-sl-h"><i></i><span></span><b>'+seq.split('').map(function(c){return '<span>'+(c==='A'||c==='T'?'2':'3')+'</span>';}).join('')+'</b><span></span></div>'+
+   line(EN?'template DNA':'ADN molde',comp,'3′','5′')+
+   line(EN?'mRNA':'ARN mensajero',rna,'5′','3′')+
+   '<p class="tpe-meta" style="margin:.6rem 0 0"><b>'+seq.length+'</b> '+(EN?'bases':'bases')+' · <b>'+(Math.round(gc/seq.length*1000)/10).toString().replace('.',EN?'.':',')+' %</b> GC · <b>'+(2*at+3*gc)+'</b> '+(EN?'hydrogen bonds between the two strands (2 per A–T, 3 per G–C)':'puentes de hidrógeno entre las dos hebras (2 por A–T, 3 por G–C)')+(bad?'. '+(EN?bad+' character(s) ignored.':bad+' carácter(es) ignorado(s).'):'')+'</p>';
+}
+$('seq').addEventListener('input',seqCalc); seqCalc();
+$('nnote').innerHTML=EN?
+ 'Structures drawn in the usual keto/amino form. Molar masses from standard atomic weights. In RNA, uracil takes the place of thymine; the pairs are A–T and G–C in DNA, and A–U and G–C between RNA and DNA or within RNA.':
+ 'Estructuras dibujadas en la forma habitual ceto/amino. Masas molares calculadas con pesos atómicos estándar. En el ARN el uracilo ocupa el lugar de la timina; los pares son A–T y G–C en el ADN, y A–U y G–C entre ARN y ADN o dentro del ARN.';
+var NS=['n-bases','n-sug','n-seq'];
+chipRow('nsub',[['n-bases',EN?'Nitrogenous bases':'Bases nitrogenadas'],['n-sug',EN?'Pentoses and nucleotides':'Pentosas y nucleótidos'],['n-seq',EN?'Sequences':'Secuencias']],function(k){NS.forEach(function(id){$(id).hidden=(id!==k);});});
+})();
 })();
