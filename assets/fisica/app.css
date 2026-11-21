@@ -1,0 +1,48 @@
+/* Física en tarjetas (Modelo Estándar y Magnitudes y unidades) · Laboratorio MACEDONIA
+   Se carga después de assets/tabla-periodica/app.css y reutiliza sus clases tpe-. */
+.fis .fis-head{display:grid;gap:.3rem;margin:0 0 .4rem}
+.fis-sm{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:.7rem;margin:0 0 1rem}
+.fis-colh{display:none;font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:.8rem;color:var(--muted);text-align:center;text-transform:uppercase;letter-spacing:.06em;align-self:end;padding-bottom:.1rem}
+@media (min-width:760px){
+  .fis-sm{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .fis-sm .tpe-card{grid-row:var(--r);grid-column:var(--c)}
+  .fis-colh{display:block;grid-row:1;grid-column:var(--c)}
+}
+.fis-sm .tpe-card{height:330px}
+.fis-sm .tpe-face.back{overflow:auto}
+.fis-sm .tpe-face.front{justify-content:space-between}
+.fis-sm .tpe-face.front{background:var(--fc);color:var(--ink);align-items:stretch;text-align:center;gap:.1rem}
+.fis-sm .tpe-face.back{font-size:.72rem}
+.fis-sm .tpe-face.back .tpe-back-dl{gap:.35rem;font-size:.72rem}
+.fis-sm .tpe-face.back .tpe-h3{font-size:.9rem}
+.fis-card.dim{opacity:.28;filter:saturate(.4)}
+.fis-top{display:flex;justify-content:space-between;font-size:.74rem;font-variant-numeric:tabular-nums;gap:.3rem}
+.fis-sym{font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:2.7rem;line-height:1.05;letter-spacing:-.04em;margin:.35rem 0 .1rem}
+.fis-name{font-weight:700;font-size:.9rem;line-height:1.2}
+.fis-sub{font-size:.74rem;opacity:.85}
+.fis-sm .tpe-hint{color:inherit;opacity:.7}
+.fis-q{--fc:var(--nob)}.fis-l{--fc:var(--nom)}.fis-g{--fc:var(--alke)}.fis-h{--fc:var(--alk)}
+.fis-build{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:1rem;box-shadow:var(--shadow);margin:0 0 1rem}
+.fis-build h3{margin:0 0 .5rem;font-family:'Manrope',system-ui,sans-serif;font-size:1.05rem;padding:0;border:0}
+.fis-row{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0}
+.fis-row select,.fis-row input{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:.4rem .6rem;font:inherit;min-width:0}
+.fis-out{font-size:1.05rem;margin:.4rem 0 0}
+.fis-out b{font-family:'Manrope',system-ui,sans-serif;font-size:1.25rem;color:var(--accent-text)}
+.fis-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:.8rem}
+.fis-cards .tpe-card{min-height:250px}
+.fis-bigsym{font-family:'Manrope',system-ui,sans-serif;font-weight:800;font-size:3rem;line-height:1;letter-spacing:-.04em;text-align:center;margin:.5rem 0 .2rem;color:var(--hi)}
+.fis-qty{text-align:center;font-size:.86rem;color:var(--ink);font-weight:700}
+.fis-dim{text-align:center;font-size:.78rem;color:var(--muted)}
+.fis-badge2{align-self:center}
+.fis-pfx{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:.5rem;margin:0 0 1rem}
+.fis-p{border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:.5rem .6rem;text-align:center;box-shadow:var(--shadow)}
+.fis-p b{display:block;font-family:'Manrope',system-ui,sans-serif;font-size:1.5rem;line-height:1.1;color:var(--ink)}
+.fis-p span{display:block;font-size:.8rem;color:var(--muted)}
+.fis-p i{display:block;font-style:normal;font-weight:700;font-size:.9rem;color:var(--accent-text);font-variant-numeric:tabular-nums}
+.fis-p.big{background:var(--surface-alt)}
+.fis-d-mec{--hi:var(--tpe-apo)}.fis-d-ele{--hi:var(--tpe-bas)}.fis-d-ter{--hi:var(--tpe-out)}.fis-d-rad{--hi:var(--tpe-aci)}.fis-d-geo{--hi:var(--tpe-aro)}
+@media (max-width:759px){.fis-sym{font-size:2.3rem}}
+@media (min-width:1000px){
+  .fis[data-tool=sm]{width:min(1120px,calc(100vw - 3rem));position:relative;left:50%;transform:translateX(-50%)}
+  .fis-sm .tpe-card{height:336px}
+}

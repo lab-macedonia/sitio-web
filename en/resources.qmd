@@ -1,7 +1,7 @@
 ---
 title: "Educational resources"
 subtitle: "Open resources to explore, learn and teach science"
-description: "Open resources from the MACEDONIA Laboratory: augmented reality, 115 science simulations with teacher guides, organic chemistry animations and a periodic table with structures."
+description: "Open resources from the MACEDONIA Laboratory: augmented reality, 115 science simulations with teacher guides, organic chemistry animations, a periodic table with structures, the Standard Model and SI units."
 ---
 
 The digital laboratory brings together open developments published on GitHub and educational resources from the laboratory.
@@ -63,6 +63,24 @@ The digital laboratory brings together open developments published on GitHub and
 **Availability:** an open page, in Spanish and English, with nothing to install, under the MIT license.
 
 [Open the periodic table](periodic-table.qmd)
+:::
+::: {.resource-item}
+## Standard Model of particles
+
+**Topics:** particle physics, quarks, leptons and bosons.  
+**What it is:** the 12 fermions and the bosons of the Standard Model on flip cards with mass, charge, spin and interactions, plus a hadron builder.  
+**Availability:** an open page, in Spanish and English, with nothing to install, under the MIT license.
+
+[Open the Standard Model](standard-model.qmd)
+:::
+::: {.resource-item}
+## Quantities and units
+
+**Topics:** the International System of Units, base and derived units, prefixes.  
+**What it is:** the 7 base units with their defining constants, 22 named derived units and a prefix converter.  
+**Availability:** an open page, in Spanish and English, with nothing to install, under the MIT license.
+
+[Open quantities and units](si-units.qmd)
 :::
 :::
 

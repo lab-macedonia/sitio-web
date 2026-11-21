@@ -1,0 +1,19 @@
+---
+title: "Modelo Estándar de partículas"
+subtitle: "Quarks, leptones y bosones en tarjetas giratorias"
+description: "Modelo Estándar de la física de partículas en una tabla interactiva: masa, carga, espín, interacciones y descubrimiento. Laboratorio MACEDONIA, UMCE."
+toc: false
+---
+
+La «tabla periódica» de la física de partículas: **6 quarks**, **6 leptones**, los **bosones** que median las interacciones y el **bosón de Higgs**. Cada tarjeta muestra masa, carga y espín, y al girarla aparecen sus interacciones, su descubrimiento y un dato clave. Al final puedes armar un hadrón con tres quarks.
+
+```{=html}
+<link rel="stylesheet" href="assets/tabla-periodica/app.css">
+<link rel="stylesheet" href="assets/fisica/app.css">
+<div id="fis" class="tpe fis" data-lang="es" data-tool="sm"><noscript>Esta página necesita JavaScript para mostrar el Modelo Estándar interactivo.</noscript></div>
+<script src="assets/fisica/app.js" defer></script>
+```
+
+**Licencia:** [MIT](https://opensource.org/license/mit). Puedes usar, copiar y adaptar el recurso conservando el aviso de autoría del Laboratorio MACEDONIA, UMCE.
+
+**Fuente de los datos:** [Particle Data Group, Review of Particle Physics 2024](https://pdg.lbl.gov/2024/tables/contents_tables.html).

@@ -67,6 +67,10 @@ website:
         href: animaciones.qmd
       - text: Tabla periódica y estructuras
         href: tabla-periodica.qmd
+      - text: Modelo Estándar de partículas
+        href: modelo-estandar.qmd
+      - text: Magnitudes y unidades
+        href: magnitudes-unidades.qmd
     - text: Actualidad
       href: noticias.qmd
     right:
