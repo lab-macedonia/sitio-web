@@ -54,12 +54,8 @@ website:
         href: resources.qmd
       - text: Organic chemistry animations
         href: animations.qmd
-      - text: Periodic table and structures
-        href: periodic-table.qmd
-      - text: Standard Model of particles
-        href: standard-model.qmd
-      - text: Quantities and units
-        href: si-units.qmd
+      - text: Science reference tables
+        href: science-tables.qmd
     right:
     - text: Español
       href: ../index.html

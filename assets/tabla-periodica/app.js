@@ -11,10 +11,10 @@ var $=function(id){return document.getElementById('tpe-'+id);};
 
 /* ================= textos de la interfaz ================= */
 var S={
- tabs:[['Tabla periódica','configuración electrónica'],['Grupos funcionales','estructuras generales'],['Aminoácidos','los 20 proteinogénicos']],
- tabsEn:[['Periodic table','electron configuration'],['Functional groups','general structures'],['Amino acids','the 20 standard ones']],
- h2:['Tabla periódica de los elementos','Grupos funcionales de la química orgánica','Aminoácidos proteinogénicos'],
- h2En:['Periodic table of the elements','Functional groups in organic chemistry','Standard protein amino acids'],
+ tabs:[['Tabla periódica','configuración electrónica'],['Grupos funcionales','estructuras generales'],['Aminoácidos','los 20 proteinogénicos'],['Modelo Estándar','partículas elementales'],['Magnitudes y unidades','Sistema Internacional']],
+ tabsEn:[['Periodic table','electron configuration'],['Functional groups','general structures'],['Amino acids','the 20 standard ones'],['Standard Model','elementary particles'],['Quantities and units','SI']],
+ h2:['Tabla periódica de los elementos','Grupos funcionales de la química orgánica','Aminoácidos proteinogénicos','Modelo Estándar de partículas','Magnitudes y unidades del Sistema Internacional'],
+ h2En:['Periodic table of the elements','Functional groups in organic chemistry','Standard protein amino acids','Standard Model of particles','Quantities and units of the International System'],
  search:['Buscar por nombre, símbolo o número','Search by name, symbol or number'],
  searchLabel:['Buscar elemento','Search element'],
  tileLabel:['Casilla:','Tile shows:'],
@@ -343,7 +343,7 @@ var aVB=unionVB(AA);
 
 /* ================= construcción de la interfaz ================= */
 var tabsT=T('tabs'), h2T=T('h2');
-var ids=['tabla','grupos','aminoacidos'];
+var ids=['tabla','grupos','aminoacidos','estandar','unidades'];
 var html='<div class="tpe-tabs" role="tablist">';
 ids.forEach(function(id,i){html+='<button class="tpe-tab" role="tab" type="button" id="tpe-t-'+id+'" aria-controls="tpe-p-'+id+'" aria-selected="'+(i===0)+'" data-tab="'+id+'">'+tabsT[i][0]+'<small>'+tabsT[i][1]+'</small></button>';});
 html+='</div>';
@@ -364,6 +364,8 @@ html+='<section id="tpe-p-aminoacidos" role="tabpanel" aria-labelledby="tpe-t-am
  '<div class="tpe-chips" id="tpe-achips" role="group"></div>'+
  '<div class="tpe-legend"><span><i style="border-color:var(--muted)"></i>'+S.aLegend[0][LI]+'</span><span><i style="border-color:var(--accent-text)"></i>'+S.aLegend[1][LI]+'</span></div>'+
  '<div class="tpe-cards" id="tpe-acards"></div><p class="tpe-note">'+tr(S.noteAmino)+'</p></section>';
+html+='<section id="tpe-p-estandar" role="tabpanel" aria-labelledby="tpe-t-estandar" hidden><h2 class="visually-hidden">'+h2T[3]+'</h2><div class="fis" data-fis data-lang="'+(EN?'en':'es')+'" data-tool="sm"></div></section>';
+html+='<section id="tpe-p-unidades" role="tabpanel" aria-labelledby="tpe-t-unidades" hidden><h2 class="visually-hidden">'+h2T[4]+'</h2><div class="fis" data-fis data-lang="'+(EN?'en':'es')+'" data-tool="si"></div></section>';
 root.innerHTML=html;
 root.classList.add('tpe');
 

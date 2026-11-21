@@ -1,0 +1,20 @@
+---
+title: "Tablas de referencia de ciencias"
+subtitle: "Tabla periódica, grupos funcionales, aminoácidos, Modelo Estándar y unidades SI"
+description: "Cinco tablas interactivas de química y física: tabla periódica con configuración electrónica y átomo animado, grupos funcionales, aminoácidos, Modelo Estándar de partículas y unidades del Sistema Internacional. Laboratorio MACEDONIA, UMCE."
+toc: false
+---
+
+Recurso del Laboratorio MACEDONIA con cinco vistas para consultar y estudiar. En **química**: la **tabla periódica** con configuración electrónica (resumida, completa y en cajas cuánticas) y un átomo animado, los **grupos funcionales** y los **20 aminoácidos** con sus estructuras. En **física**: el **Modelo Estándar de partículas** y las **magnitudes y unidades** del Sistema Internacional. Las tarjetas giran para mostrar los datos principales en el reverso.
+
+```{=html}
+<link rel="stylesheet" href="assets/tabla-periodica/app.css">
+<link rel="stylesheet" href="assets/fisica/app.css">
+<div id="tpe" class="tpe" data-lang="es"><noscript>Esta página necesita JavaScript para mostrar las tablas interactivas.</noscript></div>
+<script src="assets/tabla-periodica/app.js" defer></script>
+<script src="assets/fisica/app.js" defer></script>
+```
+
+**Licencia:** [MIT](https://opensource.org/license/mit). Puedes usar, copiar y adaptar el recurso conservando el aviso de autoría del Laboratorio MACEDONIA, UMCE.
+
+**Fuentes de los datos:** [CIAAW (IUPAC), pesos atómicos estándar](https://ciaaw.org/atomic-weights.htm) · [NIST, niveles fundamentales de los átomos neutros](https://physics.nist.gov/PhysRefData/IonEnergy/ionEnergy.html) · [IUPAC, Nomenclatura de química orgánica 2013](https://iupac.qmul.ac.uk/BlueBook/P4.html) · [Sigma-Aldrich, tabla de aminoácidos](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart) · [Particle Data Group, Review of Particle Physics 2024](https://pdg.lbl.gov/2024/tables/contents_tables.html) · [BIPM, Sistema Internacional de Unidades](https://www.bipm.org/en/measurement-units/).

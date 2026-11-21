@@ -9,7 +9,7 @@ PAIRS = {  # español -> inglés
  'proposito.html':'purpose.html','investigacion.html':'research.html','proyectos.html':'projects.html',
  'publicaciones.html':'publications.html','congresos.html':'conferences.html','tesistas.html':'theses.html',
  'perfil.html':'profile.html','contacto.html':'contact.html',
- 'animaciones.html':'animations.html','tabla-periodica.html':'periodic-table.html','modelo-estandar.html':'standard-model.html','magnitudes-unidades.html':'si-units.html','laboratorio-digital.html':'resources.html',
+ 'animaciones.html':'animations.html','tablas-ciencias.html':'science-tables.html','laboratorio-digital.html':'resources.html',
  'colaboradores.html':'team.html',
 }
 def url(rel):

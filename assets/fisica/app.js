@@ -3,13 +3,12 @@
    data-tool="si"  → Magnitudes y unidades (SI) */
 (function(){
 'use strict';
-var root=document.getElementById('fis');
-if(!root) return;
+[].forEach.call(document.querySelectorAll('[data-fis]'),function(root){
 var EN=root.getAttribute('data-lang')==='en', LI=EN?1:0, TOOL=root.getAttribute('data-tool');
 var tr=function(a){return a[LI];};
 var fmt=function(s){return EN?String(s):String(s).replace(/(\d)\.(\d)/g,'$1,$2');};
 var $=function(id){return document.getElementById('fis-'+id);};
-root.classList.add('tpe','fis');
+root.classList.add('fis');
 
 /* ---------- tarjetas giratorias ---------- */
 var FLIP=[' : girar tarjeta',': flip card'], HINT=['Girar ↻','Flip ↻'], BACK=['Volver ↻','Back ↻'];
@@ -157,25 +156,19 @@ if(TOOL==='si'){
   var T3=EN?[['Base units','7 units'],['Derived units','22 named units'],['Prefixes','powers of ten']]:[['Unidades base','las 7 del SI'],['Unidades derivadas','22 con nombre propio'],['Prefijos','potencias de diez']];
   var H3=EN?['SI base units','Derived units with special names','SI prefixes']:['Unidades base del SI','Unidades derivadas con nombre propio','Prefijos del SI'];
   var ids=['base','der','pre'];
-  var h='<div class="tpe-tabs" role="tablist">';
-  ids.forEach(function(id,i){h+='<button class="tpe-tab" role="tab" type="button" id="fis-t-'+id+'" aria-controls="fis-p-'+id+'" aria-selected="'+(i===0)+'" data-tab="'+id+'">'+T3[i][0]+'<small>'+T3[i][1]+'</small></button>';});
-  h+='</div>';
-  h+='<section id="fis-p-base" role="tabpanel" aria-labelledby="fis-t-base"><h2 class="visually-hidden">'+H3[0]+'</h2><div class="fis-cards" id="fis-bc"></div><p class="tpe-note">'+(EN?
+  var h='<div class="tpe-chips" id="fis-sub" role="group"></div>';
+  h+='<section id="fis-p-base"><h2 class="visually-hidden">'+H3[0]+'</h2><div class="fis-cards" id="fis-bc"></div><p class="tpe-note">'+(EN?
     'Since 20 May 2019 the SI is defined by fixing the exact numerical values of seven constants (BIPM, SI Brochure, 9th edition). The unit of mass no longer depends on a physical object. Tap a card to flip it and see the definition, the constant that fixes it and an everyday example.':
     'Desde el 20 de mayo de 2019 el SI se define fijando el valor numérico exacto de siete constantes (BIPM, folleto del SI, 9.ª edición). La unidad de masa ya no depende de un objeto físico. Toca una tarjeta para girarla y ver la definición, la constante que la fija y un ejemplo cotidiano.')+'</p></section>';
-  h+='<section id="fis-p-der" role="tabpanel" aria-labelledby="fis-t-der" hidden><h2 class="visually-hidden">'+H3[1]+'</h2><div class="tpe-chips" id="fis-dch" role="group"></div><div class="fis-cards" id="fis-dc"></div><p class="tpe-note">'+(EN?
+  h+='<section id="fis-p-der" hidden><h2 class="visually-hidden">'+H3[1]+'</h2><div class="tpe-chips" id="fis-dch" role="group"></div><div class="fis-cards" id="fis-dc"></div><p class="tpe-note">'+(EN?
     'These are the 22 coherent derived units that have their own name and symbol in the SI. The radian and steradian are dimensionless. The degree Celsius is the only one defined by an offset from the kelvin. Tap a card to flip it.':
     'Son las 22 unidades derivadas coherentes con nombre y símbolo propios en el SI. El radián y el estereorradián son adimensionales. El grado Celsius es la única definida con un desfase respecto del kelvin. Toca una tarjeta para girarla.')+'</p></section>';
-  h+='<section id="fis-p-pre" role="tabpanel" aria-labelledby="fis-t-pre" hidden><h2 class="visually-hidden">'+H3[2]+'</h2><div class="fis-pfx" id="fis-pf"></div>'+
+  h+='<section id="fis-p-pre" hidden><h2 class="visually-hidden">'+H3[2]+'</h2><div class="fis-pfx" id="fis-pf"></div>'+
     '<div class="fis-build"><h3>'+(EN?'Prefix converter':'Conversor de prefijos')+'</h3><div class="fis-row"><input id="fis-cv" type="text" inputmode="decimal" value="1" aria-label="'+(EN?'Value':'Valor')+'" size="8"><select id="fis-cf" aria-label="'+(EN?'From':'Desde')+'"></select><span aria-hidden="true">→</span><select id="fis-ct" aria-label="'+(EN?'To':'Hasta')+'"></select></div><p class="fis-out" id="fis-co" aria-live="polite"></p></div>'+
     '<p class="tpe-note">'+(EN?'Prefixes ronna, quetta, ronto and quecto were added in 2022 (27th CGPM). Prefixes apply to the gram in the case of mass (milligram, not microkilogram).':'Los prefijos ronna, quetta, ronto y quecto se agregaron en 2022 (27.ª CGPM). En el caso de la masa, los prefijos se aplican al gramo (miligramo, no microkilogramo).')+'</p></section>';
   root.innerHTML=h;
-  var tabs=[].slice.call(root.querySelectorAll('.tpe-tab'));
-  function showTab(id){tabs.forEach(function(t){t.setAttribute('aria-selected',String(t.getAttribute('data-tab')===id));});ids.forEach(function(k){$('p-'+k).hidden=(k!==id);});}
-  tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){showTab(t.getAttribute('data-tab'));});
-    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];n.focus();showTab(n.getAttribute('data-tab'));}});
-  });
+  function showTab(id){ids.forEach(function(k){$('p-'+k).hidden=(k!==id);});}
+  chipRow($('sub'),ids.map(function(id,i){return [id,T3[i][0]+' · '+T3[i][1]];}),showTab);
   var LBL=EN?{q:'Quantity',dim:'Dimension',c:'Fixed by',d:'Definition',e:'Example',b:'In base units',n:'Name'}:{q:'Magnitud',dim:'Dimensión',c:'Se fija con',d:'Definición',e:'Ejemplo',b:'En unidades base',n:'Nombre'};
   BASE.forEach(function(b){
     var nm=tr(b.n);
@@ -210,4 +203,5 @@ if(TOOL==='si'){
   }
   ['cv','cf','ct'].forEach(function(i){$(i).addEventListener('input',conv);$(i).addEventListener('change',conv);}); conv();
 }
+});
 })();

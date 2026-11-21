@@ -1,0 +1,20 @@
+---
+title: "Science reference tables"
+subtitle: "Periodic table, functional groups, amino acids, Standard Model and SI units"
+description: "Five interactive chemistry and physics tables: periodic table with electron configuration and an animated atom, functional groups, amino acids, the Standard Model of particles and International System units. MACEDONIA Laboratory, UMCE."
+toc: false
+---
+
+A MACEDONIA Laboratory resource with five views for looking things up and studying. In **chemistry**: the **periodic table** with electron configuration (condensed, full and as orbital boxes) and an animated atom, the **functional groups** and the **20 amino acids** with their structures. In **physics**: the **Standard Model of particles** and the **quantities and units** of the International System. Cards flip to show the key facts on the back.
+
+```{=html}
+<link rel="stylesheet" href="assets/tabla-periodica/app.css">
+<link rel="stylesheet" href="assets/fisica/app.css">
+<div id="tpe" class="tpe" data-lang="en"><noscript>This page needs JavaScript to display the interactive tables.</noscript></div>
+<script src="assets/tabla-periodica/app.js" defer></script>
+<script src="assets/fisica/app.js" defer></script>
+```
+
+**License:** [MIT](https://opensource.org/license/mit). You may use, copy and adapt this resource as long as you keep the MACEDONIA Laboratory, UMCE, copyright notice.
+
+**Data sources:** [CIAAW (IUPAC), standard atomic weights](https://ciaaw.org/atomic-weights.htm) · [NIST, ground levels of the neutral atoms](https://physics.nist.gov/PhysRefData/IonEnergy/ionEnergy.html) · [IUPAC, Nomenclature of Organic Chemistry 2013](https://iupac.qmul.ac.uk/BlueBook/P4.html) · [Sigma-Aldrich, amino acid reference chart](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart) · [Particle Data Group, Review of Particle Physics 2024](https://pdg.lbl.gov/2024/tables/contents_tables.html) · [BIPM, International System of Units](https://www.bipm.org/en/measurement-units/).
