@@ -13,4 +13,6 @@ Recurso del Laboratorio MACEDONIA con tres vistas para consultar y estudiar: la 
 <script src="assets/tabla-periodica/app.js" defer></script>
 ```
 
+**Licencia:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es). Puedes compartir y adaptar el recurso citando al Laboratorio MACEDONIA, UMCE.
+
 **Fuentes de los datos:** [CIAAW (IUPAC), pesos atómicos estándar](https://ciaaw.org/atomic-weights.htm) · [NIST, niveles fundamentales de los átomos neutros](https://physics.nist.gov/PhysRefData/IonEnergy/ionEnergy.html) · [IUPAC, Nomenclatura de química orgánica 2013](https://iupac.qmul.ac.uk/BlueBook/P4.html) · [Sigma-Aldrich, tabla de aminoácidos](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart).

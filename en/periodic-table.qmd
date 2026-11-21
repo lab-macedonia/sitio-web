@@ -13,4 +13,6 @@ A MACEDONIA Laboratory resource with three views for looking things up and study
 <script src="assets/tabla-periodica/app.js" defer></script>
 ```
 
+**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). You may share and adapt this resource with credit to the MACEDONIA Laboratory, UMCE.
+
 **Data sources:** [CIAAW (IUPAC), standard atomic weights](https://ciaaw.org/atomic-weights.htm) · [NIST, ground levels of the neutral atoms](https://physics.nist.gov/PhysRefData/IonEnergy/ionEnergy.html) · [IUPAC, Nomenclature of Organic Chemistry 2013](https://iupac.qmul.ac.uk/BlueBook/P4.html) · [Sigma-Aldrich, amino acid reference chart](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart).
