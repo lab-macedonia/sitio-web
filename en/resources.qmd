@@ -60,7 +60,7 @@ The digital laboratory brings together open developments published on GitHub and
 
 **Topics:** electron configuration, functional groups and amino acids with their structures.  
 **What it is:** a periodic table of 118 elements with condensed, full and orbital-box configurations and an animated atom; 18 functional groups and 20 amino acids on flip cards.  
-**Availability:** an open page, in Spanish and English, with nothing to install, under a CC BY-NC-SA 4.0 license.
+**Availability:** an open page, in Spanish and English, with nothing to install, under the MIT license.
 
 [Open the periodic table](periodic-table.qmd)
 :::
