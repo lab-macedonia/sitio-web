@@ -228,7 +228,7 @@ var GRUPOS=[
  {tags:['ox'],n:['Alcohol','Alcohol'],gen:'R–OH',suf:['-ol','-ol'],ej:['etanol, CH<sub>3</sub>CH<sub>2</sub>OH','ethanol, CH<sub>3</sub>CH<sub>2</sub>OH'],
   atoms:{R1:[0,.5,'R'],O:[2*a,0,'OH']},bonds:'R1-O',hi:['O'],mode:'fg',
   geo:['O sp³ angular; el O–H polar forma puentes de hidrógeno.','Bent sp³ oxygen; the polar O–H forms hydrogen bonds.'],
-  prop:['Ebullición alta; los de pocos C son solubles en agua (pKa ≈ 16).','High boiling point; those with few carbons dissolve in water (pKa ≈ 16).'],
+  prop:['Ebullición alta; los de pocos C son solubles en agua (pKa ≈ 16–18).','High boiling point; those with few carbons dissolve in water (pKa ≈ 16–18).'],
   rx:['Oxidación (1.º → aldehído o ácido; 2.º → cetona), deshidratación y esterificación.','Oxidation (1° → aldehyde or acid; 2° → ketone), dehydration and esterification.'],
   uso:['Etanol, glicerol, azúcares y serina.','Ethanol, glycerol, sugars and serine.']},
  {tags:['ox'],n:['Éter','Ether'],gen:'R–O–R′',suf:['prefijo alcoxi- (también éter dialquílico)','prefix alkoxy- (also dialkyl ether)'],ej:['etoxietano (éter dietílico), CH<sub>3</sub>CH<sub>2</sub>OCH<sub>2</sub>CH<sub>3</sub>','ethoxyethane (diethyl ether), CH<sub>3</sub>CH<sub>2</sub>OCH<sub>2</sub>CH<sub>3</sub>'],
@@ -284,7 +284,7 @@ var GRUPOS=[
   geo:['C=O plano con un buen grupo saliente (X).','Planar C=O with a good leaving group (X).'],
   prop:['El derivado de ácido más reactivo; se hidroliza con la humedad.','The most reactive acid derivative; hydrolyzes with moisture.'],
   rx:['Con alcoholes → ésteres; con aminas → amidas; con agua → ácido.','With alcohols → esters; with amines → amides; with water → acid.'],
-  uso:['Reactivo de laboratorio; no existe en la naturaleza.','A laboratory reagent; not found in nature.']},
+  uso:['Reactivos de laboratorio e industriales; se hidrolizan con la humedad del aire.','Laboratory and industrial reagents; they hydrolyze with moisture in the air.']},
  {tags:['ox'],n:['Anhídrido de ácido','Acid anhydride'],gen:'(RCO)<sub>2</sub>O',suf:['anhídrido -oico','-oic anhydride'],ej:['anhídrido etanoico (acético), (CH<sub>3</sub>CO)<sub>2</sub>O','ethanoic anhydride (acetic anhydride), (CH<sub>3</sub>CO)<sub>2</sub>O'],
   atoms:{R1:[-a,.5,'R'],C1:[0,0],O1:[0,-1,'O'],Ob:[a,.5,'O'],C2:[2*a,0],O2:[2*a,-1,'O'],R2:[3*a,.5,'R′']},bonds:'R1-C1 C1=O1 C1-Ob Ob-C2 C2=O2 C2-R2',hi:['C1','O1','Ob','C2','O2'],mode:'fg',
   geo:['Dos grupos acilo unidos por un oxígeno.','Two acyl groups joined by an oxygen.'],
@@ -319,7 +319,7 @@ var AA=[
  {n:['Prolina','Proline'],t:'Pro',o:'P',c:'apo',r:['–CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>– (cíclica, unida al N)','–CH<sub>2</sub>CH<sub>2</sub>CH<sub>2</sub>– (cyclic, bonded to N)'],pi:'6.30',pro:1,q:Q0,d:['Amina secundaria cíclica; rompe hélices α y forma giros.','Cyclic secondary amine; breaks α-helices and forms turns.'],side:{B:[.658,1.478],G:[-.337,1.583],D:[-.744,.669]},b:'CA-B B-G G-D D-N'},
  {n:['Metionina','Methionine'],t:'Met',o:'M',c:'apo',r:['–CH<sub>2</sub>CH<sub>2</sub>SCH<sub>3</sub>','–CH<sub>2</sub>CH<sub>2</sub>SCH<sub>3</sub>'],pi:'5.74',es:1,q:Q0,d:['Contiene azufre (tioéter); las proteínas nuevas parten con Met (codón AUG).','Contains sulfur (a thioether); new proteins start with Met (AUG codon).'],side:{B:[a,1.5],G:[2*a,2],S:[2*a,3,'S'],E:[3*a,3.5]},b:'CA-B B-G G-S S-E'},
  {n:['Fenilalanina','Phenylalanine'],t:'Phe',o:'F',c:'aro',r:['–CH<sub>2</sub>C<sub>6</sub>H<sub>5</sub>','–CH<sub>2</sub>C<sub>6</sub>H<sub>5</sub>'],pi:'5.48',es:1,q:Q0,d:['Aromática hidrofóbica; precursora de la tirosina.','Hydrophobic aromatic; precursor of tyrosine.'],side:{B:[a,1.5],G:[2*a,2],D1:[3*a,1.5],E1:[4*a,2],Z:[4*a,3],E2:[3*a,3.5],D2:[2*a,3]},b:'CA-B B-G G=D1@c D1-E1 E1=Z@c Z-E2 E2=D2@c D2-G',rc:{c:[3*a,2.5]}},
- {n:['Tirosina','Tyrosine'],t:'Tyr',o:'Y',c:'aro',r:['–CH<sub>2</sub>C<sub>6</sub>H<sub>4</sub>OH','–CH<sub>2</sub>C<sub>6</sub>H<sub>4</sub>OH'],pi:'5.66',q:Q0,pk:'10.07',d:['OH fenólico; se fosforila; absorbe UV a ≈ 275 nm.','Phenolic OH; gets phosphorylated; absorbs UV at ≈ 275 nm.'],side:{B:[a,1.5],G:[2*a,2],D1:[3*a,1.5],E1:[4*a,2],Z:[4*a,3],E2:[3*a,3.5],D2:[2*a,3],OH2:[5*a,3.5,'OH']},b:'CA-B B-G G=D1@c D1-E1 E1=Z@c Z-E2 E2=D2@c D2-G Z-OH2',rc:{c:[3*a,2.5]}},
+ {n:['Tirosina','Tyrosine'],t:'Tyr',o:'Y',c:'aro',r:['–CH<sub>2</sub>C<sub>6</sub>H<sub>4</sub>OH','–CH<sub>2</sub>C<sub>6</sub>H<sub>4</sub>OH'],pi:'5.66',q:Q0,pk:'10.07',d:['OH fenólico; se fosforila; precursora de melanina, adrenalina y hormonas tiroideas.','Phenolic OH; gets phosphorylated; precursor of melanin, epinephrine and thyroid hormones.'],side:{B:[a,1.5],G:[2*a,2],D1:[3*a,1.5],E1:[4*a,2],Z:[4*a,3],E2:[3*a,3.5],D2:[2*a,3],OH2:[5*a,3.5,'OH']},b:'CA-B B-G G=D1@c D1-E1 E1=Z@c Z-E2 E2=D2@c D2-G Z-OH2',rc:{c:[3*a,2.5]}},
  {n:['Triptófano','Tryptophan'],t:'Trp',o:'W',c:'aro',r:['–CH<sub>2</sub>–indol','–CH<sub>2</sub>–indole'],pi:'5.89',es:1,q:Q0,d:['Indol; es la que más absorbe UV (≈ 280 nm); precursora de serotonina.','Indole; the strongest UV absorber (≈ 280 nm); precursor of serotonin.'],side:{B:[a,1.5],G:[2*a,2],D1:[1.144,2.809],E1:[2*a,3.618,'NH'],E2:[2.683,3.309],D2:[2.683,2.309],Z2:[3.549,1.809],H2:[4.415,2.309],Z3:[4.415,3.309],Z4:[3.549,3.809]},b:'CA-B B-G G=D1@p D1-E1 E1-E2 E2-D2 D2-G D2=Z2@c Z2-H2 H2=Z3@c Z3-Z4 Z4=E2@c',rc:{p:[1.995,2.809],c:[3.549,2.809]}},
  {n:['Serina','Serine'],t:'Ser',o:'S',c:'pol',r:['–CH<sub>2</sub>OH','–CH<sub>2</sub>OH'],pi:'5.68',q:Q0,d:['OH primario; sitio frecuente de fosforilación.','Primary OH; a common phosphorylation site.'],side:{B:[a,1.5],OG:[2*a,2,'OH']},b:'CA-B B-OG'},
  {n:['Treonina','Threonine'],t:'Thr',o:'T',c:'pol',r:['–CH(OH)CH<sub>3</sub>','–CH(OH)CH<sub>3</sub>'],pi:'5.60',es:1,q:Q0,d:['OH secundario; dos carbonos quirales (2S,3R); se fosforila.','Secondary OH; two chiral carbons (2S,3R); gets phosphorylated.'],side:{B:[a,1.5],G2:[0,2],OG:[2*a,2,'OH']},b:'CA-B B-G2 B-OG'},
@@ -344,8 +344,13 @@ var aVB=unionVB(AA);
 /* ================= construcción de la interfaz ================= */
 var tabsT=T('tabs'), h2T=T('h2');
 var ids=['tabla','grupos','aminoacidos','nucleo','estandar','unidades'];
+var AREAS=[[['Química','Chemistry'],[0,1],'var(--tpe-bas)'],[['Biología','Biology'],[2,3],'var(--tpe-pol)'],[['Física','Physics'],[4,5],'var(--tpe-aro)']];
 var html='<div class="tpe-tabs" role="tablist">';
-ids.forEach(function(id,i){html+='<button class="tpe-tab" role="tab" type="button" id="tpe-t-'+id+'" aria-controls="tpe-p-'+id+'" aria-selected="'+(i===0)+'" data-tab="'+id+'">'+tabsT[i][0]+'<small>'+tabsT[i][1]+'</small></button>';});
+AREAS.forEach(function(g){
+  html+='<div class="tpe-tg" role="presentation"><span class="tpe-tgl" aria-hidden="true"><i style="background:'+g[2]+'"></i>'+tr(g[0])+'</span><div class="tpe-tgt" role="presentation">';
+  g[1].forEach(function(i){var id=ids[i];html+='<button class="tpe-tab" role="tab" type="button" id="tpe-t-'+id+'" aria-controls="tpe-p-'+id+'" aria-selected="'+(i===0)+'" data-tab="'+id+'" aria-label="'+tr(g[0])+': '+tabsT[i][0]+'">'+tabsT[i][0]+'<small>'+tabsT[i][1]+'</small></button>';});
+  html+='</div></div>';
+});
 html+='</div>';
 html+='<section id="tpe-p-tabla" role="tabpanel" aria-labelledby="tpe-t-tabla"><h2 class="visually-hidden">'+h2T[0]+'</h2>'+
  '<div class="tpe-panel" id="tpe-panel" aria-live="polite"></div>'+
@@ -591,7 +596,7 @@ var NB=[
  {k:'G',n:['Guanina','Guanine'],t:'pur',d:purine('G'),f:'C<sub>5</sub>H<sub>5</sub>N<sub>5</sub>O',mm:'151.13',par:['con C: 3 puentes de hidrógeno','with C: 3 hydrogen bonds'],nuc:['guanosina · GMP (en ADN: desoxiguanosina · dGMP)','guanosine · GMP (in DNA: deoxyguanosine · dGMP)'],en:['ADN y ARN','DNA and RNA'],x:['Forma GTP, usado en la síntesis de proteínas y en señales celulares.','Forms GTP, used in protein synthesis and in cell signalling.']},
  {k:'C',n:['Citosina','Cytosine'],t:'pir',d:pyrimidine('C'),f:'C<sub>4</sub>H<sub>5</sub>N<sub>3</sub>O',mm:'111.10',par:['con G: 3 puentes de hidrógeno','with G: 3 hydrogen bonds'],nuc:['citidina · CMP (en ADN: desoxicitidina · dCMP)','cytidine · CMP (in DNA: deoxycytidine · dCMP)'],en:['ADN y ARN','DNA and RNA'],x:['Al perder su grupo amino (desaminación) se convierte en uracilo, una fuente común de mutaciones.','When it loses its amino group (deamination) it becomes uracil, a common source of mutations.']},
  {k:'T',n:['Timina','Thymine'],t:'pir',d:pyrimidine('T'),f:'C<sub>5</sub>H<sub>6</sub>N<sub>2</sub>O<sub>2</sub>',mm:'126.11',par:['con A: 2 puentes de hidrógeno','with A: 2 hydrogen bonds'],nuc:['desoxitimidina · dTMP (timidina)','deoxythymidine · dTMP (thymidine)'],en:['solo ADN','DNA only'],x:['Es 5-metiluracilo: el grupo CH₃ la distingue del uracilo.','It is 5-methyluracil: the CH₃ group distinguishes it from uracil.']},
- {k:'U',n:['Uracilo','Uracil'],t:'pir',d:pyrimidine('U'),f:'C<sub>4</sub>H<sub>4</sub>N<sub>2</sub>O<sub>2</sub>',mm:'112.09',par:['con A: 2 puentes de hidrógeno','with A: 2 hydrogen bonds'],nuc:['uridina · UMP','uridine · UMP'],en:['solo ARN','RNA only'],x:['Reemplaza a la timina en el ARN.','It replaces thymine in RNA.']}
+ {k:'U',n:['Uracilo','Uracil'],t:'pir',d:pyrimidine('U'),f:'C<sub>4</sub>H<sub>4</sub>N<sub>2</sub>O<sub>2</sub>',mm:'112.09',par:['con A (en el ARN): 2 puentes de hidrógeno','with A (in RNA): 2 hydrogen bonds'],nuc:['uridina · UMP','uridine · UMP'],en:['principalmente ARN','mainly RNA'],x:['Ocupa en el ARN el lugar de la timina; aparece rara vez en el ADN.','It takes the place of thymine in RNA; it is rarely found in DNA.']}
 ];
 var NBCOL={pur:'var(--tpe-bas)',pir:'var(--tpe-aci)'};
 var NBT={pur:['Purina (dos anillos)','Purine (two rings)'],pir:['Pirimidina (un anillo)','Pyrimidine (one ring)']};
@@ -627,9 +632,9 @@ SG.forEach(function(g){
   $('scards').appendChild(makeCard(front,back,g.dx?'var(--tpe-bas)':'var(--tpe-aci)',nm));
 });
 var TB=EN?
- {h:['Base','Nucleoside (RNA)','Nucleotide (RNA)','Nucleoside (DNA)','Nucleotide (DNA)'],r:[['Adenine (A)','adenosine','AMP','deoxyadenosine','dAMP'],['Guanine (G)','guanosine','GMP','deoxyguanosine','dGMP'],['Cytosine (C)','cytidine','CMP','deoxycytidine','dCMP'],['Thymine (T)','—','—','deoxythymidine','dTMP'],['Uracil (U)','uridine','UMP','—','—']],
+ {h:['Base','Nucleoside (RNA)','Nucleotide (RNA)','Nucleoside (DNA)','Nucleotide (DNA)'],r:[['Adenine (A)','adenosine','AMP','deoxyadenosine','dAMP'],['Guanine (G)','guanosine','GMP','deoxyguanosine','dGMP'],['Cytosine (C)','cytidine','CMP','deoxycytidine','dCMP'],['Thymine (T)','—','—','deoxythymidine','dTMP'],['Uracil (U)','uridine','UMP','deoxyuridine (rare)','dUMP (rare)']],
   t:'A nucleoside is a base bonded to a pentose; a nucleotide adds one to three phosphate groups on the 5′ carbon (the names here are the monophosphates).'}:
- {h:['Base','Nucleósido (ARN)','Nucleótido (ARN)','Nucleósido (ADN)','Nucleótido (ADN)'],r:[['Adenina (A)','adenosina','AMP','desoxiadenosina','dAMP'],['Guanina (G)','guanosina','GMP','desoxiguanosina','dGMP'],['Citosina (C)','citidina','CMP','desoxicitidina','dCMP'],['Timina (T)','—','—','desoxitimidina','dTMP'],['Uracilo (U)','uridina','UMP','—','—']],
+ {h:['Base','Nucleósido (ARN)','Nucleótido (ARN)','Nucleósido (ADN)','Nucleótido (ADN)'],r:[['Adenina (A)','adenosina','AMP','desoxiadenosina','dAMP'],['Guanina (G)','guanosina','GMP','desoxiguanosina','dGMP'],['Citosina (C)','citidina','CMP','desoxicitidina','dCMP'],['Timina (T)','—','—','desoxitimidina','dTMP'],['Uracilo (U)','uridina','UMP','desoxiuridina (raro)','dUMP (raro)']],
   t:'Un nucleósido es una base unida a una pentosa; un nucleótido suma de uno a tres grupos fosfato en el carbono 5′ (aquí se muestran los monofosfatos).'};
 $('ntab').innerHTML='<div class="tpe-tblwrap"><table class="tpe-tbl"><thead><tr>'+TB.h.map(function(x){return '<th scope="col">'+x+'</th>';}).join('')+'</tr></thead><tbody>'+TB.r.map(function(r){return '<tr><th scope="row">'+r[0]+'</th>'+r.slice(1).map(function(c){return '<td>'+c+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table></div><p class="tpe-meta" style="margin:.6rem 0 0">'+TB.t+'</p>';
 /* secuencia */
