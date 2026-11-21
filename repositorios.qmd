@@ -21,6 +21,20 @@ Los recursos siguientes pertenecen a los repositorios públicos de la cuenta [la
 
 [Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Guías docentes](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/guias/index.html) · [Cobertura curricular](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/curriculo.html) · [Código fuente](https://github.com/lab-macedonia/simulaciones-quimica)
 :::
+::: {.feature}
+## Dibujador de moléculas 2D
+
+**dibujador-moleculas** · Editor de código abierto para dibujar moléculas en 2D con colores CPK, nomenclatura IUPAC en español, masa molar y exportación a PNG y SVG.
+
+[Abrir el dibujador](https://lab-macedonia.github.io/dibujador-moleculas/) · [Código fuente](https://github.com/lab-macedonia/dibujador-moleculas)
+:::
+::: {.feature}
+## Montajes de laboratorio
+
+**montajes-laboratorio** · Página para dibujar montajes con material e instrumentos de química de laboratorio, con un modo actividad que revisa automáticamente los montajes.
+
+[Abrir la página](https://lab-macedonia.github.io/montajes-laboratorio/) · [Código fuente](https://github.com/lab-macedonia/montajes-laboratorio)
+:::
 :::
 
 ## Animaciones de química orgánica

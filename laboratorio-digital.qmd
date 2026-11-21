@@ -29,6 +29,24 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 [Explorar simulaciones](https://lab-macedonia.github.io/simulaciones-quimica/) · [Guías docentes](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/guias/index.html) · [Cobertura curricular](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/curriculo.html) · [Código abierto](https://github.com/lab-macedonia/simulaciones-quimica)
 :::
 ::: {.resource-item}
+## Dibujador de moléculas 2D
+
+**Repositorio:** `dibujador-moleculas`  
+**Contenido:** editor para dibujar moléculas en 2D con colores CPK, nomenclatura IUPAC en español, masa molar y exportación a PNG y SVG.  
+**Aplicación educativa:** representación de estructuras orgánicas y revisión de su nombre y masa molar.
+
+[Abrir el dibujador](https://lab-macedonia.github.io/dibujador-moleculas/) · [Código abierto](https://github.com/lab-macedonia/dibujador-moleculas)
+:::
+::: {.resource-item}
+## Montajes de laboratorio
+
+**Repositorio:** `montajes-laboratorio`  
+**Contenido:** página para dibujar montajes con material e instrumentos de química de laboratorio, con un modo actividad de revisión automática.  
+**Aplicación educativa:** preparación de prácticas y evaluación formativa de montajes.
+
+[Abrir la página](https://lab-macedonia.github.io/montajes-laboratorio/) · [Código abierto](https://github.com/lab-macedonia/montajes-laboratorio)
+:::
+::: {.resource-item}
 ## Animaciones de química orgánica
 
 **Temas:** estereoquímica, isomería y conformaciones moleculares.  

@@ -29,6 +29,24 @@ The digital laboratory brings together open developments published on GitHub and
 [Explore the simulations](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/index.en.html) · [Teacher guides](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/guias/en/index.html) · [Curriculum coverage](https://lab-macedonia.github.io/simulaciones-quimica/simulaciones/curriculo.en.html) · [Source code](https://github.com/lab-macedonia/simulaciones-quimica)
 :::
 ::: {.resource-item}
+## 2D molecule drawing tool
+
+**Repository:** `dibujador-moleculas`  
+**What it is:** an open-source editor for drawing molecules in 2D with CPK colors, IUPAC names (in Spanish), molar mass and PNG/SVG export.  
+**Educational use:** representing organic structures and checking their name and molar mass.
+
+[Open the editor](https://lab-macedonia.github.io/dibujador-moleculas/) · [Source code](https://github.com/lab-macedonia/dibujador-moleculas)
+:::
+::: {.resource-item}
+## Laboratory setups
+
+**Repository:** `montajes-laboratorio`  
+**What it is:** a page for drawing setups with chemistry lab equipment and instruments, with an activity mode that checks setups automatically.  
+**Educational use:** lab practical preparation and formative assessment of setups.
+
+[Open the page](https://lab-macedonia.github.io/montajes-laboratorio/) · [Source code](https://github.com/lab-macedonia/montajes-laboratorio)
+:::
+::: {.resource-item}
 ## Organic chemistry animations
 
 **Topics:** stereochemistry, isomerism, Newman and sawhorse projections, and molecular conformations.  
