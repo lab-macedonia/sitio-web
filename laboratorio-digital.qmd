@@ -60,7 +60,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 
 **Temas:** configuración electrónica, grupos funcionales y aminoácidos con sus estructuras.  
 **Contenido:** tabla periódica de 118 elementos con configuración resumida, completa y en cajas cuánticas, y un átomo animado; 18 grupos funcionales y 20 aminoácidos en tarjetas giratorias.  
-**Disponibilidad:** página abierta, en español e inglés, sin instalación, con licencia CC BY 4.0.
+**Disponibilidad:** página abierta, en español e inglés, sin instalación, con licencia CC BY-NC-SA 4.0.
 
 [Abrir la tabla periódica](tabla-periodica.qmd)
 :::
