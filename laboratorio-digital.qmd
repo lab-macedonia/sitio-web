@@ -1,7 +1,7 @@
 ---
 title: "Laboratorio digital"
 subtitle: "Recursos abiertos para explorar, aprender y enseñar ciencias"
-description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 115 simulaciones de ciencias con guías docentes, animaciones de química orgánica, tablas de referencia de química y física."
+description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 115 simulaciones de ciencias con guías docentes, animaciones de química orgánica, tablas de referencia de química, biología y física."
 ---
 
 El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recursos educativos del laboratorio.
@@ -58,7 +58,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 ::: {.resource-item}
 ## Tablas de referencia de ciencias
 
-**Temas:** tabla periódica, grupos funcionales, aminoácidos, Modelo Estándar de partículas y Sistema Internacional de Unidades.  
+**Temas:** química, biología y física: tabla periódica, grupos funcionales, aminoácidos, Modelo Estándar de partículas y Sistema Internacional de Unidades.  
 **Contenido:** cinco tablas interactivas con tarjetas giratorias: 118 elementos con configuración electrónica y átomo animado, 18 grupos funcionales, 20 aminoácidos, las partículas del Modelo Estándar y las unidades base, derivadas y prefijos del SI.  
 **Disponibilidad:** página abierta, en español e inglés, sin instalación, con licencia MIT.
 
