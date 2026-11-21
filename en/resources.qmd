@@ -1,7 +1,7 @@
 ---
 title: "Educational resources"
 subtitle: "Open resources to explore, learn and teach science"
-description: "Open resources from the MACEDONIA Laboratory: augmented reality, 115 science simulations with teacher guides and organic chemistry animations."
+description: "Open resources from the MACEDONIA Laboratory: augmented reality, 115 science simulations with teacher guides, organic chemistry animations and a periodic table with structures."
 ---
 
 The digital laboratory brings together open developments published on GitHub and educational resources from the laboratory.
@@ -54,6 +54,15 @@ The digital laboratory brings together open developments published on GitHub and
 **Availability:** 25 animations under CC BY-NC-SA 4.0.
 
 [Watch the animations](animations.qmd)
+:::
+::: {.resource-item}
+## Periodic table and structures
+
+**Topics:** electron configuration, functional groups and amino acids with their structures.  
+**What it is:** a periodic table of 118 elements with condensed, full and orbital-box configurations and an animated atom; 18 functional groups and 20 amino acids on flip cards.  
+**Availability:** an open page, in Spanish and English, with nothing to install.
+
+[Open the periodic table](periodic-table.qmd)
 :::
 :::
 

@@ -54,6 +54,8 @@ website:
         href: resources.qmd
       - text: Organic chemistry animations
         href: animations.qmd
+      - text: Periodic table and structures
+        href: periodic-table.qmd
     right:
     - text: Español
       href: ../index.html

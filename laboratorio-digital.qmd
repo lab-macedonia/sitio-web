@@ -1,7 +1,7 @@
 ---
 title: "Laboratorio digital"
 subtitle: "Recursos abiertos para explorar, aprender y enseñar ciencias"
-description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 115 simulaciones de ciencias con guías docentes y animaciones de química orgánica."
+description: "Recursos digitales abiertos del laboratorio: realidad aumentada, 115 simulaciones de ciencias con guías docentes, animaciones de química orgánica y una tabla periódica con estructuras."
 ---
 
 El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recursos educativos del laboratorio.
@@ -54,6 +54,15 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 **Disponibilidad:** 25 animaciones con licencia CC BY-NC-SA 4.0.
 
 [Ver las animaciones](animaciones.qmd)
+:::
+::: {.resource-item}
+## Tabla periódica y estructuras
+
+**Temas:** configuración electrónica, grupos funcionales y aminoácidos con sus estructuras.  
+**Contenido:** tabla periódica de 118 elementos con configuración resumida, completa y en cajas cuánticas, y un átomo animado; 18 grupos funcionales y 20 aminoácidos en tarjetas giratorias.  
+**Disponibilidad:** página abierta, en español e inglés, sin instalación.
+
+[Abrir la tabla periódica](tabla-periodica.qmd)
 :::
 :::
 

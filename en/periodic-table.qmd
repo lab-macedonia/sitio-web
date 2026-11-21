@@ -1,0 +1,16 @@
+---
+title: "Periodic table and structures"
+subtitle: "Electron configuration, functional groups and amino acids"
+description: "Interactive periodic table with electron configuration, orbital boxes and an animated atom, plus functional groups and amino acids with their structures. MACEDONIA Laboratory, UMCE."
+toc: false
+---
+
+A MACEDONIA Laboratory resource with three views for looking things up and studying: the **periodic table** with electron configuration (condensed, full and as orbital boxes) and an animated shell model of the atom; the **functional groups** of organic chemistry with their structures; and the **20 standard amino acids** with their structure and properties. In the functional groups and amino acids views, each card flips to show the key facts on the back.
+
+```{=html}
+<link rel="stylesheet" href="assets/tabla-periodica/app.css">
+<div id="tpe" class="tpe" data-lang="en"><noscript>This page needs JavaScript to display the interactive periodic table.</noscript></div>
+<script src="assets/tabla-periodica/app.js" defer></script>
+```
+
+**Data sources:** [CIAAW (IUPAC), standard atomic weights](https://ciaaw.org/atomic-weights.htm) · [NIST, ground levels of the neutral atoms](https://physics.nist.gov/PhysRefData/IonEnergy/ionEnergy.html) · [IUPAC, Nomenclature of Organic Chemistry 2013](https://iupac.qmul.ac.uk/BlueBook/P4.html) · [Sigma-Aldrich, amino acid reference chart](https://www.sigmaaldrich.com/US/en/technical-documents/technical-article/protein-biology/protein-structural-analysis/amino-acid-reference-chart).

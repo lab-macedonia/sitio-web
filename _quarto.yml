@@ -65,6 +65,8 @@ website:
         href: laboratorio-digital.qmd
       - text: Animaciones de química orgánica
         href: animaciones.qmd
+      - text: Tabla periódica y estructuras
+        href: tabla-periodica.qmd
     - text: Actualidad
       href: noticias.qmd
     right:
