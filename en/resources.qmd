@@ -59,7 +59,7 @@ The digital laboratory brings together open developments published on GitHub and
 ## Science reference tables
 
 **Topics:** chemistry (periodic table and functional groups), biology (amino acids, nucleotides and bases) and physics (the Standard Model of particles and the International System of Units).  
-**What it is:** six interactive tables with flip cards, organized by area. Chemistry: 118 elements with electron configuration and an animated atom, and 18 functional groups. Biology: 20 amino acids, the 5 nitrogenous bases and the pentoses of DNA and RNA. Physics: the particles of the Standard Model and the base units, derived units and prefixes of the SI.  
+**What it is:** six interactive tables with flip cards, organized by area. Chemistry: 118 elements with electron configuration, an animated atom and periodic properties, and 18 functional groups. Biology: 20 amino acids, the 5 nitrogenous bases and the pentoses of DNA and RNA. Physics: the particles of the Standard Model and the base units, derived units and prefixes of the SI.  
 **Availability:** an open page, in Spanish and English, with nothing to install, under the MIT license.
 
 [Open the reference tables](science-tables.qmd)

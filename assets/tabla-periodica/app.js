@@ -24,6 +24,17 @@ var S={
  speed:['Velocidad','Speed'],
  speedOpts:[['Lenta','Slow'],['Normal','Normal'],['Rápida','Fast']],
  legendLabel:['Filtrar por categoría','Filter by category'],
+ propLabel:['Iluminar por propiedad:','Light up by property:'],
+ propNone:['Categorías','Categories'],
+ sweepLabel:['Recorrido','Sweep'],
+ sweepModes:[['Por valor','By value'],['Por período','By period'],['Por grupo','By group']],
+ sweepGo:['✦ Iluminar la tendencia','✦ Light up the trend'],
+ sweepBusy:['✦ Iluminando…','✦ Lighting up…'],
+ noData:['sin dato fiable','no reliable data'],
+ noAnion:['no forma anión estable (≤ 0)','no stable anion (≤ 0)'],
+ lowest:['Menor','Lowest'],highest:['Mayor','Highest'],
+ perTrend:['En un período →','Across a period →'],grpTrend:['En un grupo ↓','Down a group ↓'],
+ up:['aumenta','increases'],down:['disminuye','decreases'],
  prev:['Elemento anterior','Previous element'],
  next:['Elemento siguiente','Next element'],
  block:['Bloque','Block'],group:['Grupo','Group'],period:['Período','Period'],state:['Estado','State'],
@@ -47,8 +58,8 @@ var S={
  aLegend:[['esqueleto común (H<sub>2</sub>N–CH–COOH)','common backbone (H<sub>2</sub>N–CH–COOH)'],['cadena lateral (R), con el color de su clase','side chain (R), colored by class']],
  aAll:['Todos','All'],
  noteTable:[
-  'Masas atómicas abreviadas (CIAAW/IUPAC, tabla 2024). En los elementos sin masa estándar se indica entre corchetes el número de masa de un isótopo representativo. Las configuraciones son las de estado fundamental de NIST (Z 1–104), con sus excepciones al orden de llenado (Cr, Cu, Nb, Mo, Ru, Rh, Pd, Ag, La, Ce, Gd, Pt, Au, Ac, Th, Pa, U, Np, Cm, Lr); de 105 a 118 son predicciones. El estado físico es el de condiciones ambientales; «desconocido» indica que no se ha observado. Lu y Lr se ubican en el grupo 3 (recomendación IUPAC 2021).',
-  'Abridged atomic weights (CIAAW/IUPAC, 2024 table). For elements with no standard atomic weight, the mass number of a representative isotope is given in square brackets. Configurations are the NIST ground-state ones (Z 1–104), including the exceptions to the filling order (Cr, Cu, Nb, Mo, Ru, Rh, Pd, Ag, La, Ce, Gd, Pt, Au, Ac, Th, Pa, U, Np, Cm, Lr); those of 105–118 are predictions. The physical state is the one at ambient conditions; “unknown” means it has not been observed. Lu and Lr are placed in group 3 (IUPAC 2021 recommendation).'],
+  'Masas atómicas abreviadas (CIAAW/IUPAC, tabla 2024). En los elementos sin masa estándar se indica entre corchetes el número de masa de un isótopo representativo. Las configuraciones son las de estado fundamental de NIST (Z 1–104), con sus excepciones al orden de llenado (Cr, Cu, Nb, Mo, Ru, Rh, Pd, Ag, La, Ce, Gd, Pt, Au, Ac, Th, Pa, U, Np, Cm, Lr); de 105 a 118 son predicciones. El estado físico es el de condiciones ambientales; «desconocido» indica que no se ha observado. Lu y Lr se ubican en el grupo 3 (recomendación IUPAC 2021). Propiedades periódicas: radio atómico calculado de Clementi et al. (hasta Z = 86, sin La ni Ce); carácter metálico como índice relativo (0 a 100) derivado de la primera energía de ionización, no medido; electronegatividad en la escala de Pauling (sin valores fiables para He, Ne, Ar, Rn, Pm, Eu, Tb, Yb ni para Z ≥ 104; los de Fr y Lr son estimados); radio covalente de enlace sencillo de Cordero et al. (2008), hasta Z = 96; primera energía de ionización de NIST en kJ/mol (hasta Z = 103); afinidad electrónica en kJ/mol como energía liberada al formar el anión (hasta Z = 88, sin dato para la mayoría de lantánidos y actínidos; «≤ 0» indica que el anión no es estable). El color de cada casilla es relativo al mínimo y al máximo de la propiedad; las casillas rayadas no tienen dato.',
+  'Abridged atomic weights (CIAAW/IUPAC, 2024 table). For elements with no standard atomic weight, the mass number of a representative isotope is given in square brackets. Configurations are the NIST ground-state ones (Z 1–104), including the exceptions to the filling order (Cr, Cu, Nb, Mo, Ru, Rh, Pd, Ag, La, Ce, Gd, Pt, Au, Ac, Th, Pa, U, Np, Cm, Lr); those of 105–118 are predictions. The physical state is the one at ambient conditions; “unknown” means it has not been observed. Lu and Lr are placed in group 3 (IUPAC 2021 recommendation). Periodic properties: calculated atomic radius from Clementi et al. (up to Z = 86, without La and Ce); metallic character as a relative index (0 to 100) derived from the first ionization energy, not measured; electronegativity on the Pauling scale (no reliable values for He, Ne, Ar, Rn, Pm, Eu, Tb, Yb or for Z ≥ 104; those of Fr and Lr are estimates); single-bond covalent radius from Cordero et al. (2008), up to Z = 96; first ionization energy from NIST in kJ/mol (up to Z = 103); electron affinity in kJ/mol as the energy released when the anion forms (up to Z = 88, no data for most lanthanides and actinides; “≤ 0” means the anion is not stable). Each tile’s color is relative to the minimum and maximum of the property; hatched tiles have no data.'],
  noteGroups:[
   'Toca una tarjeta para girarla y ver los datos principales. Prioridad del grupo principal al nombrar (IUPAC 2013, de mayor a menor): ácido carboxílico, anhídrido, éster, haluro de acilo, amida, nitrilo, aldehído, cetona, alcohol, tiol, amina. Los dobles y triples enlaces C–C no son grupos característicos: se indican con -eno e -ino en la cadena. Éteres, haluros de alquilo y nitro se nombran como prefijos.',
   'Tap a card to flip it and see the key facts. Seniority of the principal characteristic group when naming (IUPAC 2013, highest first): carboxylic acid, anhydride, ester, acyl halide, amide, nitrile, aldehyde, ketone, alcohol, thiol, amine. C–C double and triple bonds are not characteristic groups: they are shown as -ene and -yne in the chain. Ethers, alkyl halides and nitro groups are named as prefixes.'],
@@ -192,6 +203,61 @@ var EL=RAW.split('|').map(function(l,i){
   var blk=pos.f?'f':(Z===2||pos.g<=2)?'s':pos.g>=13?'p':'d';
   return {z:Z,s:p[1],n:[p[2],NAMES_EN[i]],m:p[3],pos:pos,cat:cat,blk:blk,st:stateOf(Z),cfg:configOf(Z)};
 });
+
+/* ================= propiedades periódicas ================= */
+/* Cadenas de 118 valores (Z = 1…118) separados por «|»; vacío = sin dato fiable; «x» = no forma anión estable (afinidad ≤ 0).
+   en: electronegatividad (Pauling) · rc: radio covalente, pm (Cordero et al., 2008) · ei: 1.ª energía de ionización, kJ/mol · ea: afinidad electrónica, kJ/mol */
+var PD={
+ en:'2.20||0.98|1.57|2.04|2.55|3.04|3.44|3.98||0.93|1.31|1.61|1.90|2.19|2.58|3.16||0.82|1.00|1.36|1.54|1.63|1.66|1.55|1.83|1.88|1.91|1.90|1.65|1.81|2.01|2.18|2.55|2.96|3.00|0.82|0.95|1.22|1.33|1.60|2.16|1.90|2.20|2.28|2.20|1.93|1.69|1.78|1.96|2.05|2.10|2.66|2.60|0.79|0.89|1.10|1.12|1.13|1.14||1.17||1.20||1.22|1.23|1.24|1.25||1.27|1.30|1.50|2.36|1.90|2.20|2.20|2.28|2.54|2.00|1.62|2.33|2.02|2.00|2.20||0.70|0.90|1.10|1.30|1.50|1.38|1.36|1.28|1.30|1.30|1.30|1.30|1.30|1.30|1.30|1.30|1.30|||||||||||||||',
+ rc:'31|28|128|96|84|76|71|66|57|58|166|141|121|111|107|105|102|106|203|176|170|160|153|139|139|132|126|124|132|122|122|120|119|120|120|116|220|195|190|175|164|154|147|146|142|139|145|144|142|139|139|138|139|140|244|215|207|204|203|201|199|198|198|196|194|192|192|189|190|187|187|175|170|162|151|144|141|136|136|132|145|146|148|140|150|150|260|221|215|206|200|196|190|187|180|169||||||||||||||||||||||',
+ ei:'1312|2372.3|520.2|899.5|800.6|1086.5|1402.3|1313.9|1681|2080.7|495.8|737.7|577.5|786.5|1011.8|999.6|1251.2|1520.6|418.8|589.8|633.1|658.8|650.9|652.9|717.3|762.5|760.4|737.1|745.5|906.4|578.8|762.2|944.5|941|1139.9|1350.8|403|549.5|599.9|640.1|652.1|684.3|686.9|710.2|719.7|804.4|731|867.8|558.3|708.6|830.6|869.3|1008.4|1170.4|375.7|502.8|538.1|534.4|527.8|533.1|538.6|544.5|547.1|593.4|565.8|573|581|589.3|596.7|603.4|523.5|658.5|728.4|758.8|755.8|814.2|865.2|864.4|890.1|1007.1|589.4|715.6|702.9|812.2|899|1037.1|393|509.3|519.1|608.5|568.3|597.6|604.5|581.4|576.4|578.2|598|606.1|614.5|627.2|634.9|639.3|478.6|||||||||||||||',
+ ra:'53|31|167|112|87|67|56|48|42|38|190|145|118|111|98|88|79|71|243|194|184|176|171|166|161|156|152|149|145|142|136|125|114|103|94|88|265|219|212|206|198|190|183|178|173|169|165|161|156|145|133|123|115|108|298|253|||247|206|205|238|231|233|225|228|226|226|222|222|217|208|200|193|188|185|180|177|174|171|156|154|143|135|127|120||||||||||||||||||||||||||||||||',
+ ea:'72.769|x|59.6326|x|26.989|121.776|x|140.976|328.165|x|52.867|x|41.762|134.068|72.037|200.41|348.575|x|48.383|2.37|17.3076|7.289|50.911|65.2172|x|14.785|63.8979|111.65|119.235|x|29.0581|118.935|77.6211|194.965|324.537|x|46.884|5.023|30.035|41.806|88.516|72.097|53|100.95|110.27|54.24|125.862|x|37.043|107.298|101.059|190.161|295.153|x|45.5023|13.954|53.795|57.9067|92.8||||||||||99||23.04|17.18|31.7301|78.7803|5.8273|103.978|150.909|205.041|222.747|x|30.8804|34.4183|90.924|136|233.087|x|46.89|9.6485||||||||||||||||||||||||||||||'
+};
+/* tp / tg: tendencia por período (→) y por grupo (↓); dt / dp: decimales en la casilla y en el panel; ramp: tres colores (bajo, medio, alto) */
+var PR=[
+ {k:'en',n:['Electronegatividad','Electronegativity'],u:['escala de Pauling','Pauling scale'],lab:['Electronegatividad (Pauling)','Electronegativity (Pauling)'],unit:'',dt:2,dp:2,tp:1,tg:-1,gam:1,ramp:['#fff0b8','#f7873f','#7b1650'],
+  d:['Qué tan fuerte atrae un átomo los electrones de un enlace.','How strongly an atom pulls on the electrons of a bond.'],
+  w:['Aumenta hacia el flúor: más carga nuclear efectiva y menos capas. Los gases nobles ligeros no tienen valor.','Rises toward fluorine: higher effective nuclear charge and fewer shells. The light noble gases have no value.']},
+ {k:'rc',n:['Radio covalente','Covalent radius'],u:['enlace sencillo, pm','single bond, pm'],lab:['Radio covalente','Covalent radius'],unit:'pm',dt:0,dp:0,tp:-1,tg:1,gam:1,ramp:['#e4f5fc','#4aa6de','#0c3b7c'],
+  d:['Tamaño del átomo en un enlace covalente sencillo.','Size of the atom in a single covalent bond.'],
+  w:['Disminuye a lo largo del período (la carga nuclear efectiva contrae la nube) y aumenta al bajar en un grupo (más capas).','Shrinks across a period (effective nuclear charge pulls the cloud in) and grows down a group (more shells).']},
+ {k:'ei',n:['Energía de ionización','Ionization energy'],u:['primera, kJ/mol','first, kJ/mol'],lab:['1.ª energía de ionización','1st ionization energy'],unit:'kJ/mol',dt:0,dp:1,tp:1,tg:-1,gam:1,ramp:['#f3e9fb','#a56fdc','#3f1478'],
+  d:['Energía para arrancar el electrón más externo de un átomo gaseoso.','Energy needed to remove the outermost electron of a gaseous atom.'],
+  w:['Aumenta hacia el helio. En cada período hay caídas (por ejemplo, Be → B y N → O) por la subcapa p y por los electrones apareados.','Rises toward helium. Each period has dips (for example Be → B and N → O) because of the p subshell and paired electrons.']},
+ {k:'ra',n:['Radio atómico','Atomic radius'],u:['calculado, pm','calculated, pm'],lab:['Radio atómico','Atomic radius'],unit:'pm',dt:0,dp:0,tp:-1,tg:1,gam:1,ramp:['#eaf7f4','#2fb5a3','#0a5a52'],
+  d:['Tamaño del átomo aislado: distancia al máximo de densidad electrónica externa.','Size of the isolated atom: distance to the outer electron-density maximum.'],
+  w:['Disminuye a lo largo del período (más carga nuclear efectiva) y aumenta al bajar (más capas). Valores calculados de Clementi et al., hasta Z = 86.','Shrinks across a period (higher effective nuclear charge) and grows down a group (more shells). Calculated values from Clementi et al., up to Z = 86.']},
+ {k:'mc',n:['Carácter metálico','Metallic character'],u:['índice relativo, 0 a 100','relative index, 0 to 100'],lab:['Carácter metálico (índice)','Metallic character (index)'],unit:'',dt:0,dp:0,tp:-1,tg:1,gam:1,ramp:['#f1f3f6','#8f9fb5','#26344d'],
+  d:['Tendencia de un átomo a perder electrones y formar cationes.','Tendency of an atom to lose electrons and form cations.'],
+  w:['Disminuye a lo largo del período y aumenta al bajar: los más metálicos son Cs y Fr. Es un índice relativo calculado a partir de la 1.ª energía de ionización, no una magnitud medida.','Falls across a period and rises down a group: Cs and Fr are the most metallic. It is a relative index calculated from the first ionization energy, not a measured quantity.']},
+ {k:'ea',n:['Afinidad electrónica','Electron affinity'],u:['kJ/mol, energía liberada','kJ/mol, energy released'],lab:['Afinidad electrónica','Electron affinity'],unit:'kJ/mol',dt:0,dp:1,tp:1,tg:-1,gam:.7,ex:1,ramp:['#e6f6e2','#4dbd78','#0a5f38'],
+  d:['Energía liberada cuando un átomo gaseoso captura un electrón.','Energy released when a gaseous atom gains an electron.'],
+  w:['Tiende a crecer hacia los halógenos y el máximo es el cloro, no el flúor (por su tamaño). Los gases nobles, Be, Mg, N, Zn, Cd y Hg no forman un anión estable.','It tends to grow toward the halogens, and the maximum is chlorine, not fluorine (because of its size). The noble gases, Be, Mg, N, Zn, Cd and Hg do not form a stable anion.']}
+];
+/* carácter metálico: índice relativo derivado de la 1.ª energía de ionización (0 = He, 100 = Cs); no es una magnitud medida */
+PD.mc=PD.ei.split('|').map(function(x){x=parseFloat(x);return isNaN(x)?'':String(Math.round(100*(1-(x-375.7)/(2372.3-375.7))));}).join('|');
+var PM={}, PF=[1,3,11,19,37,55,87], PC=[2,8,8,18,18,32,32];
+function hex2rgb(h){return [parseInt(h.substr(1,2),16),parseInt(h.substr(3,2),16),parseInt(h.substr(5,2),16)];}
+function colorAt(p,t){
+  var r=p.ramp.map(hex2rgb), k=t<.5?0:1, u=t<.5?t*2:(t-.5)*2, a=r[k], b=r[k+1];
+  return [0,1,2].map(function(i){return Math.round(a[i]+(b[i]-a[i])*u);});
+}
+function rgbCss(c){return 'rgb('+c[0]+','+c[1]+','+c[2]+')';}
+function lumOf(c){var f=function(x){x/=255;return x<=.03928?x/12.92:Math.pow((x+.055)/1.055,2.4);};return .2126*f(c[0])+.7152*f(c[1])+.0722*f(c[2]);}
+PR.forEach(function(p){
+  PM[p.k]=p;
+  var lo=1e9,hi=-1e9;
+  PD[p.k].split('|').forEach(function(v,i){
+    var x=v===''?null:v==='x'?'x':parseFloat(v);
+    (EL[i].p=EL[i].p||{})[p.k]=x;
+    if(typeof x==='number'){if(x<lo){lo=x;p.loZ=i+1;}if(x>hi){hi=x;p.hiZ=i+1;}}
+  });
+  p.lo=lo;p.hi=hi;
+});
+function fnum(v,dec){return fmt(dec===0?String(Math.round(v)):v.toFixed(dec));}
+function tileVal(p,e){var v=e.p[p.k];return v===null?'—':v==='x'?'≤ 0':fnum(v,p.dt);}
+function panelVal(p,e){var v=e.p[p.k];return v===null?'—':v==='x'?tr(S.noAnion):fnum(v,p.dp)+(p.unit?' '+p.unit:'');}
 
 /* ================= grupos funcionales ================= */
 var GRUPOS=[
@@ -358,8 +424,10 @@ html+='<section id="tpe-p-tabla" role="tabpanel" aria-labelledby="tpe-t-tabla"><
  '<label for="tpe-show">'+tr(S.tileLabel)+'</label><select id="tpe-show"><option value="n">'+S.tileOpts[0][LI]+'</option><option value="m">'+S.tileOpts[1][LI]+'</option></select></div>'+
  '<div class="tpe-ctrl"><button class="tpe-chip" id="tpe-play" type="button" aria-pressed="false">'+tr(S.play)+'</button><label for="tpe-speed">'+tr(S.speed)+'</label>'+
  '<select id="tpe-speed"><option value="900">'+S.speedOpts[0][LI]+'</option><option value="550" selected>'+S.speedOpts[1][LI]+'</option><option value="250">'+S.speedOpts[2][LI]+'</option></select></div>'+
+ '<div class="tpe-propsrow"><span class="tpe-lbl" id="tpe-proplbl">'+tr(S.propLabel)+'</span><div class="tpe-chips" id="tpe-props" role="group" aria-labelledby="tpe-proplbl"></div></div>'+
+ '<p class="tpe-why" id="tpe-why" aria-live="polite" hidden></p>'+
  '<div class="tpe-chips" id="tpe-legend" role="group" aria-label="'+tr(S.legendLabel)+'"></div>'+
- '<div class="tpe-ptwrap"><div class="tpe-pt" id="tpe-pt"></div></div>'+
+ '<div class="tpe-ptwrap"><div class="tpe-pcard" id="tpe-pcard" hidden></div><div class="tpe-pt" id="tpe-pt"></div></div>'+
  '<p class="tpe-note">'+tr(S.noteTable)+'</p></section>';
 html+='<section id="tpe-p-grupos" role="tabpanel" aria-labelledby="tpe-t-grupos" hidden><h2 class="visually-hidden">'+h2T[1]+'</h2>'+
  '<div class="tpe-chips" id="tpe-gchips" role="group"></div>'+
@@ -397,7 +465,7 @@ tabs.forEach(function(t,i){
 });
 
 /* ---- tabla periódica ---- */
-var sel=6, activeCat=null, query='', atomPaused=false;
+var sel=6, activeCat=null, activeProp=null, query='', atomPaused=false;
 var reduced=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 var ptEl=$('pt'), panel=$('panel');
 (function buildTable(){
@@ -411,10 +479,10 @@ var ptEl=$('pt'), panel=$('panel');
   ptEl.classList.add('wave');
 })();
 function fillSmall(){
-  var mode=$('show').value;
+  var mode=$('show').value, p=activeProp?PM[activeProp]:null;
   [].forEach.call(ptEl.querySelectorAll('.tpe-el'),function(b){
     var e=EL[+b.getAttribute('data-z')-1];
-    b.querySelector('.n').textContent=mode==='m'?fmt(e.m):tr(e.n);
+    b.querySelector('.n').textContent=p?tileVal(p,e):(mode==='m'?fmt(e.m):tr(e.n));
   });
 }
 function orbBlock(e){
@@ -442,6 +510,13 @@ function atomBlock(e){
     '<div class="tpe-atomcap">'+n+' '+S.shells[LI][n===1?0:1]+' · <b>'+last+'</b> '+S.outer[LI][last===1?0:1]+tr(S.inOuter)+'</div>'+
     (reduced?'':'<button class="tpe-mini" id="tpe-pauseatom" type="button"></button>')+'</div>';
 }
+function propRows(e){
+  return PR.map(function(p){
+    var act=activeProp===p.k, v=e.p[p.k], meter='';
+    if(act&&typeof v==='number') meter='<span class="tpe-meter" aria-hidden="true"><i style="width:'+((v-p.lo)/(p.hi-p.lo)*100).toFixed(1)+'%;background:'+rgbCss(colorAt(p,Math.pow((v-p.lo)/(p.hi-p.lo),p.gam)))+'"></i></span>';
+    return '<dt'+(act?' class="act"':'')+'>'+tr(p.lab)+'</dt><dd'+(act?' class="act"':'')+'>'+panelVal(p,e)+meter+'</dd>';
+  }).join('');
+}
 function renderPanel(){
   var e=EL[sel-1], c=e.cfg;
   var cond=(c.core?'[<b>'+c.core+'</b>] ':'')+sup(c.val);
@@ -450,7 +525,7 @@ function renderPanel(){
    '<div class="tpe-big" style="--c:var(--'+e.cat+')"><span class="bz">'+e.z+'</span><span class="bs">'+e.s+'</span><span class="bm">'+fmt(e.m)+'</span></div>'+
    '<div class="tpe-info"><h3 class="tpe-name">'+tr(e.n)+'<button class="tpe-step" type="button" id="tpe-prev" aria-label="'+tr(S.prev)+'"'+(sel===1?' disabled':'')+'>‹</button><button class="tpe-step" type="button" id="tpe-next" aria-label="'+tr(S.next)+'"'+(sel===118?' disabled':'')+'>›</button></h3>'+
    '<div class="tpe-tags"><span class="tpe-tag"><b>'+tr(CATS[e.cat])+'</b></span><span class="tpe-tag">'+tr(S.block)+' <b>'+e.blk+'</b></span><span class="tpe-tag">'+tr(S.group)+' <b>'+group+'</b></span><span class="tpe-tag">'+tr(S.period)+' <b>'+e.pos.p+'</b></span><span class="tpe-tag">'+tr(S.state)+' <b>'+tr(S.states[e.st])+'</b></span></div>'+
-   '<dl class="tpe-kv"><dt>'+tr(S.kvShort)+'</dt><dd>'+cond+'</dd><dt>'+tr(S.kvFull)+'</dt><dd>'+sup(c.full)+'</dd><dt>'+tr(S.kvShells)+'</dt><dd>'+c.shells.join(' · ')+'</dd><dt>'+tr(S.kvMass)+'</dt><dd>'+fmt(e.m)+'</dd></dl>'+
+   '<dl class="tpe-kv"><dt>'+tr(S.kvShort)+'</dt><dd>'+cond+'</dd><dt>'+tr(S.kvFull)+'</dt><dd>'+sup(c.full)+'</dd><dt>'+tr(S.kvShells)+'</dt><dd>'+c.shells.join(' · ')+'</dd><dt>'+tr(S.kvMass)+'</dt><dd>'+fmt(e.m)+'</dd>'+propRows(e)+'</dl>'+
    '<div class="tpe-orbhead"><b>'+tr(S.orbHead)+'</b>'+tr(S.orbSub)+(c.core?'<small>'+tr(S.orbDim)+' [<b>'+c.core+'</b>]. '+tr(S.orbDim2)+'</small>':'')+'</div><div class="tpe-orbs">'+orbBlock(e)+'</div></div>'+atomBlock(e);
   var asvg=panel.querySelector('.tpe-atom'), pb=panel.querySelector('#tpe-pauseatom');
   if(pb){
@@ -470,7 +545,7 @@ function select(z){
     b.setAttribute('aria-pressed',String(bz===z));
     b.classList.toggle('pending',building&&bz>z);
   });
-  renderPanel();
+  renderPanel(); updatePin();
   if(building){var w=root.querySelector('.tpe-ptwrap'),t=ptEl.querySelector('[data-z="'+z+'"]');if(t)w.scrollLeft=t.offsetLeft-w.clientWidth/2;}
 }
 function applyDim(){
@@ -503,6 +578,99 @@ $('speed').addEventListener('change',function(){if(timer){clearInterval(timer);t
 fillSmall(); select(6);
 ptEl.addEventListener('click',function(ev){var b=ev.target.closest('.tpe-el');if(b)select(+b.getAttribute('data-z'));});
 $('show').addEventListener('change',fillSmall);
+
+/* ---- propiedades periódicas: color relativo, brillo y recorrido animado (sin atenuar la tabla) ---- */
+var tiles=[].slice.call(ptEl.querySelectorAll('.tpe-el')), pcard=$('pcard'), whyEl=$('why');
+var ignT=null, sweepT=null, sweepMode='val', SPAN=6200;
+var INK_L=.0168;
+function textFor(c){var L=lumOf(c);return (1.05/(L+.05))>((L+.05)/(INK_L+.05))?'#fff':'#10243a';}
+function rampStops(p){var a=[];for(var i=0;i<=8;i++){var s=i/8;a.push(rgbCss(colorAt(p,Math.pow(s,p.gam)))+' '+(s*100).toFixed(1)+'%');}return a.join(',');}
+function updatePin(){
+  var pin=$('pin'); if(!pin||!activeProp)return;
+  var p=PM[activeProp], e=EL[sel-1], v=e.p[p.k];
+  if(typeof v!=='number'){pin.style.visibility='hidden';return;}
+  pin.style.visibility='visible';
+  pin.style.left=((v-p.lo)/(p.hi-p.lo)*100).toFixed(2)+'%';
+  pin.querySelector('b').textContent=e.s;
+}
+function renderCard(){
+  var p=activeProp?PM[activeProp]:null;
+  pcard.hidden=!p; whyEl.hidden=!p;
+  if(!p){pcard.innerHTML='';whyEl.textContent='';return;}
+  var lo=EL[p.loZ-1], hi=EL[p.hiZ-1], exc=p.ex?' ('+(EN?'with exceptions':'con excepciones')+')':'';
+  var modes=S.sweepModes.map(function(m,i){var k=['val','per','grp'][i];return '<option value="'+k+'"'+(k===sweepMode?' selected':'')+'>'+m[LI]+'</option>';}).join('');
+  pcard.innerHTML=
+   '<div class="pc-top"><span class="pc-title"><b>'+tr(p.n)+'</b> <small>'+tr(p.u)+'</small></span>'+
+    '<span class="pc-trs"><span class="pc-t"><b>'+tr(S.perTrend)+'</b> '+(p.tp>0?tr(S.up):tr(S.down))+exc+'</span><span class="pc-t"><b>'+tr(S.grpTrend)+'</b> '+(p.tg>0?tr(S.up):tr(S.down))+exc+'</span></span></div>'+
+   '<p class="pc-d">'+tr(p.d)+'</p>'+
+   '<div class="pc-barwrap"><span class="pc-pin" id="tpe-pin"><b></b></span><div class="pc-bar" style="background:linear-gradient(90deg,'+rampStops(p)+')"></div><span class="pc-run" id="tpe-run"></span></div>'+
+   '<div class="pc-lbl"><span>'+tr(S.lowest)+': <b>'+lo.s+'</b> '+fnum(p.lo,p.dp)+'</span><span>'+tr(S.highest)+': <b>'+hi.s+'</b> '+fnum(p.hi,p.dp)+'</span></div>'+
+   '<div class="pc-foot">'+(reduced?'':'<label for="tpe-sweep">'+tr(S.sweepLabel)+'</label><select id="tpe-sweep">'+modes+'</select><button class="tpe-chip pc-go" id="tpe-go" type="button">'+tr(S.sweepGo)+'</button>')+'<span class="pc-nd"><i></i>'+tr(S.noData)+'</span></div>';
+  whyEl.textContent=tr(p.w);
+}
+function cancelSweep(){
+  clearTimeout(sweepT);sweepT=null;
+  ptEl.classList.remove('sweeping');
+  tiles.forEach(function(b){b.classList.remove('lit');b.style.removeProperty('--sd');});
+  var go=$('go'), run=$('run');
+  if(go){go.disabled=false;go.textContent=tr(S.sweepGo);}
+  if(run)run.classList.remove('on');
+}
+function startSweep(){
+  var p=activeProp?PM[activeProp]:null; if(!p||reduced)return;
+  if(timer)stopPlay();
+  cancelSweep(); ptEl.classList.remove('wave');
+  var lit=[];
+  tiles.forEach(function(b){
+    var e=EL[+b.getAttribute('data-z')-1], v=e.p[p.k], t;
+    if(sweepMode==='val'){ if(typeof v!=='number')return; t=(v-p.lo)/(p.hi-p.lo); }
+    else if(sweepMode==='per'){ t=(e.pos.p-1+(e.z-PF[e.pos.p-1])/PC[e.pos.p-1])/7; }
+    else { t=((e.pos.g||3)-1+(e.pos.p-1)/8)/18; }
+    b.style.setProperty('--sd',Math.round(t*SPAN)); lit.push(b);
+  });
+  void ptEl.offsetWidth;
+  ptEl.classList.add('sweeping');
+  lit.forEach(function(b){b.classList.add('lit');});
+  var run=$('run'); if(run&&sweepMode==='val'){run.style.animationDuration=SPAN+'ms';run.classList.add('on');}
+  var go=$('go'); if(go){go.disabled=true;go.textContent=tr(S.sweepBusy);}
+  sweepT=setTimeout(cancelSweep,SPAN+1100);
+}
+function applyProp(){
+  var p=activeProp?PM[activeProp]:null;
+  cancelSweep();
+  ptEl.classList.remove('wave');
+  ptEl.classList.toggle('prop',!!p);
+  clearTimeout(ignT);
+  ptEl.classList.toggle('igniting',!!p&&!reduced);
+  if(p&&!reduced) ignT=setTimeout(function(){ptEl.classList.remove('igniting');},2000);
+  $('show').disabled=!!p;
+  tiles.forEach(function(b){
+    var e=EL[+b.getAttribute('data-z')-1], v=p?e.p[p.k]:null;
+    if(!p){b.style.setProperty('--c','var(--'+e.cat+')');b.style.color='';b.classList.remove('nodata');b.removeAttribute('title');return;}
+    if(typeof v==='number'){
+      var c=colorAt(p,Math.pow((v-p.lo)/(p.hi-p.lo),p.gam));
+      b.style.setProperty('--c',rgbCss(c)); b.style.color=textFor(c); b.classList.remove('nodata');
+      b.title=tr(e.n)+': '+fnum(v,p.dp)+(p.unit?' '+p.unit:'');
+    } else {
+      b.style.color=''; b.classList.add('nodata');
+      b.title=tr(e.n)+': '+(v==='x'?tr(S.noAnion):tr(S.noData));
+    }
+  });
+  fillSmall(); renderCard(); renderPanel(); updatePin();
+}
+pcard.addEventListener('click',function(ev){if(ev.target.closest('#tpe-go'))startSweep();});
+pcard.addEventListener('change',function(ev){if(ev.target.id==='tpe-sweep')sweepMode=ev.target.value;});
+(function propChips(){
+  var box=$('props');
+  var items=[['',tr(S.propNone)]].concat(PR.map(function(p){return [p.k,tr(p.n)];}));
+  box.innerHTML=items.map(function(it){return '<button class="tpe-chip" type="button" data-k="'+it[0]+'" aria-pressed="'+(it[0]===''?'true':'false')+'">'+it[1]+'</button>';}).join('');
+  box.addEventListener('click',function(ev){
+    var b=ev.target.closest('.tpe-chip');if(!b)return;
+    activeProp=b.getAttribute('data-k')||null;
+    [].forEach.call(box.querySelectorAll('.tpe-chip'),function(x){x.setAttribute('aria-pressed',String((x.getAttribute('data-k')||null)===activeProp));});
+    applyProp();
+  });
+})();
 $('q').addEventListener('input',function(ev){query=ev.target.value;applyDim();});
 $('q').addEventListener('keydown',function(ev){
   if(ev.key==='Enter'){var f=ptEl.querySelector('.tpe-el:not(.dim)');if(f&&query.trim())select(+f.getAttribute('data-z'));}

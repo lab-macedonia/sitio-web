@@ -59,7 +59,7 @@ El laboratorio digital reúne desarrollos abiertos publicados en GitHub y recurs
 ## Tablas de referencia de ciencias
 
 **Temas:** química (tabla periódica y grupos funcionales), biología (aminoácidos, nucleótidos y bases) y física (Modelo Estándar de partículas y Sistema Internacional de Unidades).  
-**Contenido:** seis tablas interactivas con tarjetas giratorias, ordenadas por área. Química: 118 elementos con configuración electrónica y átomo animado, y 18 grupos funcionales. Biología: 20 aminoácidos, las 5 bases nitrogenadas y las pentosas del ADN y ARN. Física: las partículas del Modelo Estándar y las unidades base, derivadas y prefijos del SI.  
+**Contenido:** seis tablas interactivas con tarjetas giratorias, ordenadas por área. Química: 118 elementos con configuración electrónica, átomo animado y propiedades periódicas, y 18 grupos funcionales. Biología: 20 aminoácidos, las 5 bases nitrogenadas y las pentosas del ADN y ARN. Física: las partículas del Modelo Estándar y las unidades base, derivadas y prefijos del SI.  
 **Disponibilidad:** página abierta, en español e inglés, sin instalación, con licencia MIT.
 
 [Abrir las tablas de referencia](tablas-ciencias.qmd)
