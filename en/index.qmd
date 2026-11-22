@@ -1,5 +1,6 @@
 ---
 title: "Home"
+pagetitle: "MACEDONIA Laboratory"
 page-layout: full
 toc: false
 title-block-banner: false

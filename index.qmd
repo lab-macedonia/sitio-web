@@ -1,5 +1,6 @@
 ---
 title: "Inicio"
+pagetitle: "Laboratorio MACEDONIA"
 page-layout: full
 toc: false
 title-block-banner: false
