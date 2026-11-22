@@ -424,7 +424,8 @@ html+='<section id="tpe-p-tabla" role="tabpanel" aria-labelledby="tpe-t-tabla"><
  '<label for="tpe-show">'+tr(S.tileLabel)+'</label><select id="tpe-show"><option value="n">'+S.tileOpts[0][LI]+'</option><option value="m">'+S.tileOpts[1][LI]+'</option></select></div>'+
  '<div class="tpe-ctrl"><button class="tpe-chip" id="tpe-play" type="button" aria-pressed="false">'+tr(S.play)+'</button><label for="tpe-speed">'+tr(S.speed)+'</label>'+
  '<select id="tpe-speed"><option value="900">'+S.speedOpts[0][LI]+'</option><option value="550" selected>'+S.speedOpts[1][LI]+'</option><option value="250">'+S.speedOpts[2][LI]+'</option></select></div>'+
- '<div class="tpe-propsrow"><span class="tpe-lbl" id="tpe-proplbl">'+tr(S.propLabel)+'</span><div class="tpe-chips" id="tpe-props" role="group" aria-labelledby="tpe-proplbl"></div></div>'+
+ '<div class="tpe-propsrow"><span class="tpe-lbl" id="tpe-proplbl">'+tr(S.propLabel)+'</span><div class="tpe-chips" id="tpe-props" role="group" aria-labelledby="tpe-proplbl"></div><button class="tpe-chip tpe-retbtn" id="tpe-retbtn" type="button" aria-pressed="false">'+['Retos','Challenges'][LI]+'</button></div>'+
+ '<div class="tpe-ret" id="tpe-ret" aria-live="polite" hidden></div>'+
  '<p class="tpe-why" id="tpe-why" aria-live="polite" hidden></p>'+
  '<div class="tpe-chips" id="tpe-legend" role="group" aria-label="'+tr(S.legendLabel)+'"></div>'+
  '<div class="tpe-ptwrap"><div class="tpe-pcard" id="tpe-pcard" hidden></div><div class="tpe-pt" id="tpe-pt"></div></div>'+
@@ -671,6 +672,262 @@ pcard.addEventListener('change',function(ev){if(ev.target.id==='tpe-sweep')sweep
     applyProp();
   });
 })();
+/* ================= retos: predicción, registro y reporte (piloto 8.º básico, OA 14) ================= */
+var RS={
+ btn:['Retos','Challenges'],
+ title:['Reto','Challenge'],
+ cand:['Haz clic en el elemento (candidatos resaltados). Predice antes de ver los datos.','Click the element (candidates are highlighted). Predict before seeing the data.'],
+ ok:['¡Correcto!','Correct!'],
+ no:['Aún no. Piensa en la posición de los elementos (grupo y período) y vuelve a intentar.','Not yet. Think about the elements’ position (group and period) and try again.'],
+ show:['Ver el resultado','Show the answer'],
+ next:['Siguiente reto','Next challenge'],
+ end:['Terminar','Finish'],
+ exit:['Salir de los retos','Exit challenges'],
+ answerWas:['La respuesta era','The answer was'],
+ lit:['Se ilumina la propiedad para que compares con tu predicción.','The property is now lit so you can compare it with your prediction.'],
+ sum:['Resumen de tus retos','Challenge summary'],
+ first:['aciertos al primer intento','correct on the first attempt'],
+ level:['Nivel de logro (referencial)','Achievement level (indicative)'],
+ lv:[['Insuficiente','Suficiente','Bien','Muy bien'],['Insufficient','Sufficient','Good','Very good']],
+ alias:['Código o alias (sin nombre real)','Code or alias (no real name)'],
+ dl:['Descargar reporte','Download report'],
+ cp:['Copiar resumen','Copy summary'],
+ copied:['Copiado','Copied'],
+ again:['Repetir','Repeat'],
+ note:['Piloto alineado a Ciencias Naturales 8.º básico, OA 14 (la tabla periódica como modelo para predecir) y a las habilidades de investigación OA c (predecir) y OA j (concluir). Verifica la vigencia de los OA en curriculumnacional.cl. El nivel es una referencia, no una calificación. El reporte no se envía a ningún servidor: lo entregas tú.','Pilot aligned to Chilean Natural Sciences, grade 8, OA 14 (the periodic table as a model for predicting) and the inquiry skills OA c (predict) and OA j (conclude). Check that the OA are still current at curriculumnacional.cl. The level is indicative, not a grade. The report is not sent to any server: you hand it in yourself.']
+};
+var RC=[
+ {k:'en',t:'max',zs:[3,6,9],q:['¿Cuál de estos elementos del período 2 tiene la mayor electronegatividad?','Which of these period-2 elements has the highest electronegativity?'],w:['Crece hacia la derecha en el período: más carga nuclear efectiva.','It grows to the right across a period: higher effective nuclear charge.']},
+ {k:'ra',t:'max',zs:[11,12,17],q:['¿Cuál del período 3 tiene el mayor radio atómico?','Which period-3 element has the largest atomic radius?'],w:['El radio disminuye a lo largo del período.','The radius shrinks across a period.']},
+ {k:'ra',t:'max',zs:[9,17,35],q:['¿Cuál de los halógenos tiene el mayor radio atómico?','Which halogen has the largest atomic radius?'],w:['Al bajar por el grupo se agregan capas electrónicas.','Going down a group adds electron shells.']},
+ {k:'ei',t:'min',zs:[11,19,55],q:['¿Cuál de los alcalinos tiene la menor energía de ionización?','Which alkali metal has the lowest ionization energy?'],w:['Al bajar por el grupo el electrón externo está más lejos y se pierde más fácil.','Down the group the outer electron is farther away and is lost more easily.']},
+ {k:'mc',t:'max',zs:[12,14,16],q:['¿Cuál del período 3 tiene el mayor carácter metálico?','Which period-3 element has the highest metallic character?'],w:['El carácter metálico disminuye hacia la derecha del período.','Metallic character decreases to the right across a period.']},
+ {k:'mc',t:'mc',opts:[['Aumenta','Increases'],['Disminuye','Decreases'],['No cambia','Does not change']],ok:0,zs:[3,11,19,37,55],q:['Al bajar por el grupo 1 (de Li a Cs), el carácter metálico…','Going down group 1 (Li to Cs), metallic character…'],w:['Aumenta al bajar por un grupo.','It increases down a group.']}
+];
+var ret={on:false,i:0,log:[],cur:null,done:false,alias:''};
+var retBox=$('ret'), retBtn=$('retbtn');
+function setProp(k){
+  activeProp=k||null;
+  [].forEach.call($('props').querySelectorAll('.tpe-chip'),function(x){x.setAttribute('aria-pressed',String((x.getAttribute('data-k')||null)===activeProp));});
+  applyProp();
+}
+function lockChips(f){[].forEach.call($('props').querySelectorAll('.tpe-chip'),function(x){x.disabled=f;});}
+function markCand(zs){tiles.forEach(function(b){b.classList.toggle('retc',!!zs&&zs.indexOf(+b.getAttribute('data-z'))>-1);});}
+function retCorrect(c){
+  if(c.t==='mc')return c.ok;
+  var k=c.k, best=null;
+  c.zs.forEach(function(z){var v=EL[z-1].p[k]; if(best===null||(c.t==='max'?v>EL[best-1].p[k]:v<EL[best-1].p[k]))best=z;});
+  return best;
+}
+function retStart(){
+  ret.i=0;ret.log=[];ret.done=false;ret.cur=null;
+  retNew();
+}
+function retNew(){
+  var c=RC[ret.i];
+  ret.cur={c:c,att:0,t0:Date.now(),ans:[],solved:false,secs:0};
+  setProp(null);markCand(c.t==='mc'?null:c.zs);retRender();
+}
+function sym(z){return EL[z-1].s;}
+function retRender(){
+  var r=ret.cur,c=r.c,h='';
+  h+='<div class="rt-top"><b>'+tr(RS.title)+' '+(ret.i+1)+' / '+RC.length+'</b><button class="tpe-chip" type="button" data-a="exit">'+tr(RS.exit)+'</button></div>';
+  h+='<p class="rt-q">'+tr(c.q)+'</p>';
+  if(c.t==='mc'){
+    h+='<div class="tpe-chips" role="group">'+c.opts.map(function(o,j){return '<button class="tpe-chip" type="button" data-a="opt" data-j="'+j+'"'+(r.solved?' disabled':'')+'>'+tr(o)+'</button>';}).join('')+'</div>';
+  } else if(!r.solved){
+    h+='<p class="rt-h">'+tr(RS.cand)+' <b>'+c.zs.map(sym).join(' · ')+'</b></p>';
+  }
+  if(r.msg)h+='<p class="rt-m '+(r.solved?'ok':'no')+'" role="status">'+r.msg+'</p>';
+  if(r.solved){
+    h+='<p class="rt-w">'+tr(RS.lit)+' '+tr(c.w)+'</p>';
+    h+='<button class="tpe-chip rt-go" type="button" data-a="next">'+tr(ret.i<RC.length-1?RS.next:RS.end)+'</button>';
+  } else if(r.att>=2){
+    h+='<button class="tpe-chip rt-go" type="button" data-a="reveal">'+tr(RS.show)+'</button>';
+  }
+  retBox.innerHTML=h;
+}
+function retAnswer(a){
+  var r=ret.cur;if(!r||r.solved)return;
+  var c=r.c;
+  if(c.t!=='mc'&&c.zs.indexOf(a)<0)return;
+  r.att++;r.ans.push(a);
+  var ok=a===retCorrect(c);
+  if(ok){retSolve(true);}
+  else{r.msg=tr(RS.no);retRender();}
+}
+function retSolve(ok){
+  var r=ret.cur,c=r.c;
+  r.solved=true;r.secs=Math.round((Date.now()-r.t0)/1000);
+  var right=retCorrect(c);
+  r.msg=ok?tr(RS.ok):tr(RS.answerWas)+': '+(c.t==='mc'?tr(c.opts[c.ok]):tr(EL[right-1].n));
+  ret.log.push({n:ret.i+1,propiedad:c.k,tipo:c.t,candidatos:c.t==='mc'?null:c.zs.map(sym),respuestas:r.ans.map(function(x){return c.t==='mc'?tr(c.opts[x]):sym(x);}),correcta:c.t==='mc'?tr(c.opts[c.ok]):sym(right),acierto:ok,primer_intento:ok&&r.att===1,intentos:r.att,segundos:r.secs});
+  markCand(null);setProp(c.k);retRender();
+}
+function levelOf(p){return p>=80?3:p>=60?2:p>=40?1:0;}
+function retSummary(){
+  var n=ret.log.length,f=ret.log.filter(function(x){return x.primer_intento;}).length,p=Math.round(100*f/n),lv=levelOf(p);
+  return {n:n,f:f,p:p,lv:lv};
+}
+function retReport(){
+  var s=retSummary();
+  return {recurso:'Tabla periódica interactiva · Laboratorio MACEDONIA',fecha:new Date().toISOString(),alias:ret.alias||null,
+   curriculo:{curso:'8.º básico',asignatura:'Ciencias Naturales',oa:'OA 14 (verificar vigencia en curriculumnacional.cl)',habilidades:['OA c: formular predicciones','OA j: examinar resultados y concluir']},
+   resultado:{retos:s.n,aciertos_primer_intento:s.f,porcentaje:s.p,nivel_referencial:RS.lv[0][s.lv]},retos:ret.log};
+}
+function retFinish(){
+  ret.done=true;markCand(null);setProp(null);
+  var s=retSummary();
+  retBox.innerHTML='<div class="rt-top"><b>'+tr(RS.sum)+'</b><button class="tpe-chip" type="button" data-a="exit">'+tr(RS.exit)+'</button></div>'+
+   '<p class="rt-q">'+s.f+' / '+s.n+' '+tr(RS.first)+' ('+s.p+' %)</p>'+
+   '<p>'+tr(RS.level)+': <b>'+RS.lv[LI][s.lv]+'</b></p>'+
+   '<p><label>'+tr(RS.alias)+' <input id="tpe-rtal" type="text" maxlength="30" value="'+ret.alias.replace(/[&<>"]/g,'')+'" autocomplete="off"></label></p>'+
+   '<div class="tpe-chips"><button class="tpe-chip" type="button" data-a="dl">'+tr(RS.dl)+'</button><button class="tpe-chip" type="button" data-a="cp">'+tr(RS.cp)+'</button><button class="tpe-chip" type="button" data-a="again">'+tr(RS.again)+'</button></div>'+
+   '<p class="rt-note">'+tr(RS.note)+'</p>';
+}
+function retText(){
+  var s=retSummary();
+  return 'Tabla periódica MACEDONIA · 8.º básico OA 14\n'+(ret.alias?'Alias: '+ret.alias+'\n':'')+s.f+'/'+s.n+' al primer intento ('+s.p+' %) · '+RS.lv[0][s.lv]+'\n'+
+   ret.log.map(function(x){return x.n+'. '+x.propiedad+': '+x.respuestas.join(' → ')+' ('+(x.acierto?'ok':'no')+', '+x.intentos+' int., '+x.segundos+' s)';}).join('\n');
+}
+function retOn(f){
+  ret.on=f;
+  retBtn.setAttribute('aria-pressed',String(f));
+  root.classList.toggle('tpe-retmode',f);
+  retBox.hidden=!f;
+  lockChips(f);
+  if(f){retStart();}else{markCand(null);setProp(null);lockChips(false);}
+}
+retBtn.addEventListener('click',function(){retOn(!ret.on);});
+ptEl.addEventListener('click',function(ev){
+  if(!ret.on||ret.done)return;
+  var b=ev.target.closest('.tpe-el');if(b)retAnswer(+b.getAttribute('data-z'));
+});
+retBox.addEventListener('input',function(ev){if(ev.target.id==='tpe-rtal')ret.alias=ev.target.value.replace(/[^\w\- .]/g,'').slice(0,30);});
+retBox.addEventListener('click',function(ev){
+  var b=ev.target.closest('[data-a]');if(!b)return;
+  var a=b.getAttribute('data-a');
+  if(a==='exit')retOn(false);
+  else if(a==='opt')retAnswer(+b.getAttribute('data-j'));
+  else if(a==='reveal')retSolve(false);
+  else if(a==='next'){if(ret.i<RC.length-1){ret.i++;retNew();}else retFinish();}
+  else if(a==='again')retStart();
+  else if(a==='dl'){
+    var blob=new Blob([JSON.stringify(retReport(),null,2)],{type:'application/json'});
+    var u=URL.createObjectURL(blob),l=document.createElement('a');
+    l.href=u;l.download='reporte-retos-tabla-periodica.json';document.body.appendChild(l);l.click();document.body.removeChild(l);
+    setTimeout(function(){URL.revokeObjectURL(u);},1000);
+  }
+  else if(a==='cp'){
+    var t=retText();
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){b.textContent=tr(RS.copied);},function(){});}
+  }
+});
+/* ================= retos de opción múltiple (Biología y Física) con vínculo curricular ================= */
+RS.no2=['Aún no. Revisa la información de la pestaña e inténtalo de nuevo.','Not yet. Review the information in this tab and try again.'];
+RS.q=['Pregunta','Question'];
+RS.linkL=['Vínculo curricular','Curriculum link'];
+RS.sug=['Sugerido: verifica la vigencia de los OA en curriculumnacional.cl.','Suggested: check that the OA are still current at curriculumnacional.cl.'];
+RS.noteQ=['El nivel es una referencia, no una calificación. El reporte no se envía a ningún servidor: lo entregas tú.','The level is indicative, not a grade. The report is not sent to any server: you hand it in yourself.'];
+var QZ=[
+ {id:'aminoacidos',mod:['Aminoácidos','Amino acids'],
+  cur:['3.º–4.º medio · Biología Celular y Molecular','Grades 11–12 (3.º–4.º medio) · Cell and Molecular Biology'],
+  oa:['Unidad 2, OA 5: explicar las relaciones entre estructura y función de las proteínas','Unit 2, OA 5: explain structure–function relationships of proteins'],
+  hab:['OA d: analizar las relaciones entre las partes de un sistema','OA d: analyze the relationships between the parts of a system'],
+  items:[
+   {q:['¿Cuál de estos aminoácidos tiene una cadena lateral apolar?','Which of these amino acids has a nonpolar side chain?'],o:[['Serina','Serine'],['Leucina','Leucine'],['Lisina','Lysine'],['Ácido aspártico','Aspartic acid']],ok:1,w:['La leucina tiene una cadena alquílica: es hidrofóbica.','Leucine has an alkyl chain: it is hydrophobic.']},
+   {q:['¿Cuál es un aminoácido básico (carga positiva a pH fisiológico)?','Which is a basic amino acid (positively charged at physiological pH)?'],o:[['Glicina','Glycine'],['Alanina','Alanine'],['Glutamato','Glutamate'],['Lisina','Lysine']],ok:3,w:['La lisina tiene un grupo amino adicional en la cadena lateral (también la arginina y la histidina son básicas).','Lysine has an extra amino group in its side chain (arginine and histidine are also basic).']},
+   {q:['¿Qué enlace une a los aminoácidos en una proteína?','Which bond joins amino acids in a protein?'],o:[['Glucosídico','Glycosidic'],['Éster','Ester'],['Peptídico','Peptide'],['Puente de hidrógeno','Hydrogen bond']],ok:2,w:['El enlace peptídico es una amida entre el grupo carboxilo de uno y el amino del siguiente.','The peptide bond is an amide between one residue’s carboxyl and the next one’s amino group.']},
+   {q:['¿Qué aminoácido puede formar puentes disulfuro entre cadenas laterales?','Which amino acid can form disulfide bridges between side chains?'],o:[['Metionina','Methionine'],['Cisteína','Cysteine'],['Serina','Serine'],['Treonina','Threonine']],ok:1,w:['La cisteína tiene un grupo tiol (–SH); dos de ellos se oxidan a un enlace S–S.','Cysteine has a thiol (–SH) group; two of them oxidize into an S–S bond.']},
+   {q:['¿Cuántos aminoácidos proteinogénicos estándar hay?','How many standard proteinogenic amino acids are there?'],o:[['4','4'],['20','20'],['64','64'],['100','100']],ok:1,w:['Veinte aminoácidos codificados por el código genético (4 es el número de bases; 64, el de codones).','Twenty amino acids are encoded by the genetic code (4 is the number of bases; 64, of codons).']},
+   {q:['La hélice α es un ejemplo de estructura…','The α-helix is an example of … structure'],o:[['primaria','primary'],['secundaria','secondary'],['terciaria','tertiary'],['cuaternaria','quaternary']],ok:1,w:['La estructura secundaria depende de puentes de hidrógeno entre átomos del esqueleto peptídico.','Secondary structure depends on hydrogen bonds between backbone atoms.']}]},
+ {id:'nucleo',mod:['Nucleótidos y bases','Nucleotides and bases'],
+  cur:['3.º–4.º medio · Biología Celular y Molecular','Grades 11–12 (3.º–4.º medio) · Cell and Molecular Biology'],
+  oa:['Unidad 3, OA 3: analizar el significado biológico del dogma central (ADN → ARN → proteínas)','Unit 3, OA 3: analyze the biological meaning of the central dogma (DNA → RNA → proteins)'],
+  hab:['OA d: analizar las relaciones entre las partes de un sistema','OA d: analyze the relationships between the parts of a system'],
+  items:[
+   {q:['¿Qué base está en el ARN pero no en el ADN?','Which base is in RNA but not in DNA?'],o:[['Timina','Thymine'],['Uracilo','Uracil'],['Citosina','Cytosine'],['Guanina','Guanine']],ok:1,w:['El ARN usa uracilo en lugar de timina.','RNA uses uracil in place of thymine.']},
+   {q:['En el ADN, ¿con qué base se aparea la adenina?','In DNA, which base pairs with adenine?'],o:[['Guanina','Guanine'],['Citosina','Cytosine'],['Timina','Thymine'],['Uracilo','Uracil']],ok:2,w:['A–T (dos puentes de hidrógeno) y G–C (tres).','A–T (two hydrogen bonds) and G–C (three).']},
+   {q:['¿Qué azúcar contiene el ADN?','Which sugar does DNA contain?'],o:[['Ribosa','Ribose'],['Glucosa','Glucose'],['Desoxirribosa','Deoxyribose'],['Fructosa','Fructose']],ok:2,w:['Desoxirribosa: le falta el OH del carbono 2′ que sí tiene la ribosa.','Deoxyribose: it lacks the 2′ OH that ribose has.']},
+   {q:['¿Cuántos nucleótidos forman un codón?','How many nucleotides make up a codon?'],o:[['1','1'],['2','2'],['3','3'],['4','4']],ok:2,w:['Tres nucleótidos del ARNm especifican un aminoácido.','Three mRNA nucleotides specify one amino acid.']},
+   {q:['¿Cómo se llama el proceso que sintetiza ARN a partir de un molde de ADN?','What is the process that synthesizes RNA from a DNA template called?'],o:[['Replicación','Replication'],['Traducción','Translation'],['Transcripción','Transcription'],['Mutación','Mutation']],ok:2,w:['La transcripción copia un gen a ARN; la traducción lo lee para armar la proteína.','Transcription copies a gene into RNA; translation reads it to build the protein.']},
+   {q:['En la transcripción, la adenina del molde de ADN se aparea con…','In transcription, adenine on the DNA template pairs with…'],o:[['timina','thymine'],['uracilo','uracil'],['guanina','guanine'],['adenina','adenine']],ok:1,w:['El ARN incorpora uracilo frente a la adenina del molde.','RNA incorporates uracil opposite template adenine.']}]},
+ {id:'estandar',mod:['Modelo Estándar','Standard Model'],
+  cur:['3.º–4.º medio · Física (ampliación)','Grades 11–12 (3.º–4.º medio) · Physics (extension)'],
+  oa:['Unidad 4, OA 4: evaluar la contribución de la física moderna (relatividad y mecánica cuántica)','Unit 4, OA 4: evaluate the contribution of modern physics (relativity and quantum mechanics)'],
+  hab:['OA f: desarrollar y usar modelos basados en evidencia','OA f: develop and use evidence-based models'],
+  items:[
+   {q:['¿Cuántos tipos (sabores) de quarks existen?','How many types (flavors) of quarks are there?'],o:[['2','2'],['3','3'],['6','6'],['12','12']],ok:2,w:['Up, down, charm, strange, top y bottom.','Up, down, charm, strange, top and bottom.']},
+   {q:['El protón está formado por…','The proton is made of…'],o:[['dos quarks up y uno down','two up quarks and one down quark'],['un quark up y dos down','one up quark and two down quarks'],['tres electrones','three electrons'],['dos quarks up y dos down','two up and two down quarks']],ok:0,w:['uud: la carga es +2/3 + 2/3 − 1/3 = +1.','uud: the charge is +2/3 + 2/3 − 1/3 = +1.']},
+   {q:['¿Cuál de estas partículas es un leptón?','Which of these particles is a lepton?'],o:[['Protón','Proton'],['Quark up','Up quark'],['Electrón','Electron'],['Gluón','Gluon']],ok:2,w:['El electrón es un leptón; el protón no es elemental.','The electron is a lepton; the proton is not elementary.']},
+   {q:['¿Qué partícula transmite la interacción electromagnética?','Which particle carries the electromagnetic interaction?'],o:[['Gluón','Gluon'],['Fotón','Photon'],['Bosón W','W boson'],['Neutrino','Neutrino']],ok:1,w:['El fotón; los gluones transmiten la fuerza fuerte y los W y Z, la débil.','The photon; gluons carry the strong force and the W and Z the weak force.']},
+   {q:['¿Qué partícula está asociada al mecanismo que explica la masa de las partículas elementales?','Which particle is associated with the mechanism that explains the mass of elementary particles?'],o:[['Bosón de Higgs','Higgs boson'],['Fotón','Photon'],['Quark top','Top quark'],['Muon','Muon']],ok:0,w:['El campo de Higgs; el bosón de Higgs se observó en 2012.','The Higgs field; the Higgs boson was observed in 2012.']}]},
+ {id:'unidades',mod:['Magnitudes y unidades','Quantities and units'],
+  cur:['7.º básico a 4.º medio · Ciencias Naturales / Física (apoyo)','Grades 7–12 · Natural Sciences / Physics (support)'],
+  oa:['Apoyo transversal, sin OA específico: se asocia a organizar datos y describir relaciones entre variables','Cross-cutting support, no specific OA: it relates to organizing data and describing relationships between variables'],
+  hab:['OA c (3.º–4.º medio): describir patrones, tendencias y relaciones entre datos','OA c (grades 11–12): describe patterns, trends and relationships among data'],
+  items:[
+   {q:['¿Cuál es la unidad base del SI para la masa?','What is the SI base unit of mass?'],o:[['Gramo','Gram'],['Kilogramo','Kilogram'],['Newton','Newton'],['Tonelada','Tonne']],ok:1,w:['El kilogramo es la unidad base (el gramo no lo es).','The kilogram is the base unit (the gram is not).']},
+   {q:['¿Cuál de estas NO es una unidad base del SI?','Which of these is NOT an SI base unit?'],o:[['Metro','Metre'],['Segundo','Second'],['Newton','Newton'],['Ampere','Ampere']],ok:2,w:['El newton es derivada: 1 N = 1 kg·m/s².','The newton is derived: 1 N = 1 kg·m/s².']},
+   {q:['El prefijo «micro» (µ) equivale a…','The prefix “micro” (µ) equals…'],o:[['10⁻³','10⁻³'],['10⁻⁶','10⁻⁶'],['10⁶','10⁶'],['10⁻⁹','10⁻⁹']],ok:1,w:['micro = 10⁻⁶ (mili = 10⁻³; nano = 10⁻⁹).','micro = 10⁻⁶ (milli = 10⁻³; nano = 10⁻⁹).']},
+   {q:['2,5 MHz equivale a…','2.5 MHz equals…'],o:[['2 500 Hz','2,500 Hz'],['25 000 Hz','25,000 Hz'],['2 500 000 Hz','2,500,000 Hz'],['0,0025 Hz','0.0025 Hz']],ok:2,w:['mega = 10⁶: 2,5 × 10⁶ Hz.','mega = 10⁶: 2.5 × 10⁶ Hz.']},
+   {q:['¿Cuál es la unidad base del SI para la corriente eléctrica?','What is the SI base unit of electric current?'],o:[['Volt','Volt'],['Ohm','Ohm'],['Ampere','Ampere'],['Coulomb','Coulomb']],ok:2,w:['El ampere; el coulomb es derivada (A·s).','The ampere; the coulomb is derived (A·s).']}]}
+];
+QZ.forEach(function(m){
+  var sec=document.getElementById('tpe-p-'+m.id); if(!sec)return;
+  var wrap=document.createElement('div');
+  wrap.className='tpe-qz';
+  wrap.innerHTML='<div class="tpe-qzbar"><p class="tpe-qzcur"><b>'+tr(RS.linkL)+':</b> '+tr(m.cur)+' · '+tr(m.oa)+'. <span class="tpe-qzsug">'+tr(RS.sug)+'</span></p><button class="tpe-chip tpe-retbtn" type="button" aria-pressed="false">'+tr(RS.btn)+'</button></div><div class="tpe-ret" aria-live="polite" hidden></div>';
+  var h2=sec.querySelector('h2');
+  if(h2&&h2.nextSibling)sec.insertBefore(wrap,h2.nextSibling);else sec.appendChild(wrap);
+  var btn=wrap.querySelector('button'), box=wrap.querySelector('.tpe-ret');
+  var st={on:false,i:0,log:[],cur:null,alias:''};
+  function newQ(){st.cur={att:0,t0:Date.now(),ans:[],solved:false,msg:''};render();}
+  function render(){
+    var r=st.cur,it=m.items[st.i],h='';
+    h+='<div class="rt-top"><b>'+tr(RS.q)+' '+(st.i+1)+' / '+m.items.length+'</b><button class="tpe-chip" type="button" data-a="exit">'+tr(RS.exit)+'</button></div><p class="rt-q">'+tr(it.q)+'</p>';
+    h+='<div class="tpe-chips" role="group">'+it.o.map(function(o,j){return '<button class="tpe-chip" type="button" data-a="opt" data-j="'+j+'"'+(r.solved?' disabled':'')+'>'+tr(o)+'</button>';}).join('')+'</div>';
+    if(r.msg)h+='<p class="rt-m '+(r.solved&&r.ok?'ok':'no')+'" role="status">'+r.msg+'</p>';
+    if(r.solved){h+='<p class="rt-w">'+tr(it.w)+'</p><button class="tpe-chip rt-go" type="button" data-a="next">'+tr(st.i<m.items.length-1?RS.next:RS.end)+'</button>';}
+    else if(r.att>=2){h+='<button class="tpe-chip rt-go" type="button" data-a="reveal">'+tr(RS.show)+'</button>';}
+    box.innerHTML=h;
+  }
+  function solve(ok){
+    var r=st.cur,it=m.items[st.i];
+    r.solved=true;r.ok=ok;r.secs=Math.round((Date.now()-r.t0)/1000);
+    r.msg=ok?tr(RS.ok):tr(RS.answerWas)+': '+tr(it.o[it.ok]);
+    st.log.push({n:st.i+1,pregunta:it.q[0],respuestas:r.ans.map(function(x){return it.o[x][0];}),correcta:it.o[it.ok][0],acierto:ok,primer_intento:ok&&r.att===1,intentos:r.att,segundos:r.secs});
+    render();
+  }
+  function sum(){var n=st.log.length,f=st.log.filter(function(x){return x.primer_intento;}).length,p=Math.round(100*f/n);return {n:n,f:f,p:p,lv:levelOf(p)};}
+  function report(){
+    var s=sum();
+    return {recurso:'Tabla periódica interactiva · '+m.mod[0],fecha:new Date().toISOString(),alias:st.alias||null,
+      curriculo:{curso:m.cur[0],oa:m.oa[0]+' (sugerido; verificar vigencia en curriculumnacional.cl)',habilidades:[m.hab[0]]},
+      resultado:{preguntas:s.n,aciertos_primer_intento:s.f,porcentaje:s.p,nivel_referencial:RS.lv[0][s.lv]},retos:st.log};
+  }
+  function finish(){
+    var s=sum();
+    box.innerHTML='<div class="rt-top"><b>'+tr(RS.sum)+'</b><button class="tpe-chip" type="button" data-a="exit">'+tr(RS.exit)+'</button></div>'+
+      '<p class="rt-q">'+s.f+' / '+s.n+' '+tr(RS.first)+' ('+s.p+' %)</p><p>'+tr(RS.level)+': <b>'+RS.lv[LI][s.lv]+'</b></p>'+
+      '<p><label>'+tr(RS.alias)+' <input type="text" data-alias maxlength="30" value="'+st.alias.replace(/[&<>"]/g,'')+'" autocomplete="off"></label></p>'+
+      '<div class="tpe-chips"><button class="tpe-chip" type="button" data-a="dl">'+tr(RS.dl)+'</button><button class="tpe-chip" type="button" data-a="cp">'+tr(RS.cp)+'</button><button class="tpe-chip" type="button" data-a="again">'+tr(RS.again)+'</button></div>'+
+      '<p class="rt-note">'+tr(RS.noteQ)+'</p>';
+  }
+  function setOn(f){st.on=f;btn.setAttribute('aria-pressed',String(f));box.hidden=!f;if(f){st.i=0;st.log=[];newQ();}}
+  btn.addEventListener('click',function(){setOn(!st.on);});
+  box.addEventListener('input',function(ev){if(ev.target.hasAttribute('data-alias'))st.alias=ev.target.value.replace(/[^\w\- .]/g,'').slice(0,30);});
+  box.addEventListener('click',function(ev){
+    var b=ev.target.closest('[data-a]');if(!b)return;var a=b.getAttribute('data-a'),r=st.cur,it=m.items[st.i];
+    if(a==='exit')setOn(false);
+    else if(a==='opt'){if(r.solved)return;var j=+b.getAttribute('data-j');r.att++;r.ans.push(j);if(j===it.ok)solve(true);else{r.msg=tr(RS.no2);render();}}
+    else if(a==='reveal')solve(false);
+    else if(a==='next'){if(st.i<m.items.length-1){st.i++;newQ();}else finish();}
+    else if(a==='again'){st.i=0;st.log=[];newQ();}
+    else if(a==='dl'){var blob=new Blob([JSON.stringify(report(),null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),l=document.createElement('a');l.href=u;l.download='reporte-retos-'+m.id+'.json';document.body.appendChild(l);l.click();document.body.removeChild(l);setTimeout(function(){URL.revokeObjectURL(u);},1000);}
+    else if(a==='cp'){var s=sum(),t='Tabla periódica MACEDONIA · '+m.mod[0]+' · '+m.cur[0]+'\n'+(st.alias?'Alias: '+st.alias+'\n':'')+s.f+'/'+s.n+' ('+s.p+' %) · '+RS.lv[0][s.lv];if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(function(){b.textContent=tr(RS.copied);},function(){});}
+  });
+});
 $('q').addEventListener('input',function(ev){query=ev.target.value;applyDim();});
 $('q').addEventListener('keydown',function(ev){
   if(ev.key==='Enter'){var f=ptEl.querySelector('.tpe-el:not(.dim)');if(f&&query.trim())select(+f.getAttribute('data-z'));}
