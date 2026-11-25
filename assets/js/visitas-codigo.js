@@ -8,7 +8,7 @@
 
 /* Llave pública del laboratorio (JWK sin el campo «d»). Mientras sea null, la etapa 2 queda cerrada.
    Se obtiene con la página assets/herramientas/codigos-visita.html. */
-var CLAVE_PUBLICA=null;
+var CLAVE_PUBLICA={"kty":"EC","crv":"P-256","x":"WZgsvRHCJ9Ma3OnyOIhW8ihiqP3pvc2lHToPK4EuMyM","y":"AZ-T6PydIG7yJjAPbApHQa3eyDu2Oa8v2l2Y4UCQQZ8"};
 
 var PREFIJO='MAC1';
 var DIAS_VIGENCIA=30; /* días de vigencia posteriores a la fecha de la visita */
