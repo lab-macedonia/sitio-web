@@ -1,5 +1,6 @@
 /* Formulario de visitas de colegios · Departamento de Química UMCE.
-   La solicitud (etapa 1) se envía por FormSubmit; la ficha con RUT (etapa 2) NO se envía: solo correo manual. */
+   La solicitud (etapa 1) se envía por FormSubmit; la ficha con RUT (etapa 2) NO se envía: solo correo manual.
+   La etapa 2 se habilita con un código de visita firmado por el laboratorio (assets/js/visitas-codigo.js). */
 (function(){
 'use strict';
 var ACAD='Germán Barriga González', MAIL_LAB='german.barriga@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
@@ -23,6 +24,40 @@ tabs.forEach(function(t,i){
     if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();tab(1-i,true)}
   });
 });
+
+/* etapa 2: se habilita con el código de visita que el laboratorio envía al aceptar la solicitud */
+var visita=null; /* datos del código validado: {i,c,f,e} */
+var MOTIVOS={
+  'sin-clave':'Esta etapa aún no está habilitada en el sitio. Escribe a '+MAIL_LAB+'.',
+  'formato':'El código no tiene el formato correcto. Cópialo completo desde el correo (empieza con MAC1.) o abre el enlace que te enviamos.',
+  'firma':'El código no es válido. Revisa que esté completo y sin modificaciones; si el problema continúa, escribe a '+MAIL_LAB+'.',
+  'vencido':'Este código está vencido. Escribe a '+MAIL_LAB+' para solicitar uno nuevo.'
+};
+function codMsg(cls,html){$('cod_msg').innerHTML='<p class="vc-note '+cls+'">'+html+'</p>'}
+function validarCodigo(){
+  var t=v('cod');
+  visita=null;$('vc-ficha').hidden=true;$('vc-lock').hidden=false;
+  if(!t){codMsg('vc-note--warn','Pega el código de visita que recibiste por correo.');return}
+  if(!window.VisitasCodigo){codMsg('vc-note--warn','No se pudo cargar el verificador de códigos. Recarga la página.');return}
+  codMsg('','Validando…');
+  window.VisitasCodigo.verificar(t).then(function(r){
+    if(!r.ok){codMsg('vc-note--warn',esc(MOTIVOS[r.motivo]||MOTIVOS.firma));return}
+    visita=r.datos;
+    $('vc-lock').hidden=true;$('vc-ficha').hidden=false;
+    var ok=document.getElementById('cod_ok');
+    if(!ok){ok=document.createElement('p');ok.id='cod_ok';ok.setAttribute('role','status');$('vc-ficha').insertBefore(ok,$('vc-ficha').firstChild)}
+    ok.className='vc-note vc-note--ok';
+    ok.textContent='Código VIS-'+visita.i+' válido para «'+visita.c+'» (visita del '+fdate(visita.f)+'). Vigente hasta el '+fdate(visita.e)+'.';
+    if(!v('f_cole'))$('f_cole').value=visita.c;
+    if(!v('f_fecha'))$('f_fecha').value=visita.f;
+  },function(){codMsg('vc-note--warn',esc(MOTIVOS.firma))}).catch(function(){codMsg('vc-note--warn',esc(MOTIVOS.firma))});
+}
+$('valcod').addEventListener('click',validarCodigo);
+(function(){ /* enlace con el código en el fragmento (#codigo=…): se abre la etapa 2 y se valida solo */
+  var m=location.hash.match(/codigo=([^&]+)/);
+  if(!m)return;
+  $('cod').value=m[1];tab(1);validarCodigo();
+})();
 
 /* actividad */
 function actividad(){var a=v('act');return a==='otra'?v('otra_txt'):a}
@@ -206,6 +241,7 @@ $('gen1').addEventListener('click',function(){
 /* generar ficha de identificación */
 $('gen2').addEventListener('click',function(){
   var e=[];
+  if(!visita){showErrs('errs2',['Código de visita válido (ingrésalo arriba)']);$('out2').hidden=true;return}
   [['f_cole','Establecimiento'],['f_fecha','Fecha'],['f_hini','Horario'],['f_act','Actividad'],['f_n','N.º de estudiantes'],['f_prof','Profesor/a'],['f_mail','Correo del profesor/a'],['f_acad','Académico/a encargado/a']]
     .forEach(function(p){if(!v(p[0]))e.push(p[1])});
   var filas=Array.prototype.map.call(tbl('tn').tBodies[0].rows,function(r){return Array.prototype.map.call(r.querySelectorAll('input'),function(i){return i.value.trim()})})
@@ -217,6 +253,7 @@ $('gen2').addEventListener('click',function(){
     else if(!rutValido(r[1]))e.push('El RUT de '+r[0]+' no es válido');
   });
   if(v('f_n')&&filas.length&&+v('f_n')!==filas.length)e.push('La nómina tiene '+filas.length+' estudiantes, pero el N.º declarado es '+v('f_n'));
+  if(!$('f_img').checked)e.push('Declaración sobre las autorizaciones de uso de imágenes');
   showErrs('errs2',e);
   if(e.length){$('out2').hidden=true;$('errs2').scrollIntoView({behavior:'smooth'});return}
   var L=['FICHA DE IDENTIFICACIÓN DE VISITAS – DEPARTAMENTO DE QUÍMICA UMCE','(Visita ratificada por la Dirección del Departamento de Química)',''];
@@ -226,9 +263,12 @@ $('gen2').addEventListener('click',function(){
   L.push('N.º de estudiantes: '+v('f_n'));
   L.push('Profesor/a (establecimiento educacional): '+v('f_prof'));
   L.push('Correo profesor/a: '+v('f_mail'));
-  L.push('Académico/a encargado/a (UMCE): '+v('f_acad'),'');
+  L.push('Académico/a encargado/a (UMCE): '+v('f_acad'));
+  L.push('Código de visita: VIS-'+visita.i,'');
   L.push('N.º | Nombre estudiante | RUT');
   filas.forEach(function(r,i){L.push((i+1)+' | '+r[0]+' | '+r[1])});
+  L.push('','AUTORIZACIÓN DE USO DE IMÁGENES');
+  L.push('El establecimiento declara contar con las autorizaciones firmadas por los apoderados de los estudiantes para el uso de fotografías y videos de esta actividad en las redes sociales, el sitio web y el podcast del Laboratorio MACEDONIA (fines educativos y de difusión, sin fines comerciales y sin publicar nombres), las conserva y las pondrá a disposición del laboratorio si se solicitan, e informará qué estudiantes no cuentan con autorización para excluirlos de los registros.');
   setupOut('2','Ficha de identificación de visitas – '+v('f_cole')+' – '+fdate(v('f_fecha')),L.join('\n'),'');
 });
 })();

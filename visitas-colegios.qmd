@@ -14,13 +14,13 @@ Si eres profesor/a y quieres que el laboratorio vaya a tu colegio, usa el formul
 
 - La solicitud debe hacerse **por escrito**, con al menos **3 semanas (15 días hábiles)** de antelación. Las solicitudes sin esa antelación no pueden realizarse.
 - El Departamento responde por escrito en un máximo de **5 días hábiles** desde que recibe la solicitud.
-- La solicitud será **procesada por el laboratorio y la Dirección del Departamento**. Solo si la respuesta es positiva se procede con la **ficha de identificación de visitas** (pestaña 2), con el envío de los RUT.
+- La solicitud será **procesada por el laboratorio y la Dirección del Departamento**. Solo si la respuesta es positiva se te envía un **código de visita**, que habilita la **ficha de identificación de visitas** (pestaña 2), con el envío de los RUT.
 :::
 
 ::: {.callout-note}
 ## Cómo funciona
 
-Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta página al Laboratorio MACEDONIA, que la **procesa y la gestiona con la Dirección del Departamento de Química**. El envío se hace a través del servicio externo FormSubmit. Si la respuesta es positiva, se te avisará y **recién entonces se procede con el envío de la ficha de identificación (pestaña 2), que incluye los RUT de los estudiantes**. Esa ficha no se almacena en esta página: se genera para que la copies o la mandes por correo al laboratorio. Si prefieres, la solicitud también puedes abrirla en tu programa de correo, copiarla o descargarla.
+Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta página al Laboratorio MACEDONIA, que la **procesa y la gestiona con la Dirección del Departamento de Química**. El envío se hace a través del servicio externo FormSubmit. Si la respuesta es positiva, te enviaremos por correo un **código de visita** (o un enlace que ya lo incluye): **recién entonces se habilita la ficha de identificación (pestaña 2)**, que incluye los RUT de los estudiantes y una declaración sobre las autorizaciones de uso de imágenes. Esa ficha no se almacena en esta página: se genera para que la copies o la mandes por correo al laboratorio. Si prefieres, la solicitud también puedes abrirla en tu programa de correo, copiarla o descargarla.
 :::
 
 ```{=html}
@@ -145,6 +145,16 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
 
   <!-- ETAPA 2 -->
   <div id="vc-p2" role="tabpanel" aria-labelledby="vc-t2" hidden>
+    <div class="vc-card" id="vc-lock">
+      <h2 class="vc-h3">Código de visita</h2>
+      <p class="vc-note">Esta etapa se habilita con el <strong>código de visita</strong> que recibirás por correo junto con la <strong>respuesta positiva</strong> a tu solicitud. Si te llegó un enlace, ábrelo y esta ficha se habilitará sola; si te llegó solo el código, pégalo aquí.</p>
+      <label for="cod">Código de visita</label>
+      <textarea id="cod" rows="3" autocomplete="off" spellcheck="false" placeholder="MAC1.…"></textarea>
+      <button class="vc-btn" id="valcod" type="button">Validar código</button>
+      <div id="cod_msg" aria-live="polite" role="status"></div>
+    </div>
+
+    <div id="vc-ficha" hidden>
     <p class="vc-note vc-note--warn">Completa esta ficha <strong>solo cuando recibas una respuesta positiva</strong> a tu solicitud: los RUT se envían únicamente después de esa confirmación.</p>
     <fieldset class="vc-card">
       <legend>Ficha de identificación de visitas</legend>
@@ -178,6 +188,12 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
       <p class="vc-note">El RUT se valida con su dígito verificador y se formatea automáticamente (12.345.678-5). Los datos no se guardan ni se envían desde esta página: la ficha se manda por correo, de forma manual.</p>
     </fieldset>
 
+    <fieldset class="vc-card">
+      <legend>Autorización de uso de imágenes</legend>
+      <p class="vc-note">Durante la visita, el laboratorio podría registrar fotografías y videos de la actividad para difundirla en sus redes sociales (por ejemplo, Instagram @labmacedonia), su sitio web y su podcast, con fines educativos y de difusión, sin fines comerciales y sin publicar nombres de estudiantes. Solo se usan imágenes de estudiantes con autorización. La autorización puede retirarse en cualquier momento escribiendo a german.barriga@umce.cl.</p>
+      <label class="vc-chk"><input type="checkbox" id="f_img"><span>Declaro que el establecimiento cuenta con las autorizaciones firmadas por los apoderados de los estudiantes para el uso de fotografías y videos de esta actividad, que las conserva y las pondrá a disposición del laboratorio si se solicitan, y que informará qué estudiantes no cuentan con autorización para excluirlos de los registros.</span></label>
+    </fieldset>
+
     <div class="vc-card">
       <div id="errs2" aria-live="polite"></div>
       <button class="vc-btn" id="gen2" type="button">Generar ficha</button>
@@ -193,7 +209,9 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
         <p class="vc-note" id="msg2" role="status">Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a german.barriga@umce.cl.</p>
       </div>
     </div>
+    </div>
   </div>
 </div>
+<script src="assets/js/visitas-codigo.js" defer></script>
 <script src="assets/js/visitas.js" defer></script>
 ```

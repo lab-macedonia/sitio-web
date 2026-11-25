@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Códigos de visita · Laboratorio MACEDONIA (uso interno)</title>
+<style>
+:root{--deep:#062a4d;--line:#c9d3de;--bg:#f5f7fa;--ok:#14653a;--warn:#8a3b00}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#16212b;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:1rem}
+h1{font-size:1.4rem;color:var(--deep);margin:.4rem 0}
+h2{font-size:1.1rem;color:var(--deep);margin:0 0 .5rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;margin:0 0 1rem}
+label{display:block;font-weight:700;margin:.8rem 0 .25rem}
+input,textarea{width:100%;padding:.55rem .65rem;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff}
+textarea{min-height:5.5rem;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem}
+button{padding:.6rem 1rem;border:0;border-radius:10px;background:var(--deep);color:#fff;font:inherit;font-weight:700;cursor:pointer;margin:.6rem .4rem 0 0}
+button.sec{background:#fff;color:var(--deep);border:1px solid var(--deep)}
+.note{font-size:.92rem;color:#455566;margin:.4rem 0}
+.warn{color:var(--warn);font-weight:600}
+.ok{color:var(--ok);font-weight:600}
+pre{white-space:pre-wrap;word-break:break-word;background:#eef2f6;border-radius:8px;padding:.7rem;font-size:.9rem}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<h1>Códigos de visita (uso interno)</h1>
+<p class="note">Esta página funciona <strong>solo en tu navegador</strong>: la llave privada nunca se envía a ningún servidor ni se guarda. Cada código lleva dentro el establecimiento, la fecha de la visita y su vencimiento; la página de visitas lo verifica con la llave pública.</p>
+
+<details class="card" id="cardLlaves">
+  <summary><strong>Paso único: crear tus llaves</strong> (solo la primera vez)</summary>
+  <p class="note">Crea el par de llaves. Guarda la <strong>llave privada</strong> en tu gestor de contraseñas (no la compartas ni la subas al repositorio). La <strong>llave pública</strong> se pega en <code>assets/js/visitas-codigo.js</code> (variable <code>CLAVE_PUBLICA</code>); es pública y no es secreta.</p>
+  <button type="button" id="btnLlaves">Crear llaves</button>
+  <div id="outLlaves" hidden>
+    <label for="pub">Llave pública (se publica en el sitio)</label>
+    <textarea id="pub" readonly></textarea>
+    <button type="button" class="sec" data-copiar="pub">Copiar llave pública</button>
+    <label for="priv">Llave privada (SECRETA: guárdala ahora)</label>
+    <textarea id="priv" readonly></textarea>
+    <button type="button" class="sec" data-copiar="priv">Copiar llave privada</button>
+    <p class="note warn">Si pierdes la llave privada, hay que crear otras y cambiar la pública del sitio; los códigos antiguos dejarían de valer.</p>
+  </div>
+</details>
+
+<section class="card">
+  <h2>Generar código para una visita aceptada</h2>
+  <label for="kpriv">Llave privada</label>
+  <textarea id="kpriv" placeholder='Pega aquí la llave privada (empieza con {"key_ops"… o {"kty"…)' autocomplete="off" spellcheck="false"></textarea>
+  <label for="colegio">Establecimiento</label>
+  <input id="colegio" type="text" autocomplete="off">
+  <label for="fecha">Fecha de la visita</label>
+  <input id="fecha" type="date">
+  <button type="button" id="btnGen">Generar código</button>
+  <p class="note" id="msg" role="status"></p>
+
+  <div id="out" hidden>
+    <p class="note">Código <strong id="idv"></strong> · vence el <strong id="venc"></strong>.</p>
+    <label for="mail">Texto para el correo al establecimiento</label>
+    <textarea id="mail" readonly style="min-height:14rem;font-family:inherit;font-size:.95rem"></textarea>
+    <button type="button" class="sec" data-copiar="mail">Copiar texto del correo</button>
+    <label for="reg">Línea para tu registro interno</label>
+    <textarea id="reg" readonly style="min-height:3rem"></textarea>
+    <button type="button" class="sec" data-copiar="reg">Copiar línea de registro</button>
+  </div>
+</section>
+</main>
+<script src="../js/visitas-codigo.js"></script>
+<script>
+(function(){
+'use strict';
+var V=window.VisitasCodigo;
+var BASE='https://lab-macedonia.github.io/sitio-web/visitas-colegios.html';
+function $(id){return document.getElementById(id)}
+function fd(s){var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}
+function copiar(id,btn){
+  var el=$(id),t=el.value;
+  var fin=function(){var o=btn.textContent;btn.textContent='Copiado ✓';setTimeout(function(){btn.textContent=o},1500)};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(fin,function(){el.select()});
+  else{el.select();document.execCommand&&document.execCommand('copy');fin()}
+}
+Array.prototype.forEach.call(document.querySelectorAll('[data-copiar]'),function(b){
+  b.addEventListener('click',function(){copiar(b.getAttribute('data-copiar'),b)});
+});
+
+$('btnLlaves').addEventListener('click',function(){
+  V.crearLlaves().then(function(k){
+    $('pub').value=JSON.stringify(k.publica);
+    $('priv').value=JSON.stringify(k.privada);
+    $('outLlaves').hidden=false;
+  }).catch(function(e){alert(e.message)});
+});
+
+$('btnGen').addEventListener('click',function(){
+  var msg=$('msg');msg.className='note';msg.textContent='';
+  var colegio=$('colegio').value.trim(),fecha=$('fecha').value,jwk;
+  if(!colegio||!fecha||!$('kpriv').value.trim()){msg.className='note warn';msg.textContent='Completa la llave privada, el establecimiento y la fecha de la visita.';return}
+  try{jwk=JSON.parse($('kpriv').value)}catch(e){msg.className='note warn';msg.textContent='La llave privada no tiene el formato correcto (debe ser el texto completo entre llaves { }).';return}
+  V.crear(jwk,{colegio:colegio,fecha:fecha}).then(function(r){
+    var enlace=BASE+'#codigo='+r.codigo,d=r.datos;
+    $('idv').textContent='VIS-'+d.i;$('venc').textContent=fd(d.e);
+    $('mail').value=[
+      'Estimados/as:','',
+      'Junto con saludar, les informamos que la solicitud de visita de '+colegio+' al Departamento de Química de la UMCE para el '+fd(fecha)+' fue aceptada.','',
+      'Para continuar con la ficha de identificación de visitas (nómina de estudiantes y declaración de autorización de imágenes), ingresen a este enlace, que habilita la etapa 2 del formulario:','',
+      enlace,'',
+      'Si el enlace no abre directamente, pueden entrar a https://lab-macedonia.github.io/sitio-web/visitas-colegios.html, abrir la pestaña «2. Ficha de identificación» y pegar este código de visita:','',
+      r.codigo,'',
+      'El código es válido hasta el '+fd(d.e)+'.','',
+      'Saludos cordiales,','Germán Barriga González','Laboratorio MACEDONIA · Departamento de Química, UMCE'
+    ].join('\n');
+    $('reg').value='VIS-'+d.i+' | '+colegio+' | visita '+fd(fecha)+' | vence '+fd(d.e);
+    $('out').hidden=false;
+    msg.className='note ok';msg.textContent='Código generado.';
+    $('out').scrollIntoView({behavior:'smooth'});
+  }).catch(function(){msg.className='note warn';msg.textContent='No se pudo firmar: revisa que la llave privada esté completa y sea la correcta.'});
+});
+})();
+</script>
+</body>
+</html>
