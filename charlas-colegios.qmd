@@ -121,4 +121,4 @@ Al terminar, puedes **enviar la solicitud directamente** al laboratorio desde es
 
 ## Contacto
 
-Para consultas, escríbenos a [german.barriga@umce.cl](mailto:german.barriga@umce.cl).
+Para consultas, escríbenos a [lab.macedonia@umce.cl](mailto:lab.macedonia@umce.cl).

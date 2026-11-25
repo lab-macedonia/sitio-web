@@ -3,7 +3,7 @@
    La etapa 2 se habilita con un código de visita firmado por el laboratorio (assets/js/visitas-codigo.js). */
 (function(){
 'use strict';
-var ACAD='Germán Barriga González', MAIL_LAB='german.barriga@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
+var ACAD='Germán Barriga González', MAIL_LAB='lab.macedonia@umce.cl', MAIL_DEPTO=MAIL_LAB; /* todos los correos van solo al laboratorio, sin copias */
 function $(id){return document.getElementById(id)}
 /* tablas: Quarto envuelve <table id> en un <div> con el mismo id; se busca la tabla por su etiqueta */
 function tbl(id){return document.querySelector('table#'+id)}

@@ -2,7 +2,7 @@
    Se envía por FormSubmit al correo del laboratorio (DESTINO). */
 (function(){
 'use strict';
-var DESTINO='german.barriga@umce.cl';
+var DESTINO='lab.macedonia@umce.cl';
 function $(id){return document.getElementById(id)}
 function v(id){return ($(id).value||'').trim()}
 function fdate(s){if(!s)return '';var p=s.split('-');return p[2]+'-'+p[1]+'-'+p[0]}

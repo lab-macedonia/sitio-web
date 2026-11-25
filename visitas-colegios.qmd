@@ -129,7 +129,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
       <div id="errs" aria-live="polite"></div>
       <button class="vc-btn" id="gen1" type="button">Generar solicitud</button>
       <div id="out1" hidden>
-        <p class="vc-meta"><strong>Para:</strong> german.barriga@umce.cl</p>
+        <p class="vc-meta"><strong>Para:</strong> lab.macedonia@umce.cl</p>
         <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto1"></span></p>
         <pre id="body1" tabindex="0"></pre>
         <div class="vc-actions">
@@ -190,7 +190,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
 
     <fieldset class="vc-card">
       <legend>Autorización de uso de imágenes</legend>
-      <p class="vc-note">Durante la visita, el laboratorio podría registrar fotografías y videos de la actividad para difundirla en sus redes sociales (por ejemplo, Instagram @labmacedonia), su sitio web y su podcast, con fines educativos y de difusión, sin fines comerciales y sin publicar nombres de estudiantes. Solo se usan imágenes de estudiantes con autorización. La autorización puede retirarse en cualquier momento escribiendo a german.barriga@umce.cl.</p>
+      <p class="vc-note">Durante la visita, el laboratorio podría registrar fotografías y videos de la actividad para difundirla en sus redes sociales (por ejemplo, Instagram @labmacedonia), su sitio web y su podcast, con fines educativos y de difusión, sin fines comerciales y sin publicar nombres de estudiantes. Solo se usan imágenes de estudiantes con autorización. La autorización puede retirarse en cualquier momento escribiendo a lab.macedonia@umce.cl.</p>
       <label class="vc-chk"><input type="checkbox" id="f_img"><span>Declaro que el establecimiento cuenta con las autorizaciones firmadas por los apoderados de los estudiantes para el uso de fotografías y videos de esta actividad, que las conserva y las pondrá a disposición del laboratorio si se solicitan, y que informará qué estudiantes no cuentan con autorización para excluirlos de los registros.</span></label>
     </fieldset>
 
@@ -198,7 +198,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
       <div id="errs2" aria-live="polite"></div>
       <button class="vc-btn" id="gen2" type="button">Generar ficha</button>
       <div id="out2" hidden>
-        <p class="vc-meta"><strong>Para:</strong> german.barriga@umce.cl</p>
+        <p class="vc-meta"><strong>Para:</strong> lab.macedonia@umce.cl</p>
         <p class="vc-meta"><strong>Asunto:</strong> <span id="asunto2"></span></p>
         <pre id="body2" tabindex="0"></pre>
         <div class="vc-actions">
@@ -206,7 +206,7 @@ Al terminar la **solicitud (pestaña 1)**, la envías directamente desde esta p�
           <a class="vc-btn vc-btn--sec" id="mailto2" href="#">Abrir en el correo</a>
           <button class="vc-btn vc-btn--sec" id="dl2" type="button">Descargar .txt</button>
         </div>
-        <p class="vc-note" id="msg2" role="status">Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a german.barriga@umce.cl.</p>
+        <p class="vc-note" id="msg2" role="status">Si el botón de correo no funciona, copia el texto y pégalo en un mensaje a lab.macedonia@umce.cl.</p>
       </div>
     </div>
     </div>
